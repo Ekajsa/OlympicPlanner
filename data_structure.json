@@ -1,0 +1,25 @@
+{
+  "user": {
+    "first_name": "",
+    "last_name": "",
+    "full_name": "",
+    "e-mail": "",
+    "password": "",
+    "date_created": "",
+    "last_signin": "",
+    "status": "",
+    "activated": "",
+    "avatar": ""
+  },
+  "event": {
+    "discipline": "cross-country",
+    "gren": "15 km classic technique",
+    "start_time": "",
+    "end_time": "",
+    "sex": "",
+    "tv_channel": [],
+    "competition_type": "prologue",
+
+  }
+
+}
