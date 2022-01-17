@@ -9,17 +9,31 @@
     "last_signin": "",
     "status": "",
     "activated": "",
-    "avatar": ""
+    "avatar": "",
+    "ttt": ""
   },
   "event": {
     "discipline": "cross-country",
-    "gren": "15 km classic technique",
-    "start_time": "",
-    "end_time": "",
-    "sex": "",
-    "tv_channel": [],
+    "description": "15 km classic technique",
     "competition_type": "prologue",
-
+    "sex": "",
+    "date": "",
+    "local_start_time": "",
+    "local_end_time": "",
+    "tv_channel": [],
+    "participating_countries": []
+  },
+  "personal_schedules": {
+    "selected_event": {
+      "discipline": "cross-country",
+      "description": "15 km classic technique",
+      "competition_type": "prologue",
+      "sex": "",
+      "date": "",
+      "local_start_time": "",
+      "local_end_time": "",
+      "tv_channel": [],
+      "priority_col": ""
+    }
   }
-
 }
