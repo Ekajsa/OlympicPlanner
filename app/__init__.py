@@ -8,8 +8,8 @@ def create_app():
     _app.config.from_pyfile('settings.py')
     init_db(_app)
 
-    # from app.blueprints.open import bp_open
-    # _app.register_blueprint(bp_open)
+    from app.blueprints.open import bp_open
+    _app.register_blueprint(bp_open)
     #
     # from app.blueprints.user import bp_user
     # _app.register_blueprint(bp_user, url_prefix='/user')
