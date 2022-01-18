@@ -1,6 +1,13 @@
-def main():
-    pass
+from flask import Blueprint, render_template
+
+bp_open = Blueprint('bp_open', __name__)
 
 
-if __name__ == '__main__':
-    main()
+@bp_open.get('/')
+def index():
+    return render_template('index.html')
+
+
+# @bp_open.get('/about')
+# def about():
+#     return render_template('about.html')
