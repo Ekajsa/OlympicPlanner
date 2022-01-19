@@ -12,12 +12,35 @@ def create_user():
         "last_name": "Persson",
         "full_name": "Peps Persson",
         "e-mail": "peps@email.com",
-        "password": "jklö",
+        "password": "jkldfa",
         "date_created": "2021-01-17",
         "last_signin": "2021-01-18",
         "status": "online",
         "activated": "True",
-        "avatar": ""
-    }
+        "avatar": "",
+        "schedules": [
+            {
+                "schedule_name": "My first schedule",
+                "events": [
+                    {
+                        "event_no": "104",  # Should be event numbers from mongodb
+                        "priority_col": "1"
+                    },
+                    {
+                        "event_no": "098",
+                        "priority_col": "1"
+                    },
+                    {
+                        "event_no": "086",
+                        "priority_col": "2"
+                    },
+                    {
+                        "event_no": "076",
+                        "priority_col": "2"
+                    }
+                ]
+            }
+          ]
+        }
 
     ur.create_user(user)
