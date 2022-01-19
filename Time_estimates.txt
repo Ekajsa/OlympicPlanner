@@ -1,0 +1,13 @@
+Sprint week 1 (39h, from tuesday afternoon and forward minus lectures and meetings, included vab for Johanna)
+Issue Est. time Total
+#006  1h        1
+#007  1h        2
+#008  1h        3
+#009  3h        6
+#010  2h        8
+#011  4h        12
+#012  4h        16
+#014  4h        20 
+#015  3h        23
+#016  3h        26
+#017  13h       39
