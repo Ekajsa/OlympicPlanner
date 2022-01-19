@@ -1,0 +1,79 @@
+
+************************************************************************************************************************************************
+Daily 2022-01-19
+Britta
+  *   Vad har jag gjort sedan avstämningen igår?
+  	Letat efter API (#007), har mejlat till två företag/organisationer som verkar leverera API:er till tv-kanaler och liknande. 
+	Drog ner projektet och kollat på buggar som uppstod vid byggandet av strukturen i PyCharm.
+  *   Vad ska jag göra till nästa avstämning?
+  	Plan A är att fixa med user-inloggning (#008). Tidsuppskattningen för den uppgiften är troligtvis för låg. 
+	Eventuellt jobbar med user-sidan (#014). Försöker hålla ett lugnare tempo med tanke på covid-19-tröttheten.
+  *   Behöver jag hjälp med något?
+  	Nej
+
+Kajsa
+  *   Vad har jag gjort sedan avstämningen igår?
+  	#006 Tidsuppskattningen för att sätta upp strukturen var för lågt satt men det är klart nu. 
+	Även att skapa testposter i db (user, schedule, event) som ingick i samma issue. 
+  *   Vad ska jag göra till nästa avstämning?
+  	#009 Leta efter template för frontend.
+  *   Behöver jag hjälp med något?
+  	Att klargöra målbilden för frontend samt en generator-fråga.
+  
+Johanna  
+  *   Vad har jag gjort sedan avstämningen igår?
+  	#012 Börjat kolla på drag&drop med att kopiera istället för att flytta. Har två varianter
+	som ska checkas med Joakim. Har även sökt på hur en ska låsa fast ett event till en viss tid.
+	Svårt att hitta så en fråga till StackOverflow är ivägskickad.
+  *   Vad ska jag göra till nästa avstämning?
+  	Fortsätta med #012
+  *   Behöver jag hjälp med något?
+  	Nej
+  
+  Vi inser att vi inte tagit höjd för tid när vi hjälper varandra, något att ta med till retrospektivet på fredag.
+  
+  
+**************************************************************************************************************************************************************************  	  
+
+Projektmöte 2022-01-18
+Tillägg till spelregler:
+Vi ska försöka dela ut uppgifter till den som kan minst i frågan, och därmed ska tiden uppskattas utifrån den som kan minst.
+Förtydligat namngivning av branches: Till att börja med namnger vi branchen med enbart issuens #nummer. Beskrivning av vad man har gjort bör framgå av commit message.
+
+Gjort klart product backlog. Satt upp sprint backlog för första veckan och tidsestimerat.
+Beräknat kvarvarande tid för veckan för teamet, exklusive möten, föreläsning och VAB.
+Fördelat uppgifter.
+
+Mötet var planerat till 2 h och tog 1,5 h, hurra!
+
+
+Projektmöte 2022-01-17
+
+1. Administrativa spelregler
+- Daily scrum (och andra möten)
+Daily scrum kl 9. På föreläsningsdagar tar vi det direkt efter Joakims möte.
+Sprint retrospektiv + planera nästa veckas sprint: Fredagar kl 15.
+Kajsa bokar.
+
+- Code review
+Issues ska namnges med # och treställigt löpnummer. Branches ska namnges som issuen.
+Någon annan ska göra pull request på den branch man vill mergea in.
+
+- Tidsloggning
+Uppskattad tid och den tid det faktiskt tog sätts på issuen på GitHub.
+Paustid räknas in i arbetstiden - bra att komma ihåg vid estimat!
+
+2. Synka målbild i projektet
+	• Vi fokuserar på ett event, vinter-OS.
+	• Preferenser sätts på länder och discipliner, oberoende av varandra, och därefter gör applikationen ett första urval
+		○ Färgkodade
+	• Ytterligare filter i nästa sorteringssteg
+	• Till sist möjlighet att spara till "Mitt schema"
+
+Ytterligare dokumentation på Miro-board https://miro.com/app/board/uXjVOVQmub0=/
+
+3. Etablera databasstruktur
+	• Enligt fil data_structure.json
+
+4. Etablera product backlog
+Påbörjades, fortsättning följer imorgon kl 9!
