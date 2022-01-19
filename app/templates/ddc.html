@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script>
+        {# Put in js #}
+        {# The events to be copied gets a newIdValue #}
+        let newIdVal = 1;
+        let copied = [];
+
+        {#ev is the item/event we want to drag#}
+        function allowDrop(ev) {
+            {# preventDefault() prevents the default action to happen, in our case to drop the event in an unwanted area #}
+            ev.preventDefault();
+        }
+        
+        function drag(ev) {
+            ev.dataTransfer.setData("text/html", ev.target.id);
+        }
+        
+        function drop_move(ev) {
+
+            /* Use this to get the default drag and drop behavior. We don't want it but this is what it looks like. */
+            ev.preventDefault();
+            let id_to_dropped = ev.dataTransfer.getData("text/html");
+            ev.target.appendChild(document.getElementById(id_to_dropped));
+        }
+
+        function drop_copy(ev) {
+            /* Use this to make a copy when the element is dropped */
+            ev.preventDefault();
+            {# id_to_dropped is the id of the event we want to make a copy of #}
+            let id_to_dropped = ev.dataTransfer.getData("text/html");
+            {# Code below prevents the user from adding the same event twice to its schedule #}
+            if(!copied.includes(id_to_dropped)){
+                {# nodeCopy is the copy that the user will have in its own schedule #}
+                let nodeCopy = document.getElementById(id_to_dropped).cloneNode(true);
+                {# Change width and height to harmonize with our application #}
+                nodeCopy.style.width = "16px";
+                nodeCopy.style.height = "16px";
+                nodeCopy.id = "item" + newIdVal; /* We cannot use the same ID */
+                {# Code below is our auto-increment #}
+                newIdVal++;
+                {# Change row3 to the time boxes corresponding to the events starting times #}
+                document.getElementById("row3").appendChild(nodeCopy);
+                {# push is the same as append #}
+                copied.push(id_to_dropped);
+            }
+        }
+    </script>
+    <style>
+        {# Put in css #}
+        .box {
+            width: 200px;
+            height: 200px;
+            border: solid 1px black;
+            text-align: center;
+        }
+
+        #div1{
+            background-color: cadetblue;
+        }
+        #div2{
+            background-color: rgb(62, 184, 143);
+        }
+        #div3{
+            background-color: rgb(160, 95, 135);
+        }
+        
+        .img {
+            width: 33%;
+            height: 33%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .rows {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row-div {
+            width: 100%;
+            height: 48px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="div1" ondrop="drop_copy(event)" ondragover="allowDrop(event)">
+        <div class="rows">
+            {# Change row1 etc. to 00:00 etc.? #}
+            <div id="row1" class="row-div"></div>
+            <div id="row2" class="row-div"></div>
+            <div id="row3" class="row-div"></div>
+            <div id="row4" class="row-div"></div>
+        </div>
+        
+        </div>
+        <div class="box" id="div2" ondrop="drop_move(event)" ondragover="allowDrop(event)"></div>
+        <div class="box" id="div3" ondrop="drop_move(event)" ondragover="allowDrop(event)">
+            <img class="img" id="drag1" src="{{ url_for('static', filename='img/superman.png') }}" draggable="true" ondragstart="drag(event)">
+        </div>
+    </div>
+</body>
+
+</html>
