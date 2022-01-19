@@ -1,4 +1,40 @@
 
+************************************************************************************************************************************************
+Daily 2022-01-19
+Britta
+  *   Vad har jag gjort sedan avstämningen igår?
+  	Letat efter API (#007), har mejlat till två företag/organisationer som verkar leverera API:er till tv-kanaler och liknande. 
+	Drog ner projektet och kollat på buggar som uppstod vid byggandet av strukturen i PyCharm.
+  *   Vad ska jag göra till nästa avstämning?
+  	Plan A är att fixa med user-inloggning (#008). Tidsuppskattningen för den uppgiften är troligtvis för låg. 
+	Eventuellt jobbar med user-sidan (#014). Försöker hålla ett lugnare tempo med tanke på covid-19-tröttheten.
+  *   Behöver jag hjälp med något?
+  	Nej
+
+Kajsa
+  *   Vad har jag gjort sedan avstämningen igår?
+  	#006 Tidsuppskattningen för att sätta upp strukturen var för lågt satt men det är klart nu. 
+	Även att skapa testposter i db (user, schedule, event) som ingick i samma issue. 
+  *   Vad ska jag göra till nästa avstämning?
+  	#009 Leta efter template för frontend.
+  *   Behöver jag hjälp med något?
+  	Att klargöra målbilden för frontend samt en generator-fråga.
+  
+Johanna  
+  *   Vad har jag gjort sedan avstämningen igår?
+  	#012 Börjat kolla på drag&drop med att kopiera istället för att flytta. Har två varianter
+	som ska checkas med Joakim. Har även sökt på hur en ska låsa fast ett event till en viss tid.
+	Svårt att hitta så en fråga till StackOverflow är ivägskickad.
+  *   Vad ska jag göra till nästa avstämning?
+  	Fortsätta med #012
+  *   Behöver jag hjälp med något?
+  	Nej
+  
+  Vi inser att vi inte tagit höjd för tid när vi hjälper varandra, något att ta med till retrospektivet på fredag.
+  
+  
+**************************************************************************************************************************************************************************  	  
+
 Projektmöte 2022-01-18
 Tillägg till spelregler:
 Vi ska försöka dela ut uppgifter till den som kan minst i frågan, och därmed ska tiden uppskattas utifrån den som kan minst.
