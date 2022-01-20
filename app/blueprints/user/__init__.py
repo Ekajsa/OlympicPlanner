@@ -15,7 +15,7 @@ def user():
     return render_template('user.html')
 
 
-@bp_user.get('/')
-@login_required
+@bp_user.get('/firstsorting')
+# @login_required
 def first_sorting_get():
     return render_template('firstsorting.html')
