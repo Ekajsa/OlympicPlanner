@@ -1,4 +1,6 @@
 from flask import Blueprint, render_template
+from flask_login import login_required
+
 from app.controllers import user_controller as uc
 from app.controllers import event_controller as ec
 
@@ -14,5 +16,6 @@ def user():
 
 
 @bp_user.get('/')
+@login_required
 def first_sorting():
-    return render_template('first_sorting')
+    return render_template('firstsorting.html')
