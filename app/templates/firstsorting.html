@@ -1,79 +1,84 @@
 {% extends "user.html" %}
 
+{% block content %}
 <p>Choose the disciplines of interest:</p>
-
-<div>
-  <input type="checkbox" id="alpine" name="alpine"
-         checked>
-  <label for="alpine">Alpine Skiing</label>
+<div class="checkbox-container">
+  <input type="checkbox" id="d1" name="discipline" value="alpine">
+  <label for="d1">Alpine Skiing</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d2" name="discipline" value="biathlon">
+  <label for="d2">Biathlon</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d3" name="discipline" value="bobsleigh">
+  <label for="d3">Bobsleigh</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d4" name="discipline" value="cross-country">
+  <label for="d4">Cross-Country Skiing</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d5" name="discipline" value="curling">
+  <label for="d5">Curling</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d6" name="discipline" value="figure_skating">
+  <label for="d6">Figure Skating</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d7" name="discipline" value="freestyle">
+  <label for="d7">Freestyle Skiing</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d8" name="discipline" value="ice_hockey">
+  <label for="d8">Ice Hockey</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d9" name="discipline" value="luge">
+  <label for="d9">Luge</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d10" name="discipline" value="nordic">
+  <label for="d10">Nordic Combined</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d11" name="discipline" value="short_track">
+  <label for="d11">Short Track Speed Skating</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d12" name="discipline" value="skeleton">
+  <label for="d12">Skeleton</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d13" name="discipline" value="ski_jumping">
+  <label for="d13">Ski Jumping</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d14" name="discipline" value="snowboard">
+  <label for="d14">Snowboard</label>
+</div>
+<br>
+<div class="checkbox-container">
+  <input type="checkbox" id="d15" name="discipline" value="speed_skating">
+  <label for="d15">Speed Skating</label>
 </div>
 
 <div>
-  <input type="checkbox" id="biathlon" name="biathlon">
-  <label for="biathlon">Biathlon</label>
+    <button type="submit">Select</button>
 </div>
 
-<div>
-  <input type="checkbox" id="bobsleigh" name="bobsleigh">
-  <label for="bobsleigh">Bobsleigh</label>
-</div>
-
-<div>
-  <input type="checkbox" id="cross-country" name="cross-country">
-  <label for="cross-country">Cross-Country Skiing</label>
-</div>
-
-<div>
-  <input type="checkbox" id="curling" name="curling">
-  <label for="curling">Curling</label>
-</div>
-
-<div>
-  <input type="checkbox" id="figure" name="figure">
-  <label for="figure">Figure Skating</label>
-</div>
-
-<div>
-  <input type="checkbox" id="freestyle" name="freestyle">
-  <label for="freestyle">Freestyle Skiing</label>
-</div>
-
-<div>
-  <input type="checkbox" id="hockey" name="hockey">
-  <label for="hockey">Ice Hockey</label>
-</div>
-
-<div>
-  <input type="checkbox" id="luge" name="luge">
-  <label for="luge">Luge</label>
-</div>
-
-<div>
-  <input type="checkbox" id="nordic" name="nordic">
-  <label for="nordic">Nordic Combined</label>
-</div>
-
-<div>
-  <input type="checkbox" id="short_track" name="short_track">
-  <label for="short_track">Short Track Speed Skating</label>
-</div>
-
-<div>
-  <input type="checkbox" id="skeleton" name="skeleton">
-  <label for="skeleton">Skeleton</label>
-</div>
-
-<div>
-  <input type="checkbox" id="ski_jumping" name="ski_jumping">
-  <label for="ski_jumping">Ski Jumping</label>
-</div>
-
-<div>
-  <input type="checkbox" id="snowboard" name="snowboard">
-  <label for="snowboard">Snowboard</label>
-</div>
-
-<div>
-  <input type="checkbox" id="speed" name="speed">
-  <label for="speed">Speed Skating</label>
-</div>
+{% endblock %}
