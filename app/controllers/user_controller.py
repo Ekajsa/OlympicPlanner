@@ -21,7 +21,7 @@ def create_user(first_name, last_name, email, password):
         "last_signin": None,
         "status": "offline",
         "activated": False,
-        "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random"
+        "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random",
         "schedules": [
             {
                 "schedule_name": "My first schedule",
@@ -68,4 +68,3 @@ def signin_user(email):
         login_user(user)
         user.last_signin = datetime.datetime.now()
         user.save()
-

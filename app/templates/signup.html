@@ -15,9 +15,21 @@
         <input type="text" placeholder="Last Name" name="last_name"/> <br/>
         <input type="email" placeholder="Email Address" name="email"/> <br/>
         <input type="password" placeholder="Password" name="password"/> <br/>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Sign up!" />
     </form>
 {% endblock %}
-
 {% block scripts %}
+    <script>
+        function checkPassword() {
+            let pwd1 = document.getElementById("pwd1");
+            let pwd2 = document.getElementById("pwd2");
+            if(pwd1.value === pwd2.value) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled= true;
+            }
+        }
+
+    </script>
 {% endblock %}
