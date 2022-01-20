@@ -11,3 +11,8 @@ def user():
     # uc.create_user()
     # ec.create_event()
     return render_template('user.html')
+
+
+@bp_user.get('/')
+def first_sorting():
+    return render_template('first_sorting')
