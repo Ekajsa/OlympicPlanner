@@ -17,5 +17,5 @@ def user():
 
 @bp_user.get('/')
 @login_required
-def first_sorting():
+def first_sorting_get():
     return render_template('firstsorting.html')
