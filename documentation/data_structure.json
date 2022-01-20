@@ -10,23 +10,17 @@
     "status": "",
     "activated": "",
     "avatar": "",
-    "ttt": ""
+    "personal_schedules": {
+      "schedule_name": "",
+      "selected_events": [
+        {
+          "event_no": "",
+          "priority_col": ""
+        }
+      ]
+    }
   },
-  "event": {
-    "discipline": "cross-country",
-    "description": "15 km classic technique",
-    "competition_type": "prologue",
-    "sex": "",
-    "date": "",
-    "local_start_time": "",
-    "local_end_time": "",
-    "tv_channel": [],
-    "participating_countries": []
-  },
-  "personal_schedules": {
-    "schedule_name": "",
-    "selected_events": [{
-      "event_no": ""
+    "event": {
       "discipline": "cross-country",
       "description": "15 km classic technique",
       "competition_type": "prologue",
@@ -35,7 +29,7 @@
       "local_start_time": "",
       "local_end_time": "",
       "tv_channel": [],
-      "priority_col": ""}
-    ]
-  }
+      "participating_countries": []
+    }
 }
+
