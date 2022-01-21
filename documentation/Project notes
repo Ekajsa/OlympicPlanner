@@ -19,6 +19,62 @@ Kajsa
 Övrigt
 * xxx
 
+<Mall för retrospective>
+Retrospective 2022-xx-xx
+
+************************************************************************************************************************************************
+
+<Mall för sprint review>
+Sprint review 2022-xx-xx
+* Blev alla issues klara?
+* Om inte, varför?
+* Icke klara issues återförs till backlog, efter att de har uppdaterats.
+  - Har vissa delar klarats av?
+  - Skall vi ha en ny tidsuppskattning?
+  - Vad behövs för att vi skall klara detta issue nästa gång?
+* Bedöm vad ni kan göra bättre i nästa sprint
+* Har det kommit upp nya saker som skall läggas till på er backlog?
+
+************************************************************************************************************************************************
+Sprint review 2022-01-21
+* Blev alla issues klara?
+* Om inte, varför?
+* Icke klara issues återförs till backlog, efter att de har uppdaterats.
+  - Har vissa delar klarats av?
+  - Skall vi ha en ny tidsuppskattning?
+  - Vad behövs för att vi skall klara detta issue nästa gång?
+* Bedöm vad ni kan göra bättre i nästa sprint
+* Har det kommit upp nya saker som skall läggas till på er backlog?
+
+************************************************************************************************************************************************
+Daily 2022-01-21
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Välja discipliner 015, börjat kolla på att välja land. Sparat .svg-bilder. 
+*   Vad ska jag göra till nästa avstämning?
+	Fråga Joakim om 015, börja med 016 (skriva i namn på länder)
+*   Behöver jag hjälp med något?
+	Nej
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Jobbat med problemen med inloggning, fått negativa svar från API-ägare, vilat som avtalat
+*   Vad ska jag göra till nästa avstämning?
+	Be Joakim om hjälp med inloggningen
+*   Behöver jag hjälp med något?
+	Kan Kajsa signa upp en användare och logga in?
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Surfat efter templates, gjort fantastisk .ppt-modell över applikationen
+*   Vad ska jag göra till nästa avstämning?
+	Konsultera om scraper
+*   Behöver jag hjälp med något?
+	Nej
+
+Övrigt
+* Fixa en scraper som scannar av resultat m.m.
+
 ************************************************************************************************************************************************
 Daily 2022-01-20
 Johanna
