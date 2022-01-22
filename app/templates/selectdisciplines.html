@@ -3,7 +3,7 @@
 {% block content %}
 <p>Choose the disciplines of interest:</p>
 {#    Which URL (action_page) is desired here?#}
-<form action="/action_page.php">
+<form action="{{url_for("")}}">
     <div class="checkbox-container">
       <input type="checkbox" id="d1" name="discipline" value="alpine">
       <label for="d1">Alpine Skiing</label>
@@ -84,15 +84,6 @@
     </div>
 </form>
 
-<!--Make sure the form has the autocomplete function switched off:-->
-<form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="Country">
-  </div>
-  <input type="submit">
-</form>
-
-var countries = ["Albania","American Samoa","Andorra","Argentina","Armenia","Australia","Austria","Azerbaijan","Belarus","Belgium","Bolivia","Bosnia &amp; Herzegovina","Brazil","Bulgaria","Canada","Chile","China","Colombia","Croatia","Cyprus","Czech Republic","Denmark","East Timor","Ecuador","Eritrea","Estonia","Finland","France","Georgia","Germany","Ghana","Great Britain/United Kingdom","Greece","Haiti","Hong Kong","Hungary","Iceland","India","Iran","Ireland","Israel","Italy","Jamaica","Japan","Kazakhstan","Kosovo","Kyrgyzstan","Latvia","Lebanon","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malaysia","Malta","Mexico","Moldova","Monaco","Mongolia","Montenegro","Morocco","Netherlands","New Zealand","Nigeria","North Macedonia","Norway","Pakistan","Peru","Philippines","Poland","Portugal","Puerto Rico","ROC/Russia","Romania","San Marino","Saudi Arabia","Serbia","Slovakia","Slovenia","South Korea","Spain","Sweden","Switzerland","Chinese Taipei","Thailand","Trinidad and Tobago","Turkey","Ukraine","United States of America","Uzbekistan"];
 
 
 <script>
@@ -109,7 +100,7 @@ function isChecked() {
     {#Loop through the id:s and add all with true value to a list?#}
 }
 
-autocomplete(document.getElementById("myInput"), countries);
+
 
 </script>
 

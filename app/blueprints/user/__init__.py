@@ -18,4 +18,4 @@ def user():
 @bp_user.get('/firstsorting')
 # @login_required
 def first_sorting_get():
-    return render_template('firstsorting.html')
+    return render_template('selectdisciplines.html')
