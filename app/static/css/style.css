@@ -41,11 +41,11 @@
 
 .checkbox-container input[type='checkbox']:checked + label::before {
     content: '\002714';
-    background-color: #2c5d7c;
+    background-color: #5186b4;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d3d0d0;
+    color: #f1f0f0;
 }
 
 /*Select countries*/

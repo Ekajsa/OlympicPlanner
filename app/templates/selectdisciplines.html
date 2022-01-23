@@ -2,8 +2,7 @@
 
 {% block content %}
 <p>Choose the disciplines of interest:</p>
-{#    Which URL (action_page) is desired here?#}
-<form action="{{url_for("")}}">
+<form action="{{url_for("bp_user.select_disciplines_get")}}" id="form">
     <div class="checkbox-container">
       <input type="checkbox" id="d1" name="discipline" value="alpine">
       <label for="d1">Alpine Skiing</label>
@@ -78,15 +77,26 @@
       <input type="checkbox" id="d15" name="discipline" value="speed_skating">
       <label for="d15">Speed Skating</label>
     </div>
-
+    <br>
+    <div id="response">Your preferences has been saved</div>
     <div>
-        <input type="button" onclick="isChecked()" value="Select">
+        <input type="submit" class="submit" onclick="isChecked()" value="Select">
+    </div>
+    <br>
+    <div>
+        <input type="submit" class="submit" id="continue" value="Continue">
     </div>
 </form>
 
 
+{##}
+{#<form id="form">#}
+{#<!-- your form here -->#}
+{#<input type="submit" class="submit" value="Submit">#}
+{#</form>#}
 
-<script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 
 function isChecked() {
     var discipline = document.forms[0]; {# Why [0]? #}
@@ -99,9 +109,46 @@ function isChecked() {
     }
     {#Loop through the id:s and add all with true value to a list?#}
 }
+    {#Don't need the one below?#}
+    {#document.getElementById("continue").onclick = function () {#}
+    {#    location.href = "{{ url_for('bp_user.select_countries_get') }}";#}
+{
+    #}
+    #}
 
+    {#TODO: but how?#}
+    {#In your php page (here i just called it process_profile.php ({{url_for("bp_user.select_countries_get")}} in my
+    case)), you will process all f your $_POST variables, and once the script is complete, simply echo() a message.
+    This will appear int he response <div>#}
+    $(document).ready(function () {
+        var form = $('#form'); // form (by ID attr)
+        var submit = $('.submit');  // submit button (by CLASS attr)
+        var alert = $('#response'); // alert div for show alert message (by ID attr)
+        // form submit event
+        form.on('submit', function (e) {
+            e.preventDefault(); // prevent default form submit
 
+            $.ajax({
+                url: '{{url_for("bp_user.select_countries_get")}}', // form action url - this is your script where the $_POST is sent. The response will be whatever you return (eg: echo 'Success!'; )
+                type: 'POST', // form submit method get/post
+                dataType: 'html', // request type html/json/xml
+                data: form.serialize(), // serialize form data
+                beforeSend: function () {
+                    alert.fadeOut();
+                    submit.html('Processing...'); // change submit button text
+                },
+                success: function (data) {
 
+                    //form.trigger('reset'); // reset form?
+                    submit.html('Submit'); // reset submit button text
+                },
+                error: function (e) {
+                    console.log(e)
+                }
+            });
+        });
+    });
+}
 </script>
 
 {% endblock %}
