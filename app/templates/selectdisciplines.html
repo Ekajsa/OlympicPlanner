@@ -117,8 +117,9 @@ function isChecked() {
     #}
 
     {#TODO: but how?#}
-    {#In your php page (here i just called it process_profile.php ({{url_for("bp_user.select_countries_get")}} in my
-    case)), you will process all f your $_POST variables, and once the script is complete, simply echo() a message.
+    {#In your php page (here i just called it process_profile.php (selected {{url_for("bp_user.select_countries_get")}}
+    but think that it might be another page but which one???)), you will process all f your $_POST variables, and once
+    the script is complete, simply echo() a message.
     This will appear int he response <div>#}
     $(document).ready(function () {
         var form = $('#form'); // form (by ID attr)
