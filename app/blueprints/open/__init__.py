@@ -21,10 +21,11 @@ def signup_post():
     last_name = request.form["last_name"]
     email = request.form["email"]
     password = request.form["password"]
+    user = get_user_by_email(email)
 
-    if get_user_by_email(email) is not None:
+    if user is not None:
         flash("Error. An account with this email already exists.")
-        redirect(url_for("bp_open.signup_get"))
+        return redirect(url_for("bp_open.signup_get"))
 
     create_user(first_name, last_name, email, password)
     return redirect(url_for("bp_open.signin_get"))
