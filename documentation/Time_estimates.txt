@@ -1,13 +1,25 @@
 Sprint week 1 (39h, from tuesday afternoon and forward minus lectures and meetings, included vab for Johanna)
-Issue Est. time Total Actual time   Total
-#006  1h        1           7:30      7:30
-#007  1h        2           1:15      8:15
-#008  1h        3
-#009  3h        6
-#010  2h        8
-#011  4h        12
-#012  4h        16
-#014  4h        20 
-#015  3h        23
-#016  3h        26
-#017  13h       39
+Issue Est. time Total Actual time         Total
+#006  1h        1           7:30          7:30
+#007  1h        2           1:15          8:15
+#008  1h        3           2:30 (so far) 10:45
+#009  3h        6           7:30          18:15
+#010  2h        8           -             18:15
+#011  4h        12          -             18:15
+#012  4h        16          2:45          21
+#014  4h        20          -             21
+#015  3h        23          3:15          24:15
+#016  3h        26          0:15          24:30
+#017  13h       39          -             24:30
+
+
+Sprint week 2 (33h, not including lectures and meetings, not including 2 days vab for Johanna and private meeting Britta)
+Issue Est. time Total Actual time         Total
+#008  3:30      03:30                                
+#014  6h        09:30          
+#015  0:45      10:15          
+#016  3h        13:15  
+#018  8h        21:15
+#019  4h        25:15
+#020  3h        28:15    
+#021  5h        33:15

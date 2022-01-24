@@ -6,7 +6,12 @@ Flask-WTF==1.0.0
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
+passlib~=1.7.4
 pymongo==4.0.1
 python-dotenv==0.19.2
 Werkzeug==2.0.2
+<<<<<<< HEAD
 WTForms==3.0.1
+=======
+WTForms==3.0.1
+>>>>>>> ecfd786714059fca88a714df36f58be7302172c2

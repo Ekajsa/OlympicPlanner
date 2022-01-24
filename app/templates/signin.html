@@ -1,4 +1,5 @@
 {%  extends "base_template.html" %}
+{% set active_page = "signin" %}
 
 {% block content %}
     {% with messages = get_flashed_messages() %}
@@ -13,6 +14,6 @@
     <form action="{{ url_for("bp_open.signin_post") }}" method="POST">
         <input type="email" placeholder="Email Address" name="email"/> <br/>
         <input type="password" placeholder="Password" name="password"/> <br/>
-        <input type="submit" value="Save" />
+        <input type="submit" value="Sign in!" />
     </form>
 {% endblock %}
