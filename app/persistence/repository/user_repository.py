@@ -1,6 +1,7 @@
 from app.persistence.model import User
 
 
+# Do we need this?
 def get_all_users():
     return User.all()
 

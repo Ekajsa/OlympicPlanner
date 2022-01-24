@@ -1,11 +1,12 @@
 import datetime
-
+from passlib.hash import argon2
 from flask_login import login_user
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from app.persistence.repository import user_repository as ur, user_repository
 
 
+# Do we need this?
 def get_all_users():
     return ur.get_all_users()
 
@@ -58,8 +59,13 @@ def verify_user(email, password):
     user = user_repository.get_user_by_email(email)
     if user is None:
         return False
-
-    return check_password_hash(user.password, password)
+    if user.password.startswith('pbkdf2:sha256'):
+        verified = check_password_hash(user.password, password)
+        if verified:
+            user.password = argon2.using(rounds=12).hash(password)
+            user.save()
+        return verified
+    return argon2.verify(password, user.password)
 
 
 def signin_user(email):

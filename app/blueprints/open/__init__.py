@@ -24,7 +24,7 @@ def signup_post():
 
     if get_user_by_email(email) is not None:
         flash("Error. An account with this email already exists.")
-        redirect(url_for("bp_open.signup_get"))
+        return redirect(url_for("bp_open.signup_get"))
 
     create_user(first_name, last_name, email, password)
     return redirect(url_for("bp_open.signin_get"))
