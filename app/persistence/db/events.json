@@ -23,7 +23,7 @@
     "tv_channel": ["TBA"],
     "participating_countries": ["Australia", "USA"]
   },
-    "event_3":
+  "event_3":
   {
     "discipline": "curling",
     "description": "mixed doubles",
@@ -59,7 +59,7 @@
     "tv_channel": ["TBA"],
     "participating_countries": ["Australia", "China"]
   },
-    "event_6":
+  "event_6":
   {
     "discipline": "curling",
     "description": "mixed doubles",
@@ -71,7 +71,7 @@
     "tv_channel": ["5?"],
     "participating_countries": ["Sweden", "Czech Republic"]
   },
-    "event_7":
+  "event_7":
   {
     "discipline": "curling",
     "description": "mixed doubles",
@@ -83,7 +83,7 @@
     "tv_channel": ["TBA"],
     "participating_countries": ["USA", "Italy"]
   },
-      "event_8":
+  "event_8":
   {
     "discipline": "curling",
     "description": "mixed doubles",
@@ -94,5 +94,315 @@
     "local_end_time": "11:00",
     "tv_channel": ["TBA"],
     "participating_countries": ["Great Britain", "Canada"]
+  },
+  "event_9":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 3",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "14:05",
+    "local_end_time": "16:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Italy", "Switzerland"]
+  },
+  "event_10":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 3",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "14:05",
+    "local_end_time": "16:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["USA", "Norway"]
+  },
+  "event_11":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 4",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Norway", "Canada"]
+  },
+  "event_12":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 4",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Switzerland", "Great Britain"]
+  },
+  "event_13":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 4",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["5?"],
+    "participating_countries": ["China", "Sweden"]
+  },
+  "event_14":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 4",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Czech Republic", "Australia"]
+  },
+  "event_15":
+  {
+    "discipline": "freestyle skiing",
+    "description": "moguls",
+    "competition_type": "qualification 1",
+    "sex": "female",
+    "date": "2022-02-03",
+    "local_start_time": "18:00",
+    "local_end_time": "18:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+    "event_16":
+  {
+    "discipline": "freestyle skiing",
+    "description": "moguls",
+    "competition_type": "qualification 1",
+    "sex": "male",
+    "date": "2022-02-03",
+    "local_start_time": "19:45",
+    "local_end_time": "20:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_17":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-03",
+    "local_start_time": "12:10",
+    "local_end_time": "14:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Canada", "Switzerland"]
+  },
+  "event_18":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-03",
+    "local_start_time": "12:10",
+    "local_end_time": "14:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Czech Republic", "China"]
+  },
+  "event_19":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-03",
+    "local_start_time": "16:40",
+    "local_end_time": "18:55",
+    "tv_channel": ["5?"],
+    "participating_countries": ["Sweden", "Japan"]
+  },
+  "event_20":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-03",
+    "local_start_time": "21:10",
+    "local_end_time": "23:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Finland", "USA"]
+  },
+  "event_21":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 5",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "08:35",
+    "local_end_time": "10:30",
+    "tv_channel": ["5?"],
+    "participating_countries": ["Sweden", "Australia"]
+  },
+  "event_22":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 5",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "08:35",
+    "local_end_time": "10:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Canada", "Switzerland"]
+  },
+  "event_23":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 5",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "08:35",
+    "local_end_time": "10:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Italy", "Norway"]
+  },
+  "event_24":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 6",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "13:35",
+    "local_end_time": "15:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Czech Republic", "Italy"]
+  },
+  "event_25":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 6",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "13:35",
+    "local_end_time": "15:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["China", "Canada"]
+  },
+  "event_26":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 6",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "13:35",
+    "local_end_time": "15:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Great Britain", "Australia"]
+  },
+  "event_27":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 6",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "13:35",
+    "local_end_time": "15:30",
+    "tv_channel": ["5?"],
+    "participating_countries": ["Sweden", "USA"]
+  },
+  "event_28":
+  {
+    "discipline": "figure skating",
+    "description": "single skating, short program",
+    "competition_type": "team event",
+    "sex": "male",
+    "date": "2022-02-04",
+    "local_start_time": "10:02",
+    "local_end_time": "11:15",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_29":
+  {
+    "discipline": "figure skating",
+    "description": "ice dance, rhythm dance",
+    "competition_type": "team event",
+    "sex": ["female","male"],
+    "date": "2022-02-04",
+    "local_start_time": "11:41",
+    "local_end_time": "12:54",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_30":
+  {
+    "discipline": "figure skating",
+    "description": "pair skating, short program",
+    "competition_type": "team event",
+    "sex": ["female","male"],
+    "date": "2022-02-04",
+    "local_start_time": "13:22",
+    "local_end_time": "14:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_31":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-04",
+    "local_start_time": "12:10",
+    "local_end_time": "14:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["ROC", "Switzerland"]
+  },
+  "event_32":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-04",
+    "local_start_time": "12:10",
+    "local_end_time": "14:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Denmark", "China"]
+  },
+  "event_33":
+  {
+    "discipline": "ceremony",
+    "description": "opening",
+    "competition_type": "None",
+    "sex": ["female", "male"],
+    "date": "2022-02-04",
+    "local_start_time": "20:00",
+    "local_end_time": "22:00",
+    "tv_channel": ["5?"],
+    "participating_countries": ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria",
+      "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chile",
+      "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea",
+      "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong",
+      "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Kosovo",
+      "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta",
+      "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria",
+      "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC",
+      "Romania", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden",
+      "Switzerland", "Chinese Taipei", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United States",
+      "Uzbekistan"]
   }
 }
