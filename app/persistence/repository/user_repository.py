@@ -11,4 +11,6 @@ def create_user(user):
 
 
 def get_user_by_email(email):
-    return User.find(email=email).first_or_none()
+    user = User.find(email=email).first_or_none()
+    return user
+
