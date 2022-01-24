@@ -1,0 +1,26 @@
+{
+  "event_1":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "session 1",
+    "sex": ["female", "male"],
+    "date": "",
+    "local_start_time": "",
+    "local_end_time": "",
+    "tv_channel": [],
+    "participating_countries": ["Sw"]
+  },
+  "event_2":
+  {
+    "discipline": "cross-country",
+    "description": "15 km classic technique",
+    "competition_type": "prologue",
+    "sex": "",
+    "date": "",
+    "local_start_time": "",
+    "local_end_time": "",
+    "tv_channel": [],
+    "participating_countries": []
+  }
+}
