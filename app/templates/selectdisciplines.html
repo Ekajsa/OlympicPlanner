@@ -2,7 +2,7 @@
 
 {% block content %}
 <p>Choose the disciplines of interest:</p>
-<form action="{{url_for("bp_user.select_disciplines_get")}}" id="form">
+<form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form">
     <div class="checkbox-container">
       <input type="checkbox" id="d1" name="discipline" value="alpine">
       <label for="d1">Alpine Skiing</label>
@@ -80,12 +80,12 @@
     <br>
     <div id="response">Your preferences has been saved</div>
     <div>
-        <input type="submit" class="submit" onclick="isChecked()" value="Select">
+        <input type="submit" class="submit" onclick="isChecked()" value="Select and Continue">
     </div>
-    <br>
-    <div>
-        <input type="submit" class="submit" id="continue" value="Continue">
-    </div>
+{#    <br>#}
+{#    <div>#}
+{#        <input type="submit" class="submit" id="continue" value="Continue">#}
+{#    </div>#}
 </form>
 
 
@@ -151,9 +151,13 @@ function isChecked() {
         });
     });
 }
-   document.getElementById("continue").onclick = function () {
-        location.href = "{{ url_for("bp_user.select_countries_get") }}";
-    };
+   {#document.getElementById("continue").onclick = function () {#}
+   {#     location.href = "{{ url_for("bp_user.select_countries_get") }}";#}
+   {# };#}
+
+$("#disciplines").on("submit", function() {
+  localeStorage.clear();
+});
 </script>
 
 {% endblock %}
