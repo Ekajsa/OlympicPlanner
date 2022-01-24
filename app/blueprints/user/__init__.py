@@ -17,6 +17,6 @@ def signout_get():
 
 
 @bp_user.get("/schedules")
-#@login_required
+# @login_required
 def schedules_get():
     return render_template("schedules.html")
