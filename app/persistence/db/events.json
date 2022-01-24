@@ -3,24 +3,96 @@
   {
     "discipline": "curling",
     "description": "mixed doubles",
-    "competition_type": "session 1",
+    "competition_type": "round robin session 1",
     "sex": ["female", "male"],
-    "date": "",
-    "local_start_time": "",
-    "local_end_time": "",
-    "tv_channel": [],
-    "participating_countries": ["Sw"]
+    "date": "2022-02-02",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["5?"],
+    "participating_countries": ["Sweden", "Great Britain"]
   },
   "event_2":
   {
-    "discipline": "cross-country",
-    "description": "15 km classic technique",
-    "competition_type": "prologue",
-    "sex": "",
-    "date": "",
-    "local_start_time": "",
-    "local_end_time": "",
-    "tv_channel": [],
-    "participating_countries": []
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 1",
+    "sex": ["female", "male"],
+    "date": "2022-02-02",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Australia", "USA"]
+  },
+    "event_3":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 1",
+    "sex": ["female", "male"],
+    "date": "2022-02-02",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Norway", "Czech Republic"]
+  },
+  "event_4":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 1",
+    "sex": ["female", "male"],
+    "date": "2022-02-02",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["China", "Switzerland"]
+  },
+  "event_5":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 2",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "09:05",
+    "local_end_time": "11:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Australia", "China"]
+  },
+    "event_6":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 2",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "09:05",
+    "local_end_time": "11:00",
+    "tv_channel": ["5?"],
+    "participating_countries": ["Sweden", "Czech Republic"]
+  },
+    "event_7":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 2",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "09:05",
+    "local_end_time": "11:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["USA", "Italy"]
+  },
+      "event_8":
+  {
+    "discipline": "curling",
+    "description": "mixed doubles",
+    "competition_type": "round robin session 2",
+    "sex": ["female", "male"],
+    "date": "2022-02-03",
+    "local_start_time": "09:05",
+    "local_end_time": "11:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Great Britain", "Canada"]
   }
 }
