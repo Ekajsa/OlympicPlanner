@@ -48,7 +48,7 @@ def select_countries_get():
 
 
 @bp_user.post("/countries")
-def select_countries_get():
+def select_countries_post():
     countries = []
     # How do I return all countries who has been clicked and therefore has a value of true?
     country = request.form["country"]

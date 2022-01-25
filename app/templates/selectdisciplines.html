@@ -80,26 +80,14 @@
     <br>
     <div id="response">Your preferences has been saved</div>
     <div>
-        <input type="submit" class="submit" onclick="isChecked()" value="Select and Continue">
+        <input type="submit" class="submit" onclick="isChecked()" value="Select And Go To Next Step">
     </div>
-{#    <br>#}
-{#    <div>#}
-{#        <input type="submit" class="submit" id="continue" value="Continue">#}
-{#    </div>#}
 </form>
-
-
-{##}
-{#<form id="form">#}
-{#<!-- your form here -->#}
-{#<input type="submit" class="submit" value="Submit">#}
-{#</form>#}
-
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 
 function isChecked() {
-    var discipline = document.forms[0]; {# Why [0]? #}
+    var discipline = document.forms[0];
     var discipline_list = []
     var i;
     for (i = 0; i < discipline.length; i++) {

@@ -2,17 +2,35 @@
 
 {% block content %}
 <!--Make sure the form has the autocomplete function switched off:-->
-<form autocomplete="off" action="{{url_for("bp_user.select_countries_get")}}">
+<form autocomplete="off" class="countries" id="countries1" action="{{url_for("bp_user.select_countries_get")}}">
   <div class="autocomplete" style="width:300px;">
     <input id="myInput" type="text" name="country" placeholder="Country">
   </div>
-  <input type="submit" placeholder="Add to list">
+  <input type="submit" value="Add to list">
+  <input type="submit" value="Next step">
 </form>
 
+<div id="countries">Chosen countries:</div>
 
 <script>
 var countries = ["Albania","American Samoa","Andorra","Argentina","Armenia","Australia","Austria","Azerbaijan","Belarus","Belgium","Bolivia","Bosnia and Herzegovina","Brazil","Bulgaria","Canada","Chinese Taipei","Chile","China","Colombia","Croatia","Cyprus","Czech Republic","Denmark","East Timor","Ecuador","Eritrea","Estonia","Finland","France","Georgia","Germany","Ghana","Great Britain/United Kingdom","Greece","Haiti","Hong Kong","Hungary","Iceland","India","Iran","Ireland","Israel","Italy","Jamaica","Japan","Kazakhstan","Kosovo","Kyrgyzstan","Latvia","Lebanon","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malaysia","Malta","Mexico","Moldova","Monaco","Mongolia","Montenegro","Morocco","Netherlands","New Zealand","Nigeria","North Macedonia","Norway","Pakistan","Peru","Philippines","Poland","Portugal","Puerto Rico","ROC/Russia","Romania","San Marino","Saudi Arabia","Serbia","Slovakia","Slovenia","South Korea","Spain","Sweden","Switzerland","Thailand","Trinidad and Tobago","Turkey","Ukraine","United States of America","Uzbekistan"];
 autocomplete(document.getElementById("myInput"), countries);
+
+{#//Makes an array of the chosen countries#}
+{#var myFormInputs = document.getElementsByClassName("countries")#}
+{#//Get the values from the array#}
+{#var myFormData = Array.prototype.filter.call(myFormInputs, function(anElement) {#}
+{#    return anElement.value;#}
+{#})#}
+{#//Loop through array and display as list https://stackoverflow.com/questions/46141450/create-li-from-loop-through-array-and-display-to-html-as-a-list#}
+{#var str = '<ul>'#}
+{#slides.forEach(function(slide) {#}
+{#  str += '<li>'+ slide + '</li>';#}
+{#});#}
+{#str += '</ul>';#}
+{#document.getElementById("countries").innerHTML = str;#}
+
+
 
 // functions for autocomplete
 function autocomplete(inp, arr) {
