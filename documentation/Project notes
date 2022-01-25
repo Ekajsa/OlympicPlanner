@@ -38,6 +38,54 @@ Sprint planning
 * Uppskatta tillgänglig tid för gruppen i nästa sprint.
 * Vad ska ingå i nästa veckas sprint?
 
+
+************************************************************************************************************************************************
+
+Designmöte 2022-01-25
+Diskuterar om bannern ska finnas kvar eller inte, om det ska finnas direktvägar till användarens scheman på användarsidan och vilken sida man 
+egentligen ska komma in på som förstasida. Så här tänker vi nu: Första sidan man hamnar på är en sida där man har två val: Man kan antingen komma till 
+create schedule (och då direkt in på välja discipliner med hjälp av kryssrutor (#015), eller välja mellan sina sparade scheman. Profilsidan kan man
+komma till via sin avatar uppe i bannern, högra hörnet. Där kommer ganska lite info finnas i nuläget: Namn, email, avatar, möjlighet att ändra sina uppgifter.
+Bannern finns alltså kvar. Där finns: Create schedule (kommer direkt in på att välja discipliner), My schedules (med drop-down så man direkt kan välja vilket 
+schema man ska komma till. 
+
+Ny fundering av Britta som antecknar detta i efterhand: Ska också Home finnas i bannern? Då kommer man till första sidan igen (den som man kommer till direkt 
+efter inloggning)?
+
+
+************************************************************************************************************************************************
+
+Daily 2022-01-25
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Småfix med #015 och #016. Nästan klar. Problem som kvarstår: Hur ska informationen sparas? Blir nog listor under personal schedules. 
+	Försöker fixa så att man kan se länderna man har valt. Frågat Joakim.
+*   Vad ska jag göra till nästa avstämning?
+	Vabba + fortsätta med #015 och #016.
+*   Behöver jag hjälp med något?
+	Nej.
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Jag har löst #008. Lite administration. Skrivit i lite data. Svårt att få tag på länder och kanaler.
+*   Vad ska jag göra till nästa avstämning?
+	Jobba med #014 Create user page.
+*   Behöver jag hjälp med något?
+	Nej
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Gjort #019. En sketch av hur user-sidan ska se ut. Nu behöver vi andra titta på den och ge feedback.
+	Började med #021: Första version av schemat. Funderingar kring hur vi ska dela upp det sinsemellan? Kanske finnas en issue som heter base-template.
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätta med CSS och base-template.
+*   Behöver jag hjälp med något?
+	Nej
+
+Övrigt
+* Vi sprängde in en halvtimmes designmöte gällande användarsidan (och lite andra sidor) för att Britta skulle kunna börja med #014.
+  Stand up: 30 min. Designmöte (#019): 30 min.
+
 ************************************************************************************************************************************************
 Sprint review 2022-01-21
 * Blev alla issues klara?
