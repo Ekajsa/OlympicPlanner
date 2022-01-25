@@ -404,5 +404,17 @@
       "Romania", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden",
       "Switzerland", "Chinese Taipei", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United States",
       "Uzbekistan"]
+  },
+    "event_34":
+  {
+    "discipline": "biathlon",
+    "description": "mixed relay 4x6 km",
+    "competition_type": "None",
+    "sex": ["female", "male"],
+    "date": "2022-02-05",
+    "local_start_time": "17:00",
+    "local_end_time": "18:15",
+    "tv_channel": ["5?"],
+    "participating_countries": ["TBA"]
   }
 }
