@@ -4,82 +4,82 @@
 <p>Choose the disciplines of interest:</p>
 <form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form">
     <div class="checkbox-container">
-      <input type="checkbox" id="all" onclick="toggle(this)">
+      <input type="checkbox" id="all" name="all">
       <label for="all">Select All</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d1" name="discipline" value="alpine">
+      <input type="checkbox" id="d1" name="d1" value="alpine">
       <label for="d1">Alpine Skiing</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d2" name="discipline" value="biathlon">
+      <input type="checkbox" id="d2" name="d2" value="biathlon">
       <label for="d2">Biathlon</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d3" name="discipline" value="bobsleigh">
+      <input type="checkbox" id="d3" name="d3" value="bobsleigh">
       <label for="d3">Bobsleigh</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d4" name="discipline" value="cross-country">
+      <input type="checkbox" id="d4" name="d4" value="cross-country">
       <label for="d4">Cross-Country Skiing</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d5" name="discipline" value="curling">
+      <input type="checkbox" id="d5" name="d5" value="curling">
       <label for="d5">Curling</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d6" name="discipline" value="figure_skating">
+      <input type="checkbox" id="d6" name="d6" value="figure_skating">
       <label for="d6">Figure Skating</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d7" name="discipline" value="freestyle">
+      <input type="checkbox" id="d7" name="d7" value="freestyle">
       <label for="d7">Freestyle Skiing</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d8" name="discipline" value="ice_hockey">
+      <input type="checkbox" id="d8" name="d8" value="ice_hockey">
       <label for="d8">Ice Hockey</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d9" name="discipline" value="luge">
+      <input type="checkbox" id="d9" name="d9" value="luge">
       <label for="d9">Luge</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d10" name="discipline" value="nordic">
+      <input type="checkbox" id="d10" name="d10" value="nordic">
       <label for="d10">Nordic Combined</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d11" name="discipline" value="short_track">
+      <input type="checkbox" id="d11" name="d11" value="short_track">
       <label for="d11">Short Track Speed Skating</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d12" name="discipline" value="skeleton">
+      <input type="checkbox" id="d12" name="d12" value="skeleton">
       <label for="d12">Skeleton</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d13" name="discipline" value="ski_jumping">
+      <input type="checkbox" id="d13" name="d13" value="ski_jumping">
       <label for="d13">Ski Jumping</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d14" name="discipline" value="snowboard">
+      <input type="checkbox" id="d14" name="d14" value="snowboard">
       <label for="d14">Snowboard</label>
     </div>
     <br>
     <div class="checkbox-container">
-      <input type="checkbox" id="d15" name="discipline" value="speed_skating">
+      <input type="checkbox" id="d15" name="d15" value="speed_skating">
       <label for="d15">Speed Skating</label>
     </div>
     <br>
@@ -101,7 +101,7 @@
 {#</form>#}
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 function isChecked() {
     var discipline = document.forms[0]; {# Why [0]? #}
@@ -164,12 +164,19 @@ $("#disciplines").on("submit", function() {
   localeStorage.clear();
 });
 
-function toggle(source) {
-  checkboxes = document.getElementsByName('discipline');
-  for(var i=0, n=checkboxes.length;i<n;i++) {
-    checkboxes[i].checked = source.checked;
-  }
-}
+// Listen for click on toggle checkbox
+$('#all').click(function(event) {
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;
+        });
+    } else {
+        $(':checkbox').each(function() {
+            this.checked = false;
+        });
+    }
+});
 </script>
 
 
