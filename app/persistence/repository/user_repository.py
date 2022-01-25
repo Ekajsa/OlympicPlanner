@@ -14,3 +14,10 @@ def get_user_by_email(email):
     user = User.find(email=email).first_or_none()
     return user
 
+
+def add_countries(email, countries):
+    user = get_user_by_email(email)
+
+
+
+
