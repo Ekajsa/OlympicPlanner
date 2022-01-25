@@ -20,6 +20,88 @@ Kajsa
 * xxx
 
 ************************************************************************************************************************************************
+
+<Mall för sprint review och sprint planning>
+Möte 2022-xx-xx
+
+Sprint review
+* Blev alla issues klara?
+   - Om inte, varför?
+* Icke klara issues återförs till backlog, efter att de har uppdaterats.
+  - Har vissa delar klarats av?
+  - Skall vi ha en ny tidsuppskattning?
+  - Vad behövs för att vi skall klara detta issue nästa gång?
+* Bedöm vad ni kan göra bättre i nästa sprint
+* Har det kommit upp nya saker som skall läggas till på er backlog?
+
+Sprint planning
+* Uppskatta tillgänglig tid för gruppen i nästa sprint.
+* Vad ska ingå i nästa veckas sprint?
+
+************************************************************************************************************************************************
+Sprint review 2022-01-21
+* Blev alla issues klara?
+  Går igenom och stänger klara issues, samt sätter upp tid i tidsestimeringsloggen.
+  Alla issues blev inte klara.
+  - Om inte, varför?
+    Delvis visste vi att vi hade lagt till lite mer i sprinten än vi troligen skulle hinna. 
+    Men främst beror diffen på att vi underskattade vad som tar tid och hur mycket tid vi skulle ha.
+    - Vi tänkte inte på hur många timmars möte vi skulle ha.
+    - Vi glömde ta med tid för raster när vi estimerade.
+    - Sjukdom och VAB.
+    - Vi glömde ta med tid för att rätta buggar och för att hjälpa varandra.
+    - Väntan på att Joakim skulle lägga upp kod och lektionsinspelning.
+* Icke klara issues återförs till backlog, efter att de har uppdaterats.
+  - Har vissa delar klarats av?
+    Ja, vissa issues är delvis klara.
+  - Skall vi ha en ny tidsuppskattning?
+      - Vad behövs för att vi skall klara detta issue nästa gång?
+    På vissa issues satte vi nytt tidsestimat. På vissa issues avgränsade vi uppgiften tydligare.
+* Bedöm vad ni kan göra bättre i nästa sprint
+  Tidsuppskattningarna behöver förbättras. Använd tumregeln att ta det man tror och multiplicera med pi.
+  Vi ska bara merga in färdiga brancher i main, där issuen som branchen avser är löst.
+  Kajsa bokar om sprint review möte till måndagar i fortsättningen, så att vi inte tar tid från de tillfällen då vi kan få hjälp av Joakim. 
+* Har det kommit upp nya saker som skall läggas till på er backlog?
+  - Ja, se product backlog
+  
+Sprint planning
+* Uppskatta tillgänglig tid för gruppen i nästa sprint.
+  Totalt räknar vi med en 30-timmarsvecka per person. Minus lektioner, 1 h möte/dag för daily + andra avstämningar, 1,5 h för sprint review/retrospective = 48 h. 
+  Dessutom blir det sannolikt 2 dagar VAB och ytterligare något familjerelaterat ärende = 33 h
+
+* Vad ska ingå i nästa veckas sprint?
+  Ny sprint planerades, se dokumentation i separat fil Time estimates.
+  
+************************************************************************************************************************************************
+Daily 2022-01-21
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Välja discipliner 015, börjat kolla på att välja land. Sparat .svg-bilder. 
+*   Vad ska jag göra till nästa avstämning?
+	Fråga Joakim om 015, börja med 016 (skriva i namn på länder)
+*   Behöver jag hjälp med något?
+	Nej
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Jobbat med problemen med inloggning, fått negativa svar från API-ägare, vilat som avtalat
+*   Vad ska jag göra till nästa avstämning?
+	Be Joakim om hjälp med inloggningen
+*   Behöver jag hjälp med något?
+	Kan Kajsa signa upp en användare och logga in?
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Surfat efter templates, gjort fantastisk .ppt-modell över applikationen
+*   Vad ska jag göra till nästa avstämning?
+	Konsultera om scraper
+*   Behöver jag hjälp med något?
+	Nej
+
+Övrigt
+* Fixa en scraper som scannar av resultat m.m.
+
+************************************************************************************************************************************************
 Daily 2022-01-20
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
