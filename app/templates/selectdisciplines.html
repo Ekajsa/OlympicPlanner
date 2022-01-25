@@ -4,6 +4,11 @@
 <p>Choose the disciplines of interest:</p>
 <form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form">
     <div class="checkbox-container">
+      <input type="checkbox" id="all" onclick="toggle(this)">
+      <label for="all">Select All</label>
+    </div>
+    <br>
+    <div class="checkbox-container">
       <input type="checkbox" id="d1" name="discipline" value="alpine">
       <label for="d1">Alpine Skiing</label>
     </div>
@@ -158,6 +163,15 @@ function isChecked() {
 $("#disciplines").on("submit", function() {
   localeStorage.clear();
 });
+
+function toggle(source) {
+  checkboxes = document.getElementsByName('discipline');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
 </script>
+
+
 
 {% endblock %}
