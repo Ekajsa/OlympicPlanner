@@ -12,6 +12,8 @@
     "avatar": "",
     "personal_schedules": {
       "schedule_name": "",
+      "disciplines": [],
+      "countries": [],
       "selected_events": [
         {
           "event_no": "",

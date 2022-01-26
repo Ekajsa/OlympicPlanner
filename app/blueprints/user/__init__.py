@@ -1,10 +1,10 @@
 
-from flask import Blueprint, render_template, redirect, url_for
+from flask import Blueprint, render_template, redirect, url_for, request
 from flask_login import login_required, logout_user, current_user
 
 from app.controllers import user_controller as uc
 from app.controllers import event_controller as ec
-
+from app.controllers.user_controller import add_country
 
 bp_user = Blueprint("bp_user", __name__)
 
@@ -43,4 +43,16 @@ def select_disciplines_get():
 
 @bp_user.get("/countries")
 def select_countries_get():
+    countries = get_countries()  # Continue here!
     return render_template("selectcountries.html")
+
+
+@bp_user.post("/countries")
+def select_countries_post():
+    country = request.form["myCountry"]
+    email = current_user.email
+    # schedule_name = ''  # How do we get this?
+    # if schedule_name == None:
+    schedule_name = "First"
+    add_country(email, country, schedule_name)
+    return redirect(url_for("bp_user.select_countries_get"))

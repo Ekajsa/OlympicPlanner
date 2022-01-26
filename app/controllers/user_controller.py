@@ -74,3 +74,7 @@ def signin_user(email):
         login_user(user)
         user.last_signin = datetime.datetime.now()
         user.save()
+
+
+def add_country(email, country, schedule_name):
+    ur.add_country(email, country, schedule_name)
