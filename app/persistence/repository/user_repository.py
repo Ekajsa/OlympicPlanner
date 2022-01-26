@@ -17,7 +17,7 @@ def get_user_by_email(email):
 
 def add_countries(email, countries):
     user = get_user_by_email(email)
-    user["personal_schedules"]["countries"] = countries
+    user.personal_schedules.countries = countries
     user.save()
 
 
