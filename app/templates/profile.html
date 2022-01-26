@@ -1,0 +1,21 @@
+{% extends "base_template.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/profile_style.css") }}">
+{% endblock %}
+
+{%  block content %}
+    <h1>{{ current_user.first_name }}s profile</h1>
+    <section>
+        <span>Personal Information</span> <br/>
+        Name: {{ current_user.full_name }} <br/>
+        E-mail: {{ current_user.email }} <br/>
+        Avatar: <a href="{{ current_user.avatar }}"></a> <br/>
+    </section>
+    <section>
+        <span>Saved Schedules</span> <br/>
+        {% for schedule in current_user.schedules %}
+            schedule
+        {% endfor %}
+    </section>
+
+{% endblock %}

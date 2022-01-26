@@ -1,7 +1,0 @@
-{% extends "base_template.html" %}
-
-{%  block content %}
-    <h1>Page for {{ current_user.first_name }}</h1>
-    <a href="{{ url_for("bp_user.courses_get") }}">My Page</a>
-    <a href="{{ url_for("bp_user.signout_get") }}">Sign Out</a>
-{% endblock %}

@@ -1,0 +1,28 @@
+body{
+	background: #30D5C8;
+	background-image: url("../img/winter_olympics.jpg");
+	background-size: cover;
+	margin: 2%
+}
+
+section{
+	background: #D3D3D3;
+	opacity: 0.8;
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+	border-style: solid;
+	box-shadow: 0 0 20px gray;
+	border-radius: 3%;
+   	width: 400px;
+   	height: 500px;
+   	position: relative;
+   	left: 50%;
+   	margin-left: -50px;
+   	top: 50%;
+   	margin-top: -50px;
+}
+
+span{
+	font-size: larger;
+}
