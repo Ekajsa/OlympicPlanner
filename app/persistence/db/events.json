@@ -991,7 +991,7 @@
     "local_start_time": "09:30",
     "local_end_time": "11:30",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_83":
   {
@@ -1003,7 +1003,7 @@
     "local_start_time": "11:50",
     "local_end_time": "12:40",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_84":
   {
@@ -1315,7 +1315,7 @@
     "local_start_time": "09:15",
     "local_end_time": "10:15",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_110":
   {
@@ -1327,7 +1327,7 @@
     "local_start_time": "10:30",
     "local_end_time": "11:30",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_111":
   {
@@ -1339,7 +1339,7 @@
     "local_start_time": "09:15",
     "local_end_time": "10:15",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_112":
   {
@@ -1351,7 +1351,7 @@
     "local_start_time": "09:30",
     "local_end_time": "10:15",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_113":
   {
@@ -1363,7 +1363,7 @@
     "local_start_time": "10:15",
     "local_end_time": "11:00",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_114":
   {
@@ -1375,7 +1375,7 @@
     "local_start_time": "11:00",
     "local_end_time": "11:45",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_115":
   {
@@ -1387,7 +1387,7 @@
     "local_start_time": "13:30",
     "local_end_time": "14:15",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_116":
   {
@@ -1399,7 +1399,7 @@
     "local_start_time": "14:15",
     "local_end_time": "15:00",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_117":
   {
@@ -1411,7 +1411,7 @@
     "local_start_time": "15:00",
     "local_end_time": "15:45",
     "tv_channel": ["TBA"],
-    "participating_countries": "TBA"]
+    "participating_countries": ["TBA"]
   },
   "event_118":
   {
@@ -1794,6 +1794,54 @@
     "date": "2022-02-08",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_150":
+  {
+    "discipline": "figure skating",
+    "description": "single skating, short program",
+    "competition_type": "None",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "20:05",
+    "local_end_time": "22:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_151":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski big air",
+    "competition_type": "final run 1",
+    "sex": "female",
+    "date": "2022-02-07",
+    "local_start_time": "10:00",
+    "local_end_time": "10:20",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_152":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski big air",
+    "competition_type": "final run 2",
+    "sex": "female",
+    "date": "2022-02-07",
+    "local_start_time": "10:22",
+    "local_end_time": "10:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_153":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski big air",
+    "competition_type": ["final run 3", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-07",
+    "local_start_time": "10:45",
+    "local_end_time": "11:20",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
