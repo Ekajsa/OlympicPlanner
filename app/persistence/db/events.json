@@ -1815,7 +1815,7 @@
     "description": "freeski big air",
     "competition_type": "final run 1",
     "sex": "female",
-    "date": "2022-02-07",
+    "date": "2022-02-08",
     "local_start_time": "10:00",
     "local_end_time": "10:20",
     "tv_channel": ["TBA"],
@@ -1827,7 +1827,7 @@
     "description": "freeski big air",
     "competition_type": "final run 2",
     "sex": "female",
-    "date": "2022-02-07",
+    "date": "2022-02-08",
     "local_start_time": "10:22",
     "local_end_time": "10:45",
     "tv_channel": ["TBA"],
@@ -1839,9 +1839,417 @@
     "description": "freeski big air",
     "competition_type": ["final run 3", "gold medal event"],
     "sex": "female",
-    "date": "2022-02-07",
+    "date": "2022-02-08",
     "local_start_time": "10:45",
     "local_end_time": "11:20",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_154":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "12:10",
+    "local_end_time": "14:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["USA", "Canada"]
+  },
+  "event_155":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "16:40",
+    "local_end_time": "18:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Japan", "Czech Republic"]
+  },
+  "event_156":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "21:10",
+    "local_end_time": "23:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Sweden", "Denmark"]
+  },
+  "event_157":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "21:10",
+    "local_end_time": "23:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Finland", "ROC"]
+  },
+  "event_158":
+  {
+    "discipline": "luge",
+    "description": "singles",
+    "competition_type": "run 3",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "19:50",
+    "local_end_time": "21:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_159":
+  {
+    "discipline": "luge",
+    "description": "singles",
+    "competition_type": ["run 4", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "21:35",
+    "local_end_time": "22:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_160":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "qualification run",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "10:40",
+    "local_end_time": "11:05",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_161":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "qualification run",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "11:07",
+    "local_end_time": "11:32",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_162":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "elimination run",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "11:34",
+    "local_end_time": "12:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_163":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "elimination run",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "12:01",
+    "local_end_time": "12:30",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_164":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "1/8 finals",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "14:30",
+    "local_end_time": "14:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_165":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "1/8 finals",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "14:48",
+    "local_end_time": "15:05",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_166":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "quarterfinals",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:06",
+    "local_end_time": "15:13",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_167":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "quarterfinals",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "15:15",
+    "local_end_time": "15:22",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_168":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:24",
+    "local_end_time": "15:29",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_169":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "15:30",
+    "local_end_time": "15:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_170":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": ["small final", "bronze medal event"],
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:36",
+    "local_end_time": "15:39",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_171":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": ["big final", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:39",
+    "local_end_time": "15:42",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_172":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": ["small final", "bronze medal event"],
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "15:43",
+    "local_end_time": "15:46",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_173":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": ["big final", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "15:47",
+    "local_end_time": "16:10",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_174":
+  {
+    "discipline": "speed skating",
+    "description": "1500m",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "18:30",
+    "local_end_time": "20:00",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_175":
+  {
+    "discipline": "alpine skiing",
+    "description": "slalom",
+    "competition_type": "run 1",
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "10:15",
+    "local_end_time": "11:50",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_176":
+  {
+    "discipline": "alpine skiing",
+    "description": "giant slalom",
+    "competition_type": ["run 2", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "13:45",
+    "local_end_time": "15:40",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_177":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 1",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Denmark", "Canada"]
+  },
+  "event_178":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 1",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["USA", "ROC"]
+  },
+  "event_179":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 1",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Norway", "Switzerland"]
+  },
+  "event_180":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 1",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["China", "Sweden"]
+  },
+  "event_181":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski big air",
+    "competition_type": "final run 1",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "11:00",
+    "local_end_time": "11:20",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_182":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski big air",
+    "competition_type": "final run 2",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "11:22",
+    "local_end_time": "11:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_183":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski big air",
+    "competition_type": ["final run 3", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "11:45",
+    "local_end_time": "12:20",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_184":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "16:40",
+    "local_end_time": "18:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["ROC", "Switzerland"]
+  },
+  "event_185":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "21:10",
+    "local_end_time": "23:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Czech Republic", "Denmark"]
+  },
+  "event_186":
+  {
+    "discipline": "luge",
+    "description": "doubles",
+    "competition_type": "run 1",
+    "sex": ["female", "male"],
+    "date": "2022-02-09",
+    "local_start_time": "20:20",
+    "local_end_time": "21:10",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_187":
+  {
+    "discipline": "luge",
+    "description": "doubles",
+    "competition_type": ["run 2", "gold medal event"],
+    "sex": ["female", "male"],
+    "date": "2022-02-09",
+    "local_start_time": "21:35",
+    "local_end_time": "22:25",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
