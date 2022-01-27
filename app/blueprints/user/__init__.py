@@ -45,7 +45,7 @@ def select_disciplines_get():
 
 @bp_user.get("/countries")
 def select_countries_get():
-    countries = get_country()  # Continue here!
+    # countries = get_country()  # Continue here!
     return render_template("selectcountries.html")
 
 
