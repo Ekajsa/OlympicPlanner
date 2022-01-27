@@ -1,28 +1,35 @@
 body{
-	background: #30D5C8;
-	background-image: url("../img/winter_olympics.jpg");
+	background: #30D5C8 url("../img/winter_olympics.jpg");
 	background-size: cover;
 	margin: 2%
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 
 section{
 	background: #D3D3D3;
 	opacity: 0.8;
-	display: inline-block;
-	text-align: center;
-	padding: 15px;
+	padding: 50px;
+	margin-top: 4%;
 	border-style: solid;
 	box-shadow: 0 0 20px gray;
 	border-radius: 3%;
-   	width: 400px;
-   	height: 500px;
-   	position: relative;
-   	left: 50%;
-   	margin-left: -50px;
-   	top: 50%;
-   	margin-top: -50px;
+   	width: 350px;
+   	height: 450px;
+	text-align: center;
 }
 
-span{
+.header{
+	font-weight: bold;
 	font-size: larger;
+}
+
+#edit_info{
+	opacity: 0.8;
+	border-radius: 6px;
+	background-color: #53CEF0;
 }
