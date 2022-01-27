@@ -2,7 +2,19 @@
 
 {% block content %}
 <p>Choose the disciplines of interest:</p>
+
+{#<input type="button" onclick="selects()" value="Select All">#}
+{#<br>#}
+{#<input type="button" onclick="deSelect()" value="Deselect All">#}
+{#<br>#}
+
+{#<a href="#" onclick="javascript:toggleCheck(true,this);" class="btn">Select All</a>&nbsp;#}
+{#<br>#}
+{#<a href="#" onclick="javascript:toggleCheck(false,this);" class="btn">Deselect All</a>#}
+{#<br>    #}
+
 <form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form">
+
     <div class="checkbox-container">
       <input type="checkbox" id="d1" name="discipline" value="alpine">
       <label for="d1">Alpine Skiing</label>
@@ -83,15 +95,16 @@
     </div>
 </form>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 function isChecked() {
-    var discipline = document.forms[0];
-    var discipline_list = []
+    var discipline = document.forms[0]; {# Why [0]? #}
+    var discipline_array = [];
     var i;
     for (i = 0; i < discipline.length; i++) {
         if (discipline[i].checked) {
-            discipline_list.push(discipline[i].value);
+            discipline_array.push(discipline[i].value);
         }
     }
     console.log(discipline_list)
@@ -109,7 +122,7 @@ function isChecked() {
     {#In your php page (here i just called it process_profile.php (selected {{url_for("bp_user.select_countries_get")}}
     but think that it might be another page but which one???)), you will process all f your $_POST variables, and once
     the script is complete, simply echo() a message.
-    This will appear int he response <div>#}
+    This will appear in the response <div>#}
     $(document).ready(function () {
         var form = $('#form'); // form (by ID attr)
         var submit = $('.submit');  // submit button (by CLASS attr)
@@ -146,6 +159,44 @@ function isChecked() {
 $("#disciplines").on("submit", function() {
   localeStorage.clear();
 });
+
+
+//Select or deselect all
+function toggleCheck(state, elem) {
+  jQuery(elem).closest("form").find("input:checkbox").prop('checked', state);
+}
+            {#function selects(){#}
+            {#    var ele=document.getElementsByName('discipline');#}
+            {#    for(var i=0; i<ele.length; i++){#}
+            {#        if(ele[i].type=='checkbox')#}
+            {#            ele[i].checked=true;#}
+            {#    }#}
+            {#}#}
+            {#function deSelect(){#}
+            {#    var ele=document.getElementsByName('discipline');#}
+            {#    for(var i=0; i<ele.length; i++){#}
+            {#        if(ele[i].type=='checkbox')#}
+            {#            ele[i].checked=false;#}
+            {##}
+            {#    }#}
+            {#}#}
+            {##}
+
+{#// Listen for click on toggle checkbox#}
+{#$('#all').click(function(event) {#}
+{#    if(this.checked) {#}
+{#        // Iterate each checkbox#}
+{#        $(':checkbox').each(function() {#}
+{#            this.checked = true;#}
+{#        });#}
+{#    } else {#}
+{#        $(':checkbox').each(function() {#}
+{#            this.checked = false;#}
+{#        });#}
+{#    }#}
+{#});#}
 </script>
+
+
 
 {% endblock %}

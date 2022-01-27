@@ -15,11 +15,12 @@ def get_user_by_email(email):
     return user
 
 
-def add_countries(email, countries):
+def add_country(email, country, schedule_name):
     user = get_user_by_email(email)
-    user.personal_schedules.countries = countries
-    user.save()
-
+    if len(user.personal_schedules) == 0:
+        user.personal_schedules.schedule_name = "First"
+    if user.personal_schedules.schedule_name == "First":
+        user.personal_schedules.countries.append(country)
 
 
 

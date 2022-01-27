@@ -76,6 +76,6 @@ def signin_user(email):
         user.save()
 
 
-def add_countries(email, countries):
-    ur.add_countries(email, countries)
+def add_country(email, country, schedule_name):
+    ur.add_country(email, country, schedule_name)
 
