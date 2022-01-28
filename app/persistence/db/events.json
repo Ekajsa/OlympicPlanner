@@ -2912,6 +2912,18 @@
     "local_end_time": "15:40",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
+  },
+  "event_243":
+  {
+    "discipline": "speed skating",
+    "description": "5000m",
+    "competition_type": "gold medal event",
+    "sex": "female",
+    "date": "2022-02-10",
+    "local_start_time": "20:00",
+    "local_end_time": "21:16",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
   }
 }
 
