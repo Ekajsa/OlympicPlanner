@@ -2853,63 +2853,63 @@
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_203":
+  "event_238":
   {
     "discipline": "snowboard",
     "description": "cross",
     "competition_type": "1/8 finals",
     "sex": "male",
     "date": "2022-02-10",
-    "local_start_time": "14:30",
-    "local_end_time": "15:05",
+    "local_start_time": "14:00",
+    "local_end_time": "14:35",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_204":
+  "event_239":
   {
     "discipline": "snowboard",
     "description": "cross",
     "competition_type": "quarterfinals",
-    "sex": "female",
-    "date": "2022-02-09",
-    "local_start_time": "15:07",
-    "local_end_time": "15:25",
+    "sex": "male",
+    "date": "2022-02-10",
+    "local_start_time": "14:37",
+    "local_end_time": "14:55",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_205":
+  "event_240":
   {
     "discipline": "snowboard",
     "description": "cross",
     "competition_type": "semifinals",
-    "sex": "female",
-    "date": "2022-02-09",
-    "local_start_time": "15:28",
-    "local_end_time": "15:43",
+    "sex": "male",
+    "date": "2022-02-10",
+    "local_start_time": "14:58",
+    "local_end_time": "15:13",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_206":
+  "event_241":
   {
     "discipline": "snowboard",
     "description": "cross",
     "competition_type": "small final",
     "sex": "female",
     "date": "2022-02-09",
-    "local_start_time": "15:45",
-    "local_end_time": "15:50",
+    "local_start_time": "15:15",
+    "local_end_time": "15:20",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_207":
+  "event_242":
   {
     "discipline": "snowboard",
     "description": "cross",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "female",
-    "date": "2022-02-09",
-    "local_start_time": "15:50",
-    "local_end_time": "16:10",
+    "sex": "male",
+    "date": "2022-02-10",
+    "local_start_time": "15:20",
+    "local_end_time": "15:40",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
