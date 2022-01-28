@@ -2792,6 +2792,126 @@
     "local_end_time": "11:55",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
+  },
+  "event_233":
+  {
+    "discipline": "snowboard",
+    "description": "halfpipe",
+    "competition_type": "final run 1",
+    "sex": "female",
+    "date": "2022-02-10",
+    "local_start_time": "09:30",
+    "local_end_time": "09:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_234":
+  {
+    "discipline": "snowboard",
+    "description": "halfpipe",
+    "competition_type": "final run 2",
+    "sex": "female",
+    "date": "2022-02-10",
+    "local_start_time": "09:58",
+    "local_end_time": "10:20",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_235":
+  {
+    "discipline": "snowboard",
+    "description": "halfpipe",
+    "competition_type": "final run 3",
+    "sex": "female",
+    "date": "2022-02-10",
+    "local_start_time": "10:25",
+    "local_end_time": "10:49",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_236":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "seeding run 1",
+    "sex": "male",
+    "date": "2022-02-10",
+    "local_start_time": "11:15",
+    "local_end_time": "11:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_237":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "seeding run 2",
+    "sex": "male",
+    "date": "2022-02-10",
+    "local_start_time": "12:10",
+    "local_end_time": "12:40",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_203":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "1/8 finals",
+    "sex": "male",
+    "date": "2022-02-10",
+    "local_start_time": "14:30",
+    "local_end_time": "15:05",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_204":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "quarterfinals",
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "15:07",
+    "local_end_time": "15:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_205":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "15:28",
+    "local_end_time": "15:43",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_206":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "small final",
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "15:45",
+    "local_end_time": "15:50",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_207":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": ["big final", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-09",
+    "local_start_time": "15:50",
+    "local_end_time": "16:10",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
   }
 }
 
