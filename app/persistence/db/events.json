@@ -2264,6 +2264,18 @@
     "local_end_time": "15:55",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
+  },
+    "event_189":
+  {
+    "discipline": "nordic combined",
+    "description": "individual gundersen normal hill/10km, ski jumping",
+    "competition_type": "competition round",
+    "sex": "male",
+    "date": "2022-02-09",
+    "local_start_time": "16:00",
+    "local_end_time": "16:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
   }
 }
 
