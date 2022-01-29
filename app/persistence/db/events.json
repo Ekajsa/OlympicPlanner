@@ -2112,7 +2112,7 @@
   "event_176":
   {
     "discipline": "alpine skiing",
-    "description": "giant slalom",
+    "description": "slalom",
     "competition_type": ["run 2", "gold medal event"],
     "sex": "female",
     "date": "2022-02-09",
@@ -2250,18 +2250,6 @@
     "date": "2022-02-09",
     "local_start_time": "21:35",
     "local_end_time": "22:25",
-    "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
-  },
-  "event_188":
-  {
-    "discipline": "nordic combined",
-    "description": "individual gundersen normal hill/10km, ski jumping",
-    "competition_type": "trial round",
-    "sex": "male",
-    "date": "2022-02-09",
-    "local_start_time": "15:00",
-    "local_end_time": "15:55",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
@@ -3273,18 +3261,6 @@
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_273":
-  {
-    "discipline": "ski jumping",
-    "description": "large hill individual",
-    "competition_type": "trial round",
-    "sex": "male",
-    "date": "2022-02-11",
-    "local_start_time": "17:45",
-    "local_end_time": "18:45",
-    "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
-  },
   "event_274":
   {
     "discipline": "ski jumping",
@@ -3511,6 +3487,582 @@
     "local_start_time": "19:00",
     "local_end_time": "22:38",
     "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_293":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "12:10",
+    "local_end_time": "14:35",
+    "tv_channel": "5",
+    "participating_countries": ["Canada", "USA"]
+  },
+  "event_294":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": "quarterfinals",
+    "sex": "female",
+    "date": "2022-02-12",
+    "local_start_time": "12:10",
+    "local_end_time": "14:35",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_295":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "16:40",
+    "local_end_time": "18:55",
+    "tv_channel": "TBA",
+    "participating_countries": ["Germany", "China"]
+  },
+  "event_296":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": "quarterfinals",
+    "sex": "female",
+    "date": "2022-02-12",
+    "local_start_time": "16:40",
+    "local_end_time": "18:55",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_297":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "21:10",
+    "local_end_time": "23:35",
+    "tv_channel": "5",
+    "participating_countries": ["ROC", "Czech Republic"]
+  },
+  "event_298":
+  {
+    "discipline": "ice hockey",
+    "description": "group b",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "21:10",
+    "local_end_time": "23:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["Switzerland", "Denmark"]
+  },
+  "event_299":
+  {
+    "discipline": "skeleton",
+    "description": "group b",
+    "competition_type": "heat 3",
+    "sex": "female",
+    "date": "2022-02-12",
+    "local_start_time": "20:20",
+    "local_end_time": "21:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_300":
+  {
+    "discipline": "skeleton",
+    "description": "group b",
+    "competition_type": ["heat 4", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-12",
+    "local_start_time": "21:55",
+    "local_end_time": "22:40",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_301":
+  {
+    "discipline": "ski jumping",
+    "description": "large hill individual",
+    "competition_type": "first round",
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "19:00",
+    "local_end_time": "19:55",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_302":
+  {
+    "discipline": "ski jumping",
+    "description": "large hill individual",
+    "competition_type": ["final round", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "20:00",
+    "local_end_time": "20:33",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_303":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "quarterfinals",
+    "sex": ["female","male"],
+    "date": "2022-02-12",
+    "local_start_time": "10:00",
+    "local_end_time": "10:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_304":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "semifinals",
+    "sex": ["female","male"],
+    "date": "2022-02-12",
+    "local_start_time": "10:28",
+    "local_end_time": "10:43",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_305":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": "small final",
+    "sex": ["female","male"],
+    "date": "2022-02-12",
+    "local_start_time": "10:50",
+    "local_end_time": "10:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_306":
+  {
+    "discipline": "snowboard",
+    "description": "cross",
+    "competition_type": ["big final", "gold medal event"],
+    "sex": ["female","male"],
+    "date": "2022-02-12",
+    "local_start_time": "10:55",
+    "local_end_time": "11:15",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_307":
+  {
+    "discipline": "speed skating",
+    "description": "team pursuit",
+    "competition_type": "quarterfinals",
+    "sex": "female",
+    "date": "2022-02-12",
+    "local_start_time": "16:00",
+    "local_end_time": "16:23",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_308":
+  {
+    "discipline": "speed skating",
+    "description": "500m",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-12",
+    "local_start_time": "16:53",
+    "local_end_time": "17:34",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_309":
+  {
+    "discipline": "alpine skiing",
+    "description": "giant slalom",
+    "competition_type": "run 1",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "10:15",
+    "local_end_time": "12:15",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_310":
+  {
+    "discipline": "alpine skiing",
+    "description": "giant slalom",
+    "competition_type": ["run 2", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "13:45",
+    "local_end_time": "15:50",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_311":
+  {
+    "discipline": "biathlon",
+    "description": "10km pursuit",
+    "competition_type": "gold medal event",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "17:00",
+    "local_end_time": "17:40",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_312":
+  {
+    "discipline": "biathlon",
+    "description": "12.5km pursuit",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "18:45",
+    "local_end_time": "19:25",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_313":
+  {
+    "discipline": "bob sleigh",
+    "description": "monobob",
+    "competition_type": "heat 1",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "09:30",
+    "local_end_time": "10:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_314":
+  {
+    "discipline": "bob sleigh",
+    "description": "monobob",
+    "competition_type": "heat 2",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "11:00",
+    "local_end_time": "11:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_315":
+  {
+    "discipline": "cross-country skiing",
+    "description": "4 x 10km relay",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "15:00",
+    "local_end_time": "16:40",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_316":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "5",
+    "participating_countries": ["Norway", "Sweden"]
+  },
+  "event_317":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["China", "Great Britain"]
+  },
+  "event_318":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["USA", "Canada"]
+  },
+  "event_319":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Italy", "ROC"]
+  },
+  "event_320":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Denmark", "Great Britain"]
+  },
+  "event_321":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["USA", "Sweden"]
+  },
+  "event_322":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Korea", "China"]
+  },
+  "event_323":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 6",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Switzerland", "Canada"]
+  },
+  "event_324":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 7",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Great Britain", "Denmark"]
+  },
+  "event_325":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 7",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Switzerland", "Italy"]
+  },
+  "event_326":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 7",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["China", "USA"]
+  },
+  "event_327":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": "qualification run 1",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "10:00",
+    "local_end_time": "11:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_328":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": "qualification run 2",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "11:01",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_329":
+  {
+    "discipline": "freestyle skiing",
+    "description": "aerials",
+    "competition_type": "qualification run 1",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "19:00",
+    "local_end_time": "19:30",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_330":
+  {
+    "discipline": "freestyle skiing",
+    "description": "aerials",
+    "competition_type": "qualification run 2",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "19:45",
+    "local_end_time": "20:15",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_331":
+  {
+    "discipline": "ice hockey",
+    "description": "group c",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "12:10",
+    "local_end_time": "14:25",
+    "tv_channel": "5",
+    "participating_countries": ["Slovakia", "Latvia"]
+  },
+  "event_332":
+  {
+    "discipline": "ice hockey",
+    "description": "group c",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "16:40",
+    "local_end_time": "18:55",
+    "tv_channel": "9",
+    "participating_countries": ["Finland","Sweden"]
+  },
+  "event_333":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "21:10",
+    "local_end_time": "23:25",
+    "tv_channel": "TBA",
+    "participating_countries": ["China", "Canada"]
+  },
+  "event_334":
+  {
+    "discipline": "ice hockey",
+    "description": "group a",
+    "competition_type": "preliminary round",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "21:10",
+    "local_end_time": "23:25",
+    "tv_channel": "5",
+    "participating_countries": ["USA", "Germany"]
+  },
+  "event_335":
+  {
+    "discipline": "short track speed skating",
+    "description": "500m",
+    "competition_type": "quarterfinals",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "19:00",
+    "local_end_time": "19:25",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_264":
+  {
+    "discipline": "short track speed skating",
+    "description": "1000m",
+    "competition_type": "heats",
+    "sex": "male",
+    "date": "2022-02-11",
+    "local_start_time": "19:18",
+    "local_end_time": "19:42",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_265":
+  {
+    "discipline": "short track speed skating",
+    "description": "1000m",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-11",
+    "local_start_time": "19:55",
+    "local_end_time": "20:03",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_266":
+  {
+    "discipline": "short track speed skating",
+    "description": "5000m relay",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-11",
+    "local_start_time": "20:04",
+    "local_end_time": "20:23",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_267":
+  {
+    "discipline": "short track speed skating",
+    "description": "1000m",
+    "competition_type": "final b",
+    "sex": "female",
+    "date": "2022-02-11",
+    "local_start_time": "20:37",
+    "local_end_time": "20:42",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_268":
+  {
+    "discipline": "short track speed skating",
+    "description": "1000m",
+    "competition_type": ["final a", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-11",
+    "local_start_time": "20:43",
+    "local_end_time": "20:49",
+    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
 }
