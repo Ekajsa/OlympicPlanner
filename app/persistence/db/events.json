@@ -4005,63 +4005,63 @@
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_264":
+  "event_336":
   {
     "discipline": "short track speed skating",
-    "description": "1000m",
-    "competition_type": "heats",
-    "sex": "male",
-    "date": "2022-02-11",
-    "local_start_time": "19:18",
-    "local_end_time": "19:42",
-    "tv_channel": "5",
-    "participating_countries": ["TBA"]
-  },
-  "event_265":
-  {
-    "discipline": "short track speed skating",
-    "description": "1000m",
-    "competition_type": "semifinals",
-    "sex": "female",
-    "date": "2022-02-11",
-    "local_start_time": "19:55",
-    "local_end_time": "20:03",
-    "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
-  },
-  "event_266":
-  {
-    "discipline": "short track speed skating",
-    "description": "5000m relay",
+    "description": "500m",
     "competition_type": "semifinals",
     "sex": "male",
-    "date": "2022-02-11",
-    "local_start_time": "20:04",
-    "local_end_time": "20:23",
-    "tv_channel": ["TBA"],
+    "date": "2022-02-13",
+    "local_start_time": "19:27",
+    "local_end_time": "19:33",
+    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
-  "event_267":
+  "event_337":
   {
     "discipline": "short track speed skating",
-    "description": "1000m",
+    "description": "3000m relay",
     "competition_type": "final b",
     "sex": "female",
-    "date": "2022-02-11",
-    "local_start_time": "20:37",
-    "local_end_time": "20:42",
+    "date": "2022-02-13",
+    "local_start_time": "19:35",
+    "local_end_time": "19:43",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
-  "event_268":
+  "event_338":
+  {
+    "discipline": "short track speed skating",
+    "description": "3000m relay",
+    "competition_type": ["final a", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "19:44",
+    "local_end_time": "19:55",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_339":
+  {
+    "discipline": "short track speed skating",
+    "description": "500m",
+    "competition_type": "final b",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "20:09",
+    "local_end_time": "20:13",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_340":
   {
     "discipline": "short track speed skating",
     "description": "1000m",
     "competition_type": ["final a", "gold medal event"],
-    "sex": "female",
-    "date": "2022-02-11",
-    "local_start_time": "20:43",
-    "local_end_time": "20:49",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "20:14",
+    "local_end_time": "20:19",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
