@@ -3106,7 +3106,8 @@
     "local_start_time": "12:10",
     "local_end_time": "14:35",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_260":
   {
@@ -3142,7 +3143,8 @@
     "local_start_time": "21:10",
     "local_end_time": "23:35",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_263":
   {
@@ -3514,7 +3516,8 @@
     "local_start_time": "12:10",
     "local_end_time": "14:35",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_295":
   {
@@ -3538,7 +3541,8 @@
     "local_start_time": "16:40",
     "local_end_time": "18:55",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_297":
   {
@@ -4378,7 +4382,8 @@
     "local_start_time": "12:10",
     "local_end_time": "14:25",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_367":
   {
@@ -4390,7 +4395,8 @@
     "local_start_time": "21:10",
     "local_end_time": "23:25",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_368":
   {
@@ -5290,7 +5296,8 @@
     "local_start_time": "16:40",
     "local_end_time": "18:55",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_444":
   {
@@ -5662,7 +5669,8 @@
     "local_start_time": "12:10",
     "local_end_time": "14:35",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_475":
   {
@@ -6070,7 +6078,8 @@
     "local_start_time": "14:05",
     "local_end_time": "17:00",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Denmark", "Great Britain", "Italy", "Norway", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_510":
   {
@@ -6142,7 +6151,8 @@
     "local_start_time": "21:10",
     "local_end_time": "23:25",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Germany", "Latvia", "ROC",
+      "Slovakia", "Sweden", "Switzerland", "USA"]
   },
   "event_516":
   {
@@ -6238,7 +6248,8 @@
     "local_start_time": "09:05",
     "local_end_time": "12:00",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Denmark", "Great Britain", "Japan", "Korea", "ROC", "Sweden",
+      "Switzerland", "USA"]
   },
   "event_524":
   {
