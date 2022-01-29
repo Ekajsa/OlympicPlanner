@@ -6128,5 +6128,65 @@
     "local_end_time": "10:49",
     "tv_channel": "5",
     "participating_countries": ["TBA"]
+  },
+  "event_515":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": ["bronze medal game", "bronze medal event"],
+    "sex": "male",
+    "date": "2022-02-19",
+    "local_start_time": "21:10",
+    "local_end_time": "23:25",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_516":
+  {
+    "discipline": "speed skating",
+    "description": "mass start",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-19",
+    "local_start_time": "15:00",
+    "local_end_time": "15:30",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_517":
+  {
+    "discipline": "speed skating",
+    "description": "mass start",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-19",
+    "local_start_time": "15:45",
+    "local_end_time": "16:10",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_518":
+  {
+    "discipline": "speed skating",
+    "description": "mass start",
+    "competition_type": ["final", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-19",
+    "local_start_time": "16:30",
+    "local_end_time": "16:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_518":
+  {
+    "discipline": "speed skating",
+    "description": "mass start",
+    "competition_type": ["final", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-19",
+    "local_start_time": "17:00",
+    "local_end_time": "17:15",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
   }
 }
