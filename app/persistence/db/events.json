@@ -5012,6 +5012,90 @@
     "local_end_time": "16:53",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
-  }
+  },
+  "event_421":
+  {
+    "discipline": "alpine skiing",
+    "description": "slalom",
+    "competition_type": "run 1",
+    "sex": "male",
+    "date": "2022-02-16",
+    "local_start_time": "10:15",
+    "local_end_time": "12:10",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_422":
+  {
+    "discipline": "alpine skiing",
+    "description": "slalom",
+    "competition_type": ["run 2", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-16",
+    "local_start_time": "13:45",
+    "local_end_time": "15:40",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_423":
+  {
+    "discipline": "biathlon",
+    "description": "4x6km relay",
+    "competition_type": "gold medal event",
+    "sex": "female",
+    "date": "2022-02-16",
+    "local_start_time": "15:45",
+    "local_end_time": "17:00",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "France", "Norway"]
+  },
+  "event_424":
+  {
+    "discipline": "cross-country skiing",
+    "description": "team sprint classic",
+    "competition_type": "semi finals",
+    "sex": "female",
+    "date": "2022-02-16",
+    "local_start_time": "17:00",
+    "local_end_time": "17:30",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "Norway"]
+  },
+  "event_425":
+  {
+    "discipline": "cross-country skiing",
+    "description": "team sprint classic",
+    "competition_type": "semi finals",
+    "sex": "male",
+    "date": "2022-02-16",
+    "local_start_time": "18:00",
+    "local_end_time": "18:30",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "Norway"]
+  },
+  "event_426":
+  {
+    "discipline": "cross-country skiing",
+    "description": "team sprint classic",
+    "competition_type": ["final", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-16",
+    "local_start_time": "19:00",
+    "local_end_time": "19:25",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "Norway"]
+  },
+  "event_427":
+  {
+    "discipline": "cross-country skiing",
+    "description": "team sprint classic",
+    "competition_type": ["final", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-16",
+    "local_start_time": "19:30",
+    "local_end_time": "20:00",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "Norway"]
+  },
 }
 
