@@ -6177,7 +6177,7 @@
     "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
-  "event_518":
+  "event_519":
   {
     "discipline": "speed skating",
     "description": "mass start",
@@ -6187,6 +6187,66 @@
     "local_start_time": "17:00",
     "local_end_time": "17:15",
     "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_520":
+  {
+    "discipline": "bobsleigh",
+    "description": "4-man",
+    "competition_type": "heat 3",
+    "sex": "male",
+    "date": "2022-02-20",
+    "local_start_time": "09:30",
+    "local_end_time": "11:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_521":
+  {
+    "discipline": "bobsleigh",
+    "description": "4-man",
+    "competition_type": ["heat 4", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-20",
+    "local_start_time": "11:20",
+    "local_end_time": "12:05",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_522":
+  {
+    "discipline": "cross-country skiing",
+    "description": "30km mass start free",
+    "competition_type": "gold medal event",
+    "sex": "female",
+    "date": "2022-02-20",
+    "local_start_time": "14:30",
+    "local_end_time": "16:30",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_523":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": ["gold medal game", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-20",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_524":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": ["gold medal game", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-20",
+    "local_start_time": "12:10",
+    "local_end_time": "14:35",
+    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
 }
