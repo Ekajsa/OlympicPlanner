@@ -4274,7 +4274,7 @@
     "discipline": "figure skating",
     "description": "ice dance, free dance",
     "competition_type": "gold medal event",
-    "sex": ["female", "gold medal event"],
+    "sex": "female",
     "date": "2022-02-14",
     "local_start_time": "09:15",
     "local_end_time": "12:36",
@@ -5696,6 +5696,233 @@
     "local_end_time": "17:42",
     "tv_channel": "5",
     "participating_countries": ["TBA"]
+  },
+  "event_478":
+  {
+    "discipline": "biathlon",
+    "description": "15km mass start",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "17:00",
+    "local_end_time": "17:45",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_479":
+  {
+    "discipline": "bobsleigh",
+    "description": "2-woman",
+    "competition_type": "heat 1",
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "20:00",
+    "local_end_time": "21:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_480":
+  {
+    "discipline": "bobsleigh",
+    "description": "2-woman",
+    "competition_type": "heat 2",
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "21:30",
+    "local_end_time": "22:15",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_481":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": ["bronze medal game", "bronze medal event"],
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_483":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "semi-final",
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_484":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "semi-final",
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_485":
+  {
+    "discipline": "figure skating",
+    "description": "pair skating, short program",
+    "competition_type": "None",
+    "sex": ["female", "male"],
+    "date": "2022-02-18",
+    "local_start_time": "18:30",
+    "local_end_time": "21:43",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_486":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski halfpipe",
+    "competition_type": "final run 1",
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "09:30",
+    "local_end_time": "09:55",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_487":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski halfpipe",
+    "competition_type": "final run 2",
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "09:58",
+    "local_end_time": "10:20",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_488":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski halfpipe",
+    "competition_type": ["final run 3", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-18",
+    "local_start_time": "10:25",
+    "local_end_time": "10:49",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_489":
+  {
+    "discipline": "freestyle skiing",
+    "description": "ski cross",
+    "competition_type": "seeding",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "11:45",
+    "local_end_time": "12:30",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_490":
+  {
+    "discipline": "freestyle skiing",
+    "description": "ski cross",
+    "competition_type": "1/8 finals",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "14:00",
+    "local_end_time": "14:30",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_491":
+  {
+    "discipline": "freestyle skiing",
+    "description": "ski cross",
+    "competition_type": "quarterfinals",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "14:35",
+    "local_end_time": "14:50",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_492":
+  {
+    "discipline": "freestyle skiing",
+    "description": "ski cross",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "14:54",
+    "local_end_time": "15:04",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_493":
+  {
+    "discipline": "freestyle skiing",
+    "description": "ski cross",
+    "competition_type": "small final",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "15:10",
+    "local_end_time": "15:15",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_494":
+  {
+    "discipline": "freestyle skiing",
+    "description": "ski cross",
+    "competition_type": ["big final", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "15:20",
+    "local_end_time": "16:20",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_495":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "12:10",
+    "local_end_time": "16:25",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_496":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "21:10",
+    "local_end_time": "23:25",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_497":
+  {
+    "discipline": "speed skating",
+    "description": "1000m",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-18",
+    "local_start_time": "16:30",
+    "local_end_time": "17:40",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
   }
 }
-
