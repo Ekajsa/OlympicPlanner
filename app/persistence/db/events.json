@@ -189,7 +189,7 @@
     "local_start_time": "19:45",
     "local_end_time": "20:30",
     "tv_channel": "streaming",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Sweden"]
   },
   "event_17":
   {
@@ -345,7 +345,8 @@
     "local_start_time": "11:41",
     "local_end_time": "12:54",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Armenia, Canada", "China", "Czech Republic", "Finland", "France", "Georgia",
+      "Germany", "Great Britain", "Italy", "Japan", "Lithuania", "Poland", "ROC", "Spain", "Ukraine", "USA"]
   },
   "event_30":
   {
@@ -357,7 +358,8 @@
     "local_start_time": "13:22",
     "local_end_time": "14:55",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "Canada", "China", "Czech Republic", "Georgia", "Germany", "Hungary",
+      "Israel","Italy", "Japan", "ROC", "Spain", "USA"]
   },
   "event_31":
   {
@@ -427,7 +429,7 @@
     "local_start_time": "15:45",
     "local_end_time": "16:45",
     "tv_channel": ["5?"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_36":
   {
@@ -715,7 +717,8 @@
     "local_start_time": "20:23",
     "local_end_time": "20:45",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "France", "Hungary", "Italy", "Japan", "Kazakhstan", "Netherlands",
+      "Poland", "Korea", "ROC", "USA"]
   } ,
   "event_60":
   {
@@ -847,7 +850,7 @@
     "local_start_time": "15:00",
     "local_end_time": "16:45",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_71":
   {
@@ -859,7 +862,7 @@
     "local_start_time": "11:00",
     "local_end_time": "13:30",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_72":
   {
@@ -991,7 +994,7 @@
     "local_start_time": "09:30",
     "local_end_time": "11:30",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Korea"]
   },
   "event_83":
   {
@@ -1207,7 +1210,7 @@
     "local_start_time": "10:15",
     "local_end_time": "11:55",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Argentina"]
   },
   "event_101":
   {
@@ -1387,7 +1390,7 @@
     "local_start_time": "13:30",
     "local_end_time": "14:15",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["France"]
   },
   "event_116":
   {
@@ -1663,7 +1666,7 @@
     "local_start_time": "11:00",
     "local_end_time": "13:25",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_139":
   {
@@ -2323,7 +2326,7 @@
     "local_start_time": "20:45",
     "local_end_time": "21:10",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Italy", "Netherlands", "Poland", "Korea", "ROC", "USA"]
   },
   "event_195":
   {
@@ -2431,7 +2434,7 @@
     "local_start_time": "14:30",
     "local_end_time": "15:05",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_204":
   {
@@ -2491,7 +2494,7 @@
     "local_start_time": "10:30",
     "local_end_time": "12:45",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_209":
   {
@@ -2508,14 +2511,14 @@
   "event_210":
   {
     "discipline": "cross-country skiing",
-    "description": "10 km classic",
+    "description": "10km classic",
     "competition_type": "gold medal event",
     "sex": "female",
     "date": "2022-02-10",
     "local_start_time": "15:00",
     "local_end_time": "16:30",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_211":
   {
@@ -2683,7 +2686,7 @@
     "local_start_time": "19:00",
     "local_end_time": "19:45",
     "tv_channel": "TBA",
-    "participating_countries": "TBA"
+    "participating_countries": ["Ukraine"]
   },
   "event_225":
   {
@@ -2767,7 +2770,7 @@
     "local_start_time": "09:30",
     "local_end_time": "10:30",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["American Samoa"]
   },
   "event_232":
   {
@@ -2923,7 +2926,7 @@
     "local_start_time": "11:00",
     "local_end_time": "13:09",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra", "Argentina"]
   },
   "event_245":
   {
@@ -2940,14 +2943,14 @@
   "event_246":
   {
     "discipline": "cross-country skiing",
-    "description": "7.5km sprint",
+    "description": "15km classic",
     "competition_type": "gold medal event",
     "sex": "male",
     "date": "2022-02-11",
     "local_start_time": "15:00",
     "local_end_time": "16:35",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_247":
   {
@@ -3187,7 +3190,7 @@
     "local_start_time": "20:04",
     "local_end_time": "20:23",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Canada", "China", "Hungary", "Italy", "Japan", "Netherlands", "Korea", "ROC"]
   },
   "event_267":
   {
@@ -3253,7 +3256,7 @@
   {
     "discipline": "skeleton",
     "description": "None",
-    "competition_type": ["heat 3", "gold medal event"],
+    "competition_type": ["heat 4", "gold medal event"],
     "sex": "male",
     "date": "2022-02-11",
     "local_start_time": "21:55",
@@ -3564,7 +3567,7 @@
   "event_299":
   {
     "discipline": "skeleton",
-    "description": "group b",
+    "description": "None",
     "competition_type": "heat 3",
     "sex": "female",
     "date": "2022-02-12",
@@ -3576,7 +3579,7 @@
   "event_300":
   {
     "discipline": "skeleton",
-    "description": "group b",
+    "description": "None",
     "competition_type": ["heat 4", "gold medal event"],
     "sex": "female",
     "date": "2022-02-12",
@@ -3691,7 +3694,7 @@
     "local_start_time": "10:15",
     "local_end_time": "12:15",
     "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Albania", "Andorra", "Argentina"]
   },
   "event_310":
   {
@@ -4327,7 +4330,7 @@
     "local_start_time": "12:30",
     "local_end_time": "13:29",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["France"]
   },
   "event_363":
   {
@@ -4495,7 +4498,7 @@
     "local_start_time": "11:00",
     "local_end_time": "12:59",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_377":
   {
@@ -4735,7 +4738,7 @@
     "local_start_time": "19:00",
     "local_end_time": "19:30",
     "tv_channel": "TBA",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Ukraine"]
   },
   "event_397":
   {
@@ -5023,7 +5026,7 @@
     "local_start_time": "10:15",
     "local_end_time": "12:10",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Albania", "Argentina"]
   },
   "event_422":
   {
@@ -6055,7 +6058,7 @@
     "local_start_time": "14:00",
     "local_end_time": "16:45",
     "tv_channel": "5",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Andorra"]
   },
   "event_509":
   {
