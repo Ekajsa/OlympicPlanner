@@ -3731,7 +3731,7 @@
   },
   "event_313":
   {
-    "discipline": "bob sleigh",
+    "discipline": "bobsleigh",
     "description": "monobob",
     "competition_type": "heat 1",
     "sex": "female",
@@ -3743,7 +3743,7 @@
   },
   "event_314":
   {
-    "discipline": "bob sleigh",
+    "discipline": "bobsleigh",
     "description": "monobob",
     "competition_type": "heat 2",
     "sex": "female",
@@ -4064,6 +4064,618 @@
     "local_end_time": "20:19",
     "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
+  },
+  "event_341":
+  {
+    "discipline": "speed skating",
+    "description": "team pursuit",
+    "competition_type": "quarterfinals",
+    "sex": "male",
+    "date": "2022-02-13",
+    "local_start_time": "21:00",
+    "local_end_time": "21:26",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_342":
+  {
+    "discipline": "speed skating",
+    "description": "500m",
+    "competition_type": "gold medal event",
+    "sex": "female",
+    "date": "2022-02-13",
+    "local_start_time": "21:56",
+    "local_end_time": "22:37",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_343":
+  {
+    "discipline": "bobsleigh",
+    "description": "monobob",
+    "competition_type": "heat 3",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:30",
+    "local_end_time": "10:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_344":
+  {
+    "discipline": "bobsleigh",
+    "description": "monobob",
+    "competition_type": ["heat 4", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "11:00",
+    "local_end_time": "11:50",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_345":
+  {
+    "discipline": "bobsleigh",
+    "description": "2-man",
+    "competition_type": "heat 1",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "20:05",
+    "local_end_time": "21:10",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_346":
+  {
+    "discipline": "bobsleigh",
+    "description": "2-man",
+    "competition_type": "heat 2",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "21:40",
+    "local_end_time": "22:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_347":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 7",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["China", "Japan"]
+  },
+  "event_348":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 7",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Canada", "ROC"]
+  },
+  "event_349":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 7",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["USA", "Korea"]
+  },
+  "event_350":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Canada", "Italy"]
+  },
+  "event_351":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Denmark", "Norway"]
+  },
+  "event_352":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "5",
+    "participating_countries": ["ROC", "Sweden"]
+  },
+  "event_353":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Switzerland", "Great Britain"]
+  },
+  "event_354":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Switzerland", "Sweden"]
+  },
+  "event_355":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Great Britain", "Canada"]
+  },
+  "event_356":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Japan", "Korea"]
+  },
+  "event_357":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 8",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Denmark", "ROC"]
+  },
+  "event_358":
+  {
+    "discipline": "figure skating",
+    "description": "ice dance, free dance",
+    "competition_type": "gold medal event",
+    "sex": ["female", "gold medal event"],
+    "date": "2022-02-14",
+    "local_start_time": "09:15",
+    "local_end_time": "12:36",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_359":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": "final run 1",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:30",
+    "local_end_time": "09:50",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_360":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": "final run 2",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:57",
+    "local_end_time": "10:20",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_361":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": ["final run 3", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "10:24",
+    "local_end_time": "10:49",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_362":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": "qualification run 1",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "12:30",
+    "local_end_time": "13:29",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_363":
+  {
+    "discipline": "freestyle skiing",
+    "description": "freeski slopestyle",
+    "competition_type": "qualification run 2",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "13:33",
+    "local_end_time": "14:32",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_364":
+  {
+    "discipline": "freestyle skiing",
+    "description": "aerials",
+    "competition_type": "final 1",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "19:00",
+    "local_end_time": "19:30",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_365":
+  {
+    "discipline": "freestyle skiing",
+    "description": "aerials",
+    "competition_type": ["final 2", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "20:00",
+    "local_end_time": "20:15",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_366":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "12:10",
+    "local_end_time": "14:25",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_367":
+  {
+    "discipline": "ice hockey",
+    "description": "None",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "21:10",
+    "local_end_time": "23:25",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_368":
+  {
+    "discipline": "ski jumping",
+    "description": "team",
+    "competition_type": "first round",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "19:00",
+    "local_end_time": "20:00",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_369":
+  {
+    "discipline": "ski jumping",
+    "description": "team",
+    "competition_type": ["final round", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "20:06",
+    "local_end_time": "20:42",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_370":
+  {
+    "discipline": "snowboard",
+    "description": "big air",
+    "competition_type": "qualification run 1",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "09:30",
+    "local_end_time": "10:15",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_371":
+  {
+    "discipline": "snowboard",
+    "description": "big air",
+    "competition_type": "qualification run 2",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "10:15",
+    "local_end_time": "11:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_372":
+  {
+    "discipline": "snowboard",
+    "description": "big air",
+    "competition_type": "qualification run 3",
+    "sex": "female",
+    "date": "2022-02-14",
+    "local_start_time": "11:00",
+    "local_end_time": "11:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_373":
+  {
+    "discipline": "snowboard",
+    "description": "big air",
+    "competition_type": "qualification run 1",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "13:30",
+    "local_end_time": "14:15",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_374":
+  {
+    "discipline": "snowboard",
+    "description": "big air",
+    "competition_type": "qualification run 2",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "14:15",
+    "local_end_time": "15:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_375":
+  {
+    "discipline": "snowboard",
+    "description": "big air",
+    "competition_type": "qualification run 3",
+    "sex": "male",
+    "date": "2022-02-14",
+    "local_start_time": "15:00",
+    "local_end_time": "15:45",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_376":
+  {
+    "discipline": "alpine skiing",
+    "description": "downhill",
+    "competition_type": "gold medal event",
+    "sex": "female",
+    "date": "2022-02-15",
+    "local_start_time": "11:00",
+    "local_end_time": "12:59",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_377":
+  {
+    "discipline": "biathlon",
+    "description": "4 x 7.5km relay",
+    "competition_type": "gold medal event",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "17:00",
+    "local_end_time": "18:15",
+    "tv_channel": "5",
+    "participating_countries": ["TBA"]
+  },
+  "event_378":
+  {
+    "discipline": "bobsleigh",
+    "description": "2-man",
+    "competition_type": "heat 3",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "20:15",
+    "local_end_time": "21:30",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_379":
+  {
+    "discipline": "bobsleigh",
+    "description": "2-man",
+    "competition_type": ["heat 4", "gold medal event"],
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "21:50",
+    "local_end_time": "22:35",
+    "tv_channel": "TBA",
+    "participating_countries": ["TBA"]
+  },
+  "event_380":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["ROC", "Norway"]
+  },
+  "event_381":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Canada", "China"]
+  },
+  "event_382":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Switzerland", "USA"]
+  },
+  "event_383":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "09:05",
+    "local_end_time": "12:00",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "Denmark"]
+  },
+  "event_384":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "female",
+    "date": "2022-02-15",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["China", "ROC"]
+  },
+  "event_385":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "female",
+    "date": "2022-02-15",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "5",
+    "participating_countries": ["Sweden", "Denmark"]
+  },
+  "event_386":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "female"
+    "date": "2022-02-15",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "5",
+    "participating_countries": ["USA", "Switzerland"]
+  },
+  "event_387":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 9",
+    "sex": "female",
+    "date": "2022-02-15",
+    "local_start_time": "14:05",
+    "local_end_time": "17:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Great Britain", "Japan"]
+  },
+  "event_388":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 10",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Sweden", "Great Britain"]
+  },
+  "event_389":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 10",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Italy", "USA"]
+  },
+  "event_390":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 10",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["Norway", "China"]
+  },
+  "event_391":
+  {
+    "discipline": "curling",
+    "description": "None",
+    "competition_type": "round robin session 10",
+    "sex": "male",
+    "date": "2022-02-15",
+    "local_start_time": "20:05",
+    "local_end_time": "23:00",
+    "tv_channel": "TBA",
+    "participating_countries": ["ROC", "China"]
   }
 }
 
