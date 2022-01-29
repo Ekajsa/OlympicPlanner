@@ -5924,5 +5924,101 @@
     "local_end_time": "17:40",
     "tv_channel": "TBA",
     "participating_countries": ["TBA"]
+  },
+  "event_498":
+  {
+    "discipline": "alpine skiing",
+    "description": "mixed team parallel",
+    "competition_type": "1/8 finals",
+    "sex": ["female", "male]",
+    "date": "2022-02-08",
+    "local_start_time": "14:30",
+    "local_end_time": "14:45",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_165":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "1/8 finals",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "14:48",
+    "local_end_time": "15:05",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_166":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "quarterfinals",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:06",
+    "local_end_time": "15:13",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_167":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "quarterfinals",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "15:15",
+    "local_end_time": "15:22",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_168":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "semifinals",
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:24",
+    "local_end_time": "15:29",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_169":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": "semifinals",
+    "sex": "male",
+    "date": "2022-02-08",
+    "local_start_time": "15:30",
+    "local_end_time": "15:35",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_170":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": ["small final", "bronze medal event"],
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:36",
+    "local_end_time": "15:39",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
+  },
+  "event_171":
+  {
+    "discipline": "snowboard",
+    "description": "parallel giant slalom",
+    "competition_type": ["big final", "gold medal event"],
+    "sex": "female",
+    "date": "2022-02-08",
+    "local_start_time": "15:39",
+    "local_end_time": "15:42",
+    "tv_channel": ["TBA"],
+    "participating_countries": ["TBA"]
   }
 }
