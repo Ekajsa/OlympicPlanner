@@ -26,9 +26,3 @@ def profile_get():
 # @login_required
 def schedules_get():
     return render_template("schedule_start.html")
-
-
-@bp_user.get("/profile")
-# @login_required
-def profile_get():
-    return render_template("user.html")
