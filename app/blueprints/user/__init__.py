@@ -19,4 +19,10 @@ def signout_get():
 @bp_user.get("/schedules")
 # @login_required
 def schedules_get():
-    return render_template("schedules.html")
+    return render_template("schedule_start.html")
+
+
+@bp_user.get("/profile")
+# @login_required
+def profile_get():
+    return render_template("user.html")
