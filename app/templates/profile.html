@@ -6,47 +6,30 @@
 
 {%  block content %}
     <div class="content-section">
-        <h1>My profile</h1>
-{#            <div class="container-fluid">#}
-{#                <p>Congratulations on your excellent decision to use The Olympic Planner! Click next to create a new schedule, or open an existing one.</p>#}
-{#            </div>#}
+        <h3>Personal Information
+        <button type="button" id="edit_info"><i id="pen" class="fa fa-fw fa-solid fa-pencil"></i></button>
+        </h3>
 
         <div class="container mr-4">
-{#            <section id="info">#}
-                <span class="header">
-                    Personal Information
-                    <button type="button" id="edit_info"><i id="pen" class="fa fa-fw fa-solid fa-pencil"></i></button>
-                </span> <br/>
-                Name: <span id="name">{{ current_user.full_name }}</span> <br/>
-                E-mail: {{ current_user.email }} <br/>
-                Avatar: <a href="{{ current_user.avatar }}"></a> <br/>
-{#            </section>#}
-{#            <section id="schedules">#}
-                <span class="header">Saved Schedules</span> <br/>
-                {% for schedule in current_user.schedules %}
-                    schedule
-                {% endfor %}
-{#            </section>#}
-        </div>
-        <div class="container ml-4">
-{#            <section id="info">#}
-                <span class="header">
-                    Personal Information
-                    <button type="button" id="edit_info"><i id="pen" class="fa fa-fw fa-solid fa-pencil"></i></button>
-                </span> <br/>
-                Name: <span id="name">{{ current_user.full_name }}</span> <br/>
-                E-mail: {{ current_user.email }} <br/>
-                Avatar: <a href="{{ current_user.avatar }}"></a> <br/>
-{#            </section>#}
-{#            <section id="schedules">#}
-                <span class="header">Saved Schedules</span> <br/>
-                {% for schedule in current_user.schedules %}
-                    schedule
-                {% endfor %}
-{#            </section>#}
+            Name: <span id="name">{{ current_user.full_name }}</span> <br/>
+            E-mail: {{ current_user.email }} <br/>
+            Avatar: <a href="{{ current_user.avatar }}"></a> <br/>  <!-- Can't get the avatar to work, should it work? Don't remember... -->
         </div>
     </div>
 {% endblock %}
+
+{%  block other_content %}
+    <div class="content-section">
+        <h3>Saved Schedules</h3>
+
+        <div class="container">
+            {% for schedule in current_user.schedules %}
+                schedule
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
 
 {% block scripts %}
     <script>

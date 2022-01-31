@@ -57,7 +57,9 @@
         <div class="col-md-8">
           {% block content %}{% endblock %}
         </div>
-{#        <div class="col-md-4">#}
+        <div class="col-md-4">
+          {% block other_content %}{% endblock %}
+
 {#          <div class="content-section">#}
 {#            <h3>Our Sidebar</h3>#}
 {#            <p class='text-muted'>Maybe not to use for us, but keeping it for the moment.#}
@@ -69,11 +71,11 @@
 {#              </ul>#}
 {#            </p>#}
 {#          </div>#}
-{#        </div>#}
+        </div>
       </div>
-      <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-      </footer>
+{#      <footer class="container-fluid text-center">#}
+{#        <p>Footer Text</p>#}
+{#      </footer>#}
     </main>
 
     {% block scripts %}
