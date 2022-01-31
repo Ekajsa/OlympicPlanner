@@ -18,19 +18,6 @@
     </div>
 {% endblock %}
 
-{%  block other_content %}
-    <div class="content-section">
-        <h3>Saved Schedules</h3>
-
-        <div class="container">
-            {% for schedule in current_user.schedules %}
-                schedule
-            {% endfor %}
-        </div>
-    </div>
-{% endblock %}
-
-
 {% block scripts %}
     <script>
         document.getElementById("edit_info").onclick = function() {
@@ -43,3 +30,4 @@
         }
     </script>
 {% endblock %}
+
