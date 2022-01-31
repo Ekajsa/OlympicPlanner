@@ -8,7 +8,6 @@
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Sweden", "Great Britain"]
   },
   "event_2":
@@ -20,7 +19,6 @@
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "streaming",
     "participating_countries": ["Australia", "USA"]
   },
   "event_3":
@@ -32,7 +30,6 @@
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "streaming",
     "participating_countries": ["Norway", "Czech Republic"]
   },
   "event_4":
@@ -44,7 +41,6 @@
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "streaming",
     "participating_countries": ["China", "Switzerland"]
   },
   "event_5":
@@ -56,7 +52,6 @@
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": "streaming",
     "participating_countries": ["Australia", "China"]
   },
   "event_6":
@@ -68,7 +63,6 @@
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Sweden", "Czech Republic"]
   },
   "event_7":
@@ -80,7 +74,6 @@
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": "streaming",
     "participating_countries": ["USA", "Italy"]
   },
   "event_8":
@@ -92,7 +85,6 @@
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Great Britain", "Canada"]
   },
   "event_9":
@@ -104,7 +96,6 @@
     "date": "2022-02-03",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Italy", "Switzerland"]
   },
   "event_10":
@@ -116,7 +107,6 @@
     "date": "2022-02-03",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["USA", "Norway"]
   },
   "event_11":
@@ -128,7 +118,6 @@
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "streaming",
     "participating_countries": ["Norway", "Canada"]
   },
   "event_12":
@@ -140,7 +129,6 @@
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "streaming",
     "participating_countries": ["Switzerland", "Great Britain"]
   },
   "event_13":
@@ -152,7 +140,6 @@
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["China", "Sweden"]
   },
   "event_14":
@@ -164,7 +151,6 @@
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": "streaming",
     "participating_countries": ["Czech Republic", "Australia"]
   },
   "event_15":
@@ -176,7 +162,6 @@
     "date": "2022-02-03",
     "local_start_time": "18:00",
     "local_end_time": "18:45",
-    "tv_channel": "streaming",
     "participating_countries": ["TBA"]
   },
     "event_16":
@@ -188,7 +173,6 @@
     "date": "2022-02-03",
     "local_start_time": "19:45",
     "local_end_time": "20:30",
-    "tv_channel": "streaming",
     "participating_countries": ["Sweden"]
   },
   "event_17":
@@ -200,7 +184,6 @@
     "date": "2022-02-03",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Canada", "Switzerland"]
   },
   "event_18":
@@ -212,7 +195,6 @@
     "date": "2022-02-03",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Czech Republic", "China"]
   },
   "event_19":
@@ -224,7 +206,6 @@
     "date": "2022-02-03",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["5", "Eurosport 1"],
     "participating_countries": ["Sweden", "Japan"]
   },
   "event_20":
@@ -236,7 +217,6 @@
     "date": "2022-02-03",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "Eurosport 1",
     "participating_countries": ["Finland", "USA"]
   },
   "event_21":
@@ -248,7 +228,6 @@
     "date": "2022-02-04",
     "local_start_time": "08:35",
     "local_end_time": "10:30",
-    "tv_channel": ["5?"],
     "participating_countries": ["Sweden", "Australia"]
   },
   "event_22":
@@ -260,7 +239,6 @@
     "date": "2022-02-04",
     "local_start_time": "08:35",
     "local_end_time": "10:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "Switzerland"]
   },
   "event_23":
@@ -272,7 +250,6 @@
     "date": "2022-02-04",
     "local_start_time": "08:35",
     "local_end_time": "10:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Italy", "Norway"]
   },
   "event_24":
@@ -284,7 +261,6 @@
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Czech Republic", "Italy"]
   },
   "event_25":
@@ -296,7 +272,6 @@
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["China", "Canada"]
   },
   "event_26":
@@ -308,7 +283,6 @@
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Great Britain", "Australia"]
   },
   "event_27":
@@ -320,7 +294,6 @@
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
-    "tv_channel": ["5?"],
     "participating_countries": ["Sweden", "USA"]
   },
   "event_28":
@@ -332,7 +305,6 @@
     "date": "2022-02-04",
     "local_start_time": "10:02",
     "local_end_time": "11:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_29":
@@ -344,7 +316,6 @@
     "date": "2022-02-04",
     "local_start_time": "11:41",
     "local_end_time": "12:54",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Armenia, Canada", "China", "Czech Republic", "Finland", "France", "Georgia",
       "Germany", "Great Britain", "Italy", "Japan", "Lithuania", "Poland", "ROC", "Spain", "Ukraine", "USA"]
   },
@@ -357,7 +328,6 @@
     "date": "2022-02-04",
     "local_start_time": "13:22",
     "local_end_time": "14:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Austria", "Canada", "China", "Czech Republic", "Georgia", "Germany", "Hungary",
       "Israel","Italy", "Japan", "ROC", "Spain", "USA"]
   },
@@ -370,7 +340,6 @@
     "date": "2022-02-04",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["ROC", "Switzerland"]
   },
   "event_32":
@@ -382,7 +351,6 @@
     "date": "2022-02-04",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Denmark", "China"]
   },
   "event_33":
@@ -394,7 +362,6 @@
     "date": "2022-02-04",
     "local_start_time": "20:00",
     "local_end_time": "22:00",
-    "tv_channel": ["5?"],
     "participating_countries": ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria",
       "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chile",
       "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea",
@@ -416,7 +383,6 @@
     "date": "2022-02-05",
     "local_start_time": "17:00",
     "local_end_time": "18:15",
-    "tv_channel": ["5?"],
     "participating_countries": ["TBA"]
   },
   "event_35":
@@ -428,7 +394,6 @@
     "date": "2022-02-05",
     "local_start_time": "15:45",
     "local_end_time": "16:45",
-    "tv_channel": ["5?"],
     "participating_countries": ["Andorra"]
   },
   "event_36":
@@ -440,7 +405,6 @@
     "date": "2022-02-05",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Australia", "Norway"]
   },
   "event_37":
@@ -452,7 +416,6 @@
     "date": "2022-02-05",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["5?"],
     "participating_countries": ["Switzerland", "Sweden"]
   },
   "event_38":
@@ -464,7 +427,6 @@
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["China", "USA"]
   },
   "event_39":
@@ -476,7 +438,6 @@
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Czech Republic", "Great Britain"]
   },
   "event_40":
@@ -488,7 +449,6 @@
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["5?"],
     "participating_countries": ["Sweden", "Canada"]
   },
   "event_41":
@@ -500,7 +460,6 @@
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Australia", "Italy"]
   },
   "event_42":
@@ -512,7 +471,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Great Britain", "Italy"]
   },
   "event_43":
@@ -524,7 +482,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Norway", "China"]
   },
   "event_44":
@@ -536,7 +493,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Czech Republic", "Switzerland"]
   },
   "event_45":
@@ -548,7 +504,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["USA", "Canada"]
   },
   "event_46":
@@ -560,7 +515,6 @@
     "date": "2022-02-05",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_47":
@@ -572,7 +526,6 @@
     "date": "2022-02-05",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_48":
@@ -584,7 +537,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "20:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_49":
@@ -596,7 +548,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:40",
     "local_end_time": "21:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_50":
@@ -608,7 +559,6 @@
     "date": "2022-02-05",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "Finland"]
   },
   "event_51":
@@ -620,7 +570,6 @@
     "date": "2022-02-05",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Japan", "Denmark"]
   },
   "event_52":
@@ -632,7 +581,6 @@
     "date": "2022-02-05",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["5?"],
     "participating_countries": ["Czech Republic", "Sweden"]
   },
   "event_53":
@@ -644,7 +592,6 @@
     "date": "2022-02-05",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["5?"],
     "participating_countries": ["Czech Republic", "Sweden"]
   },
   "event_54":
@@ -656,7 +603,6 @@
     "date": "2022-02-05",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["USA", "ROC"]
   },
   "event_55":
@@ -668,7 +614,6 @@
     "date": "2022-02-05",
     "local_start_time": "19:10",
     "local_end_time": "20:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_56":
@@ -680,7 +625,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:50",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_57":
@@ -692,7 +636,6 @@
     "date": "2022-02-05",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_58":
@@ -704,7 +647,6 @@
     "date": "2022-02-05",
     "local_start_time": "19:38",
     "local_end_time": "20:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_59":
@@ -716,7 +658,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:23",
     "local_end_time": "20:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "China", "France", "Hungary", "Italy", "Japan", "Kazakhstan", "Netherlands",
       "Poland", "Korea", "ROC", "USA"]
   } ,
@@ -729,7 +670,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:53",
     "local_end_time": "21:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_61":
@@ -741,7 +681,6 @@
     "date": "2022-02-05",
     "local_start_time": "21:18",
     "local_end_time": "21:24",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_62":
@@ -753,7 +692,6 @@
     "date": "2022-02-05",
     "local_start_time": "21:26",
     "local_end_time": "21:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_63":
@@ -765,7 +703,6 @@
     "date": "2022-02-05",
     "local_start_time": "14:20",
     "local_end_time": "15:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
 "event_64":
@@ -777,7 +714,6 @@
     "date": "2022-02-05",
     "local_start_time": "18:45",
     "local_end_time": "19:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
 "event_65":
@@ -789,7 +725,6 @@
     "date": "2022-02-05",
     "local_start_time": "19:35",
     "local_end_time": "20:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_66":
@@ -801,7 +736,6 @@
     "date": "2022-02-05",
     "local_start_time": "10:45",
     "local_end_time": "11:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_67":
@@ -813,7 +747,6 @@
     "date": "2022-02-05",
     "local_start_time": "11:47",
     "local_end_time": "12:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_68":
@@ -825,7 +758,6 @@
     "date": "2022-02-05",
     "local_start_time": "16:30",
     "local_end_time": "18:05",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_69":
@@ -837,7 +769,6 @@
     "date": "2022-02-06",
     "local_start_time": "11:00",
     "local_end_time": "13:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_70":
@@ -849,7 +780,6 @@
     "date": "2022-02-06",
     "local_start_time": "15:00",
     "local_end_time": "16:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Andorra"]
   },
   "event_71":
@@ -861,7 +791,6 @@
     "date": "2022-02-06",
     "local_start_time": "11:00",
     "local_end_time": "13:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Andorra"]
   },
   "event_72":
@@ -873,7 +802,6 @@
     "date": "2022-02-06",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["USA", "Czech Republic"]
   },
   "event_73":
@@ -885,7 +813,6 @@
     "date": "2022-02-06",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Great Britain", "China"]
   },
   "event_74":
@@ -897,7 +824,6 @@
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Norway", "Sweden"]
   },
   "event_75":
@@ -909,7 +835,6 @@
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Australia", "Switzerland"]
   },
   "event_76":
@@ -921,7 +846,6 @@
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Italy", "China"]
   },
   "event_77":
@@ -933,7 +857,6 @@
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "Czech Republic"]
   },
   "event_78":
@@ -945,7 +868,6 @@
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "Australia"]
   },
   "event_79":
@@ -957,7 +879,6 @@
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Italy", "Sweden"]
   },
   "event_80":
@@ -969,7 +890,6 @@
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Switzerland", "USA"]
   },
   "event_81":
@@ -981,7 +901,6 @@
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Norway", "Great Britain"]
   },
   "event_82":
@@ -993,7 +912,6 @@
     "date": "2022-02-06",
     "local_start_time": "09:30",
     "local_end_time": "11:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Korea"]
   },
   "event_83":
@@ -1005,7 +923,6 @@
     "date": "2022-02-06",
     "local_start_time": "11:50",
     "local_end_time": "12:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_84":
@@ -1017,7 +934,6 @@
     "date": "2022-02-056",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_85":
@@ -1029,7 +945,6 @@
     "date": "2022-02-06",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_86":
@@ -1041,7 +956,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "20:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_87":
@@ -1053,7 +967,6 @@
     "date": "2022-02-05",
     "local_start_time": "20:40",
     "local_end_time": "21:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_88":
@@ -1065,7 +978,6 @@
     "date": "2022-02-06",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["5?"],
     "participating_countries": ["China", "Japan"]
   },
   "event_89":
@@ -1077,7 +989,6 @@
     "date": "2022-02-06",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Switzerland", "USA"]
   },
   "event_90":
@@ -1089,7 +1000,6 @@
     "date": "2022-02-06",
     "local_start_time": "19:30",
     "local_end_time": "20:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_91":
@@ -1101,7 +1011,6 @@
     "date": "2022-02-06",
     "local_start_time": "21:15",
     "local_end_time": "22:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
  "event_92":
@@ -1113,7 +1022,6 @@
     "date": "2022-02-06",
     "local_start_time": "19:00",
     "local_end_time": "19:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_93":
@@ -1125,7 +1033,6 @@
     "date": "2022-02-06",
     "local_start_time": "20:00",
     "local_end_time": "20:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_94":
@@ -1137,7 +1044,6 @@
     "date": "2022-02-06",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_95":
@@ -1149,7 +1055,6 @@
     "date": "2022-02-06",
     "local_start_time": "09:57",
     "local_end_time": "10:17",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_96":
@@ -1161,7 +1066,6 @@
     "date": "2022-02-06",
     "local_start_time": "10:24",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_97":
@@ -1173,7 +1077,6 @@
     "date": "2022-02-06",
     "local_start_time": "12:30",
     "local_end_time": "13:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_98":
@@ -1185,7 +1088,6 @@
     "date": "2022-02-06",
     "local_start_time": "13:33",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_99":
@@ -1197,7 +1099,6 @@
     "date": "2022-02-06",
     "local_start_time": "16:30",
     "local_end_time": "18:05",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_100":
@@ -1209,7 +1110,6 @@
     "date": "2022-02-07",
     "local_start_time": "10:15",
     "local_end_time": "11:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Argentina"]
   },
   "event_101":
@@ -1221,7 +1121,6 @@
     "date": "2022-02-07",
     "local_start_time": "13:45",
     "local_end_time": "15:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_102":
@@ -1233,7 +1132,6 @@
     "date": "2022-02-07",
     "local_start_time": "17:00",
     "local_end_time": "18:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_103":
@@ -1245,7 +1143,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Switzerland", "Norway"]
   },
   "event_104":
@@ -1257,7 +1154,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "Italy"]
   },
   "event_105":
@@ -1269,7 +1165,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["USA", "Great Britain"]
   },
   "event_106":
@@ -1281,7 +1176,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Czech Republic", "China"]
   },
   "event_107":
@@ -1293,7 +1187,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_108":
@@ -1305,7 +1198,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_109":
@@ -1317,7 +1209,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:15",
     "local_end_time": "10:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_110":
@@ -1329,7 +1220,6 @@
     "date": "2022-02-07",
     "local_start_time": "10:30",
     "local_end_time": "11:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_111":
@@ -1341,7 +1231,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:15",
     "local_end_time": "10:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_112":
@@ -1353,7 +1242,6 @@
     "date": "2022-02-07",
     "local_start_time": "09:30",
     "local_end_time": "10:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_113":
@@ -1365,7 +1253,6 @@
     "date": "2022-02-07",
     "local_start_time": "10:15",
     "local_end_time": "11:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_114":
@@ -1377,7 +1264,6 @@
     "date": "2022-02-07",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_115":
@@ -1389,7 +1275,6 @@
     "date": "2022-02-07",
     "local_start_time": "13:30",
     "local_end_time": "14:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["France"]
   },
   "event_116":
@@ -1401,7 +1286,6 @@
     "date": "2022-02-07",
     "local_start_time": "14:15",
     "local_end_time": "15:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_117":
@@ -1413,7 +1297,6 @@
     "date": "2022-02-07",
     "local_start_time": "15:00",
     "local_end_time": "15:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_118":
@@ -1425,7 +1308,6 @@
     "date": "2022-02-07",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["ROC", "Canada"]
   },
   "event_119":
@@ -1437,7 +1319,6 @@
     "date": "2022-02-07",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Denmark", "Czech Republic"]
   },
   "event_120":
@@ -1449,7 +1330,6 @@
     "date": "2022-02-07",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["China", "Sweden"]
   },
   "event_121":
@@ -1461,7 +1341,6 @@
     "date": "2022-02-07",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Switzerland", "Finland"]
   },
   "event_122":
@@ -1473,7 +1352,6 @@
     "date": "2022-02-07",
     "local_start_time": "19:50",
     "local_end_time": "21:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_123":
@@ -1485,7 +1363,6 @@
     "date": "2022-02-07",
     "local_start_time": "21:30",
     "local_end_time": "22:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_124":
@@ -1497,7 +1374,6 @@
     "date": "2022-02-07",
     "local_start_time": "19:00",
     "local_end_time": "19:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_125":
@@ -1509,7 +1385,6 @@
     "date": "2022-02-07",
     "local_start_time": "19:44",
     "local_end_time": "20:13",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_126":
@@ -1521,7 +1396,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:13",
     "local_end_time": "20:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_127":
@@ -1533,7 +1407,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:20",
     "local_end_time": "20:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_128":
@@ -1545,7 +1418,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:41",
     "local_end_time": "20:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_129":
@@ -1557,7 +1429,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:46",
     "local_end_time": "20:51",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_130":
@@ -1569,7 +1440,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:52",
     "local_end_time": "20:57",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_131":
@@ -1581,7 +1451,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:58",
     "local_end_time": "21:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_132":
@@ -1593,7 +1462,6 @@
     "date": "2022-02-07",
     "local_start_time": "19:45",
     "local_end_time": "20:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_133":
@@ -1605,7 +1473,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:51",
     "local_end_time": "21:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_134":
@@ -1617,7 +1484,6 @@
     "date": "2022-02-07",
     "local_start_time": "12:00",
     "local_end_time": "12:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_135":
@@ -1629,7 +1495,6 @@
     "date": "2022-02-07",
     "local_start_time": "12:27",
     "local_end_time": "12:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_136":
@@ -1641,7 +1506,6 @@
     "date": "2022-02-07",
     "local_start_time": "12:54",
     "local_end_time": "13:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_137":
@@ -1653,7 +1517,6 @@
     "date": "2022-02-07",
     "local_start_time": "16:30",
     "local_end_time": "18:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_138":
@@ -1665,7 +1528,6 @@
     "date": "2022-02-08",
     "local_start_time": "11:00",
     "local_end_time": "13:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Andorra"]
   },
   "event_139":
@@ -1677,7 +1539,6 @@
     "date": "2022-02-08",
     "local_start_time": "16:30",
     "local_end_time": "18:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_140":
@@ -1689,7 +1550,6 @@
     "date": "2022-02-08",
     "local_start_time": "16:00",
     "local_end_time": "16:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_141":
@@ -1701,7 +1561,6 @@
     "date": "2022-02-08",
     "local_start_time": "16:50",
     "local_end_time": "17:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_142":
@@ -1713,7 +1572,6 @@
     "date": "2022-02-08",
     "local_start_time": "18:30",
     "local_end_time": "18:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_143":
@@ -1725,7 +1583,6 @@
     "date": "2022-02-08",
     "local_start_time": "18:55",
     "local_end_time": "19:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_144":
@@ -1737,7 +1594,6 @@
     "date": "2022-02-08",
     "local_start_time": "19:25",
     "local_end_time": "19:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_145":
@@ -1749,7 +1605,6 @@
     "date": "2022-02-08",
     "local_start_time": "19:35",
     "local_end_time": "19:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_146":
@@ -1761,7 +1616,6 @@
     "date": "2022-02-08",
     "local_start_time": "19:47",
     "local_end_time": "19:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_147":
@@ -1773,7 +1627,6 @@
     "date": "2022-02-08",
     "local_start_time": "20:00",
     "local_end_time": "20:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_148":
@@ -1785,7 +1638,6 @@
     "date": "2022-02-08",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_149":
@@ -1797,7 +1649,6 @@
     "date": "2022-02-08",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_150":
@@ -1809,7 +1660,6 @@
     "date": "2022-02-08",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_151":
@@ -1821,7 +1671,6 @@
     "date": "2022-02-08",
     "local_start_time": "10:00",
     "local_end_time": "10:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_152":
@@ -1833,7 +1682,6 @@
     "date": "2022-02-08",
     "local_start_time": "10:22",
     "local_end_time": "10:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_153":
@@ -1845,7 +1693,6 @@
     "date": "2022-02-08",
     "local_start_time": "10:45",
     "local_end_time": "11:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_154":
@@ -1857,7 +1704,6 @@
     "date": "2022-02-08",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["USA", "Canada"]
   },
   "event_155":
@@ -1869,7 +1715,6 @@
     "date": "2022-02-08",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Japan", "Czech Republic"]
   },
   "event_156":
@@ -1881,7 +1726,6 @@
     "date": "2022-02-08",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Sweden", "Denmark"]
   },
   "event_157":
@@ -1893,7 +1737,6 @@
     "date": "2022-02-08",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Finland", "ROC"]
   },
   "event_158":
@@ -1905,7 +1748,6 @@
     "date": "2022-02-08",
     "local_start_time": "19:50",
     "local_end_time": "21:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_159":
@@ -1917,7 +1759,6 @@
     "date": "2022-02-08",
     "local_start_time": "21:35",
     "local_end_time": "22:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_160":
@@ -1929,7 +1770,6 @@
     "date": "2022-02-08",
     "local_start_time": "10:40",
     "local_end_time": "11:05",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_161":
@@ -1941,7 +1781,6 @@
     "date": "2022-02-08",
     "local_start_time": "11:07",
     "local_end_time": "11:32",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_162":
@@ -1953,7 +1792,6 @@
     "date": "2022-02-08",
     "local_start_time": "11:34",
     "local_end_time": "12:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_163":
@@ -1965,7 +1803,6 @@
     "date": "2022-02-08",
     "local_start_time": "12:01",
     "local_end_time": "12:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_164":
@@ -1977,7 +1814,6 @@
     "date": "2022-02-08",
     "local_start_time": "14:30",
     "local_end_time": "14:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_165":
@@ -1989,7 +1825,6 @@
     "date": "2022-02-08",
     "local_start_time": "14:48",
     "local_end_time": "15:05",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_166":
@@ -2001,7 +1836,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:06",
     "local_end_time": "15:13",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_167":
@@ -2013,7 +1847,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:15",
     "local_end_time": "15:22",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_168":
@@ -2025,7 +1858,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:24",
     "local_end_time": "15:29",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_169":
@@ -2037,7 +1869,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:30",
     "local_end_time": "15:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_170":
@@ -2049,7 +1880,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:36",
     "local_end_time": "15:39",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_171":
@@ -2061,7 +1891,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:39",
     "local_end_time": "15:42",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_172":
@@ -2073,7 +1902,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:43",
     "local_end_time": "15:46",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_173":
@@ -2085,7 +1913,6 @@
     "date": "2022-02-08",
     "local_start_time": "15:47",
     "local_end_time": "16:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_174":
@@ -2097,7 +1924,6 @@
     "date": "2022-02-08",
     "local_start_time": "18:30",
     "local_end_time": "20:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_175":
@@ -2109,7 +1935,6 @@
     "date": "2022-02-09",
     "local_start_time": "10:15",
     "local_end_time": "11:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_176":
@@ -2121,7 +1946,6 @@
     "date": "2022-02-09",
     "local_start_time": "13:45",
     "local_end_time": "15:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_177":
@@ -2133,7 +1957,6 @@
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "Canada"]
   },
   "event_178":
@@ -2145,7 +1968,6 @@
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "ROC"]
   },
   "event_179":
@@ -2157,7 +1979,6 @@
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Norway", "Switzerland"]
   },
   "event_180":
@@ -2169,7 +1990,6 @@
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "Sweden"]
   },
   "event_181":
@@ -2181,7 +2001,6 @@
     "date": "2022-02-09",
     "local_start_time": "11:00",
     "local_end_time": "11:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_182":
@@ -2193,7 +2012,6 @@
     "date": "2022-02-08",
     "local_start_time": "11:22",
     "local_end_time": "11:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_183":
@@ -2205,7 +2023,6 @@
     "date": "2022-02-09",
     "local_start_time": "11:45",
     "local_end_time": "12:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_184":
@@ -2217,7 +2034,6 @@
     "date": "2022-02-09",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["ROC", "Switzerland"]
   },
   "event_185":
@@ -2229,7 +2045,6 @@
     "date": "2022-02-09",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Czech Republic", "Denmark"]
   },
   "event_186":
@@ -2241,7 +2056,6 @@
     "date": "2022-02-09",
     "local_start_time": "20:20",
     "local_end_time": "21:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_187":
@@ -2253,7 +2067,6 @@
     "date": "2022-02-09",
     "local_start_time": "21:35",
     "local_end_time": "22:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_189":
@@ -2265,7 +2078,6 @@
     "date": "2022-02-09",
     "local_start_time": "16:00",
     "local_end_time": "16:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_190":
@@ -2277,7 +2089,6 @@
     "date": "2022-02-09",
     "local_start_time": "19:00",
     "local_end_time": "19:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_191":
@@ -2289,7 +2100,6 @@
     "date": "2022-02-09",
     "local_start_time": "19:00",
     "local_end_time": "19:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_192":
@@ -2301,7 +2111,6 @@
     "date": "2022-02-09",
     "local_start_time": "19:44",
     "local_end_time": "20:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_193":
@@ -2313,7 +2122,6 @@
     "date": "2022-02-09",
     "local_start_time": "20:29",
     "local_end_time": "20:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_194":
@@ -2325,7 +2133,6 @@
     "date": "2022-02-07",
     "local_start_time": "20:45",
     "local_end_time": "21:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "China", "Italy", "Netherlands", "Poland", "Korea", "ROC", "USA"]
   },
   "event_195":
@@ -2337,7 +2144,6 @@
     "date": "2022-02-09",
     "local_start_time": "21:13",
     "local_end_time": "21:19",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_196":
@@ -2349,7 +2155,6 @@
     "date": "2022-02-09",
     "local_start_time": "21:20",
     "local_end_time": "21:28",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_197":
@@ -2361,7 +2166,6 @@
     "date": "2022-02-09",
     "local_start_time": "09:30",
     "local_end_time": "10:19",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_198":
@@ -2373,7 +2177,6 @@
     "date": "2022-02-09",
     "local_start_time": "10:21",
     "local_end_time": "11:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_199":
@@ -2385,7 +2188,6 @@
     "date": "2022-02-09",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_200":
@@ -2397,7 +2199,6 @@
     "date": "2022-02-09",
     "local_start_time": "11:55",
     "local_end_time": "12:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_201":
@@ -2409,7 +2210,6 @@
     "date": "2022-02-09",
     "local_start_time": "12:30",
     "local_end_time": "13:19",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_202":
@@ -2421,7 +2221,6 @@
     "date": "2022-02-09",
     "local_start_time": "13:21",
     "local_end_time": "14:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_203":
@@ -2433,7 +2232,6 @@
     "date": "2022-02-09",
     "local_start_time": "14:30",
     "local_end_time": "15:05",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Andorra"]
   },
   "event_204":
@@ -2445,7 +2243,6 @@
     "date": "2022-02-09",
     "local_start_time": "15:07",
     "local_end_time": "15:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_205":
@@ -2457,7 +2254,6 @@
     "date": "2022-02-09",
     "local_start_time": "15:28",
     "local_end_time": "15:43",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_206":
@@ -2469,7 +2265,6 @@
     "date": "2022-02-09",
     "local_start_time": "15:45",
     "local_end_time": "15:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_207":
@@ -2481,7 +2276,6 @@
     "date": "2022-02-09",
     "local_start_time": "15:50",
     "local_end_time": "16:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_208":
@@ -2493,7 +2287,6 @@
     "date": "2022-02-10",
     "local_start_time": "10:30",
     "local_end_time": "12:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Andorra"]
   },
   "event_209":
@@ -2505,7 +2298,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:15",
     "local_end_time": "15:59",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_210":
@@ -2517,7 +2309,6 @@
     "date": "2022-02-10",
     "local_start_time": "15:00",
     "local_end_time": "16:30",
-    "tv_channel": "5",
     "participating_countries": ["Andorra"]
   },
   "event_211":
@@ -2529,7 +2320,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "Switzerland"]
   },
   "event_212":
@@ -2541,7 +2331,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "China"]
   },
   "event_213":
@@ -2553,7 +2342,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Japan"]
   },
   "event_214":
@@ -2565,7 +2353,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "USA"]
   },
   "event_215":
@@ -2577,7 +2364,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "Sweden"]
   },
   "event_216":
@@ -2589,7 +2375,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Norway", "Canada"]
   },
   "event_217":
@@ -2601,7 +2386,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["China", "ROC"]
   },
   "event_218":
@@ -2613,7 +2397,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "Italy"]
   },
   "event_219":
@@ -2625,7 +2408,6 @@
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "Korea"]
   },
   "event_220":
@@ -2637,7 +2419,6 @@
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Sweden", "Great Britain"]
   },
   "event_221":
@@ -2649,7 +2430,6 @@
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "Denmark"]
   },
   "event_222":
@@ -2661,7 +2441,6 @@
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "Switzerland"]
   },
   "event_223":
@@ -2673,7 +2452,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "13:30",
-    "tv_channel": "TBA",
     "participating_countries": ["Japan", "USA", "etc"]
   },
   "event_224":
@@ -2685,7 +2463,6 @@
     "date": "2022-02-10",
     "local_start_time": "19:00",
     "local_end_time": "19:45",
-    "tv_channel": "TBA",
     "participating_countries": ["Ukraine"]
   },
   "event_225":
@@ -2697,7 +2474,6 @@
     "date": "2022-02-10",
     "local_start_time": "19:50",
     "local_end_time": "20:15",
-    "tv_channel": "TBA",
     "participating_countries": "TBA"
   },
   "event_226":
@@ -2709,7 +2485,6 @@
     "date": "2022-02-10",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Latvia"]
   },
   "event_227":
@@ -2721,7 +2496,6 @@
     "date": "2022-02-10",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "5",
     "participating_countries": ["Finland", "Slovakia"]
   },
   "event_228":
@@ -2733,7 +2507,6 @@
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["USA", "China"]
   },
   "event_229":
@@ -2745,7 +2518,6 @@
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": "5",
     "participating_countries": ["Canada", "Germany"]
   },
   "event_230":
@@ -2757,7 +2529,6 @@
     "date": "2022-02-10",
     "local_start_time": "21:30",
     "local_end_time": "22:38",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_231":
@@ -2769,7 +2540,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "10:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["American Samoa"]
   },
   "event_232":
@@ -2781,7 +2551,6 @@
     "date": "2022-02-10",
     "local_start_time": "11:00",
     "local_end_time": "11:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_233":
@@ -2793,7 +2562,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_234":
@@ -2805,7 +2573,6 @@
     "date": "2022-02-10",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_235":
@@ -2817,7 +2584,6 @@
     "date": "2022-02-10",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_236":
@@ -2829,7 +2595,6 @@
     "date": "2022-02-10",
     "local_start_time": "11:15",
     "local_end_time": "11:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_237":
@@ -2841,7 +2606,6 @@
     "date": "2022-02-10",
     "local_start_time": "12:10",
     "local_end_time": "12:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_238":
@@ -2853,7 +2617,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:00",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_239":
@@ -2865,7 +2628,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:37",
     "local_end_time": "14:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_240":
@@ -2877,7 +2639,6 @@
     "date": "2022-02-10",
     "local_start_time": "14:58",
     "local_end_time": "15:13",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_241":
@@ -2889,7 +2650,6 @@
     "date": "2022-02-10",
     "local_start_time": "15:15",
     "local_end_time": "15:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_242":
@@ -2901,7 +2661,6 @@
     "date": "2022-02-10",
     "local_start_time": "15:20",
     "local_end_time": "15:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_243":
@@ -2913,7 +2672,6 @@
     "date": "2022-02-10",
     "local_start_time": "20:00",
     "local_end_time": "21:16",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_244":
@@ -2925,7 +2683,6 @@
     "date": "2022-02-11",
     "local_start_time": "11:00",
     "local_end_time": "13:09",
-    "tv_channel": "5",
     "participating_countries": ["Andorra", "Argentina"]
   },
   "event_245":
@@ -2937,7 +2694,6 @@
     "date": "2022-02-11",
     "local_start_time": "17:00",
     "local_end_time": "18:10",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_246":
@@ -2949,7 +2705,6 @@
     "date": "2022-02-11",
     "local_start_time": "15:00",
     "local_end_time": "16:35",
-    "tv_channel": "5",
     "participating_countries": ["Andorra"]
   },
   "event_247":
@@ -2961,7 +2716,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "ROC"]
   },
   "event_248":
@@ -2973,7 +2727,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "USA"]
   },
   "event_249":
@@ -2985,7 +2738,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Italy"]
   },
   "event_250":
@@ -2997,7 +2749,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "China"]
   },
   "event_251":
@@ -3009,7 +2760,6 @@
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "China"]
   },
   "event_252":
@@ -3021,7 +2771,6 @@
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "Japan"]
   },
   "event_253":
@@ -3033,7 +2782,6 @@
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["Switzerland", "ROC"]
   },
   "event_254":
@@ -3045,7 +2793,6 @@
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Korea","Great Britain"]
   },
   "event_255":
@@ -3057,7 +2804,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "Denmark"]
   },
   "event_256":
@@ -3069,7 +2815,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "Norway"]
   },
   "event_257":
@@ -3081,7 +2826,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "Switzerland"]
   },
   "event_258":
@@ -3093,7 +2837,6 @@
     "date": "2022-02-11",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": "5",
     "participating_countries": ["Denmark", "ROC"]
   },
   "event_259":
@@ -3105,7 +2848,6 @@
     "date": "2022-02-11",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -3118,7 +2860,6 @@
     "date": "2022-02-11",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "9",
     "participating_countries": ["Sweden", "Slovakia"]
   },
   "event_261":
@@ -3130,7 +2871,6 @@
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Latvia", "Finland"]
   },
   "event_262":
@@ -3142,7 +2882,6 @@
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -3155,7 +2894,6 @@
     "date": "2022-02-11",
     "local_start_time": "19:00",
     "local_end_time": "19:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_264":
@@ -3167,7 +2905,6 @@
     "date": "2022-02-11",
     "local_start_time": "19:18",
     "local_end_time": "19:42",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_265":
@@ -3179,7 +2916,6 @@
     "date": "2022-02-11",
     "local_start_time": "19:55",
     "local_end_time": "20:03",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_266":
@@ -3191,7 +2927,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:04",
     "local_end_time": "20:23",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "China", "Hungary", "Italy", "Japan", "Netherlands", "Korea", "ROC"]
   },
   "event_267":
@@ -3203,7 +2938,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:37",
     "local_end_time": "20:42",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_268":
@@ -3215,7 +2949,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:43",
     "local_end_time": "20:49",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_269":
@@ -3227,7 +2960,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:30",
     "local_end_time": "10:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_270":
@@ -3239,7 +2971,6 @@
     "date": "2022-02-11",
     "local_start_time": "11:00",
     "local_end_time": "11:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_271":
@@ -3251,7 +2982,6 @@
     "date": "2022-02-11",
     "local_start_time": "20:20",
     "local_end_time": "21:30",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_272":
@@ -3263,7 +2993,6 @@
     "date": "2022-02-11",
     "local_start_time": "21:55",
     "local_end_time": "22:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_274":
@@ -3275,7 +3004,6 @@
     "date": "2022-02-11",
     "local_start_time": "19:00",
     "local_end_time": "20:06",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_275":
@@ -3287,7 +3015,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_276":
@@ -3299,7 +3026,6 @@
     "date": "2022-02-11",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_277":
@@ -3311,7 +3037,6 @@
     "date": "2022-02-11",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_278":
@@ -3323,7 +3048,6 @@
     "date": "2022-02-11",
     "local_start_time": "16:00",
     "local_end_time": "17:55",
-    "tv_channel": "9",
     "participating_countries": ["TBA"]
   },
   "event_279":
@@ -3335,7 +3059,6 @@
     "date": "2022-02-12",
     "local_start_time": "17:00",
     "local_end_time": "18:15",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_280":
@@ -3347,7 +3070,6 @@
     "date": "2022-02-12",
     "local_start_time": "15:30",
     "local_end_time": "16:45",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_281":
@@ -3359,7 +3081,6 @@
     "date": "2022-02-12",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Canada"]
   },
   "event_282":
@@ -3371,7 +3092,6 @@
     "date": "2022-02-12",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Korea", "ROC"]
   },
   "event_283":
@@ -3383,7 +3103,6 @@
     "date": "2022-02-12",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Japan","Denmark"]
   },
   "event_284":
@@ -3395,7 +3114,6 @@
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "Sweden"]
   },
   "event_285":
@@ -3407,7 +3125,6 @@
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "Switzerland"]
   },
   "event_286":
@@ -3419,7 +3136,6 @@
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["USA", "Norway"]
   },
   "event_287":
@@ -3431,7 +3147,6 @@
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Italy","China"]
   },
   "event_288":
@@ -3443,7 +3158,6 @@
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "Japan"]
   },
   "event_289":
@@ -3455,7 +3169,6 @@
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "Switzerland"]
   },
   "event_290":
@@ -3467,7 +3180,6 @@
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "USA"]
   },
   "event_291":
@@ -3479,7 +3191,6 @@
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Sweden", "China"]
   },
   "event_292":
@@ -3491,7 +3202,6 @@
     "date": "2022-02-12",
     "local_start_time": "19:00",
     "local_end_time": "22:38",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_293":
@@ -3503,7 +3213,6 @@
     "date": "2022-02-12",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": "5",
     "participating_countries": ["Canada", "USA"]
   },
   "event_294":
@@ -3515,7 +3224,6 @@
     "date": "2022-02-12",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -3528,7 +3236,6 @@
     "date": "2022-02-12",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "TBA",
     "participating_countries": ["Germany", "China"]
   },
   "event_296":
@@ -3540,7 +3247,6 @@
     "date": "2022-02-12",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -3553,7 +3259,6 @@
     "date": "2022-02-12",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": "5",
     "participating_countries": ["ROC", "Czech Republic"]
   },
   "event_298":
@@ -3565,7 +3270,6 @@
     "date": "2022-02-12",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Switzerland", "Denmark"]
   },
   "event_299":
@@ -3577,7 +3281,6 @@
     "date": "2022-02-12",
     "local_start_time": "20:20",
     "local_end_time": "21:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_300":
@@ -3589,7 +3292,6 @@
     "date": "2022-02-12",
     "local_start_time": "21:55",
     "local_end_time": "22:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_301":
@@ -3601,7 +3303,6 @@
     "date": "2022-02-12",
     "local_start_time": "19:00",
     "local_end_time": "19:55",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_302":
@@ -3613,7 +3314,6 @@
     "date": "2022-02-12",
     "local_start_time": "20:00",
     "local_end_time": "20:33",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_303":
@@ -3625,7 +3325,6 @@
     "date": "2022-02-12",
     "local_start_time": "10:00",
     "local_end_time": "10:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_304":
@@ -3637,7 +3336,6 @@
     "date": "2022-02-12",
     "local_start_time": "10:28",
     "local_end_time": "10:43",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_305":
@@ -3649,7 +3347,6 @@
     "date": "2022-02-12",
     "local_start_time": "10:50",
     "local_end_time": "10:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_306":
@@ -3661,7 +3358,6 @@
     "date": "2022-02-12",
     "local_start_time": "10:55",
     "local_end_time": "11:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_307":
@@ -3673,7 +3369,6 @@
     "date": "2022-02-12",
     "local_start_time": "16:00",
     "local_end_time": "16:23",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_308":
@@ -3685,7 +3380,6 @@
     "date": "2022-02-12",
     "local_start_time": "16:53",
     "local_end_time": "17:34",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_309":
@@ -3697,7 +3391,6 @@
     "date": "2022-02-13",
     "local_start_time": "10:15",
     "local_end_time": "12:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Albania", "Andorra", "Argentina"]
   },
   "event_310":
@@ -3709,7 +3402,6 @@
     "date": "2022-02-13",
     "local_start_time": "13:45",
     "local_end_time": "15:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_311":
@@ -3721,7 +3413,6 @@
     "date": "2022-02-13",
     "local_start_time": "17:00",
     "local_end_time": "17:40",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_312":
@@ -3733,7 +3424,6 @@
     "date": "2022-02-13",
     "local_start_time": "18:45",
     "local_end_time": "19:25",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_313":
@@ -3745,7 +3435,6 @@
     "date": "2022-02-13",
     "local_start_time": "09:30",
     "local_end_time": "10:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_314":
@@ -3757,7 +3446,6 @@
     "date": "2022-02-13",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_315":
@@ -3769,7 +3457,6 @@
     "date": "2022-02-13",
     "local_start_time": "15:00",
     "local_end_time": "16:40",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_316":
@@ -3781,7 +3468,6 @@
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["Norway", "Sweden"]
   },
   "event_317":
@@ -3793,7 +3479,6 @@
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "Great Britain"]
   },
   "event_318":
@@ -3805,7 +3490,6 @@
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "Canada"]
   },
   "event_319":
@@ -3817,7 +3501,6 @@
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Italy", "ROC"]
   },
   "event_320":
@@ -3829,7 +3512,6 @@
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "Great Britain"]
   },
   "event_321":
@@ -3841,7 +3523,6 @@
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "Sweden"]
   },
   "event_322":
@@ -3853,7 +3534,6 @@
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Korea", "China"]
   },
   "event_323":
@@ -3865,7 +3545,6 @@
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "Canada"]
   },
   "event_324":
@@ -3877,7 +3556,6 @@
     "date": "2022-02-13",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "Denmark"]
   },
   "event_325":
@@ -3889,7 +3567,6 @@
     "date": "2022-02-13",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "Italy"]
   },
   "event_326":
@@ -3901,7 +3578,6 @@
     "date": "2022-02-13",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "USA"]
   },
   "event_327":
@@ -3913,7 +3589,6 @@
     "date": "2022-02-13",
     "local_start_time": "10:00",
     "local_end_time": "11:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_328":
@@ -3925,7 +3600,6 @@
     "date": "2022-02-13",
     "local_start_time": "11:01",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_329":
@@ -3937,7 +3611,6 @@
     "date": "2022-02-13",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_330":
@@ -3949,7 +3622,6 @@
     "date": "2022-02-13",
     "local_start_time": "19:45",
     "local_end_time": "20:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_331":
@@ -3961,7 +3633,6 @@
     "date": "2022-02-13",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "5",
     "participating_countries": ["Slovakia", "Latvia"]
   },
   "event_332":
@@ -3973,7 +3644,6 @@
     "date": "2022-02-13",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "9",
     "participating_countries": ["Finland","Sweden"]
   },
   "event_333":
@@ -3985,7 +3655,6 @@
     "date": "2022-02-13",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "Canada"]
   },
   "event_334":
@@ -3997,7 +3666,6 @@
     "date": "2022-02-13",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "5",
     "participating_countries": ["USA", "Germany"]
   },
   "event_335":
@@ -4009,7 +3677,6 @@
     "date": "2022-02-13",
     "local_start_time": "19:00",
     "local_end_time": "19:25",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_336":
@@ -4021,7 +3688,6 @@
     "date": "2022-02-13",
     "local_start_time": "19:27",
     "local_end_time": "19:33",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_337":
@@ -4033,7 +3699,6 @@
     "date": "2022-02-13",
     "local_start_time": "19:35",
     "local_end_time": "19:43",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_338":
@@ -4045,7 +3710,6 @@
     "date": "2022-02-13",
     "local_start_time": "19:44",
     "local_end_time": "19:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_339":
@@ -4057,7 +3721,6 @@
     "date": "2022-02-13",
     "local_start_time": "20:09",
     "local_end_time": "20:13",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_340":
@@ -4069,7 +3732,6 @@
     "date": "2022-02-13",
     "local_start_time": "20:14",
     "local_end_time": "20:19",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_341":
@@ -4081,7 +3743,6 @@
     "date": "2022-02-13",
     "local_start_time": "21:00",
     "local_end_time": "21:26",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_342":
@@ -4093,7 +3754,6 @@
     "date": "2022-02-13",
     "local_start_time": "21:56",
     "local_end_time": "22:37",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_343":
@@ -4105,7 +3765,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:30",
     "local_end_time": "10:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_344":
@@ -4117,7 +3776,6 @@
     "date": "2022-02-14",
     "local_start_time": "11:00",
     "local_end_time": "11:50",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_345":
@@ -4129,7 +3787,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "21:10",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_346":
@@ -4141,7 +3798,6 @@
     "date": "2022-02-14",
     "local_start_time": "21:40",
     "local_end_time": "22:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_347":
@@ -4153,7 +3809,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "Japan"]
   },
   "event_348":
@@ -4165,7 +3820,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "ROC"]
   },
   "event_349":
@@ -4177,7 +3831,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["USA", "Korea"]
   },
   "event_350":
@@ -4189,7 +3842,6 @@
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "Italy"]
   },
   "event_351":
@@ -4201,7 +3853,6 @@
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "Norway"]
   },
   "event_352":
@@ -4213,7 +3864,6 @@
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["ROC", "Sweden"]
   },
   "event_353":
@@ -4225,7 +3875,6 @@
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "Great Britain"]
   },
   "event_354":
@@ -4237,7 +3886,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "Sweden"]
   },
   "event_355":
@@ -4249,7 +3897,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "Canada"]
   },
   "event_356":
@@ -4261,7 +3908,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Japan", "Korea"]
   },
   "event_357":
@@ -4273,7 +3919,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "ROC"]
   },
   "event_358":
@@ -4285,7 +3930,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:15",
     "local_end_time": "12:36",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_359":
@@ -4297,7 +3941,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_360":
@@ -4309,7 +3952,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:57",
     "local_end_time": "10:20",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_361":
@@ -4321,7 +3963,6 @@
     "date": "2022-02-14",
     "local_start_time": "10:24",
     "local_end_time": "10:49",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_362":
@@ -4333,7 +3974,6 @@
     "date": "2022-02-14",
     "local_start_time": "12:30",
     "local_end_time": "13:29",
-    "tv_channel": "TBA",
     "participating_countries": ["France"]
   },
   "event_363":
@@ -4345,7 +3985,6 @@
     "date": "2022-02-14",
     "local_start_time": "13:33",
     "local_end_time": "14:32",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_364":
@@ -4357,7 +3996,6 @@
     "date": "2022-02-14",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_365":
@@ -4369,7 +4007,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:00",
     "local_end_time": "20:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_366":
@@ -4381,7 +4018,6 @@
     "date": "2022-02-14",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "5",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -4394,7 +4030,6 @@
     "date": "2022-02-14",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "5",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -4407,7 +4042,6 @@
     "date": "2022-02-14",
     "local_start_time": "19:00",
     "local_end_time": "20:00",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_369":
@@ -4419,7 +4053,6 @@
     "date": "2022-02-14",
     "local_start_time": "20:06",
     "local_end_time": "20:42",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_370":
@@ -4431,7 +4064,6 @@
     "date": "2022-02-14",
     "local_start_time": "09:30",
     "local_end_time": "10:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_371":
@@ -4443,7 +4075,6 @@
     "date": "2022-02-14",
     "local_start_time": "10:15",
     "local_end_time": "11:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_372":
@@ -4455,7 +4086,6 @@
     "date": "2022-02-14",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_373":
@@ -4467,7 +4097,6 @@
     "date": "2022-02-14",
     "local_start_time": "13:30",
     "local_end_time": "14:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_374":
@@ -4479,7 +4108,6 @@
     "date": "2022-02-14",
     "local_start_time": "14:15",
     "local_end_time": "15:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_375":
@@ -4491,7 +4119,6 @@
     "date": "2022-02-14",
     "local_start_time": "15:00",
     "local_end_time": "15:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_376":
@@ -4503,7 +4130,6 @@
     "date": "2022-02-15",
     "local_start_time": "11:00",
     "local_end_time": "12:59",
-    "tv_channel": "5",
     "participating_countries": ["Andorra"]
   },
   "event_377":
@@ -4515,7 +4141,6 @@
     "date": "2022-02-15",
     "local_start_time": "17:00",
     "local_end_time": "18:15",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_378":
@@ -4527,7 +4152,6 @@
     "date": "2022-02-15",
     "local_start_time": "20:15",
     "local_end_time": "21:30",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_379":
@@ -4539,7 +4163,6 @@
     "date": "2022-02-15",
     "local_start_time": "21:50",
     "local_end_time": "22:35",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_380":
@@ -4551,7 +4174,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "Norway"]
   },
   "event_381":
@@ -4563,7 +4185,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China"]
   },
   "event_382":
@@ -4575,7 +4196,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "USA"]
   },
   "event_383":
@@ -4587,7 +4207,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Denmark"]
   },
   "event_384":
@@ -4599,7 +4218,6 @@
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["China", "ROC"]
   },
   "event_385":
@@ -4611,7 +4229,6 @@
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Denmark"]
   },
   "event_386":
@@ -4623,7 +4240,6 @@
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["USA", "Switzerland"]
   },
   "event_387":
@@ -4635,7 +4251,6 @@
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "Japan"]
   },
   "event_388":
@@ -4647,7 +4262,6 @@
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Sweden", "Great Britain"]
   },
   "event_389":
@@ -4659,7 +4273,6 @@
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Italy", "USA"]
   },
   "event_390":
@@ -4671,7 +4284,6 @@
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Norway", "China"]
   },
   "event_391":
@@ -4683,7 +4295,6 @@
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "China"]
   },
   "event_392":
@@ -4695,7 +4306,6 @@
     "date": "2022-02-15",
     "local_start_time": "18:00",
     "local_end_time": "22:25",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_393":
@@ -4707,7 +4317,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_394":
@@ -4719,7 +4328,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_395":
@@ -4731,7 +4339,6 @@
     "date": "2022-02-15",
     "local_start_time": "10:26",
     "local_end_time": "10:50",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_396":
@@ -4743,7 +4350,6 @@
     "date": "2022-02-15",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "tv_channel": "TBA",
     "participating_countries": ["Ukraine"]
   },
   "event_397":
@@ -4755,7 +4361,6 @@
     "date": "2022-02-15",
     "local_start_time": "19:45",
     "local_end_time": "20:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_398":
@@ -4767,7 +4372,6 @@
     "date": "2022-02-15",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_399":
@@ -4779,7 +4383,6 @@
     "date": "2022-02-15",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_400":
@@ -4791,7 +4394,6 @@
     "date": "2022-02-15",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_401":
@@ -4803,7 +4405,6 @@
     "date": "2022-02-15",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_402":
@@ -4815,7 +4416,6 @@
     "date": "2022-02-15",
     "local_start_time": "16:00",
     "local_end_time": "16:51",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_403":
@@ -4827,7 +4427,6 @@
     "date": "2022-02-15",
     "local_start_time": "19:00",
     "local_end_time": "19:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
     "event_404":
@@ -4839,7 +4438,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_405":
@@ -4851,7 +4449,6 @@
     "date": "2022-02-15",
     "local_start_time": "09:52",
     "local_end_time": "10:12",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_406":
@@ -4863,7 +4460,6 @@
     "date": "2022-02-15",
     "local_start_time": "10:15",
     "local_end_time": "10:35",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
     "event_407":
@@ -4875,7 +4471,6 @@
     "date": "2022-02-15",
     "local_start_time": "13:00",
     "local_end_time": "13:20",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_408":
@@ -4887,7 +4482,6 @@
     "date": "2022-02-15",
     "local_start_time": "13:22",
     "local_end_time": "10:42",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_409":
@@ -4899,7 +4493,6 @@
     "date": "2022-02-15",
     "local_start_time": "13:45",
     "local_end_time": "14:05",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_410":
@@ -4911,7 +4504,6 @@
     "date": "2022-02-15",
     "local_start_time": "14:30",
     "local_end_time": "14:50",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_411":
@@ -4923,7 +4515,6 @@
     "date": "2022-02-15",
     "local_start_time": "14:52",
     "local_end_time": "15:15",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_412":
@@ -4935,7 +4526,6 @@
     "date": "2022-02-15",
     "local_start_time": "15:24",
     "local_end_time": "15:29",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_413":
@@ -4947,7 +4537,6 @@
     "date": "2022-02-15",
     "local_start_time": "15:30",
     "local_end_time": "15:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_414":
@@ -4959,7 +4548,6 @@
     "date": "2022-02-15",
     "local_start_time": "15:43",
     "local_end_time": "15:48",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_416":
@@ -4971,7 +4559,6 @@
     "date": "2022-02-15",
     "local_start_time": "15:49",
     "local_end_time": "15:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_417":
@@ -4983,7 +4570,6 @@
     "date": "2022-02-15",
     "local_start_time": "16:22",
     "local_end_time": "16:27",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_418":
@@ -4995,7 +4581,6 @@
     "date": "2022-02-15",
     "local_start_time": "16:28",
     "local_end_time": "16:34",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_419":
@@ -5007,7 +4592,6 @@
     "date": "2022-02-15",
     "local_start_time": "16:41",
     "local_end_time": "16:46",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_420":
@@ -5019,7 +4603,6 @@
     "date": "2022-02-15",
     "local_start_time": "16:47",
     "local_end_time": "16:53",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_421":
@@ -5031,7 +4614,6 @@
     "date": "2022-02-16",
     "local_start_time": "10:15",
     "local_end_time": "12:10",
-    "tv_channel": "5",
     "participating_countries": ["Albania", "Argentina"]
   },
   "event_422":
@@ -5043,7 +4625,6 @@
     "date": "2022-02-16",
     "local_start_time": "13:45",
     "local_end_time": "15:40",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_423":
@@ -5055,7 +4636,6 @@
     "date": "2022-02-16",
     "local_start_time": "15:45",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "France", "Norway"]
   },
   "event_424":
@@ -5067,7 +4647,6 @@
     "date": "2022-02-16",
     "local_start_time": "17:00",
     "local_end_time": "17:30",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Norway"]
   },
   "event_425":
@@ -5079,7 +4658,6 @@
     "date": "2022-02-16",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Norway"]
   },
   "event_426":
@@ -5091,7 +4669,6 @@
     "date": "2022-02-16",
     "local_start_time": "19:00",
     "local_end_time": "19:25",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Norway"]
   },
   "event_427":
@@ -5103,7 +4680,6 @@
     "date": "2022-02-16",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Norway"]
   },
   "event_428":
@@ -5115,7 +4691,6 @@
     "date": "2022-02-16",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "USA"]
   },
   "event_429":
@@ -5127,7 +4702,6 @@
     "date": "2022-02-16",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Switzerland", "Korea"]
   },
   "event_430":
@@ -5139,7 +4713,6 @@
     "date": "2022-02-16",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["China", "Great Britain"]
   },
   "event_431":
@@ -5151,7 +4724,6 @@
     "date": "2022-02-16",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Great Britain", "ROC"]
   },
   "event_432":
@@ -5163,7 +4735,6 @@
     "date": "2022-02-16",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["Italy", "Denmark"]
   },
   "event_433":
@@ -5175,7 +4746,6 @@
     "date": "2022-02-16",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["China", "Switzerland"]
   },
   "event_434":
@@ -5187,7 +4757,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Korea", "Denmark"]
   },
   "event_435":
@@ -5199,7 +4768,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Japan", "USA"]
   },
   "event_436":
@@ -5211,7 +4779,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "Sweden"]
   },
   "event_437":
@@ -5223,7 +4790,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China"]
   },
   "event_438":
@@ -5235,7 +4801,6 @@
     "date": "2022-02-16",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_439":
@@ -5247,7 +4812,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:00",
     "local_end_time": "20:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
     "event_440":
@@ -5259,7 +4823,6 @@
     "date": "2022-02-16",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_441":
@@ -5271,7 +4834,6 @@
     "date": "2022-02-16",
     "local_start_time": "14:00",
     "local_end_time": "16:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_442":
@@ -5283,7 +4845,6 @@
     "date": "2022-02-16",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_443":
@@ -5295,7 +4856,6 @@
     "date": "2022-02-16",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -5308,7 +4868,6 @@
     "date": "2022-02-16",
     "local_start_time": "21:30",
     "local_end_time": "23:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_445":
@@ -5320,7 +4879,6 @@
     "date": "2022-02-16",
     "local_start_time": "19:30",
     "local_end_time": "20:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_446":
@@ -5332,7 +4890,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:15",
     "local_end_time": "20:30",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_447":
@@ -5344,7 +4901,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:32",
     "local_end_time": "20:42",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_448":
@@ -5356,7 +4912,6 @@
     "date": "2022-02-16",
     "local_start_time": "20:44",
     "local_end_time": "20:57",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_449":
@@ -5368,7 +4923,6 @@
     "date": "2022-02-16",
     "local_start_time": "21:11",
     "local_end_time": "21:16",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_450":
@@ -5380,7 +4934,6 @@
     "date": "2022-02-16",
     "local_start_time": "21:18",
     "local_end_time": "21:26",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_451":
@@ -5392,7 +4945,6 @@
     "date": "2022-02-17",
     "local_start_time": "10:30",
     "local_end_time": "12:00",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_452":
@@ -5404,7 +4956,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:00",
     "local_end_time": "15:19",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_453":
@@ -5416,7 +4967,6 @@
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "USA"]
   },
   "event_454":
@@ -5428,7 +4978,6 @@
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "5",
     "participating_countries": ["Sweden", "Switzerland"]
   },
   "event_455":
@@ -5440,7 +4989,6 @@
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "Great Britain"]
   },
   "event_456":
@@ -5452,7 +5000,6 @@
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Norway", "Italy"]
   },
   "event_457":
@@ -5464,7 +5011,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Japan", "Switzerland"]
   },
   "event_458":
@@ -5476,7 +5022,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["ROC", "Great Britain"]
   },
   "event_459":
@@ -5488,7 +5033,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Denmark", "Canada"]
   },
   "event_460":
@@ -5500,7 +5044,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["Korea", "Sweden"]
   },
   "event_461":
@@ -5512,7 +5055,6 @@
     "date": "2022-02-17",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_462":
@@ -5524,7 +5066,6 @@
     "date": "2022-02-17",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_463":
@@ -5536,7 +5077,6 @@
     "date": "2022-02-17",
     "local_start_time": "18:00",
     "local_end_time": "21:57",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_464":
@@ -5548,7 +5088,6 @@
     "date": "2022-02-17",
     "local_start_time": "09:30",
     "local_end_time": "10:19",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_465":
@@ -5560,7 +5099,6 @@
     "date": "2022-02-17",
     "local_start_time": "10:21",
     "local_end_time": "11:10",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_466":
@@ -5572,7 +5110,6 @@
     "date": "2022-02-17",
     "local_start_time": "11:30",
     "local_end_time": "12:15",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_467":
@@ -5584,7 +5121,6 @@
     "date": "2022-02-17",
     "local_start_time": "12:30",
     "local_end_time": "13:19",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_468":
@@ -5596,7 +5132,6 @@
     "date": "2022-02-17",
     "local_start_time": "13:21",
     "local_end_time": "14:10",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_469":
@@ -5608,7 +5143,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:00",
     "local_end_time": "14:30",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_470":
@@ -5620,7 +5154,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:35",
     "local_end_time": "15:50",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_471":
@@ -5632,7 +5165,6 @@
     "date": "2022-02-17",
     "local_start_time": "14:54",
     "local_end_time": "15:04",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_472":
@@ -5644,7 +5176,6 @@
     "date": "2022-02-17",
     "local_start_time": "15:10",
     "local_end_time": "15:15",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_473":
@@ -5656,7 +5187,6 @@
     "date": "2022-02-17",
     "local_start_time": "15:20",
     "local_end_time": "15:35",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_474":
@@ -5668,7 +5198,6 @@
     "date": "2022-02-17",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -5681,7 +5210,6 @@
     "date": "2022-02-17",
     "local_start_time": "16:00",
     "local_end_time": "16:40",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_476":
@@ -5693,7 +5221,6 @@
     "date": "2022-02-09",
     "local_start_time": "19:00",
     "local_end_time": "19:55",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_477":
@@ -5705,7 +5232,6 @@
     "date": "2022-02-17",
     "local_start_time": "16:30",
     "local_end_time": "17:42",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_478":
@@ -5717,7 +5243,6 @@
     "date": "2022-02-18",
     "local_start_time": "17:00",
     "local_end_time": "17:45",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_479":
@@ -5729,7 +5254,6 @@
     "date": "2022-02-18",
     "local_start_time": "20:00",
     "local_end_time": "21:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_480":
@@ -5741,7 +5265,6 @@
     "date": "2022-02-18",
     "local_start_time": "21:30",
     "local_end_time": "22:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_481":
@@ -5753,7 +5276,6 @@
     "date": "2022-02-18",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_483":
@@ -5765,7 +5287,6 @@
     "date": "2022-02-18",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_484":
@@ -5777,7 +5298,6 @@
     "date": "2022-02-18",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_485":
@@ -5789,7 +5309,6 @@
     "date": "2022-02-18",
     "local_start_time": "18:30",
     "local_end_time": "21:43",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_486":
@@ -5801,7 +5320,6 @@
     "date": "2022-02-18",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_487":
@@ -5813,7 +5331,6 @@
     "date": "2022-02-18",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_488":
@@ -5825,7 +5342,6 @@
     "date": "2022-02-18",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_489":
@@ -5837,7 +5353,6 @@
     "date": "2022-02-18",
     "local_start_time": "11:45",
     "local_end_time": "12:30",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_490":
@@ -5849,7 +5364,6 @@
     "date": "2022-02-18",
     "local_start_time": "14:00",
     "local_end_time": "14:30",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_491":
@@ -5861,7 +5375,6 @@
     "date": "2022-02-18",
     "local_start_time": "14:35",
     "local_end_time": "14:50",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_492":
@@ -5873,7 +5386,6 @@
     "date": "2022-02-18",
     "local_start_time": "14:54",
     "local_end_time": "15:04",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_493":
@@ -5885,7 +5397,6 @@
     "date": "2022-02-18",
     "local_start_time": "15:10",
     "local_end_time": "15:15",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_494":
@@ -5897,7 +5408,6 @@
     "date": "2022-02-18",
     "local_start_time": "15:20",
     "local_end_time": "16:20",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_495":
@@ -5909,7 +5419,6 @@
     "date": "2022-02-18",
     "local_start_time": "12:10",
     "local_end_time": "16:25",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_496":
@@ -5921,7 +5430,6 @@
     "date": "2022-02-18",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_497":
@@ -5933,7 +5441,6 @@
     "date": "2022-02-18",
     "local_start_time": "16:30",
     "local_end_time": "17:40",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_498":
@@ -5945,7 +5452,6 @@
     "date": "2022-02-19",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_499":
@@ -5957,7 +5463,6 @@
     "date": "2022-02-19",
     "local_start_time": "11:47",
     "local_end_time": "12:12",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_500":
@@ -5969,7 +5474,6 @@
     "date": "2022-02-19",
     "local_start_time": "12:14",
     "local_end_time": "12:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_501":
@@ -5981,7 +5485,6 @@
     "date": "2022-02-19",
     "local_start_time": "12:37",
     "local_end_time": "12:43",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   },
   "event_502":
@@ -5992,9 +5495,7 @@
     "sex": ["female", "male"],
     "date": "2022-02-19",
     "local_start_time": "12:46",
-    "local_end_time": "12:54",
-    "tv_channel": ["TBA"],
-    "participating_countries": ["TBA"]
+    "local_end_time": "12:54", "participating_countries": ["TBA"]
   },
   "event_503":
   {
@@ -6005,7 +5506,6 @@
     "date": "2022-02-19",
     "local_start_time": "17:00",
     "local_end_time": "17:45",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_504":
@@ -6017,7 +5517,6 @@
     "date": "2022-02-18",
     "local_start_time": "09:30",
     "local_end_time": "11:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_505":
@@ -6029,7 +5528,6 @@
     "date": "2022-02-19",
     "local_start_time": "11:05",
     "local_end_time": "12:05",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_506":
@@ -6041,7 +5539,6 @@
     "date": "2022-02-19",
     "local_start_time": "20:00",
     "local_end_time": "21:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_507":
@@ -6053,7 +5550,6 @@
     "date": "2022-02-19",
     "local_start_time": "21:30",
     "local_end_time": "22:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_508":
@@ -6065,7 +5561,6 @@
     "date": "2022-02-19",
     "local_start_time": "14:00",
     "local_end_time": "16:45",
-    "tv_channel": "5",
     "participating_countries": ["Andorra"]
   },
   "event_509":
@@ -6077,7 +5572,6 @@
     "date": "2022-02-19",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Denmark", "Great Britain", "Italy", "Norway", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -6090,7 +5584,6 @@
     "date": "2022-02-19",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_511":
@@ -6102,7 +5595,6 @@
     "date": "2022-02-19",
     "local_start_time": "19:00",
     "local_end_time": "21:53",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_512":
@@ -6114,7 +5606,6 @@
     "date": "2022-02-19",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_513":
@@ -6126,7 +5617,6 @@
     "date": "2022-02-19",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_514":
@@ -6138,7 +5628,6 @@
     "date": "2022-02-19",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_515":
@@ -6150,7 +5639,6 @@
     "date": "2022-02-19",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "tv_channel": "5",
     "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Germany", "Latvia", "ROC",
       "Slovakia", "Sweden", "Switzerland", "USA"]
   },
@@ -6163,7 +5651,6 @@
     "date": "2022-02-19",
     "local_start_time": "15:00",
     "local_end_time": "15:30",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_517":
@@ -6175,7 +5662,6 @@
     "date": "2022-02-19",
     "local_start_time": "15:45",
     "local_end_time": "16:10",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_518":
@@ -6187,7 +5673,6 @@
     "date": "2022-02-19",
     "local_start_time": "16:30",
     "local_end_time": "16:45",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_519":
@@ -6199,7 +5684,6 @@
     "date": "2022-02-19",
     "local_start_time": "17:00",
     "local_end_time": "17:15",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_520":
@@ -6211,7 +5695,6 @@
     "date": "2022-02-20",
     "local_start_time": "09:30",
     "local_end_time": "11:00",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_521":
@@ -6223,7 +5706,6 @@
     "date": "2022-02-20",
     "local_start_time": "11:20",
     "local_end_time": "12:05",
-    "tv_channel": "TBA",
     "participating_countries": ["TBA"]
   },
   "event_522":
@@ -6235,7 +5717,6 @@
     "date": "2022-02-20",
     "local_start_time": "14:30",
     "local_end_time": "16:30",
-    "tv_channel": "5",
     "participating_countries": ["TBA"]
   },
   "event_523":
@@ -6247,7 +5728,6 @@
     "date": "2022-02-20",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
-    "tv_channel": "TBA",
     "participating_countries": ["Canada", "China", "Denmark", "Great Britain", "Japan", "Korea", "ROC", "Sweden",
       "Switzerland", "USA"]
   },
@@ -6260,7 +5740,6 @@
     "date": "2022-02-20",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "tv_channel": ["TBA"],
     "participating_countries": ["TBA"]
   }
 }
