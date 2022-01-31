@@ -78,3 +78,4 @@ def signin_user(email):
 
 def add_country(email, country, schedule_name):
     ur.add_country(email, country, schedule_name)
+

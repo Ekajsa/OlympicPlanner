@@ -91,33 +91,23 @@
     </div>
     <br>
     <div>
-        <input type="submit" class="submit" onclick="isChecked()" value="Select and Continue">
+        <input type="submit" class="submit" onclick="isChecked()" value="Select And Go To Next Step">
     </div>
-{#    <br>#}
-{#    <div>#}
-{#        <input type="submit" class="submit" id="continue" value="Continue">#}
-{#    </div>#}
 </form>
-
-
-{##}
-{#<form id="form">#}
-{#<!-- your form here -->#}
-{#<input type="submit" class="submit" value="Submit">#}
-{#</form>#}
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 function isChecked() {
     var discipline = document.forms[0]; {# Why [0]? #}
-    var discipline_array = []
+    var discipline_array = [];
     var i;
     for (i = 0; i < discipline.length; i++) {
         if (discipline[i].checked) {
             discipline_array.push(discipline[i].value);
         }
     }
+    console.log(discipline_list)
     {#Loop through the id:s and add all with true value to a list?#}
 }
     {#Don't need the one below?#}

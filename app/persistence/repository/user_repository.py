@@ -23,3 +23,4 @@ def add_country(email, country, schedule_name):
         user.personal_schedules.countries.append(country)
 
 
+
