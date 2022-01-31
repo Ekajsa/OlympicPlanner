@@ -17,7 +17,6 @@
 
     </table>
     <ul id="countryList"></ul>
-    <h3>Chosen countries:</h3>
     <table>
         <tr>
             {% for country in countries %}
@@ -78,7 +77,6 @@
                         /*create a DIV element for each matching element:*/
                         b = document.createElement("DIV");
                         /*make the matching letters bold:*/
-
                         let boldText = "<strong>" + val + "</strong>";
                         b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);
                         /*insert a input field that will hold the current array item's value:*/
