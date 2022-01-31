@@ -39,6 +39,74 @@ Sprint planning
 * Vad ska ingå i nästa veckas sprint?
 
 ************************************************************************************************************************************************
+<Mall för daily stand-up>
+Daily 2022-01-28
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Med hjälp av Joakim fixat listan med valda länder (inklusive flaggor)
+*   Vad ska jag göra till nästa avstämning?
+	#016, försöka få in listan i databasen. Om tid finns göra en create_schedule.
+*   Behöver jag hjälp med något?
+	Nej
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Fortsatte med user-sidan (flexbox), snyggat till knappen. Testade att göra redigeringsbara profildatafält men det verkar vara onödigt komplicerat.
+	Försökt få till avataren som skickar användaren till user-sidan. Fört in data från tv-tablån för den vecka som var tillgänglig.
+*   Vad ska jag göra till nästa avstämning?
+	#020	
+*   Behöver jag hjälp med något?
+	Nej
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Har jobbat med base_template (tidigare #021, nu halvt konverterad till #023). Jobbar med att göra basen så att den passar de olika 
+	sidorna så bra som möjligt. Finns containers i Bootstrap's grid och det kan bli krockar då vissa sidor behöver en container och vissa två.
+*   Vad ska jag göra till nästa avstämning?
+	#023
+*   Behöver jag hjälp med något?	
+	Nej
+
+Övrigt
+* Vid senare tillfälle kan vi ta en diskussion kring hur vi vill att användaren ska kunna ändra sin personliga information.
+* Diskutera hur vi vill göra med datumformat vs JSON
+************************************************************************************************************************************************
+
+<Mall för daily stand-up>
+Daily 2022-01-27
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Har jobbat vidare med 015 och 016
+*   Vad ska jag göra till nästa avstämning?
+	Vabba och vara sjuk. Fortsätta med 015 och 016.
+*   Behöver jag hjälp med något?
+	Kan första sidan när man skapar schema vara att välja namn på schemat? JA
+	Vid val av land, lista med redan valda land. Lägga i tabell? JA
+	Vid val av land sparas i listan i personliga schemat i databasen? Nej, spara bara i en lista. Alla länder sparas i personliga schemat i 
+	databasen när man går vidare till nästa sida.
+	
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Gjort en enkel user-sida. Pluggat vidare
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätta med user-sida (014). Om jag blir klar, kolla på 020, försöka visa några events från databasen. Fortsätter ev med att lägga in 
+	data (011)
+*   Behöver jag hjälp med något?
+	Nej
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Inget! Lektionen var så lång!
+*   Vad ska jag göra till nästa avstämning?
+	Jobba vidare med 021.
+*   Behöver jag hjälp med något?
+	Nej
+
+Övrigt
+* xx
+
+************************************************************************************************************************************************
+
 Daily 2022-01-26
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
