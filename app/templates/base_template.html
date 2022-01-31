@@ -10,7 +10,13 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename='css/main_style.css') }}">
 
     <title>The Olympic Planner</title>
+
+    <link rel="stylesheet"
+              href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
+
     {% block head %}{% endblock %}
+
 </head>
 <body>
 
