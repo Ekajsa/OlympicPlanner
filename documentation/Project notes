@@ -31,15 +31,69 @@ Sprint review
   - Har vissa delar klarats av?
   - Skall vi ha en ny tidsuppskattning?
   - Vad behövs för att vi skall klara detta issue nästa gång?
-* Bedöm vad ni kan göra bättre i nästa sprint
 * Har det kommit upp nya saker som skall läggas till på er backlog?
+* Bedöm vad ni kan göra bättre i nästa sprint
+
 
 Sprint planning
+* Beskriv det övergripande målet med sprinten:
+  -Namn:
+  -Beskrivning:
+  -Startdatum:
+  -Slutdatum:
+  -Backlogg: Se Time_estimates.txt
 * Uppskatta tillgänglig tid för gruppen i nästa sprint.
 * Vad ska ingå i nästa veckas sprint?
 
 ************************************************************************************************************************************************
-<Mall för daily stand-up>
+Möte 2022-01-31
+
+Sprint review
+* Blev alla issues klara?
+  Nej. Se logg i Time_estimates.txt
+   - Om inte, varför?
+   Vi har lagt mer tid totalt än vi trodde att vi skulle lägga, men alla issues är ändå inte klara. 
+   Issues är fortsatt lite för stora.
+   Vi har gjort lite andra issues än de vi trodde att vi skulle göra, på grund av att vi insåg att vi behövde göra andra saker för att komma vidare.
+   Issues är inte tillräckligt specifika. Vi behöver tydligare definition of done.
+   Det är svårt att avgränsa och definiera issues tydligt när man är i en inlärningsprocess.
+   
+* Icke klara issues återförs till backlog, efter att de har uppdaterats.
+  - Har vissa delar klarats av?
+    Ja, det mesta har klarats av. Vi stänger dessa issues och skapar nya för det som återstår. Undantag issue 021 som återstår i sin helhet.
+  - Skall vi ha en ny tidsuppskattning?
+    Några justeringar gjordes.
+  - Vad behövs för att vi skall klara detta issue nästa gång?
+    För 021 krävs att vi har kommit längre med base template, och det har vi gjort nu.
+* Har det kommit upp nya saker som skall läggas till på er backlog?
+  Ja. Vi kompletterar det på kanbantavlan.
+  * Bedöm vad ni kan göra bättre i nästa sprint
+    Bryta ner issues mer, om vi kan...
+    Om vi har stora issues - överväg att pusha in i main halvvägs för att få in ändringar. Görs i dialog med gruppen.
+    
+* Övrigt:
+  Vi tog ett designbeslut att inte ha med tv-kanal i applikationen.
+  Det är svårt att få reda på vilka länder som ska delta i olika discipliner. Vi lägger en egen issue för att lösa detta.
+  Britta har just nu inte hittat något bättre sätt att ta reda på det än att titta på de olika deltagarna, vilken gren de ska vara med i och vilket land de kommer ifrån.
+
+Sprint planning
+* Beskriv det övergripande målet med sprinten:
+  -Namn: Schema-funktionssprinten
+  -Beskrivning: Fokus på att få grundschemat och det personliga schemat att fungera. Fokusera så lite som möjligt på styling.
+  -Startdatum: 2022-01-31
+  -Slutdatum: 2022-02-07 kl 9.00
+  -Backlogg: Se Time_estimates.txt
+* Uppskatta tillgänglig tid för gruppen i nästa sprint.
+  30+30+20 = 80 h (avdrag pga Johanna VAB och sjuk)
+  -1,5 h * 4 dagar + 1 h för daily = =-7h
+  -30h för lektioner
+  -(4+3+2)h =-9h för sprint review och sprint planning
+  =34h för att jobba.
+* Vad ska ingå i nästa veckas sprint?
+  Se Time_estimates.txt + kanbantavla på GitHub. Vi drar över med ca 6 h på sprinten om något skulle gå snabbare än väntat.
+
+************************************************************************************************************************************************
+
 Daily 2022-01-28
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
