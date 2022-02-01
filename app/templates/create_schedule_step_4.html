@@ -9,8 +9,11 @@
                     copy all of it to your personal schedule. If you want, you can fine tune the main schedule with
                     filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
                     drop to add events from the main schedule to your personal schedule. </p>
-                <div>
 
+                    {% for event in events %}
+                        {{ event.discipline }}, {{ event.sex }}. {{ event.description }}, {{ event.competition_type }}
+                        {{ event.local_start_time }}-{{ event.local_end_time }} </br>
+                    {% endfor %}
                 </div>
             </div>
     </div>

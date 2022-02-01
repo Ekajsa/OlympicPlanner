@@ -1,10 +1,10 @@
 {
   "event_1":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 1",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 1",
+    "sex": "women, men",
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -12,10 +12,10 @@
   },
   "event_2":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 1",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 1",
+    "sex": "women, men",
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -23,10 +23,10 @@
   },
   "event_3":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 1",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 1",
+    "sex": "women, men",
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -34,10 +34,10 @@
   },
   "event_4":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 1",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 1",
+    "sex": "women, men",
     "date": "2022-02-02",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -45,10 +45,10 @@
   },
   "event_5":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 2",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 2",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -56,10 +56,10 @@
   },
   "event_6":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 2",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 2",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -67,10 +67,10 @@
   },
   "event_7":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 2",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 2",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -78,10 +78,10 @@
   },
   "event_8":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 2",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 2",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -89,10 +89,10 @@
   },
   "event_9":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 3",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 3",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -100,10 +100,10 @@
   },
   "event_10":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 3",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 3",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -111,10 +111,10 @@
   },
   "event_11":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 4",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 4",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -122,10 +122,10 @@
   },
   "event_12":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 4",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 4",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -133,10 +133,10 @@
   },
   "event_13":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 4",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 4",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -144,10 +144,10 @@
   },
   "event_14":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 4",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 4",
+    "sex": "women, men",
     "date": "2022-02-03",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -155,10 +155,10 @@
   },
   "event_15":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "qualification 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-03",
     "local_start_time": "18:00",
     "local_end_time": "18:45",
@@ -167,10 +167,10 @@
   },
     "event_16":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "qualification 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-03",
     "local_start_time": "19:45",
     "local_end_time": "20:30",
@@ -179,10 +179,10 @@
   },
   "event_17":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-03",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -190,10 +190,10 @@
   },
   "event_18":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-03",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -201,10 +201,10 @@
   },
   "event_19":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-03",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -212,10 +212,10 @@
   },
   "event_20":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-03",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -223,10 +223,10 @@
   },
   "event_21":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 5",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 5",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "08:35",
     "local_end_time": "10:30",
@@ -234,10 +234,10 @@
   },
   "event_22":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 5",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 5",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "08:35",
     "local_end_time": "10:30",
@@ -245,10 +245,10 @@
   },
   "event_23":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 5",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 5",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "08:35",
     "local_end_time": "10:30",
@@ -256,10 +256,10 @@
   },
   "event_24":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 6",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 6",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
@@ -267,10 +267,10 @@
   },
   "event_25":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 6",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 6",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
@@ -278,10 +278,10 @@
   },
   "event_26":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 6",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 6",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
@@ -289,10 +289,10 @@
   },
   "event_27":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 6",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 6",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "13:35",
     "local_end_time": "15:30",
@@ -300,10 +300,10 @@
   },
   "event_28":
   {
-    "discipline": "figure skating",
-    "description": "single skating, short program",
+    "discipline": "Figure skating",
+    "description": "Single skating, short program",
     "competition_type": "team event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-04",
     "local_start_time": "10:02",
     "local_end_time": "11:15",
@@ -311,10 +311,10 @@
   },
   "event_29":
   {
-    "discipline": "figure skating",
-    "description": "ice dance, rhythm dance",
+    "discipline": "Figure skating",
+    "description": "Ice dance, rhythm dance",
     "competition_type": "team event",
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "11:41",
     "local_end_time": "12:54",
@@ -323,10 +323,10 @@
   },
   "event_30":
   {
-    "discipline": "figure skating",
-    "description": "pair skating, short program",
+    "discipline": "Figure skating",
+    "description": "Pair skating, short program",
     "competition_type": "team event",
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "13:22",
     "local_end_time": "14:55",
@@ -335,10 +335,10 @@
   },
   "event_31":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-04",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -346,10 +346,10 @@
   },
   "event_32":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-04",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -357,10 +357,10 @@
   },
   "event_33":
   {
-    "discipline": "ceremony",
-    "description": "opening",
-    "competition_type": "None",
-    "sex": ["female", "male"],
+    "discipline": "Ceremony",
+    "description": "Opening",
+    "competition_type": "",
+    "sex": "women, men",
     "date": "2022-02-04",
     "local_start_time": "20:00",
     "local_end_time": "22:00",
@@ -378,10 +378,10 @@
   },
     "event_34":
   {
-    "discipline": "biathlon",
-    "description": "mixed relay 4x6 km",
+    "discipline": "Biathlon",
+    "description": "Mixed relay 4x6 km",
     "competition_type": "gold medal event",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "17:00",
     "local_end_time": "18:15",
@@ -391,10 +391,10 @@
   },
   "event_35":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "7.5km + 7.5km skiathlon",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "15:45",
     "local_end_time": "16:45",
@@ -403,10 +403,10 @@
   },
   "event_36":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 7",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 7",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -414,10 +414,10 @@
   },
   "event_37":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 7",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 7",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -425,10 +425,10 @@
   },
   "event_38":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 8",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 8",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -436,10 +436,10 @@
   },
   "event_39":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 8",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 8",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -447,10 +447,10 @@
   },
   "event_40":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 8",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 8",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -458,10 +458,10 @@
   },
   "event_41":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 8",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 8",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -469,10 +469,10 @@
   },
   "event_42":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 9",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 9",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -480,10 +480,10 @@
   },
   "event_43":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 9",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 9",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -491,10 +491,10 @@
   },
   "event_44":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 9",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 9",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -502,10 +502,10 @@
   },
   "event_45":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 9",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 9",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -513,10 +513,10 @@
   },
   "event_46":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "qualification 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
@@ -524,10 +524,10 @@
   },
   "event_47":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "final 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
@@ -535,10 +535,10 @@
   },
     "event_48":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "final 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "20:35",
@@ -546,10 +546,10 @@
   },
     "event_49":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": ["final 3", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "20:40",
     "local_end_time": "21:10",
@@ -557,10 +557,10 @@
   },
     "event_50":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -568,10 +568,10 @@
   },
   "event_51":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -579,10 +579,10 @@
   },
   "event_52":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -590,10 +590,10 @@
   },
   "event_53":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -601,10 +601,10 @@
   },
   "event_54":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -612,10 +612,10 @@
   },
   "event_55":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": "run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "19:10",
     "local_end_time": "20:20",
@@ -623,10 +623,10 @@
   },
   "event_56":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": "run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "20:50",
     "local_end_time": "22:00",
@@ -634,10 +634,10 @@
   },
   "event_57":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
     "competition_type": "heats",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
@@ -645,10 +645,10 @@
   },
   "event_58":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "heats",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "19:38",
     "local_end_time": "20:15",
@@ -656,10 +656,10 @@
   },
   "event_59":
   {
-    "discipline": "short track speed skating",
-    "description": "mixed team relay",
+    "discipline": "Short track speed skating",
+    "description": "Mixed team relay",
     "competition_type": "quarterfinals",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "20:23",
     "local_end_time": "20:45",
@@ -668,10 +668,10 @@
   } ,
   "event_60":
   {
-    "discipline": "short track speed skating",
-    "description": "mixed team relay",
+    "discipline": "Short track speed skating",
+    "description": "Mixed team relay",
     "competition_type": "semifinals",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "20:53",
     "local_end_time": "21:10",
@@ -679,10 +679,10 @@
   },
   "event_61":
   {
-    "discipline": "short track speed skating",
-    "description": "mixed team relay",
-    "competition_type": "final b",
-    "sex": ["female", "male"],
+    "discipline": "Short track speed skating",
+    "description": "Mixed team relay",
+    "competition_type": "final B",
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "21:18",
     "local_end_time": "21:24",
@@ -690,10 +690,10 @@
   },
   "event_62":
   {
-    "discipline": "short track speed skating",
-    "description": "mixed team relay",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": ["female", "male"],
+    "discipline": "Short track speed skating",
+    "description": "Mixed team relay",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "women, men",
     "date": "2022-02-05",
     "local_start_time": "21:26",
     "local_end_time": "21:50",
@@ -701,10 +701,10 @@
   },
   "event_63":
   {
-    "discipline": "ski jumping",
-    "description": "normal hill individual",
+    "discipline": "Ski jumping",
+    "description": "Normal hill individual",
     "competition_type": "qualification round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-05",
     "local_start_time": "14:20",
     "local_end_time": "15:30",
@@ -712,10 +712,10 @@
   },
 "event_64":
   {
-    "discipline": "ski jumping",
-    "description": "normal hill individual",
+    "discipline": "Ski jumping",
+    "description": "Normal hill individual",
     "competition_type": "first round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "18:45",
     "local_end_time": "19:25",
@@ -723,10 +723,10 @@
   },
 "event_65":
   {
-    "discipline": "ski jumping",
-    "description": "normal hill individual",
+    "discipline": "Ski jumping",
+    "description": "Normal hill individual",
     "competition_type": ["final round", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "19:35",
     "local_end_time": "20:20",
@@ -734,10 +734,10 @@
   },
   "event_66":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "qualification run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "10:45",
     "local_end_time": "11:40",
@@ -745,10 +745,10 @@
   },
   "event_67":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "qualification run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "11:47",
     "local_end_time": "12:50",
@@ -756,10 +756,10 @@
   },
   "event_68":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "3000m",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "16:30",
     "local_end_time": "18:05",
@@ -767,10 +767,10 @@
   },
   "event_69":
   {
-    "discipline": "alpine skiing",
-    "description": "downhill",
+    "discipline": "Alpine skiing",
+    "description": "Downhill",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "11:00",
     "local_end_time": "13:30",
@@ -778,10 +778,10 @@
   },
   "event_70":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "15km + 15km skiathlon",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "15:00",
     "local_end_time": "16:45",
@@ -790,10 +790,10 @@
   },
   "event_71":
   {
-    "discipline": "alpine skiing",
-    "description": "downhill",
+    "discipline": "Alpine skiing",
+    "description": "Downhill",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "11:00",
     "local_end_time": "13:30",
@@ -801,10 +801,10 @@
   },
   "event_72":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 10",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 10",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -812,10 +812,10 @@
   },
   "event_73":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 10",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 10",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -823,10 +823,10 @@
   },
   "event_74":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 11",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 11",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -834,10 +834,10 @@
   },
   "event_75":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 11",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 11",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -845,10 +845,10 @@
   },
   "event_76":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 11",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 11",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -856,10 +856,10 @@
   },
   "event_77":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 11",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 11",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -867,10 +867,10 @@
   },
   "event_78":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 12",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 12",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -878,10 +878,10 @@
   },
   "event_79":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 12",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 12",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -889,10 +889,10 @@
   },
   "event_80":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 11",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 11",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -900,10 +900,10 @@
   },
   "event_81":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 11",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 11",
+    "sex": "women, men",
     "date": "2022-02-06",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -911,10 +911,10 @@
   },
   "event_82":
   {
-    "discipline": "figure skating",
-    "description": "single skating, short program",
+    "discipline": "Figure skating",
+    "description": "Single skating, short program",
     "competition_type": "team event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "09:30",
     "local_end_time": "11:30",
@@ -922,10 +922,10 @@
   },
   "event_83":
   {
-    "discipline": "figure skating",
-    "description": "single skating, free skating",
+    "discipline": "Figure skating",
+    "description": "Single skating, free skating",
     "competition_type": "team event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "11:50",
     "local_end_time": "12:40",
@@ -933,10 +933,10 @@
   },
   "event_84":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "qualification 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-056",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
@@ -944,10 +944,10 @@
   },
   "event_85":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "final 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
@@ -955,10 +955,10 @@
   },
     "event_86":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": "final 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "20:35",
@@ -966,10 +966,10 @@
   },
     "event_87":
   {
-    "discipline": "freestyle skiing",
-    "description": "moguls",
+    "discipline": "Freestyle skiing",
+    "description": "Moguls",
     "competition_type": ["final 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-05",
     "local_start_time": "20:40",
     "local_end_time": "21:10",
@@ -977,10 +977,10 @@
   },
   "event_88":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -988,10 +988,10 @@
   },
   "event_89":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -999,10 +999,10 @@
   },
   "event_90":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": "run 3",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "19:30",
     "local_end_time": "20:45",
@@ -1010,10 +1010,10 @@
   },
   "event_91":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": ["run 4", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "21:15",
     "local_end_time": "22:10",
@@ -1021,10 +1021,10 @@
   },
  "event_92":
   {
-    "discipline": "ski jumping",
-    "description": "normal hill individual",
+    "discipline": "Ski jumping",
+    "description": "Normal hill individual",
     "competition_type": "first round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "19:00",
     "local_end_time": "19:45",
@@ -1032,10 +1032,10 @@
   },
   "event_93":
   {
-    "discipline": "ski jumping",
-    "description": "normal hill individual",
+    "discipline": "Ski jumping",
+    "description": "Normal hill individual",
     "competition_type": ["final round", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "20:00",
     "local_end_time": "20:45",
@@ -1043,10 +1043,10 @@
   },
   "event_94":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "final run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
@@ -1054,10 +1054,10 @@
   },
   "event_95":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "final run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "09:57",
     "local_end_time": "10:17",
@@ -1065,10 +1065,10 @@
   },
   "event_96":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-06",
     "local_start_time": "10:24",
     "local_end_time": "11:00",
@@ -1076,10 +1076,10 @@
   },
   "event_97":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "qualification run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "12:30",
     "local_end_time": "13:30",
@@ -1087,10 +1087,10 @@
   },
   "event_98":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "qualification run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "13:33",
     "local_end_time": "14:35",
@@ -1098,10 +1098,10 @@
   },
   "event_99":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "5000m",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-06",
     "local_start_time": "16:30",
     "local_end_time": "18:05",
@@ -1109,10 +1109,10 @@
   },
   "event_100":
   {
-    "discipline": "alpine skiing",
-    "description": "giant slalom",
+    "discipline": "Alpine skiing",
+    "description": "Giant slalom",
     "competition_type": "run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "10:15",
     "local_end_time": "11:55",
@@ -1120,10 +1120,10 @@
   },
   "event_101":
   {
-    "discipline": "alpine skiing",
-    "description": "giant slalom",
+    "discipline": "Alpine skiing",
+    "description": "Giant slalom",
     "competition_type": ["run 2", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "13:45",
     "local_end_time": "15:50",
@@ -1131,10 +1131,10 @@
   },
   "event_102":
   {
-    "discipline": "biathlon",
-    "description": "15km individual",
+    "discipline": "Biathlon",
+    "description": "15km Individual",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "17:00",
     "local_end_time": "18:50",
@@ -1145,10 +1145,10 @@
   },
   "event_103":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 13",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 13",
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -1156,10 +1156,10 @@
   },
   "event_104":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 13",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 13",
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -1167,10 +1167,10 @@
   },
   "event_105":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 13",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 13",
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -1178,10 +1178,10 @@
   },
   "event_106":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
-    "competition_type": "round robin session 13",
-    "sex": ["female", "male"],
+    "discipline": "Curling",
+    "description": "Mixed doubles",
+    "competition_type": "round robin, session 13",
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "09:05",
     "local_end_time": "11:00",
@@ -1189,10 +1189,10 @@
   },
   "event_107":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
+    "discipline": "Curling",
+    "description": "Mixed doubles",
     "competition_type": "semi-final",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -1200,10 +1200,10 @@
   },
     "event_108":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
+    "discipline": "Curling",
+    "description": "Mixed doubles",
     "competition_type": "semi-final",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -1211,10 +1211,10 @@
   },
   "event_109":
   {
-    "discipline": "figure skating",
-    "description": "team event, pair skating, free skating",
-    "competition_type": "None",
-    "sex": ["female", "male"],
+    "discipline": "Figure skating",
+    "description": "team event, Pair skating, free skating",
+    "competition_type": "",
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "09:15",
     "local_end_time": "10:15",
@@ -1222,10 +1222,10 @@
   },
   "event_110":
   {
-    "discipline": "figure skating",
-    "description": "team event, ice dance, free dance",
-    "competition_type": "None",
-    "sex": ["female", "male"],
+    "discipline": "Figure skating",
+    "description": "team event, Ice dance, free dance",
+    "competition_type": "",
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "10:30",
     "local_end_time": "11:30",
@@ -1233,10 +1233,10 @@
   },
   "event_111":
   {
-    "discipline": "figure skating",
-    "description": "team event, single skating, free skating",
+    "discipline": "Figure skating",
+    "description": "team event, Single skating, free skating",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "09:15",
     "local_end_time": "10:15",
@@ -1244,10 +1244,10 @@
   },
   "event_112":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "qualification run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "09:30",
     "local_end_time": "10:15",
@@ -1256,10 +1256,10 @@
   },
   "event_113":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "qualification run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "10:15",
     "local_end_time": "11:00",
@@ -1267,10 +1267,10 @@
   },
   "event_114":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "qualification run 3",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
@@ -1278,10 +1278,10 @@
   },
   "event_115":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "qualification run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "13:30",
     "local_end_time": "14:15",
@@ -1290,10 +1290,10 @@
   },
   "event_116":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "qualification run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "14:15",
     "local_end_time": "15:00",
@@ -1301,10 +1301,10 @@
   },
   "event_117":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "qualification run 3",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "15:00",
     "local_end_time": "15:45",
@@ -1312,10 +1312,10 @@
   },
   "event_118":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -1323,10 +1323,10 @@
   },
   "event_119":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -1334,10 +1334,10 @@
   },
   "event_120":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -1345,10 +1345,10 @@
   },
   "event_121":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -1356,10 +1356,10 @@
   },
   "event_122":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": "run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "19:50",
     "local_end_time": "21:00",
@@ -1367,10 +1367,10 @@
   },
   "event_123":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": "run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "21:30",
     "local_end_time": "22:40",
@@ -1378,10 +1378,10 @@
   },
   "event_124":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "19:00",
     "local_end_time": "19:35",
@@ -1389,10 +1389,10 @@
   },
   "event_125":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "19:44",
     "local_end_time": "20:13",
@@ -1400,10 +1400,10 @@
   },
   "event_126":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "20:13",
     "local_end_time": "20:20",
@@ -1411,10 +1411,10 @@
   },
   "event_127":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "20:20",
     "local_end_time": "20:40",
@@ -1422,10 +1422,10 @@
   },
   "event_128":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
-    "competition_type": "final b",
-    "sex": "female",
+    "competition_type": "final B",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "20:41",
     "local_end_time": "20:45",
@@ -1433,10 +1433,10 @@
   },
   "event_129":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "female",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "20:46",
     "local_end_time": "20:51",
@@ -1444,10 +1444,10 @@
   },
   "event_130":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
-    "competition_type": "final b",
-    "sex": "male",
+    "competition_type": "final B",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "20:52",
     "local_end_time": "20:57",
@@ -1455,10 +1455,10 @@
   },
   "event_131":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "male",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "20:58",
     "local_end_time": "21:25",
@@ -1466,10 +1466,10 @@
   },
   "event_132":
   {
-    "discipline": "ski jumping",
-    "description": "mixed team",
+    "discipline": "Ski jumping",
+    "description": "Mixed team",
     "competition_type": "first round",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "19:45",
     "local_end_time": "20:45",
@@ -1477,10 +1477,10 @@
   },
   "event_133":
   {
-    "discipline": "ski jumping",
-    "description": "mixed team",
+    "discipline": "Ski jumping",
+    "description": "Mixed team",
     "competition_type": ["final round", "gold medal event"],
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-07",
     "local_start_time": "20:51",
     "local_end_time": "21:45",
@@ -1488,10 +1488,10 @@
   },
   "event_134":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "final run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "12:00",
     "local_end_time": "12:20",
@@ -1499,10 +1499,10 @@
   },
   "event_135":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": "final run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "12:27",
     "local_end_time": "12:50",
@@ -1510,10 +1510,10 @@
   },
   "event_136":
   {
-    "discipline": "snowboard",
-    "description": "slopestyle",
+    "discipline": "Snowboard",
+    "description": "Slopestyle",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-07",
     "local_start_time": "12:54",
     "local_end_time": "13:30",
@@ -1521,10 +1521,10 @@
   },
   "event_137":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "1500m",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "16:30",
     "local_end_time": "18:00",
@@ -1532,10 +1532,10 @@
   },
   "event_138":
   {
-    "discipline": "alpine skiing",
-    "description": "super-g",
+    "discipline": "Alpine skiing",
+    "description": "Super-g",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "11:00",
     "local_end_time": "13:25",
@@ -1543,10 +1543,10 @@
   },
   "event_139":
   {
-    "discipline": "biathlon",
-    "description": "20km individual",
+    "discipline": "Biathlon",
+    "description": "20km Individual",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "16:30",
     "local_end_time": "18:25",
@@ -1556,10 +1556,10 @@
   },
   "event_140":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": "qualification",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "16:00",
     "local_end_time": "16:45",
@@ -1568,10 +1568,10 @@
   },
   "event_141":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": "qualification",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "16:50",
     "local_end_time": "17:35",
@@ -1580,10 +1580,10 @@
   },
   "event_142":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "18:30",
     "local_end_time": "18:55",
@@ -1591,10 +1591,10 @@
   },
   "event_143":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "18:55",
     "local_end_time": "19:25",
@@ -1602,10 +1602,10 @@
   },
   "event_144":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "19:25",
     "local_end_time": "19:35",
@@ -1613,10 +1613,10 @@
   },
   "event_145":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "19:35",
     "local_end_time": "19:45",
@@ -1624,10 +1624,10 @@
   },
   "event_146":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": ["final", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "19:47",
     "local_end_time": "19:55",
@@ -1635,10 +1635,10 @@
   },
   "event_147":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "sprint free",
     "competition_type": ["final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "20:00",
     "local_end_time": "20:30",
@@ -1646,10 +1646,10 @@
   },
   "event_148":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
+    "discipline": "Curling",
+    "description": "Mixed doubles",
     "competition_type": ["final", "bronze medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "14:05",
     "local_end_time": "16:00",
@@ -1657,10 +1657,10 @@
   },
   "event_149":
   {
-    "discipline": "curling",
-    "description": "mixed doubles",
+    "discipline": "Curling",
+    "description": "Mixed doubles",
     "competition_type": ["final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -1668,10 +1668,10 @@
   },
   "event_150":
   {
-    "discipline": "figure skating",
-    "description": "single skating, short program",
-    "competition_type": "None",
-    "sex": "male",
+    "discipline": "Figure skating",
+    "description": "Single skating, short program",
+    "competition_type": "",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
@@ -1679,10 +1679,10 @@
   },
   "event_151":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "final run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "10:00",
     "local_end_time": "10:20",
@@ -1690,10 +1690,10 @@
   },
   "event_152":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "final run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "10:22",
     "local_end_time": "10:45",
@@ -1701,10 +1701,10 @@
   },
   "event_153":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "10:45",
     "local_end_time": "11:20",
@@ -1712,10 +1712,10 @@
   },
   "event_154":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -1723,10 +1723,10 @@
   },
   "event_155":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -1734,10 +1734,10 @@
   },
   "event_156":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -1745,10 +1745,10 @@
   },
   "event_157":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -1756,10 +1756,10 @@
   },
   "event_158":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": "run 3",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "19:50",
     "local_end_time": "21:00",
@@ -1767,10 +1767,10 @@
   },
   "event_159":
   {
-    "discipline": "luge",
-    "description": "singles",
+    "discipline": "Luge",
+    "description": "Singles",
     "competition_type": ["run 4", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "21:35",
     "local_end_time": "22:30",
@@ -1778,10 +1778,10 @@
   },
   "event_160":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "qualification run",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "10:40",
     "local_end_time": "11:05",
@@ -1789,10 +1789,10 @@
   },
   "event_161":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "qualification run",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "11:07",
     "local_end_time": "11:32",
@@ -1800,10 +1800,10 @@
   },
   "event_162":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "elimination run",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "11:34",
     "local_end_time": "12:00",
@@ -1811,10 +1811,10 @@
   },
   "event_163":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "elimination run",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "12:01",
     "local_end_time": "12:30",
@@ -1822,10 +1822,10 @@
   },
   "event_164":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "1/8 finals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "14:30",
     "local_end_time": "14:45",
@@ -1833,10 +1833,10 @@
   },
   "event_165":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "1/8 finals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "14:48",
     "local_end_time": "15:05",
@@ -1844,10 +1844,10 @@
   },
   "event_166":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "15:06",
     "local_end_time": "15:13",
@@ -1855,10 +1855,10 @@
   },
   "event_167":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "15:15",
     "local_end_time": "15:22",
@@ -1866,10 +1866,10 @@
   },
   "event_168":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "15:24",
     "local_end_time": "15:29",
@@ -1877,10 +1877,10 @@
   },
   "event_169":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "15:30",
     "local_end_time": "15:35",
@@ -1888,10 +1888,10 @@
   },
   "event_170":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": ["small final", "bronze medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "15:36",
     "local_end_time": "15:39",
@@ -1899,10 +1899,10 @@
   },
   "event_171":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-08",
     "local_start_time": "15:39",
     "local_end_time": "15:42",
@@ -1910,10 +1910,10 @@
   },
   "event_172":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": ["small final", "bronze medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "15:43",
     "local_end_time": "15:46",
@@ -1921,10 +1921,10 @@
   },
   "event_173":
   {
-    "discipline": "snowboard",
-    "description": "parallel giant slalom",
+    "discipline": "Snowboard",
+    "description": "Parallel giant slalom",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "15:47",
     "local_end_time": "16:10",
@@ -1932,10 +1932,10 @@
   },
   "event_174":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "1500m",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "18:30",
     "local_end_time": "20:00",
@@ -1943,10 +1943,10 @@
   },
   "event_175":
   {
-    "discipline": "alpine skiing",
-    "description": "slalom",
+    "discipline": "Alpine skiing",
+    "description": "Slalom",
     "competition_type": "run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "10:15",
     "local_end_time": "11:50",
@@ -1954,10 +1954,10 @@
   },
   "event_176":
   {
-    "discipline": "alpine skiing",
-    "description": "slalom",
+    "discipline": "Alpine skiing",
+    "description": "Slalom",
     "competition_type": ["run 2", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "13:45",
     "local_end_time": "15:40",
@@ -1965,10 +1965,10 @@
   },
   "event_177":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -1976,10 +1976,10 @@
   },
   "event_178":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -1987,10 +1987,10 @@
   },
   "event_179":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -1998,10 +1998,10 @@
   },
   "event_180":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2009,10 +2009,10 @@
   },
   "event_181":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "final run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "11:00",
     "local_end_time": "11:20",
@@ -2020,10 +2020,10 @@
   },
   "event_182":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": "final run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-08",
     "local_start_time": "11:22",
     "local_end_time": "11:45",
@@ -2031,10 +2031,10 @@
   },
   "event_183":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski big air",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski big air",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "11:45",
     "local_end_time": "12:20",
@@ -2042,10 +2042,10 @@
   },
   "event_184":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -2053,10 +2053,10 @@
   },
   "event_185":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -2064,10 +2064,10 @@
   },
   "event_186":
   {
-    "discipline": "luge",
-    "description": "doubles",
+    "discipline": "Luge",
+    "description": "Doubles",
     "competition_type": "run 1",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-09",
     "local_start_time": "20:20",
     "local_end_time": "21:10",
@@ -2075,10 +2075,10 @@
   },
   "event_187":
   {
-    "discipline": "luge",
-    "description": "doubles",
+    "discipline": "Luge",
+    "description": "Doubles",
     "competition_type": ["run 2", "gold medal event"],
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-09",
     "local_start_time": "21:35",
     "local_end_time": "22:25",
@@ -2086,10 +2086,10 @@
   },
   "event_189":
   {
-    "discipline": "nordic combined",
-    "description": "individual gundersen normal hill/10km, ski jumping",
+    "discipline": "Nordic combined",
+    "description": "Individual Gundersen normal hill/10km, Ski jumping",
     "competition_type": "competition round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "16:00",
     "local_end_time": "16:55",
@@ -2097,10 +2097,10 @@
   },
   "event_190":
   {
-    "discipline": "nordic combined",
-    "description": "individual gundersen normal hill/10km, cross country",
+    "discipline": "Nordic combined",
+    "description": "Individual Gundersen normal hill/10km, cross country",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "19:00",
     "local_end_time": "19:35",
@@ -2108,10 +2108,10 @@
   },
     "event_191":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "19:00",
     "local_end_time": "19:40",
@@ -2119,10 +2119,10 @@
   },
   "event_192":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "heats",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "19:44",
     "local_end_time": "20:25",
@@ -2130,10 +2130,10 @@
   },
   "event_193":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "20:29",
     "local_end_time": "20:40",
@@ -2141,10 +2141,10 @@
   },
   "event_194":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "3000m relay",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-07",
     "local_start_time": "20:45",
     "local_end_time": "21:10",
@@ -2152,10 +2152,10 @@
   },
   "event_195":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
-    "competition_type": "final b",
-    "sex": "male",
+    "competition_type": "final B",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "21:13",
     "local_end_time": "21:19",
@@ -2163,10 +2163,10 @@
   },
   "event_196":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "male",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "21:20",
     "local_end_time": "21:28",
@@ -2174,10 +2174,10 @@
   },
   "event_197":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "qualification run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "09:30",
     "local_end_time": "10:19",
@@ -2185,10 +2185,10 @@
   },
   "event_198":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "qualification run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "10:21",
     "local_end_time": "11:10",
@@ -2196,10 +2196,10 @@
   },
   "event_199":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "seeding run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
@@ -2207,10 +2207,10 @@
   },
   "event_200":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "seeding run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "11:55",
     "local_end_time": "12:25",
@@ -2218,10 +2218,10 @@
   },
   "event_201":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "qualification run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "12:30",
     "local_end_time": "13:19",
@@ -2229,10 +2229,10 @@
   },
   "event_202":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "qualification run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "13:21",
     "local_end_time": "14:10",
@@ -2240,10 +2240,10 @@
   },
   "event_203":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "1/8 finals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "14:30",
     "local_end_time": "15:05",
@@ -2251,10 +2251,10 @@
   },
   "event_204":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "15:07",
     "local_end_time": "15:25",
@@ -2262,10 +2262,10 @@
   },
   "event_205":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "15:28",
     "local_end_time": "15:43",
@@ -2273,10 +2273,10 @@
   },
   "event_206":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "small final",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "15:45",
     "local_end_time": "15:50",
@@ -2284,10 +2284,10 @@
   },
   "event_207":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "15:50",
     "local_end_time": "16:10",
@@ -2295,10 +2295,10 @@
   },
   "event_208":
   {
-    "discipline": "alpine skiing",
-    "description": "combined downhill",
-    "competition_type": "None",
-    "sex": "male",
+    "discipline": "Alpine skiing",
+    "description": "Combined downhill",
+    "competition_type": "",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "10:30",
     "local_end_time": "12:45",
@@ -2306,10 +2306,10 @@
   },
   "event_209":
   {
-    "discipline": "alpine skiing",
-    "description": "combined slalom",
+    "discipline": "Alpine skiing",
+    "description": "Combined slalom",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:15",
     "local_end_time": "15:59",
@@ -2317,10 +2317,10 @@
   },
   "event_210":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "10km classic",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "15:00",
     "local_end_time": "16:30",
@@ -2329,10 +2329,10 @@
   },
   "event_211":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2340,10 +2340,10 @@
   },
   "event_212":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2351,10 +2351,10 @@
   },
   "event_213":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2362,10 +2362,10 @@
   },
   "event_214":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 1",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 1",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2373,10 +2373,10 @@
   },
   "event_215":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2384,10 +2384,10 @@
   },
   "event_216":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2395,10 +2395,10 @@
   },
   "event_217":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2406,10 +2406,10 @@
   },
   "event_218":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2417,10 +2417,10 @@
   },
   "event_219":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2428,10 +2428,10 @@
   },
   "event_220":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2439,10 +2439,10 @@
   },
   "event_221":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2450,10 +2450,10 @@
   },
   "event_222":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 2",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 2",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2461,10 +2461,10 @@
   },
   "event_223":
   {
-    "discipline": "figure skating",
-    "description": "single skating, free skating",
-    "competition_type": "round robin session 2",
-    "sex": "male",
+    "discipline": "Figure skating",
+    "description": "Single skating, free skating",
+    "competition_type": "round robin, session 2",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "13:30",
@@ -2472,10 +2472,10 @@
   },
   "event_224":
   {
-    "discipline": "freestyle skiing",
-    "description": "mixed team aerials",
+    "discipline": "Freestyle skiing",
+    "description": "Mixed team aerials",
     "competition_type": "final 1",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-10",
     "local_start_time": "19:00",
     "local_end_time": "19:45",
@@ -2483,10 +2483,10 @@
   },
   "event_225":
   {
-    "discipline": "freestyle skiing",
-    "description": "mixed team aerials",
+    "discipline": "Freestyle skiing",
+    "description": "Mixed team aerials",
     "competition_type": ["final 2", "gold medal event"],
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-10",
     "local_start_time": "19:50",
     "local_end_time": "20:15",
@@ -2494,10 +2494,10 @@
   },
   "event_226":
   {
-    "discipline": "ice hockey",
-    "description": "group c",
+    "discipline": "Ice hockey",
+    "description": "Group C",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -2505,10 +2505,10 @@
   },
   "event_227":
   {
-    "discipline": "ice hockey",
-    "description": "group c",
+    "discipline": "Ice hockey",
+    "description": "Group C",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -2516,10 +2516,10 @@
   },
   "event_228":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -2527,10 +2527,10 @@
   },
   "event_229":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -2538,10 +2538,10 @@
   },
   "event_230":
   {
-    "discipline": "luge",
+    "discipline": "Luge",
     "description": "team relay",
     "competition_type": "gold medal event",
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-10",
     "local_start_time": "21:30",
     "local_end_time": "22:38",
@@ -2549,10 +2549,10 @@
   },
   "event_231":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": "heat 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "10:30",
@@ -2560,10 +2560,10 @@
   },
   "event_232":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": "heat 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "11:00",
     "local_end_time": "11:55",
@@ -2571,10 +2571,10 @@
   },
   "event_233":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "final run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
@@ -2582,10 +2582,10 @@
   },
   "event_234":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "final run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
@@ -2593,10 +2593,10 @@
   },
   "event_235":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
@@ -2604,10 +2604,10 @@
   },
   "event_236":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "seeding run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "11:15",
     "local_end_time": "11:45",
@@ -2615,10 +2615,10 @@
   },
   "event_237":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "seeding run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "12:10",
     "local_end_time": "12:40",
@@ -2626,10 +2626,10 @@
   },
   "event_238":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "1/8 finals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:00",
     "local_end_time": "14:35",
@@ -2637,10 +2637,10 @@
   },
   "event_239":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:37",
     "local_end_time": "14:55",
@@ -2648,10 +2648,10 @@
   },
   "event_240":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "14:58",
     "local_end_time": "15:13",
@@ -2659,10 +2659,10 @@
   },
   "event_241":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "small final",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "15:15",
     "local_end_time": "15:20",
@@ -2670,10 +2670,10 @@
   },
   "event_242":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "15:20",
     "local_end_time": "15:40",
@@ -2681,10 +2681,10 @@
   },
   "event_243":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "5000m",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "20:00",
     "local_end_time": "21:16",
@@ -2692,10 +2692,10 @@
   },
   "event_244":
   {
-    "discipline": "alpine skiing",
-    "description": "super g",
+    "discipline": "Alpine skiing",
+    "description": "Super g",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "11:00",
     "local_end_time": "13:09",
@@ -2703,10 +2703,10 @@
   },
   "event_245":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "7.5km sprint",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "17:00",
     "local_end_time": "18:10",
@@ -2717,10 +2717,10 @@
   },
   "event_246":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "15km classic",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "15:00",
     "local_end_time": "16:35",
@@ -2729,10 +2729,10 @@
   },
   "event_247":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2740,10 +2740,10 @@
   },
   "event_248":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2751,10 +2751,10 @@
   },
   "event_249":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2762,10 +2762,10 @@
   },
   "event_250":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -2773,10 +2773,10 @@
   },
   "event_251":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2784,10 +2784,10 @@
   },
   "event_252":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2795,10 +2795,10 @@
   },
   "event_253":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2806,10 +2806,10 @@
   },
   "event_254":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 3",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 3",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -2817,10 +2817,10 @@
   },
   "event_255":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 4",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 4",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2828,10 +2828,10 @@
   },
   "event_256":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 4",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 4",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2839,10 +2839,10 @@
   },
   "event_257":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 4",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 4",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -2850,10 +2850,10 @@
   },
   "event_258":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -2861,10 +2861,10 @@
   },
   "event_259":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -2873,10 +2873,10 @@
   },
   "event_260":
   {
-    "discipline": "ice hockey",
-    "description": "group c",
+    "discipline": "Ice hockey",
+    "description": "Group C",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -2884,10 +2884,10 @@
   },
   "event_261":
   {
-    "discipline": "ice hockey",
-    "description": "group c",
+    "discipline": "Ice hockey",
+    "description": "Group C",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -2895,10 +2895,10 @@
   },
   "event_262":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-10",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -2907,10 +2907,10 @@
   },
   "event_263":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "19:00",
     "local_end_time": "19:15",
@@ -2918,10 +2918,10 @@
   },
   "event_264":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "heats",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "19:18",
     "local_end_time": "19:42",
@@ -2929,10 +2929,10 @@
   },
   "event_265":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "19:55",
     "local_end_time": "20:03",
@@ -2940,10 +2940,10 @@
   },
   "event_266":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "5000m relay",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "20:04",
     "local_end_time": "20:23",
@@ -2951,10 +2951,10 @@
   },
   "event_267":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
-    "competition_type": "final b",
-    "sex": "female",
+    "competition_type": "final B",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "20:37",
     "local_end_time": "20:42",
@@ -2962,10 +2962,10 @@
   },
   "event_268":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "female",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "20:43",
     "local_end_time": "20:49",
@@ -2973,10 +2973,10 @@
   },
   "event_269":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": "heat 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "09:30",
     "local_end_time": "10:30",
@@ -2984,10 +2984,10 @@
   },
   "event_270":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": "heat 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-11",
     "local_start_time": "11:00",
     "local_end_time": "11:55",
@@ -2995,10 +2995,10 @@
   },
   "event_271":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": "heat 3",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "20:20",
     "local_end_time": "21:30",
@@ -3006,10 +3006,10 @@
   },
   "event_272":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": ["heat 4", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "21:55",
     "local_end_time": "22:40",
@@ -3017,10 +3017,10 @@
   },
   "event_274":
   {
-    "discipline": "ski jumping",
-    "description": "large hill individual",
+    "discipline": "Ski jumping",
+    "description": "Large hill individual",
     "competition_type": "qualification round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "19:00",
     "local_end_time": "20:06",
@@ -3028,10 +3028,10 @@
   },
   "event_275":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "final run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
@@ -3039,10 +3039,10 @@
   },
   "event_276":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": "final run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
@@ -3050,10 +3050,10 @@
   },
   "event_277":
   {
-    "discipline": "snowboard",
-    "description": "halfpipe",
+    "discipline": "Snowboard",
+    "description": "Halfpipe",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
@@ -3061,10 +3061,10 @@
   },
   "event_278":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "1000m",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-11",
     "local_start_time": "16:00",
     "local_end_time": "17:55",
@@ -3072,10 +3072,10 @@
   },
   "event_279":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "10km sprint",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "17:00",
     "local_end_time": "18:15",
@@ -3085,10 +3085,10 @@
   },
   "event_280":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "4 x 5km relay",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "15:30",
     "local_end_time": "16:45",
@@ -3097,10 +3097,10 @@
   },
   "event_281":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 4",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 4",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3108,10 +3108,10 @@
   },
   "event_282":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 4",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 4",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3119,10 +3119,10 @@
   },
   "event_283":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 4",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 4",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3130,10 +3130,10 @@
   },
   "event_284":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3141,10 +3141,10 @@
   },
   "event_285":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3152,10 +3152,10 @@
   },
   "event_286":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3163,10 +3163,10 @@
   },
   "event_287":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3174,10 +3174,10 @@
   },
   "event_288":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3185,10 +3185,10 @@
   },
   "event_289":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3196,10 +3196,10 @@
   },
   "event_290":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3207,10 +3207,10 @@
   },
   "event_291":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 5",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 5",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3218,10 +3218,10 @@
   },
   "event_292":
   {
-    "discipline": "figure skating",
-    "description": "ice dance, rhythm dance",
-    "competition_type": "None",
-    "sex": ["female", "male"],
+    "discipline": "Figure skating",
+    "description": "Ice dance, rhythm dance",
+    "competition_type": "",
+    "sex": "women, men",
     "date": "2022-02-12",
     "local_start_time": "19:00",
     "local_end_time": "22:38",
@@ -3229,10 +3229,10 @@
   },
   "event_293":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -3240,10 +3240,10 @@
   },
   "event_294":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -3252,10 +3252,10 @@
   },
   "event_295":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -3263,10 +3263,10 @@
   },
   "event_296":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -3275,10 +3275,10 @@
   },
   "event_297":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -3286,10 +3286,10 @@
   },
   "event_298":
   {
-    "discipline": "ice hockey",
-    "description": "group b",
+    "discipline": "Ice hockey",
+    "description": "Group B",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "21:10",
     "local_end_time": "23:35",
@@ -3297,10 +3297,10 @@
   },
   "event_299":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": "heat 3",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "20:20",
     "local_end_time": "21:45",
@@ -3308,10 +3308,10 @@
   },
   "event_300":
   {
-    "discipline": "skeleton",
-    "description": "None",
+    "discipline": "Skeleton",
+    "description": "",
     "competition_type": ["heat 4", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "21:55",
     "local_end_time": "22:40",
@@ -3319,10 +3319,10 @@
   },
   "event_301":
   {
-    "discipline": "ski jumping",
-    "description": "large hill individual",
+    "discipline": "Ski jumping",
+    "description": "Large hill individual",
     "competition_type": "first round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "19:00",
     "local_end_time": "19:55",
@@ -3330,10 +3330,10 @@
   },
   "event_302":
   {
-    "discipline": "ski jumping",
-    "description": "large hill individual",
+    "discipline": "Ski jumping",
+    "description": "Large hill individual",
     "competition_type": ["final round", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "20:00",
     "local_end_time": "20:33",
@@ -3341,10 +3341,10 @@
   },
   "event_303":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "quarterfinals",
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-12",
     "local_start_time": "10:00",
     "local_end_time": "10:25",
@@ -3352,10 +3352,10 @@
   },
   "event_304":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "semifinals",
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-12",
     "local_start_time": "10:28",
     "local_end_time": "10:43",
@@ -3363,10 +3363,10 @@
   },
   "event_305":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": "small final",
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-12",
     "local_start_time": "10:50",
     "local_end_time": "10:55",
@@ -3374,10 +3374,10 @@
   },
   "event_306":
   {
-    "discipline": "snowboard",
-    "description": "cross",
+    "discipline": "Snowboard",
+    "description": "Cross",
     "competition_type": ["big final", "gold medal event"],
-    "sex": ["female","male"],
+    "sex": "women, men",
     "date": "2022-02-12",
     "local_start_time": "10:55",
     "local_end_time": "11:15",
@@ -3385,10 +3385,10 @@
   },
   "event_307":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-12",
     "local_start_time": "16:00",
     "local_end_time": "16:23",
@@ -3396,10 +3396,10 @@
   },
   "event_308":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "500m",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-12",
     "local_start_time": "16:53",
     "local_end_time": "17:34",
@@ -3407,10 +3407,10 @@
   },
   "event_309":
   {
-    "discipline": "alpine skiing",
-    "description": "giant slalom",
+    "discipline": "Alpine skiing",
+    "description": "Giant slalom",
     "competition_type": "run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "10:15",
     "local_end_time": "12:15",
@@ -3419,10 +3419,10 @@
   },
   "event_310":
   {
-    "discipline": "alpine skiing",
-    "description": "giant slalom",
+    "discipline": "Alpine skiing",
+    "description": "Giant slalom",
     "competition_type": ["run 2", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "13:45",
     "local_end_time": "15:50",
@@ -3430,10 +3430,10 @@
   },
   "event_311":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "10km pursuit",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "17:00",
     "local_end_time": "17:40",
@@ -3441,10 +3441,10 @@
   },
   "event_312":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "12.5km pursuit",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "18:45",
     "local_end_time": "19:25",
@@ -3452,10 +3452,10 @@
   },
   "event_313":
   {
-    "discipline": "bobsleigh",
-    "description": "monobob",
+    "discipline": "Bobsleigh",
+    "description": "Monobob",
     "competition_type": "heat 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "09:30",
     "local_end_time": "10:45",
@@ -3464,10 +3464,10 @@
   },
   "event_314":
   {
-    "discipline": "bobsleigh",
-    "description": "monobob",
+    "discipline": "Bobsleigh",
+    "description": "Monobob",
     "competition_type": "heat 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
@@ -3475,10 +3475,10 @@
   },
   "event_315":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "4 x 10km relay",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "15:00",
     "local_end_time": "16:40",
@@ -3487,10 +3487,10 @@
   },
   "event_316":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3498,10 +3498,10 @@
   },
   "event_317":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3509,10 +3509,10 @@
   },
   "event_318":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3520,10 +3520,10 @@
   },
   "event_319":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3531,10 +3531,10 @@
   },
   "event_320":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3542,10 +3542,10 @@
   },
   "event_321":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3553,10 +3553,10 @@
   },
   "event_322":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3564,10 +3564,10 @@
   },
   "event_323":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 6",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 6",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3575,10 +3575,10 @@
   },
   "event_324":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 7",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 7",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3586,10 +3586,10 @@
   },
   "event_325":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 7",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 7",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3597,10 +3597,10 @@
   },
   "event_326":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 7",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 7",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3608,10 +3608,10 @@
   },
   "event_327":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "qualification run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "10:00",
     "local_end_time": "11:00",
@@ -3620,10 +3620,10 @@
   },
   "event_328":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "qualification run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "11:01",
     "local_end_time": "12:00",
@@ -3631,10 +3631,10 @@
   },
   "event_329":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": "qualification 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
@@ -3643,10 +3643,10 @@
   },
   "event_330":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": "qualification 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "19:45",
     "local_end_time": "20:15",
@@ -3654,10 +3654,10 @@
   },
   "event_331":
   {
-    "discipline": "ice hockey",
-    "description": "group c",
+    "discipline": "Ice hockey",
+    "description": "Group C",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -3665,10 +3665,10 @@
   },
   "event_332":
   {
-    "discipline": "ice hockey",
-    "description": "group c",
+    "discipline": "Ice hockey",
+    "description": "Group C",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -3676,10 +3676,10 @@
   },
   "event_333":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -3687,10 +3687,10 @@
   },
   "event_334":
   {
-    "discipline": "ice hockey",
-    "description": "group a",
+    "discipline": "Ice hockey",
+    "description": "Group A",
     "competition_type": "preliminary round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -3698,10 +3698,10 @@
   },
   "event_335":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "19:00",
     "local_end_time": "19:25",
@@ -3709,10 +3709,10 @@
   },
   "event_336":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "19:27",
     "local_end_time": "19:33",
@@ -3720,10 +3720,10 @@
   },
   "event_337":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "3000m relay",
-    "competition_type": "final b",
-    "sex": "female",
+    "competition_type": "final B",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "19:35",
     "local_end_time": "19:43",
@@ -3731,10 +3731,10 @@
   },
   "event_338":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "3000m relay",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "female",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "19:44",
     "local_end_time": "19:55",
@@ -3742,10 +3742,10 @@
   },
   "event_339":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "500m",
-    "competition_type": "final b",
-    "sex": "male",
+    "competition_type": "final B",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "20:09",
     "local_end_time": "20:13",
@@ -3753,10 +3753,10 @@
   },
   "event_340":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1000m",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "male",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "20:14",
     "local_end_time": "20:19",
@@ -3764,10 +3764,10 @@
   },
   "event_341":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-13",
     "local_start_time": "21:00",
     "local_end_time": "21:26",
@@ -3775,10 +3775,10 @@
   },
   "event_342":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "500m",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-13",
     "local_start_time": "21:56",
     "local_end_time": "22:37",
@@ -3786,10 +3786,10 @@
   },
   "event_343":
   {
-    "discipline": "bobsleigh",
-    "description": "monobob",
+    "discipline": "Bobsleigh",
+    "description": "Monobob",
     "competition_type": "heat 3",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:30",
     "local_end_time": "10:45",
@@ -3797,10 +3797,10 @@
   },
   "event_344":
   {
-    "discipline": "bobsleigh",
-    "description": "monobob",
+    "discipline": "Bobsleigh",
+    "description": "Monobob",
     "competition_type": ["heat 4", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "11:00",
     "local_end_time": "11:50",
@@ -3808,10 +3808,10 @@
   },
   "event_345":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-man",
     "competition_type": "heat 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "21:10",
@@ -3821,10 +3821,10 @@
   },
   "event_346":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-man",
     "competition_type": "heat 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "21:40",
     "local_end_time": "22:45",
@@ -3832,10 +3832,10 @@
   },
   "event_347":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 7",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 7",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3843,10 +3843,10 @@
   },
   "event_348":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 7",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 7",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3854,10 +3854,10 @@
   },
   "event_349":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 7",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 7",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -3865,10 +3865,10 @@
   },
   "event_350":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3876,10 +3876,10 @@
   },
   "event_351":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3887,10 +3887,10 @@
   },
   "event_352":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3898,10 +3898,10 @@
   },
   "event_353":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -3909,10 +3909,10 @@
   },
   "event_354":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3920,10 +3920,10 @@
   },
   "event_355":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3931,10 +3931,10 @@
   },
   "event_356":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3942,10 +3942,10 @@
   },
   "event_357":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 8",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 8",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -3953,10 +3953,10 @@
   },
   "event_358":
   {
-    "discipline": "figure skating",
-    "description": "ice dance, free dance",
+    "discipline": "Figure skating",
+    "description": "Ice dance, free dance",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:15",
     "local_end_time": "12:36",
@@ -3964,10 +3964,10 @@
   },
   "event_359":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "final run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
@@ -3975,10 +3975,10 @@
   },
   "event_360":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "final run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:57",
     "local_end_time": "10:20",
@@ -3986,10 +3986,10 @@
   },
   "event_361":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "10:24",
     "local_end_time": "10:49",
@@ -3997,10 +3997,10 @@
   },
   "event_362":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "qualification run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "12:30",
     "local_end_time": "13:29",
@@ -4009,10 +4009,10 @@
   },
   "event_363":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "qualification run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "13:33",
     "local_end_time": "14:32",
@@ -4020,10 +4020,10 @@
   },
   "event_364":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": "final 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
@@ -4031,10 +4031,10 @@
   },
   "event_365":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": ["final 2", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "20:00",
     "local_end_time": "20:15",
@@ -4042,10 +4042,10 @@
   },
   "event_366":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -4054,10 +4054,10 @@
   },
   "event_367":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -4066,10 +4066,10 @@
   },
   "event_368":
   {
-    "discipline": "ski jumping",
+    "discipline": "Ski jumping",
     "description": "team",
     "competition_type": "first round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "19:00",
     "local_end_time": "20:00",
@@ -4077,10 +4077,10 @@
   },
   "event_369":
   {
-    "discipline": "ski jumping",
+    "discipline": "Ski jumping",
     "description": "team",
     "competition_type": ["final round", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "20:06",
     "local_end_time": "20:42",
@@ -4088,10 +4088,10 @@
   },
   "event_370":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "qualification run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "09:30",
     "local_end_time": "10:15",
@@ -4099,10 +4099,10 @@
   },
   "event_371":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "qualification run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "10:15",
     "local_end_time": "11:00",
@@ -4110,10 +4110,10 @@
   },
   "event_372":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "qualification run 3",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-14",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
@@ -4121,10 +4121,10 @@
   },
   "event_373":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "qualification run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "13:30",
     "local_end_time": "14:15",
@@ -4132,10 +4132,10 @@
   },
   "event_374":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "qualification run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "14:15",
     "local_end_time": "15:00",
@@ -4143,10 +4143,10 @@
   },
   "event_375":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "qualification run 3",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-14",
     "local_start_time": "15:00",
     "local_end_time": "15:45",
@@ -4154,10 +4154,10 @@
   },
   "event_376":
   {
-    "discipline": "alpine skiing",
-    "description": "downhill",
+    "discipline": "Alpine skiing",
+    "description": "Downhill",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "11:00",
     "local_end_time": "12:59",
@@ -4165,10 +4165,10 @@
   },
   "event_377":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "4 x 7.5km relay",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "17:00",
     "local_end_time": "18:15",
@@ -4178,10 +4178,10 @@
   },
   "event_378":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-man",
     "competition_type": "heat 3",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "20:15",
     "local_end_time": "21:30",
@@ -4189,10 +4189,10 @@
   },
   "event_379":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-man",
     "competition_type": ["heat 4", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "21:50",
     "local_end_time": "22:35",
@@ -4200,10 +4200,10 @@
   },
   "event_380":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4211,10 +4211,10 @@
   },
   "event_381":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4222,10 +4222,10 @@
   },
   "event_382":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4233,10 +4233,10 @@
   },
   "event_383":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4244,10 +4244,10 @@
   },
   "event_384":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4255,10 +4255,10 @@
   },
   "event_385":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4266,10 +4266,10 @@
   },
   "event_386":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4277,10 +4277,10 @@
   },
   "event_387":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 9",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 9",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4288,10 +4288,10 @@
   },
   "event_388":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4299,10 +4299,10 @@
   },
   "event_389":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4310,10 +4310,10 @@
   },
   "event_390":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4321,10 +4321,10 @@
   },
   "event_391":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4332,10 +4332,10 @@
   },
   "event_392":
   {
-    "discipline": "figure skating",
-    "description": "single skating, short program",
-    "competition_type": "None",
-    "sex": "female",
+    "discipline": "Figure skating",
+    "description": "Single skating, short program",
+    "competition_type": "",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "18:00",
     "local_end_time": "22:25",
@@ -4343,10 +4343,10 @@
   },
   "event_393":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "final run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
@@ -4354,10 +4354,10 @@
   },
   "event_394":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": "final run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
@@ -4365,10 +4365,10 @@
   },
   "event_395":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski slopestyle",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski Slopestyle",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "10:26",
     "local_end_time": "10:50",
@@ -4376,10 +4376,10 @@
   },
   "event_396":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": "qualification 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
@@ -4388,10 +4388,10 @@
   },
   "event_397":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": "qualification 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "19:45",
     "local_end_time": "20:15",
@@ -4399,10 +4399,10 @@
   },
   "event_398":
   {
-    "discipline": "ice hockey",
-    "description": "play-off",
+    "discipline": "Ice hockey",
+    "description": "Play-off",
     "competition_type": "qualification",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -4410,10 +4410,10 @@
   },
   "event_399":
   {
-    "discipline": "ice hockey",
-    "description": "play-off",
+    "discipline": "Ice hockey",
+    "description": "Play-off",
     "competition_type": "qualification",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -4421,10 +4421,10 @@
   },
   "event_400":
   {
-    "discipline": "ice hockey",
-    "description": "play-off",
+    "discipline": "Ice hockey",
+    "description": "Play-off",
     "competition_type": "qualification",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -4432,10 +4432,10 @@
   },
   "event_401":
   {
-    "discipline": "ice hockey",
-    "description": "play-off",
+    "discipline": "Ice hockey",
+    "description": "Play-off",
     "competition_type": "qualification",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -4443,10 +4443,10 @@
   },
   "event_402":
   {
-    "discipline": "nordic combined",
-    "description": "individual gundersen large hill/10km, ski jumping",
+    "discipline": "Nordic combined",
+    "description": "Individual Gundersen large hill/10km, Ski jumping",
     "competition_type": "competition round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "16:00",
     "local_end_time": "16:51",
@@ -4454,10 +4454,10 @@
   },
   "event_403":
   {
-    "discipline": "nordic combined",
-    "description": "individual gundersen large hill/10km, cross country",
+    "discipline": "Nordic combined",
+    "description": "Individual Gundersen large hill/10km, cross country",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "19:00",
     "local_end_time": "19:35",
@@ -4465,10 +4465,10 @@
   },
     "event_404":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "final run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
@@ -4476,10 +4476,10 @@
   },
   "event_405":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "final run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "09:52",
     "local_end_time": "10:12",
@@ -4487,10 +4487,10 @@
   },
   "event_406":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "10:15",
     "local_end_time": "10:35",
@@ -4498,10 +4498,10 @@
   },
     "event_407":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "final run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "13:00",
     "local_end_time": "13:20",
@@ -4509,10 +4509,10 @@
   },
   "event_408":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": "final run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "13:22",
     "local_end_time": "10:42",
@@ -4520,10 +4520,10 @@
   },
   "event_409":
   {
-    "discipline": "snowboard",
+    "discipline": "Snowboard",
     "description": "big air",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "13:45",
     "local_end_time": "14:05",
@@ -4531,10 +4531,10 @@
   },
   "event_410":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "14:30",
     "local_end_time": "14:50",
@@ -4542,10 +4542,10 @@
   },
   "event_411":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "14:52",
     "local_end_time": "15:15",
@@ -4553,10 +4553,10 @@
   },
   "event_412":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
     "competition_type": "final d",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "15:24",
     "local_end_time": "15:29",
@@ -4564,10 +4564,10 @@
   },
   "event_413":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
-    "competition_type": "final c",
-    "sex": "female",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
+    "competition_type": "final C",
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "15:30",
     "local_end_time": "15:35",
@@ -4575,10 +4575,10 @@
   },
   "event_414":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
     "competition_type": "final d",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "15:43",
     "local_end_time": "15:48",
@@ -4586,10 +4586,10 @@
   },
   "event_416":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
-    "competition_type": "final c",
-    "sex": "male",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
+    "competition_type": "final C",
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "15:49",
     "local_end_time": "15:55",
@@ -4597,10 +4597,10 @@
   },
   "event_417":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
-    "competition_type": ["final b", "bronze medal event"],
-    "sex": "female",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
+    "competition_type": ["final B", "bronze medal event"],
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "16:22",
     "local_end_time": "16:27",
@@ -4608,10 +4608,10 @@
   },
   "event_418":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "female",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "women",
     "date": "2022-02-15",
     "local_start_time": "16:28",
     "local_end_time": "16:34",
@@ -4619,10 +4619,10 @@
   },
   "event_419":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
-    "competition_type": ["final b", "bronze medal event"],
-    "sex": "male",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
+    "competition_type": ["final B", "bronze medal event"],
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "16:41",
     "local_end_time": "16:46",
@@ -4630,10 +4630,10 @@
   },
   "event_420":
   {
-    "discipline": "speed skating",
-    "description": "team pursuit",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "male",
+    "discipline": "Speed skating",
+    "description": "Team pursuit",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "men",
     "date": "2022-02-15",
     "local_start_time": "16:47",
     "local_end_time": "16:53",
@@ -4641,10 +4641,10 @@
   },
   "event_421":
   {
-    "discipline": "alpine skiing",
-    "description": "slalom",
+    "discipline": "Alpine skiing",
+    "description": "Slalom",
     "competition_type": "run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "10:15",
     "local_end_time": "12:10",
@@ -4653,10 +4653,10 @@
   },
   "event_422":
   {
-    "discipline": "alpine skiing",
-    "description": "slalom",
+    "discipline": "Alpine skiing",
+    "description": "Slalom",
     "competition_type": ["run 2", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "13:45",
     "local_end_time": "15:40",
@@ -4664,10 +4664,10 @@
   },
   "event_423":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "4x6km relay",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "15:45",
     "local_end_time": "17:00",
@@ -4677,10 +4677,10 @@
   },
   "event_424":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "team sprint classic",
     "competition_type": "semi finals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "17:00",
     "local_end_time": "17:30",
@@ -4689,10 +4689,10 @@
   },
   "event_425":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "team sprint classic",
     "competition_type": "semi finals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
@@ -4701,10 +4701,10 @@
   },
   "event_426":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "team sprint classic",
     "competition_type": ["final", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "19:00",
     "local_end_time": "19:25",
@@ -4712,10 +4712,10 @@
   },
   "event_427":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "team sprint classic",
     "competition_type": ["final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
@@ -4723,10 +4723,10 @@
   },
   "event_428":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4734,10 +4734,10 @@
   },
   "event_429":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4745,10 +4745,10 @@
   },
   "event_430":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 10",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 10",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -4756,10 +4756,10 @@
   },
   "event_431":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4767,10 +4767,10 @@
   },
   "event_432":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4778,10 +4778,10 @@
   },
   "event_433":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -4789,10 +4789,10 @@
   },
   "event_434":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4800,10 +4800,10 @@
   },
   "event_435":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4811,10 +4811,10 @@
   },
   "event_436":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4822,10 +4822,10 @@
   },
   "event_437":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 11",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 11",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -4833,10 +4833,10 @@
   },
   "event_438":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": "final 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
@@ -4844,10 +4844,10 @@
   },
   "event_439":
   {
-    "discipline": "freestyle skiing",
+    "discipline": "Freestyle skiing",
     "description": "aerials",
     "competition_type": ["final 2", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "20:00",
     "local_end_time": "20:15",
@@ -4855,10 +4855,10 @@
   },
     "event_440":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
@@ -4866,10 +4866,10 @@
   },
   "event_441":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "14:00",
     "local_end_time": "16:15",
@@ -4877,10 +4877,10 @@
   },
   "event_442":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -4888,10 +4888,10 @@
   },
   "event_443":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": ["bronze medal game", "bronze medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "16:40",
     "local_end_time": "18:55",
@@ -4900,10 +4900,10 @@
   },
   "event_444":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "21:30",
     "local_end_time": "23:45",
@@ -4911,10 +4911,10 @@
   },
   "event_445":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "19:30",
     "local_end_time": "20:10",
@@ -4922,10 +4922,10 @@
   },
   "event_446":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "20:15",
     "local_end_time": "20:30",
@@ -4933,10 +4933,10 @@
   },
   "event_447":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "5000m relay",
-    "competition_type": "final b",
-    "sex": "male",
+    "competition_type": "final B",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "20:32",
     "local_end_time": "20:42",
@@ -4944,10 +4944,10 @@
   },
   "event_448":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "5000m relay",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "male",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "20:44",
     "local_end_time": "20:57",
@@ -4955,10 +4955,10 @@
   },
   "event_449":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
-    "competition_type": "final b",
-    "sex": "female",
+    "competition_type": "final B",
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "21:11",
     "local_end_time": "21:16",
@@ -4966,10 +4966,10 @@
   },
   "event_450":
   {
-    "discipline": "short track speed skating",
+    "discipline": "Short track speed skating",
     "description": "1500m",
-    "competition_type": ["final a", "gold medal event"],
-    "sex": "female",
+    "competition_type": ["final A", "gold medal event"],
+    "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "21:18",
     "local_end_time": "21:26",
@@ -4977,10 +4977,10 @@
   },
   "event_451":
   {
-    "discipline": "alpine skiing",
-    "description": "combined downhill",
-    "competition_type": "None",
-    "sex": "female",
+    "discipline": "Alpine skiing",
+    "description": "Combined downhill",
+    "competition_type": "",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "10:30",
     "local_end_time": "12:00",
@@ -4988,10 +4988,10 @@
   },
   "event_452":
   {
-    "discipline": "alpine skiing",
-    "description": "combined slalom",
+    "discipline": "Alpine skiing",
+    "description": "Combined slalom",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:00",
     "local_end_time": "15:19",
@@ -4999,10 +4999,10 @@
   },
   "event_453":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -5010,10 +5010,10 @@
   },
   "event_454":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -5021,10 +5021,10 @@
   },
   "event_455":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -5032,10 +5032,10 @@
   },
   "event_456":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "male",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -5043,10 +5043,10 @@
   },
   "event_457":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -5054,10 +5054,10 @@
   },
   "event_458":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -5065,10 +5065,10 @@
   },
   "event_459":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -5076,10 +5076,10 @@
   },
   "event_460":
   {
-    "discipline": "curling",
-    "description": "None",
-    "competition_type": "round robin session 12",
-    "sex": "female",
+    "discipline": "Curling",
+    "description": "",
+    "competition_type": "round robin, session 12",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -5087,10 +5087,10 @@
   },
   "event_461":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": "semi-final",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -5098,10 +5098,10 @@
   },
   "event_462":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": "semi-final",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -5109,10 +5109,10 @@
   },
   "event_463":
   {
-    "discipline": "figure skating",
-    "description": "single skating, free skating",
+    "discipline": "Figure skating",
+    "description": "Single skating, free skating",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "18:00",
     "local_end_time": "21:57",
@@ -5120,10 +5120,10 @@
   },
   "event_464":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "qualification run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "09:30",
     "local_end_time": "10:19",
@@ -5132,10 +5132,10 @@
   },
   "event_465":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "qualification run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "10:21",
     "local_end_time": "11:10",
@@ -5143,10 +5143,10 @@
   },
   "event_466":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "seeding",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "11:30",
     "local_end_time": "12:15",
@@ -5155,10 +5155,10 @@
   },
   "event_467":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "qualification run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "12:30",
     "local_end_time": "13:19",
@@ -5167,10 +5167,10 @@
   },
   "event_468":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "qualification run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "13:21",
     "local_end_time": "14:10",
@@ -5178,10 +5178,10 @@
   },
   "event_469":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "1/8 finals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:00",
     "local_end_time": "14:30",
@@ -5189,10 +5189,10 @@
   },
   "event_470":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "quarterfinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:35",
     "local_end_time": "15:50",
@@ -5200,10 +5200,10 @@
   },
   "event_471":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "14:54",
     "local_end_time": "15:04",
@@ -5211,10 +5211,10 @@
   },
   "event_472":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "small final",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "15:10",
     "local_end_time": "15:15",
@@ -5222,10 +5222,10 @@
   },
   "event_473":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "15:20",
     "local_end_time": "15:35",
@@ -5233,10 +5233,10 @@
   },
   "event_474":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": ["gold medal game", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
@@ -5245,10 +5245,10 @@
   },
   "event_475":
   {
-    "discipline": "nordic combined",
-    "description": "individual gundersen large hill/4x5km, ski jumping",
+    "discipline": "Nordic combined",
+    "description": "Individual Gundersen large hill/4x5km, Ski jumping",
     "competition_type": "competition round",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "16:00",
     "local_end_time": "16:40",
@@ -5256,10 +5256,10 @@
   },
   "event_476":
   {
-    "discipline": "nordic combined",
-    "description": "individual gundersen large hill/4x5km, cross country",
+    "discipline": "Nordic combined",
+    "description": "Individual Gundersen large hill/4x5km, cross country",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "19:00",
     "local_end_time": "19:55",
@@ -5267,10 +5267,10 @@
   },
   "event_477":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "1000m",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-17",
     "local_start_time": "16:30",
     "local_end_time": "17:42",
@@ -5278,10 +5278,10 @@
   },
   "event_478":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "15km mass start",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "17:00",
     "local_end_time": "17:45",
@@ -5289,10 +5289,10 @@
   },
   "event_479":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-woman",
     "competition_type": "heat 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "20:00",
     "local_end_time": "21:00",
@@ -5301,10 +5301,10 @@
   },
   "event_480":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-woman",
     "competition_type": "heat 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "21:30",
     "local_end_time": "22:15",
@@ -5312,10 +5312,10 @@
   },
   "event_481":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": ["bronze medal game", "bronze medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -5323,10 +5323,10 @@
   },
   "event_483":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": "semi-final",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -5334,10 +5334,10 @@
   },
   "event_484":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": "semi-final",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -5345,10 +5345,10 @@
   },
   "event_485":
   {
-    "discipline": "figure skating",
-    "description": "pair skating, short program",
-    "competition_type": "None",
-    "sex": ["female", "male"],
+    "discipline": "Figure skating",
+    "description": "Pair skating, short program",
+    "competition_type": "",
+    "sex": "women, men",
     "date": "2022-02-18",
     "local_start_time": "18:30",
     "local_end_time": "21:43",
@@ -5356,10 +5356,10 @@
   },
   "event_486":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "final run 1",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
@@ -5367,10 +5367,10 @@
   },
   "event_487":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "final run 2",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
@@ -5378,10 +5378,10 @@
   },
   "event_488":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-18",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
@@ -5389,10 +5389,10 @@
   },
   "event_489":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "seeding",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "11:45",
     "local_end_time": "12:30",
@@ -5401,10 +5401,10 @@
   },
   "event_490":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "1/8 finals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "14:00",
     "local_end_time": "14:30",
@@ -5412,10 +5412,10 @@
   },
   "event_491":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "quarterfinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "14:35",
     "local_end_time": "14:50",
@@ -5423,10 +5423,10 @@
   },
   "event_492":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "14:54",
     "local_end_time": "15:04",
@@ -5434,10 +5434,10 @@
   },
   "event_493":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": "small final",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "15:10",
     "local_end_time": "15:15",
@@ -5445,10 +5445,10 @@
   },
   "event_494":
   {
-    "discipline": "freestyle skiing",
-    "description": "ski cross",
+    "discipline": "Freestyle skiing",
+    "description": "Ski cross",
     "competition_type": ["big final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "15:20",
     "local_end_time": "16:20",
@@ -5456,10 +5456,10 @@
   },
   "event_495":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "12:10",
     "local_end_time": "16:25",
@@ -5467,10 +5467,10 @@
   },
   "event_496":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -5478,10 +5478,10 @@
   },
   "event_497":
   {
-    "discipline": "speed skating",
+    "discipline": "Speed skating",
     "description": "1000m",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "16:30",
     "local_end_time": "17:40",
@@ -5489,10 +5489,10 @@
   },
   "event_498":
   {
-    "discipline": "alpine skiing",
-    "description": "mixed team parallel",
+    "discipline": "Alpine skiing",
+    "description": "Mixed team Parallel",
     "competition_type": "1/8 finals",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-19",
     "local_start_time": "11:00",
     "local_end_time": "11:45",
@@ -5500,10 +5500,10 @@
   },
   "event_499":
   {
-    "discipline": "alpine skiing",
-    "description": "mixed team parallel",
+    "discipline": "Alpine skiing",
+    "description": "Mixed team Parallel",
     "competition_type": "1/4 finals",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-19",
     "local_start_time": "11:47",
     "local_end_time": "12:12",
@@ -5511,10 +5511,10 @@
   },
   "event_500":
   {
-    "discipline": "alpine skiing",
-    "description": "mixed team parallel",
+    "discipline": "Alpine skiing",
+    "description": "Mixed team Parallel",
     "competition_type": "1/2 finals",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-19",
     "local_start_time": "12:14",
     "local_end_time": "12:35",
@@ -5522,10 +5522,10 @@
   },
   "event_501":
   {
-    "discipline": "alpine skiing",
-    "description": "mixed team parallel",
+    "discipline": "Alpine skiing",
+    "description": "Mixed team Parallel",
     "competition_type": ["small final", "bronze medal event"],
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-19",
     "local_start_time": "12:37",
     "local_end_time": "12:43",
@@ -5533,20 +5533,20 @@
   },
   "event_502":
   {
-    "discipline": "alpine skiing",
-    "description": "mixed team parallel",
+    "discipline": "Alpine skiing",
+    "description": "Mixed team Parallel",
     "competition_type": ["big final", "gold medal event"],
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-19",
     "local_start_time": "12:46",
     "local_end_time": "12:54", "participating_countries": ["TBA"]
   },
   "event_503":
   {
-    "discipline": "biathlon",
+    "discipline": "Biathlon",
     "description": "12.5km mass start",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-19",
     "local_start_time": "17:00",
     "local_end_time": "17:45",
@@ -5554,10 +5554,10 @@
   },
   "event_504":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "4-man",
     "competition_type": "heat 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-18",
     "local_start_time": "09:30",
     "local_end_time": "11:00",
@@ -5566,10 +5566,10 @@
   },
   "event_505":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "4-man",
     "competition_type": "heat 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "11:05",
     "local_end_time": "12:05",
@@ -5577,10 +5577,10 @@
   },
   "event_506":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-woman",
     "competition_type": "heat 3",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-19",
     "local_start_time": "20:00",
     "local_end_time": "21:00",
@@ -5588,10 +5588,10 @@
   },
   "event_507":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "2-woman",
     "competition_type": ["heat 4", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-19",
     "local_start_time": "21:30",
     "local_end_time": "22:15",
@@ -5599,10 +5599,10 @@
   },
   "event_508":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "50km mass start free",
     "competition_type": "gold medal event",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "14:00",
     "local_end_time": "16:45",
@@ -5610,10 +5610,10 @@
   },
   "event_509":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": ["gold medal game", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "14:05",
     "local_end_time": "17:00",
@@ -5622,10 +5622,10 @@
   },
   "event_510":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": ["bronze medal game", "bronze medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-19",
     "local_start_time": "20:05",
     "local_end_time": "23:00",
@@ -5633,10 +5633,10 @@
   },
   "event_511":
   {
-    "discipline": "figure skating",
-    "description": "pair skating, free skating",
+    "discipline": "Figure skating",
+    "description": "Pair skating, free skating",
     "competition_type": "gold medal event",
-    "sex": ["female", "male"],
+    "sex": "women, men",
     "date": "2022-02-19",
     "local_start_time": "19:00",
     "local_end_time": "21:53",
@@ -5644,10 +5644,10 @@
   },
   "event_512":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "final run 1",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
@@ -5655,10 +5655,10 @@
   },
   "event_513":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": "final run 2",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
@@ -5666,10 +5666,10 @@
   },
   "event_514":
   {
-    "discipline": "freestyle skiing",
-    "description": "freeski halfpipe",
+    "discipline": "Freestyle skiing",
+    "description": "Freeski halfpipe",
     "competition_type": ["final run 3", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "10:25",
     "local_end_time": "10:49",
@@ -5677,10 +5677,10 @@
   },
   "event_515":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": ["bronze medal game", "bronze medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
@@ -5689,10 +5689,10 @@
   },
   "event_516":
   {
-    "discipline": "speed skating",
-    "description": "mass start",
+    "discipline": "Speed skating",
+    "description": "Mass start",
     "competition_type": "semifinals",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "15:00",
     "local_end_time": "15:30",
@@ -5700,10 +5700,10 @@
   },
   "event_517":
   {
-    "discipline": "speed skating",
-    "description": "mass start",
+    "discipline": "Speed skating",
+    "description": "Mass start",
     "competition_type": "semifinals",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-19",
     "local_start_time": "15:45",
     "local_end_time": "16:10",
@@ -5711,10 +5711,10 @@
   },
   "event_518":
   {
-    "discipline": "speed skating",
-    "description": "mass start",
+    "discipline": "Speed skating",
+    "description": "Mass start",
     "competition_type": ["final", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-19",
     "local_start_time": "16:30",
     "local_end_time": "16:45",
@@ -5722,10 +5722,10 @@
   },
   "event_519":
   {
-    "discipline": "speed skating",
-    "description": "mass start",
+    "discipline": "Speed skating",
+    "description": "Mass start",
     "competition_type": ["final", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-19",
     "local_start_time": "17:00",
     "local_end_time": "17:15",
@@ -5733,10 +5733,10 @@
   },
   "event_520":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "4-man",
     "competition_type": "heat 3",
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-20",
     "local_start_time": "09:30",
     "local_end_time": "11:00",
@@ -5744,10 +5744,10 @@
   },
   "event_521":
   {
-    "discipline": "bobsleigh",
+    "discipline": "Bobsleigh",
     "description": "4-man",
     "competition_type": ["heat 4", "gold medal event"],
-    "sex": "male",
+    "sex": "men",
     "date": "2022-02-20",
     "local_start_time": "11:20",
     "local_end_time": "12:05",
@@ -5755,10 +5755,10 @@
   },
   "event_522":
   {
-    "discipline": "cross-country skiing",
+    "discipline": "Cross-country skiing",
     "description": "30km mass start free",
     "competition_type": "gold medal event",
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-20",
     "local_start_time": "14:30",
     "local_end_time": "16:30",
@@ -5766,10 +5766,10 @@
   },
   "event_523":
   {
-    "discipline": "curling",
-    "description": "None",
+    "discipline": "Curling",
+    "description": "",
     "competition_type": ["gold medal game", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-20",
     "local_start_time": "09:05",
     "local_end_time": "12:00",
@@ -5778,13 +5778,34 @@
   },
   "event_524":
   {
-    "discipline": "ice hockey",
-    "description": "None",
+    "discipline": "Ice hockey",
+    "description": "",
     "competition_type": ["gold medal game", "gold medal event"],
-    "sex": "female",
+    "sex": "women",
     "date": "2022-02-20",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
     "participating_countries": ["TBA"]
+  },
+  "event_525":
+  {
+    "discipline": "Ceremony",
+    "description": "Closing",
+    "competition_type": "",
+    "sex": "women, men",
+    "date": "2022-02-20",
+    "local_start_time": "20:00",
+    "local_end_time": "22:00",
+    "participating_countries": ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria",
+      "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chile",
+      "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea",
+      "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong",
+      "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Kosovo",
+      "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta",
+      "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria",
+      "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC",
+      "Romania", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden",
+      "Switzerland", "Chinese Taipei", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United States",
+      "Uzbekistan"]
   }
 }
