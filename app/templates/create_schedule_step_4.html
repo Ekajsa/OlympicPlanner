@@ -11,10 +11,22 @@
                     drop to add events from the main schedule to your personal schedule. </p>
 
                     {% for event in events %}
-                        {{ event.discipline }}, {{ event.sex }}. {{ event.description }}, {{ event.competition_type }}
+                        {{ event.discipline }},
+                        {% if event.sex|length == 2 %}
+                            {{ event.sex[0] }}, {{ event.sex[1] }}.
+                        {% else %}
+                             {{ event.sex }}.
+                        {% endif %}
+                        {% if event.description == "" %}
+                            {{ event.competition_type|capitalize }}.
+                        {% else %}
+                            {{ event.description }}, {{ event.competition_type }}.
+                        {%  endif %}
+                        {% if event.participating_countries|length == 2 %}
+                            {{ event.participating_countries[0] }}-{{ event.participating_countries[1] }}.
+                        {% endif %}
                         {{ event.local_start_time }}-{{ event.local_end_time }} </br>
                     {% endfor %}
-                </div>
             </div>
     </div>
  {% endblock %}
