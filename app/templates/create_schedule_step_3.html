@@ -77,6 +77,7 @@
                     /*check if the item contains the same letters as the text field value:*/
                     if ((arr[i].toUpperCase()).includes(val.toUpperCase())) {
                         /*create a DIV element for each matching element:*/
+
                         b = document.createElement("div");
                         /*make the matching letters bold:*/
                         {#pattern = "uni" pattern is my val#}
@@ -101,6 +102,7 @@
 
                         {#let boldText = "<strong>" + val + "</strong>";#}
                         {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
+
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                         /*execute a function when someone clicks on the item value (DIV element):*/
@@ -175,9 +177,11 @@
                 closeAllLists(e.target);
             });
         }
+
         function capitalizeFirstLetter(string) {
           return string.charAt(0).toUpperCase() + string.slice(1);
         }
+
 
     </script>
 
