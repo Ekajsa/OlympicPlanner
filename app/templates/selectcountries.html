@@ -1,32 +1,34 @@
-{% extends "user.html" %}
+{% extends "base_template.html" %}
 
 {% block content %}
-    <!--Make sure the form has the autocomplete function switched off:-->
-    <form autocomplete="off" class="countries" id="countries1" action="{{ url_for("bp_user.select_countries_get") }}">
-        <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="country" placeholder="Country">
-        </div>
-        <input type="button" id="addCountry" onclick="ac()" value="Add to list">
-        <input type="submit" value="Next">
-    </form>
+    <div class="content-section">
+
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <form autocomplete="off" class="countries" id="countries1" action="{{ url_for("bp_user.select_countries_get") }}">
+            <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="country" placeholder="Country">
+            </div>
+            <input type="button" id="addCountry" onclick="ac()" value="Add to list">
+            <input type="submit" value="Next">
+        </form>
 
 
-    <div id="countries">Chosen countries:</div>
-    {#    Should </div> be placed under the table?#}
-    <table id="countryTable">
+        <div id="countries">Chosen countries:</div>
+        {#    Should </div> be placed under the table?#}
+        <table id="countryTable">
 
-    </table>
-    <ul id="countryList"></ul>
-    <table>
-        <tr>
-            {% for country in countries %}
-                <td>Country flag</td>
-                <td>{{ country }}</td>
-                <td>Bin</td>
-            {% endfor %}
-        </tr>
-    </table>
-
+        </table>
+        <ul id="countryList"></ul>
+        <table>
+            <tr>
+                {% for country in countries %}
+                    <td>Country flag</td>
+                    <td>{{ country }}</td>
+                    <td>Bin</td>
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
 
     <script>
         function ac() {
