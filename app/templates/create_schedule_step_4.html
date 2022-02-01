@@ -3,9 +3,19 @@
 
 {%  block content %}
     <div class="content-section">
-        <h1>Welcome {{ current_user.first_name }}!</h1>
+        <h1>Congratulations!</h1>
             <div class="container-fluid">
-                <p>Congratulations on your excellent decision to use The Olympic Planner! Click next to create a new schedule, or open an existing one.</p>
+                <p> Here is a filtered version of the main schedule. If you like it as it is, you can
+                    copy all of it to your personal schedule. If you want, you can fine tune the main schedule with
+                    filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
+                    drop to add events from the main schedule to your personal schedule. </p>
+                <div>
+
+                </div>
             </div>
     </div>
  {% endblock %}
+
+{% block scripts %}
+    <script></script>
+{% endblock %}

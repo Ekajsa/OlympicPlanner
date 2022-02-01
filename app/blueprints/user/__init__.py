@@ -28,7 +28,7 @@ def profile_get():
     return render_template("profile.html")
 
 
-@bp_user.get("/create_schedule")
+@bp_user.get("/create_schedule/step1")
 # @login_required
 def schedules_get():
     # list of schedules, only for test purpose
@@ -37,19 +37,18 @@ def schedules_get():
     return render_template("create_schedule_step_1.html", schedules=schedules)
 
 
-@bp_user.get("/create_schedule/disciplines")
-# @login_required
+@bp_user.get("/create_schedule/step2")
 def select_disciplines_get():
-    return render_template("selectdisciplines.html")
+    return render_template("create_schedule_step_2.html")
 
 
-@bp_user.get("/create_schedule/countries")
+@bp_user.get("/create_schedule/step3")
 def select_countries_get():
     # countries = get_country()  # Continue here!
-    return render_template("selectcountries.html")
+    return render_template("create_schedule_step_3.html")
 
 
-@bp_user.post("/create_schedule/countries")
+@bp_user.post("/create_schedule/step3")
 def select_countries_post():
     # countries = []
     # # How do I return all countries who has been clicked and therefore has a value of true?
@@ -62,6 +61,12 @@ def select_countries_post():
     # schedule_name = "First"
     # add_country(email, country, schedule_name)
     return redirect(url_for("bp_user.select_countries_get"))
+
+
+@bp_user.get("/create_schedule/step4")
+# @login_required
+def filtered_schedule_get():
+    return render_template("create_schedule_step_4.html")
 
 
 @bp_user.get("/my_schedule")
