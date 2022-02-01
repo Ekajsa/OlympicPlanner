@@ -75,10 +75,23 @@
                     /*check if the item contains the same letters as the text field value:*/
                     if ((arr[i].toUpperCase()).includes(val.toUpperCase())) {
                         /*create a DIV element for each matching element:*/
-                        b = document.createElement("DIV");
+                        b = document.createElement("div");
                         /*make the matching letters bold:*/
-                        let boldText = "<strong>" + val + "</strong>";
-                        b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);
+{#                        pattern = "uni" pattern is my inp#}
+{#                        country = "United Kingdom" country is my b#}
+{#                        start_idx = country.lower().index(pattern.lower())#}
+{#                        end_idx = start_idx + len(pattern)#}
+{#                        pattern = pattern if start_idx > 0 else pattern.title()#}
+{#                        output = country[:start_idx] + '<strong>' + pattern + '</strong>'  + country[end_idx:]#}
+                        let start_idx = b.toLowerCase().indexOf(inp.toLowerCase());
+                        let end_idx = start_idx + inp.length;
+                        if(start_idx === 0) {
+                            inp = inp.title;
+                        }
+                        let output = b[:start_idx] + "<strong>" + inp + "<strong>" + b[end_idx:];
+
+                        {#let boldText = "<strong>" + val + "</strong>";#}
+                        {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                         /*execute a function when someone clicks on the item value (DIV element):*/
