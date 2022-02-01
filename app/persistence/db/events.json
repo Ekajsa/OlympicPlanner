@@ -520,7 +520,8 @@
     "date": "2022-02-05",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["TBA"],
+    "participants_decided": "False"
   },
   "event_47":
   {
@@ -531,7 +532,8 @@
     "date": "2022-02-05",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["TBA"],
+    "participants_decided": "False"
   },
     "event_48":
   {
@@ -542,7 +544,8 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "20:35",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["TBA"],
+    "participants_decided": "False"
   },
     "event_49":
   {
@@ -553,7 +556,8 @@
     "date": "2022-02-05",
     "local_start_time": "20:40",
     "local_end_time": "21:10",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["TBA"],
+    "participants_decided": "False"
   },
     "event_50":
   {
