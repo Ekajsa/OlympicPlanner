@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+{% set active_page = "schedules" %}
+
+{%  block content %}
+    <div class="content-section">
+        <h1>Welcome {{ current_user.first_name }}!</h1>
+            <div class="container-fluid">
+                <p>Congratulations on your excellent decision to use The Olympic Planner! Click next to create a new schedule, or open an existing one.</p>
+            </div>
+    </div>
+ {% endblock %}
