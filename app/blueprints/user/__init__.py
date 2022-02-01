@@ -40,13 +40,13 @@ def schedules_get():
 @bp_user.get("/create_schedule/disciplines")
 # @login_required
 def select_disciplines_get():
-    return render_template("selectdisciplines.html")
+    return render_template("create_schedule_step_2.html")
 
 
 @bp_user.get("/create_schedule/countries")
 def select_countries_get():
     # countries = get_country()  # Continue here!
-    return render_template("selectcountries.html")
+    return render_template("create_schedule_step_3.html")
 
 
 @bp_user.post("/create_schedule/countries")

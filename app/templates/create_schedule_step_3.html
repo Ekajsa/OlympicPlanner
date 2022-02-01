@@ -67,7 +67,7 @@
                 }
                 currentFocus = -1;
                 /*create a DIV element that will contain the items (values):*/
-                a = document.createElement("DIV");
+                a = document.createElement("div");
                 a.setAttribute("id", this.id + "autocomplete-list");
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
@@ -79,18 +79,23 @@
                         /*create a DIV element for each matching element:*/
                         b = document.createElement("div");
                         /*make the matching letters bold:*/
-{#                        pattern = "uni" pattern is my inp#}
-{#                        country = "United Kingdom" country is my b#}
-{#                        start_idx = country.lower().index(pattern.lower())#}
-{#                        end_idx = start_idx + len(pattern)#}
-{#                        pattern = pattern if start_idx > 0 else pattern.title()#}
-{#                        output = country[:start_idx] + '<strong>' + pattern + '</strong>'  + country[end_idx:]#}
-                        let start_idx = b.toLowerCase().indexOf(inp.toLowerCase());
-                        let end_idx = start_idx + inp.length;
+                        {#pattern = "uni" pattern is my val#}
+                        {#country = "United Kingdom" country is my arr[i]#}
+                        {#start_idx = country.lower().index(pattern.lower())#}
+                        {#end_idx = start_idx + len(pattern)#}
+                        {#pattern = pattern if start_idx > 0 else pattern.title()#}
+                        {#output = country[:start_idx] + '<strong>' + pattern + '</strong>'  + country[end_idx:]#}
+                        let start_idx = arr[i].toLowerCase().indexOf(val.toLowerCase());
+                        let end_idx = start_idx + val.length;
+                        let output = ""
                         if(start_idx === 0) {
-                            inp = inp.title;
+                            val = val.title;
+                            let output = "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
+                        } else {
+                            let output = arr[i].substring(0,start_idx + 1) + "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         }
-                        let output = b[:start_idx] + "<strong>" + inp + "<strong>" + b[end_idx:];
+
+                        b.innerHTML = output;
 
                         {#let boldText = "<strong>" + val + "</strong>";#}
                         {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
