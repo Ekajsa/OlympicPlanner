@@ -40,7 +40,7 @@ def profile_get():
 @bp_user.get("/schedules")
 # @login_required
 def schedules_get():
-    return render_template("schedules.html")
+    return render_template("create_schedule_start.html")
 
 
 @bp_user.get("/disciplines")
@@ -68,4 +68,3 @@ def select_countries_post():
     # schedule_name = "First"
     # add_country(email, country, schedule_name)
     return redirect(url_for("bp_user.select_countries_get"))
-
