@@ -1,24 +1,17 @@
-
-from app.controllers import user_controller as uc
-from app.controllers import event_controller as ec
-
 from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user, login_required
 
-from app.controllers.user_controller import add_country, get_user_by_email
-
+# from app.controllers.user_controller import add_country, get_user_by_email
+from app.controllers.event_controller import get_all_events
 
 bp_user = Blueprint("bp_user", __name__)
 
 
-@bp_user.get("/")
-def user():
-    # De-comment to create database posts!
-    # uc.create_user()
-    # ec.create_event()
-    return render_template("user.html")
+# @bp_user.get("/")
+# def user():
+#     return render_template("user.html")
 
-
+# Is this the same thing as restricted access in base_template?
 @bp_user.before_request
 def before_request():
     if not current_user.is_authenticated:
@@ -37,25 +30,27 @@ def profile_get():
     return render_template("profile.html")
 
 
-@bp_user.get("/schedules")
+@bp_user.get("/create_schedule/step1")
 # @login_required
 def schedules_get():
-    return render_template("schedules.html")
+    # list of schedules, only for test purpose
+    # schedules = [{"name": "My first schedule"}, {"name": "My second schedule"}]
+    schedules = ["My first schedule", "My second schedule"]
+    return render_template("create_schedule_step_1.html", schedules=schedules)
 
 
-@bp_user.get("/disciplines")
-# @login_required
+@bp_user.get("/create_schedule/step2")
 def select_disciplines_get():
-    return render_template("selectdisciplines.html")
+    return render_template("create_schedule_step_2.html")
 
 
-@bp_user.get("/countries")
+@bp_user.get("/create_schedule/step3")
 def select_countries_get():
     # countries = get_country()  # Continue here!
-    return render_template("selectcountries.html")
+    return render_template("create_schedule_step_3.html")
 
 
-@bp_user.post("/countries")
+@bp_user.post("/create_schedule/step3")
 def select_countries_post():
     # countries = []
     # # How do I return all countries who has been clicked and therefore has a value of true?
@@ -69,3 +64,15 @@ def select_countries_post():
     # add_country(email, country, schedule_name)
     return redirect(url_for("bp_user.select_countries_get"))
 
+
+@bp_user.get("/create_schedule/step4")
+# @login_required
+def filtered_schedule_get():
+    events = get_all_events()
+    return render_template("create_schedule_step_4.html", events=events)
+
+
+@bp_user.get("/my_schedule")
+# @login_required
+def my_schedules_get():
+    return render_template("my_schedule.html")

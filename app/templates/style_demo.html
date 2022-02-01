@@ -1,0 +1,16 @@
+{% extends "base_template.html" %}
+{#{% set active_page = "schedules" %}#}
+
+{%  block content %}
+    <article class="media content-section">
+      <div class="media-body">
+        <h1>Personal schedules page for {{ current_user.first_name }}</h1>
+        <div class="article-metadata">
+          <a class="mr-2" href="#">Class mr-2</a>
+          <small class="text-muted">Class text-muted</small>
+        </div>
+        <h2><a class="article-title" href="#">Class article-title</a></h2>
+        <p class="article-content">Class article-content</p>
+      </div>
+    </article>
+{% endblock %}

@@ -26,13 +26,13 @@ Issue Est. time Total Actual time         Total
 
 #010  -                     1:15(so far)  21:15
 #011  -                     13h           34:15
-#022  -                     12h           46:15
+#020  -                     12h           46:15
 
 
-Sprint week 3 (34h, not including lectures and meetings, not including 1 days vab for Johanna and also som time withdrawn because she is sick) (Added 6 h and 30 min if some things go faster than estimated)
+Sprint week 3 (34h, not including lectures and meetings, not including 1 days vab for Johanna and also som time withdrawn because she is sick) (Added 8 h and 30 min if some things go faster than estimated)
 Issue Est. time Total Actual time         Total               
-#020  3h        03:00       - 
 #021  12h       15:00       -
+#022  3h        03:00       - 
 #023  3h        18:00
 #024  0:30      18:30
 #025  1:30      20:00
@@ -50,4 +50,4 @@ Issue Est. time Total Actual time         Total
 #037  1h        34:30
 #038  1h        35:30
 #039  5h        40:30
-
+#040  2h        42:30

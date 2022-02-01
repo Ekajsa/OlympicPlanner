@@ -1,0 +1,204 @@
+{% extends "base_template.html" %}
+
+{% block content %}
+    <div class="content-section">
+
+        <p>Choose the disciplines of interest:</p>
+
+        {#<input type="button" onclick="selects()" value="Select All">#}
+        {#<br>#}
+        {#<input type="button" onclick="deSelect()" value="Deselect All">#}
+        {#<br>#}
+
+        {#<a href="#" onclick="javascript:toggleCheck(true,this);" class="btn">Select All</a>&nbsp;#}
+        {#<br>#}
+        {#<a href="#" onclick="javascript:toggleCheck(false,this);" class="btn">Deselect All</a>#}
+        {#<br>    #}
+
+        <form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form">
+
+            <div class="checkbox-container">
+              <input type="checkbox" id="d1" name="discipline" value="alpine">
+              <label for="d1">Alpine Skiing</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d2" name="discipline" value="biathlon">
+              <label for="d2">Biathlon</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d3" name="discipline" value="bobsleigh">
+              <label for="d3">Bobsleigh</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d4" name="discipline" value="cross-country">
+              <label for="d4">Cross-Country Skiing</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d5" name="discipline" value="curling">
+              <label for="d5">Curling</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d6" name="discipline" value="figure_skating">
+              <label for="d6">Figure Skating</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d7" name="discipline" value="freestyle">
+              <label for="d7">Freestyle Skiing</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d8" name="discipline" value="ice_hockey">
+              <label for="d8">Ice Hockey</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d9" name="discipline" value="luge">
+              <label for="d9">Luge</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d10" name="discipline" value="nordic">
+              <label for="d10">Nordic Combined</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d11" name="discipline" value="short_track">
+              <label for="d11">Short Track Speed Skating</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d12" name="discipline" value="skeleton">
+              <label for="d12">Skeleton</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d13" name="discipline" value="ski_jumping">
+              <label for="d13">Ski Jumping</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d14" name="discipline" value="snowboard">
+              <label for="d14">Snowboard</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="d15" name="discipline" value="speed_skating">
+              <label for="d15">Speed Skating</label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" class="submit" onclick="isChecked()" value="Select And Go To Next Step">
+            </div>
+        </form>
+    </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+function isChecked() {
+    var discipline = document.forms[0]; {# Why [0]? #}
+    var discipline_array = [];
+    var i;
+    for (i = 0; i < discipline.length; i++) {
+        if (discipline[i].checked) {
+            discipline_array.push(discipline[i].value);
+        }
+    }
+    console.log(discipline_list)
+    {#Loop through the id:s and add all with true value to a list?#}
+}
+    {#Don't need the one below?#}
+    {#document.getElementById("continue").onclick = function () {#}
+    {#    location.href = "{{ url_for('bp_user.select_countries_get') }}";#}
+{
+    #}
+    #}
+
+    {#Alert message after user hits the submit button#}
+    {#TODO: but how?#}
+    {#In your php page (here i just called it process_profile.php (selected {{url_for("bp_user.select_countries_get")}}
+    but think that it might be another page but which one???)), you will process all f your $_POST variables, and once
+    the script is complete, simply echo() a message.
+    This will appear in the response <div>#}
+    $(document).ready(function () {
+        var form = $('#form'); // form (by ID attr)
+        var submit = $('.submit');  // submit button (by CLASS attr)
+        var alert = $('#response'); // alert div for show alert message (by ID attr)
+        // form submit event
+        form.on('submit', function (e) {
+            e.preventDefault(); // prevent default form submit
+
+            $.ajax({
+                url: '{{url_for("bp_user.select_countries_get")}}', // form action url - this is your script where the $_POST is sent. The response will be whatever you return (eg: echo 'Success!'; )
+                type: 'POST', // form submit method get/post
+                dataType: 'html', // request type html/json/xml
+                data: form.serialize(), // serialize form data
+                beforeSend: function () {
+                    alert.fadeOut();
+                    submit.html('Processing...'); // change submit button text
+                },
+                success: function (data) {
+
+                    //form.trigger('reset'); // reset form?
+                    submit.html('Submit'); // reset submit button text
+                },
+                error: function (e) {
+                    console.log(e)
+                }
+            });
+        });
+    });
+}
+   {#document.getElementById("continue").onclick = function () {#}
+   {#     location.href = "{{ url_for("bp_user.select_countries_get") }}";#}
+   {# };#}
+
+$("#disciplines").on("submit", function() {
+  localeStorage.clear();
+});
+
+
+//Select or deselect all
+function toggleCheck(state, elem) {
+  jQuery(elem).closest("form").find("input:checkbox").prop('checked', state);
+}
+            {#function selects(){#}
+            {#    var ele=document.getElementsByName('discipline');#}
+            {#    for(var i=0; i<ele.length; i++){#}
+            {#        if(ele[i].type=='checkbox')#}
+            {#            ele[i].checked=true;#}
+            {#    }#}
+            {# }#}
+            {#function deSelect(){#}
+            {#    var ele=document.getElementsByName('discipline');#}
+            {#    for(var i=0; i<ele.length; i++){#}
+            {#        if(ele[i].type=='checkbox')#}
+            {#            ele[i].checked=false;#}
+            {##}
+            {#    }#}
+            {# }#}
+            {##}
+
+{#// Listen for click on toggle checkbox#}
+{#$('#all').click(function(event) {#}
+{#    if(this.checked) {#}
+{#        // Iterate each checkbox#}
+{#        $(':checkbox').each(function() {#}
+{#            this.checked = true;#}
+{#        });#}
+{#    } else {#}
+{#        $(':checkbox').each(function() {#}
+{#            this.checked = false;#}
+{#        });#}
+{#    }#}
+{# });#}
+</script>
+
+
+
+{% endblock %}
