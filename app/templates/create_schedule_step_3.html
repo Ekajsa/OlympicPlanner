@@ -88,11 +88,13 @@
                         let start_idx = arr[i].toLowerCase().indexOf(val.toLowerCase());
                         let end_idx = start_idx + val.length;
                         let output = ""
-                        if(start_idx === 0) {
-                            val = val.title;
-                            let output = "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
+                        if(arr[i] === 0) {
+                            {#val = val.title;#}
+                            capitalizeFirstLetter(val);
+                            {#val = text.toLowerCase().replace(/(^\w{1})|(\s{1}\w{1})/g, match => match.toUpperCase());#}
+                            output = "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         } else {
-                            let output = arr[i].substring(0,start_idx + 1) + "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
+                            output = arr[i].substring(0,start_idx) + "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         }
 
                         b.innerHTML = output;
@@ -172,6 +174,9 @@
             document.addEventListener("click", function (e) {
                 closeAllLists(e.target);
             });
+        }
+        function capitalizeFirstLetter(string) {
+          return string.charAt(0).toUpperCase() + string.slice(1);
         }
 
     </script>
