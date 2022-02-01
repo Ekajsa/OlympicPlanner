@@ -623,7 +623,9 @@
     "date": "2022-02-05",
     "local_start_time": "19:10",
     "local_end_time": "20:20",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Australia", "Austria", "Bosnia Herzegovina", "Bulgaria", "Canada", "China",
+      "Czech Republic", "Georgia", "Germany", "Great Britain", "Italy", "Japan", "Latvia", "Poland", "Korea", "ROC",
+      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"]
   },
   "event_56":
   {
@@ -712,7 +714,9 @@
     "date": "2022-02-05",
     "local_start_time": "14:20",
     "local_end_time": "15:30",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Czech Republic", "Estonia", "Finland",
+      "Germany", "Italy", "Japan", "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland",
+      "Turkey", "Ukraine","USA"]
   },
 "event_64":
   {
@@ -1367,7 +1371,9 @@
     "date": "2022-02-07",
     "local_start_time": "19:50",
     "local_end_time": "21:00",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Argentina", "Austria", "Canada", "China", "Chinese Taipei", "Czech Republic",
+      "Germany", "Ireland", "Italy", "Latvia", "Poland", "Moldova", "Korea", "ROC", "Romania", "Slovakia", "Sweden",
+      "Switzerland", "Ukraine", "USA"]
   },
   "event_123":
   {
@@ -2071,18 +2077,19 @@
     "discipline": "Luge",
     "description": "Doubles",
     "competition_type": "run 1",
-    "sex": ["women", "men"],
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "20:20",
     "local_end_time": "21:10",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "Canada", "China", "Czech Republic", "Georgia", "Germany", "Italy", "Latvia",
+      "Poland", "Korea", "ROC", "Romania", "Slovakia", "Ukraine", "USA"]
   },
   "event_187":
   {
     "discipline": "Luge",
     "description": "Doubles",
     "competition_type": ["run 2", "gold medal event"],
-    "sex": ["women", "men"],
+    "sex": "men",
     "date": "2022-02-09",
     "local_start_time": "21:35",
     "local_end_time": "22:25",
@@ -2097,7 +2104,8 @@
     "date": "2022-02-09",
     "local_start_time": "16:00",
     "local_end_time": "16:55",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany",
+      "Italy", "Japan", "Kazakhstan", "Korea", "Latvia", "Norway", "Poland", "ROC", "Slovenia", "Ukraine", "USA"]
   },
   "event_190":
   {
@@ -2549,7 +2557,7 @@
     "date": "2022-02-10",
     "local_start_time": "21:30",
     "local_end_time": "22:38",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Latvia", "Poland", "Romania", "Ukraine"]
   },
   "event_231":
   {
@@ -2560,7 +2568,8 @@
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "10:30",
-    "participating_countries": ["American Samoa"]
+    "participating_countries": ["American Samoa", "Australia", "Austria", "Canada", "China", "Germany", "Great Britain",
+      "Italy", "Korea", "Latvia", "ROC", "Spain", "Switzerland", "Ukraine", "USA"]
   },
   "event_232":
   {
@@ -2984,7 +2993,8 @@
     "date": "2022-02-11",
     "local_start_time": "09:30",
     "local_end_time": "10:30",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Australia", "Austria", "Belgium", "Canada", "China", "Czech Republic", "Germany",
+      "Great Britain", "Italy", "Latvia", "Netherlands", "Puerto Rico", "Korea", "ROC", "USA", "Virgin Islands"]
   },
   "event_270":
   {
@@ -3028,7 +3038,9 @@
     "date": "2022-02-11",
     "local_start_time": "19:00",
     "local_end_time": "20:06",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Czech Republic", "Estonia", "Finland",
+      "Germany", "Italy", "Japan", "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland",
+      "Turkey", "Ukraine","USA"]
   },
   "event_275":
   {
@@ -4077,7 +4089,8 @@
     "date": "2022-02-14",
     "local_start_time": "19:00",
     "local_end_time": "20:00",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "Canada", "Czech Republic", "Estonia", "Finland", "Germany", "Japan",
+      "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland", "Ukraine","USA"]
   },
   "event_369":
   {
@@ -4454,7 +4467,8 @@
     "date": "2022-02-15",
     "local_start_time": "16:00",
     "local_end_time": "16:51",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany",
+      "Italy", "Japan", "Kazakhstan", "Korea", "Latvia", "Norway", "Poland", "ROC", "Slovenia", "Ukraine", "USA"]
   },
   "event_403":
   {
@@ -5256,7 +5270,8 @@
     "date": "2022-02-17",
     "local_start_time": "16:00",
     "local_end_time": "16:40",
-    "participating_countries": ["TBA"]
+    "participating_countries": ["Austria", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany",
+      "Italy", "Japan", "Kazakhstan", "Korea", "Latvia", "Norway", "Poland", "ROC", "Slovenia", "Ukraine", "USA"]
   },
   "event_476":
   {
