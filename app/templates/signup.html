@@ -1,24 +1,24 @@
 {%  extends "base_template.html" %}
 
 {% block content %}
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-                <div class="notification">
-                    {{ message }}
-                </div>
-            {%  endfor %}
-        {% endif %}
-    {%  endwith %}
-    <form action="{{ url_for("bp_open.signup_post") }}" method="POST">
-        <input type="text" placeholder="First Name" name="first_name"/> <br/>
-        <input type="text" placeholder="Last Name" name="last_name"/> <br/>
-        <input type="email" placeholder="Email Address" name="email"/> <br/>
-        <input type="password" id="pwd1" oninput="verifyPassword()" placeholder="Password" name="password"/>
-        <span id="pwd-message"></span><br/>
-        <input type="password" id="pwd2" oninput="checkPassword()" placeholder="Repeat Password" disabled/> <br/>
-        <input type="submit" id="submit" value="Sign up!" disabled/>
-    </form>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="notification">
+                        {{ message }}
+                    </div>
+                {%  endfor %}
+            {% endif %}
+        {%  endwith %}
+        <form action="{{ url_for("bp_open.signup_post") }}" method="POST">
+            <input type="text" placeholder="First Name" name="first_name"/> <br/>
+            <input type="text" placeholder="Last Name" name="last_name"/> <br/>
+            <input type="email" placeholder="Email Address" name="email"/> <br/>
+            <input type="password" id="pwd1" oninput="verifyPassword()" placeholder="Password" name="password"/>
+            <span id="pwd-message"></span><br/>
+            <input type="password" id="pwd2" oninput="checkPassword()" placeholder="Repeat Password" disabled/> <br/>
+            <input type="submit" id="submit" value="Sign up!" disabled/>
+        </form>
 {% endblock %}
 
 {% block scripts %}
