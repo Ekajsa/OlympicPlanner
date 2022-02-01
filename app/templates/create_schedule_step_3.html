@@ -31,26 +31,45 @@
     </div>
 
     <script>
-        let countries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Romania", "Russia", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        let countries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
         autocomplete(document.getElementById("myInput"), countries);
+        {#inList(document.getElementById("myInput"))#}
 
-        function ac() {
-            console.log("!");
-            let countryTable = document.getElementById("countryTable");
-            let input = document.getElementById("myInput");
-            let countryNotInList = true;
+        function inList(input) {
+            console.log('inList')
+            let notInList = true;
             if(countries.includes(input)) {
-                countryNotInList = false;
+                console.log('includes')
+                notInList = false;
             }
 
             for (let i = 0; i < countries.length; i++) {
-                if(countries[i] == input) {
-                    countryNotInList = false;
+                console.log('length')
+                if(countries[i] === input) {
+                    console.log('countries[i]')
+                    notInList = false;
                 }
             }
+            console.log(notInList)
+
+            document.getElementById("addCountry").disabled = notInList;
+        }
 
 
-            document.getElementById("addCountry").disabled = countryNotInList;
+        function ac() {
+            console.log("ac");
+            let countryTable = document.getElementById("countryTable");
+            let input = document.getElementById("myInput");
+            console.log(input)
+            if (input.toLowerCase() === 'united kingdom') {
+                input = 'United Kingdom';
+            } else if(input.toLowerCase() === 'usa') {
+                input = 'United States of America';
+            } else if(input.toLowerCase() === 'russia') {
+                input = 'ROC';
+            } else if(input.toLowerCase() === 'south korea') {
+                input = 'South Korea';
+            }
             fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input.value).then(resp => {
 
                 return resp.json();
