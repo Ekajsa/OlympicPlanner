@@ -60,23 +60,16 @@
 
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8">
-          {% block content %}{% endblock %}
-        </div>
-        <div class="col-md-4">
-          {% block other_content %}{% endblock %}
-
-{#          <div class="content-section">#}
-{#            <h3>Our Sidebar</h3>#}
-{#            <p class='text-muted'>Maybe not to use for us, but keeping it for the moment.#}
-{#              <ul class="list-group">#}
-{#                <li class="list-group-item list-group-item-light">Latest Posts</li>#}
-{#                <li class="list-group-item list-group-item-light">Announcements</li>#}
-{#                <li class="list-group-item list-group-item-light">Calendars</li>#}
-{#                <li class="list-group-item list-group-item-light">etc</li>#}
-{#              </ul>#}
-{#            </p>#}
-{#          </div>#}
+        <div class="col-md-12">
+          {% block wide_content %}{% endblock %}
+          <div class="row">
+            <div class="col-md-8">
+              {% block content %}{% endblock %}
+            </div>
+            <div class="col-md-4">
+              {% block other_content %}{% endblock %}
+            </div>
+          </div>
         </div>
       </div>
 {#      <footer class="container-fluid text-center">#}
