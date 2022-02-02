@@ -6,7 +6,7 @@ def get_all_events():
 
 
 def get_all_events_by_date(date):
-    return Event.find(date=date).all()
+    return Event.find(date=date)
 
 
 # def create_event(event):

@@ -2,7 +2,6 @@
 #
 # from app.persistence.model import Schedule
 #
-#
 # def get_all_schedules():
 #     return Schedule.all()
 #

@@ -2,7 +2,7 @@ from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user, login_required
 
 # from app.controllers.user_controller import add_country, get_user_by_email
-from app.controllers.event_controller import get_all_events
+from app.controllers.schedule_controller import create_schedule
 
 bp_user = Blueprint("bp_user", __name__)
 
@@ -68,8 +68,9 @@ def select_countries_post():
 @bp_user.get("/create_schedule/step4")
 # @login_required
 def filtered_schedule_get():
-    events = get_all_events()
-    return render_template("create_schedule_step_4.html", events=events)
+    schedule, disciplines, time_slots = create_schedule("2022-02-04")
+    return render_template("create_schedule_step_4.html", schedule=schedule, disciplines=disciplines,
+                           time_slots=time_slots)
 
 
 @bp_user.get("/my_schedule")

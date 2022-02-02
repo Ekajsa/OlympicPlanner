@@ -87,7 +87,12 @@ a.article-title:hover {
   font-size: 2.5rem;
 }
 
-#edit_info{
-	opacity: 0.8;
-	border-radius: 6px;
-	background-color: #2E87DE;
+#edit_info {
+  opacity: 0.8;
+  border-radius: 6px;
+  background-color: #2E87DE;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
