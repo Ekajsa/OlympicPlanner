@@ -45,6 +45,38 @@ Sprint planning
 * Uppskatta tillgänglig tid för gruppen i nästa sprint.
 * Vad ska ingå i nästa veckas sprint?
 
+************************************************************************************************************************************************
+Daily 2022-02-02
+Johanna inte med pga vab
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår? 
+	Gjort klart 033, har lagt till länder till alla events, men några sporter lite osäkra. Har lagt till
+	issue om att uppdatera när startlistorna kommer. Därför också 032 (hitta alternativa sätt att hitta deltagande länder) klar!
+	Gjort klart 022. Fått till texten som ska ligga i eventrutorna i schemat.
+	Gjort klart 026. Lagt till booleans: participants_decided för alla events. Datat är alltså i princip helt klart!
+	Börjat med 021, att göra ett första OS-schema. Letat efter färdiga schemalösningar. Svårt att komma på 
+	hur eventen ska komma på rätt ställe i schemat.
+*   Vad ska jag göra till nästa avstämning?
+	Kolla på drag n drop-grejen från Joakim. Fortsätta med 021. Dumpa datan till er andra (029)
+*   Behöver jag hjälp med något?
+	Fråga Joakim om 021! Kajsa med när jag frågar. Behöver ev hjälp även från teamet med att förstå hur schemat ska göras!
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Jobbat med 034. Klar med 036 (merge profile och base template css). Så klar som det går just nu med 037 (adjust containers in base template), 
+	038 (clean up main/base css). Nya issues till styling-veckan!
+	Pluggat bootstrap. Take away: Innan vi stylar för mycket på egen hand: Kolla på vad bootstrap har för standardlösningar.
+*   Vad ska jag göra till nästa avstämning?
+	Ta bort user.html! 
+	Också jobba med 021, kan vi dela upp den mellan oss på nåt sätt?
+*   Behöver jag hjälp med något?
+	Prata med Johanna för att få ihop 015 och 016 med base template. Inget brådskande!
+
+Övrigt
+* Britta har mergeat in pull requests själv för datagrejer för att kunna jobba snabbare. Det är OK!
+  Klurigt med många brancher som är närliggande, när vi ska pusha till github. Hålla isär kanban-tavlan från push-rutinen? Prata om på sprint review!
+  Glömde definition of done på sprint-planeringen, men verkar funka ändå pga små issues.
 
 ************************************************************************************************************************************************
 Daily 2022-02-01

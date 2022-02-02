@@ -67,7 +67,7 @@
                 }
                 currentFocus = -1;
                 /*create a DIV element that will contain the items (values):*/
-                a = document.createElement("DIV");
+                a = document.createElement("div");
                 a.setAttribute("id", this.id + "autocomplete-list");
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
@@ -77,10 +77,32 @@
                     /*check if the item contains the same letters as the text field value:*/
                     if ((arr[i].toUpperCase()).includes(val.toUpperCase())) {
                         /*create a DIV element for each matching element:*/
-                        b = document.createElement("DIV");
+
+                        b = document.createElement("div");
                         /*make the matching letters bold:*/
-                        let boldText = "<strong>" + val + "</strong>";
-                        b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);
+                        {#pattern = "uni" pattern is my val#}
+                        {#country = "United Kingdom" country is my arr[i]#}
+                        {#start_idx = country.lower().index(pattern.lower())#}
+                        {#end_idx = start_idx + len(pattern)#}
+                        {#pattern = pattern if start_idx > 0 else pattern.title()#}
+                        {#output = country[:start_idx] + '<strong>' + pattern + '</strong>'  + country[end_idx:]#}
+                        let start_idx = arr[i].toLowerCase().indexOf(val.toLowerCase());
+                        let end_idx = start_idx + val.length;
+                        let output = ""
+                        if(arr[i] === 0) {
+                            {#val = val.title;#}
+                            capitalizeFirstLetter(val);
+                            {#val = text.toLowerCase().replace(/(^\w{1})|(\s{1}\w{1})/g, match => match.toUpperCase());#}
+                            output = "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
+                        } else {
+                            output = arr[i].substring(0,start_idx) + "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
+                        }
+
+                        b.innerHTML = output;
+
+                        {#let boldText = "<strong>" + val + "</strong>";#}
+                        {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
+
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                         /*execute a function when someone clicks on the item value (DIV element):*/
@@ -155,6 +177,11 @@
                 closeAllLists(e.target);
             });
         }
+
+        function capitalizeFirstLetter(string) {
+          return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
 
     </script>
 
