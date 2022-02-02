@@ -7,6 +7,7 @@
 .checkbox-container {
     display: flex;
     align-items: center;
+    margin-bottom: 7px;
 }
 
 .checkbox-container label {
@@ -58,20 +59,20 @@ body {
   position: relative;
   display: inline-block;
 }
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-}
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 100%;
-}
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-}
+/*input {*/
+/*  border: 1px solid transparent;*/
+/*  background-color: #f1f1f1;*/
+/*  padding: 10px;*/
+/*  font-size: 16px;*/
+/*}*/
+/*input[type=text] {*/
+/*  background-color: #f1f1f1;*/
+/*  width: 100%;*/
+/*}*/
+/*input[type=submit] {*/
+/*  background-color: DodgerBlue;*/
+/*  color: #fff;*/
+/*}*/
 .autocomplete-items {
   position: absolute;
   border: 1px solid #d4d4d4;

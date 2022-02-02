@@ -49,7 +49,6 @@ def signin_post():
     return redirect(url_for("bp_open.index"))
 
 
-
-# @bp_open.get('/about')
-# def about():
-#     return render_template('about.html')
+@bp_open.get("/style_demo")
+def style_demo():
+    return render_template("style_demo.html")
