@@ -31,12 +31,17 @@
     </div>
 
     <script>
-        let countries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        let capitalizedCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        let countries = [];
+            for (let i = 0; i < capitalizedCountries.length; i++) {
+              countries[i] = capitalizedCountries[i].toLowerCase();
+            }
         autocomplete(document.getElementById("myInput"), countries);
-        {#inList(document.getElementById("myInput"))#}
+        inList(document.getElementById("myInput"))
 
         function inList(input) {
             console.log('inList')
+            input = input.toLowerCase()
             let notInList = true;
             if(countries.includes(input)) {
                 console.log('includes')
@@ -60,14 +65,15 @@
             console.log("ac");
             let countryTable = document.getElementById("countryTable");
             let input = document.getElementById("myInput");
+            input = input.toLowerCase()
             console.log(input)
-            if (input.toLowerCase() === 'united kingdom') {
+            if (input === 'united kingdom') {
                 input = 'United Kingdom';
-            } else if(input.toLowerCase() === 'usa') {
+            } else if(input === 'usa') {
                 input = 'United States of America';
-            } else if(input.toLowerCase() === 'russia') {
+            } else if(input === 'russia' | input.toLowerCase() ==='russian olympic committee') {
                 input = 'ROC';
-            } else if(input.toLowerCase() === 'south korea') {
+            } else if(input === 'south korea') {
                 input = 'South Korea';
             }
             fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input.value).then(resp => {
