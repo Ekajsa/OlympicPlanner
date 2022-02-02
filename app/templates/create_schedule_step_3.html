@@ -1,16 +1,16 @@
 {% extends "base_template.html" %}
 
-{% block content %}
+{% block content12 %}
     <div class="content-section">
 
         <!--Make sure the form has the autocomplete function switched off:-->
         <form autocomplete="off" class="countries" id="countries1" action="{{ url_for("bp_user.select_countries_get") }}">
             <div class="autocomplete" style="width:300px;">
-                <input id="myInput" type="text" name="country" placeholder="Country">
+                <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
             </div>
-            <input type="button" id="addCountry" onclick="ac()" value="Add to list">
-            <input type="submit" value="Next">
-        </form>
+            <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list">
+            <input type="submit" class="btn btn-primary" value="Next">
+        </form><br>
 
 
         <div id="countries">Chosen countries:</div>
@@ -114,6 +114,7 @@
                     /*check if the item contains the same letters as the text field value:*/
                     if ((arr[i].toUpperCase()).includes(val.toUpperCase())) {
                         /*create a DIV element for each matching element:*/
+
                         b = document.createElement("div");
                         /*make the matching letters bold:*/
                         {#pattern = "uni" pattern is my val#}
@@ -138,6 +139,7 @@
 
                         {#let boldText = "<strong>" + val + "</strong>";#}
                         {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
+
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                         /*execute a function when someone clicks on the item value (DIV element):*/
@@ -212,9 +214,11 @@
                 closeAllLists(e.target);
             });
         }
+
         function capitalizeFirstLetter(string) {
           return string.charAt(0).toUpperCase() + string.slice(1);
         }
+
 
     </script>
 
