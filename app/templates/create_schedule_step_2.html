@@ -1,7 +1,7 @@
 {% extends "base_template.html" %}
 
-{% block content %}
-    <div class="content-section">
+{% block content12 %}
+    <div class="content-section overflow-auto" style="max-height: inherit">
 
         <p>Choose the disciplines of interest:</p>
 
@@ -21,79 +21,64 @@
               <input type="checkbox" id="d1" name="discipline" value="alpine">
               <label for="d1">Alpine Skiing</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d2" name="discipline" value="biathlon">
               <label for="d2">Biathlon</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d3" name="discipline" value="bobsleigh">
               <label for="d3">Bobsleigh</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d4" name="discipline" value="cross-country">
               <label for="d4">Cross-Country Skiing</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d5" name="discipline" value="curling">
               <label for="d5">Curling</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d6" name="discipline" value="figure_skating">
               <label for="d6">Figure Skating</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d7" name="discipline" value="freestyle">
               <label for="d7">Freestyle Skiing</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d8" name="discipline" value="ice_hockey">
               <label for="d8">Ice Hockey</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d9" name="discipline" value="luge">
               <label for="d9">Luge</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d10" name="discipline" value="nordic">
               <label for="d10">Nordic Combined</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d11" name="discipline" value="short_track">
               <label for="d11">Short Track Speed Skating</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d12" name="discipline" value="skeleton">
               <label for="d12">Skeleton</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d13" name="discipline" value="ski_jumping">
               <label for="d13">Ski Jumping</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d14" name="discipline" value="snowboard">
               <label for="d14">Snowboard</label>
             </div>
-            <br>
             <div class="checkbox-container">
               <input type="checkbox" id="d15" name="discipline" value="speed_skating">
               <label for="d15">Speed Skating</label>
             </div>
-            <br>
             <div>
-                <input type="submit" class="submit" onclick="isChecked()" value="Select And Go To Next Step">
+                <input type="submit" class="btn btn-primary" onclick="isChecked()" value="Select And Go To Next Step">
             </div>
         </form>
     </div>

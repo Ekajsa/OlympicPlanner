@@ -1,16 +1,68 @@
 {% extends "base_template.html" %}
 {#{% set active_page = "schedules" %}#}
 
-{%  block content %}
-    <article class="media content-section">
-      <div class="media-body">
-        <h1>Personal schedules page for {{ current_user.first_name }}</h1>
-        <div class="article-metadata">
-          <a class="mr-2" href="#">Class mr-2</a>
-          <small class="text-muted">Class text-muted</small>
+{%  block content12 %}
+    <div class="content-section">
+        <h1>Header 1 in the content12 block.</h1>
+        <h2>Header 2 in the content12 block.</h2>
+        <h3>Header 3 in the content12 block</h3>
+        <h4>Header 4 in the content12 block</h4>
+        <p>This text is in the content12 block</p>
+    </div>
+{% endblock %}
+
+{% block content8 %}
+    <div class="content-section">
+    <p>This text is in the content8 block</p>
+     <p>Some default buttons:</p>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary (but added shadow)</button>
+        <button type="button" class="btn btn-primary active">Primary active</button>
+        <button type="button" class="btn btn-primary disabled">Primary disabled</button><br><br>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <div class="row">
+            <div class="col-md-8 bg-steel p-3 my-3"><p>This is a container within the content8 block of width 8 and some extra padding and margins</p></div>
+            <div class="col-md-4 bg-steel p-3 my-3"><p>This is a container within the content8 block of width 4 and some extra padding and margins</p></div>
         </div>
-        <h2><a class="article-title" href="#">Class article-title</a></h2>
-        <p class="article-content">Class article-content</p>
-      </div>
-    </article>
+    </div>
+{% endblock %}
+
+{% block content4 %}
+    <div class="content-section overflow-auto" style="max-height: inherit">
+        <p>This text is in the content4 block</p>
+        <p>Below is an example of how overflowing content can scroll horizontally.</p>
+          <div class="table-responsive">
+              <table class="table table-bordered">
+                  <thead class="table-light">
+                  <tr>
+                    <th>#</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Country</th>
+                  </tr>
+                  </thead>
+                  <tbody class="table table-light">
+                  <tr>
+                    <td>1</td>
+                    <td>Gösta</td>
+                    <td>Ekman</td>
+                    <td>82 yo and dead</td>
+                    <td>Stockholm</td>
+                    <td>Sweden</td>
+                  </tr>
+                  </tbody>
+                </table>
+          </div><br>
+        <p>This block is also an example of how overflowing content can scroll vertically.</p>
+        <h4>About Gösta</h4>
+        <p>Hans Gösta Gustaf Ekman (den yngre), född 28 juli 1939 i Engelbrekts församling i Stockholm,[1] död 1 april 2017 i Stockholm,[2][3] var en svensk skådespelare och regissör, uppvuxen i en skådespelarfamilj, som son till Hasse Ekman och sonson till Gösta Ekman den äldre. Hans mor var konstnären Agneta Wrangel. Mest känd blev Ekman för sin medverkan i komedier på film och teater, liksom i revyer av Hasseåtage. Framträdande rollfigurer är Charles-Ingvar Jönsson i Jönssonligan-filmerna och Gunnar Papphammar i Papphammar, en serie kortfilmer av slapstick-karaktär.</p>
+        <p>Hans Gösta Gustaf Ekman (den yngre), född 28 juli 1939 i Engelbrekts församling i Stockholm,[1] död 1 april 2017 i Stockholm,[2][3] var en svensk skådespelare och regissör, uppvuxen i en skådespelarfamilj, som son till Hasse Ekman och sonson till Gösta Ekman den äldre. Hans mor var konstnären Agneta Wrangel. Mest känd blev Ekman för sin medverkan i komedier på film och teater, liksom i revyer av Hasseåtage. Framträdande rollfigurer är Charles-Ingvar Jönsson i Jönssonligan-filmerna och Gunnar Papphammar i Papphammar, en serie kortfilmer av slapstick-karaktär.</p>
+    </div>
 {% endblock %}
