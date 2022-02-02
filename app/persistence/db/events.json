@@ -3774,7 +3774,10 @@
     "date": "2022-02-13",
     "local_start_time": "17:00",
     "local_end_time": "17:40",
-    "participating_countries": ["TBA"],
+    "participating_countries": ["Austria", "Belarus", "Belgium", "Bulgaria", "Canada", "China", "Czech Republic",
+      "Denmark","Estonia", "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Latvia", "Lithuania",
+      "Norway", "Moldova", "Korea", "Poland", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland",
+      "Ukraine", "USA"],
     "participants_decided": "False"
   },
   "event_312":
@@ -3786,7 +3789,9 @@
     "date": "2022-02-13",
     "local_start_time": "18:45",
     "local_end_time": "19:25",
-    "participating_countries": ["TBA"],
+    "participating_countries": ["Austria", "Belarus", "Belgium", "Bulgaria", "Canada", "China", "Czech Republic",
+      "Estonia", "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Lithuania", "New Zealand", "Norway",
+    "Moldova", "Korea", "Poland", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"],
     "participants_decided": "False"
   },
   "event_313":
@@ -5141,49 +5146,51 @@
   "event_424":
   {
     "discipline": "Cross-country skiing",
-    "description": "team sprint classic",
+    "description": "Team sprint classic",
     "competition_type": "semi finals",
     "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "17:00",
     "local_end_time": "17:30",
-    "participating_countries": ["Austria", "Canada", "Czech Republic", "Finland", "France", "Germany",
-      "Italy", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany", "Italy",
+      "Japan", "Kazakhstan", "Latvia", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"]
   },
   "event_425":
   {
     "discipline": "Cross-country skiing",
-    "description": "team sprint classic",
+    "description": "Team sprint classic",
     "competition_type": "semi finals",
     "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "18:00",
     "local_end_time": "18:30",
-    "participating_countries": ["Austria", "Canada", "Czech Republic", "Finland", "France", "Germany",
-      "Italy", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"]
+    "participating_countries": ["Australia", "Canada", "China", "Czech Republic", "Estonia", "Finland", "France",
+      "Germany", "Italy", "Japan", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"]
   },
   "event_426":
   {
     "discipline": "Cross-country skiing",
-    "description": "team sprint classic",
+    "description": "Team sprint classic",
     "competition_type": ["final", "gold medal event"],
     "sex": "women",
     "date": "2022-02-16",
     "local_start_time": "19:00",
     "local_end_time": "19:25",
-    "participating_countries": [],
+    "participating_countries": ["Canada", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany", "Italy",
+      "Japan", "Kazakhstan", "Latvia", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"],
     "participants_decided": "False"
   },
   "event_427":
   {
     "discipline": "Cross-country skiing",
-    "description": "team sprint classic",
+    "description": "Team sprint classic",
     "competition_type": ["final", "gold medal event"],
     "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "19:30",
     "local_end_time": "20:00",
-    "participating_countries": [],
+    "participating_countries": ["Australia", "Canada", "China", "Czech Republic", "Estonia", "Finland", "France",
+      "Germany", "Italy", "Japan", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"],
     "participants_decided": "False"
   },
   "event_428":
@@ -6297,7 +6304,8 @@
     "date": "2022-02-19",
     "local_start_time": "16:30",
     "local_end_time": "16:45",
-    "participating_countries": ["TBA"],
+    "participating_countries": ["Austria","Belgium", "Canada", "China", "Denmark", "Germany", "Italy", "Japan",
+      "Kazakhstan", "Latvia", "Netherlands", "Norway", "Poland", "Korea", "ROC", "Switzerland", "USA"],
     "participants_decided": "False"
   },
   "event_519":
