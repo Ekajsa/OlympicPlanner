@@ -31,28 +31,26 @@
     </div>
 
     <script>
-        let capitalizedCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        let capCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
         let countries = [];
-            for (let i = 0; i < capitalizedCountries.length; i++) {
-              countries[i] = capitalizedCountries[i].toLowerCase();
+            for (let i = 0; i < capCountries.length; i++) {
+              countries[i] = capCountries[i].toLowerCase();
             }
         autocomplete(document.getElementById("myInput"), countries);
         inList(document.getElementById("myInput"))
 
         function inList(input) {
             console.log('inList')
-            let userInput = document.getElementById("myInput");
-            console.log(userInput.valueOf())
-            userInput = userInput.toLowerCase()
+            input = input.toLowerCase()
             let notInList = true;
-            if(countries.includes(userInput)) {
+            if(countries.includes(input.value)) {
                 console.log('includes')
                 notInList = false;
             }
 
             for (let i = 0; i < countries.length; i++) {
                 console.log('length')
-                if(countries[i] === userInput) {
+                if(countries[i] === input.value) {
                     console.log('countries[i]')
                     notInList = false;
                 }
@@ -68,7 +66,7 @@
             let countryTable = document.getElementById("countryTable");
             let input = document.getElementById("myInput");
             input = input.toLowerCase()
-            console.log(input)
+            console.log(input.value)
             if (input === 'united kingdom') {
                 input = 'United Kingdom';
             } else if(input === 'usa') {
