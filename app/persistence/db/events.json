@@ -526,7 +526,7 @@
     "local_end_time": "18:30",
     "participating_countries": ["Australia", "Canada", "China", "Finland", "France", "Great Britain", "Japan",
       "Kazakhstan", "ROC", "Sweden", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_47":
   {
@@ -980,7 +980,7 @@
     "local_end_time": "18:30",
     "participating_countries": ["Australia", "Austria", "Brazil", "Canada", "China", "France", "Great Britain", "Japan",
       "Kazakhstan", "ROC", "USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_85":
   {
