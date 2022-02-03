@@ -44,8 +44,19 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 1px 2px 5px #5f788a;
 }
 
+#edit_info {
+  opacity: 0.8;
+  border-radius: 6px;
+  background-color: #2E87DE;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
 /*Styling from BritneyBob for the pencil button*/
 /*#edit_info{*/
 /*	opacity: 0.8;*/
 /*	border-radius: 6px;*/
 /*	background-color: #2E87DE;}*/
+>>>>>>> main
