@@ -46,6 +46,39 @@ Sprint planning
 * Vad ska ingå i nästa veckas sprint?
 
 ************************************************************************************************************************************************
+Daily 2022-02-03
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Jobbat med en bugg i step 3, inte löst än.
+*   Vad ska jag göra till nästa avstämning?
+	Eventuellt om jag får hjälp av någon fortsätter jag med det, annars kör jag på med #040. Även kolla på grejer inför morgondagens lektion. 
+*   Behöver jag hjälp med något?
+	Kanske om någon hinner kolla på min kod och se vad som är tokigt.
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Fått hjälp med Joakim att börja gör ett schema med tidsangivelser. Har gjort om tiderna till slottar som hör till en specifik kvart.
+	Varje tid är just nu en sträng men ska göras om till datetime. Att lösa: hur visa när det är flera matcher samtidigt, låta eventet sträcka sig över hela den tid som det håller på,
+	få schemat för de olika dagarna att komma i kronologisk ordning utan att hårdkoda. Även kolla på grejer inför morgondagens lektion.
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätta med problemen ovan.
+*   Behöver jag hjälp med något?
+	Inte som det ser ut just nu.
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Merge på base_templaten, löst massa konflikter där. Redigering av personlig information. Fixat en style-demo med lösning för data som tar större plats än containerns bredd samt ruta för redigering av personlig data.
+*   Vad ska jag göra till nästa avstämning? Fortsätta med redigeringen
+	Kommer att behöva myndighetsjobba. Även kolla på grejer inför morgondagens lektion.
+*   Behöver jag hjälp med något?
+	Kolla med Johanna på några konflikter men det kan vänta till nästa vecka.
+	
+
+Övrigt
+* 
+
+************************************************************************************************************************************************
+
 Daily 2022-02-02
 Johanna inte med pga vab
 
