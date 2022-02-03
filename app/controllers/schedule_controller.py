@@ -29,43 +29,29 @@ def create_empty_schedule():
     return schedule, disciplines, time_slots
 
 
-def create_schedule(date):
-    schedule, disciplines, time_slots = create_empty_schedule()
-    events = get_all_events_by_date(date)
-    for event in events:
-        col_index = disciplines.index(event.discipline)
-        start_time_nearest_quarter = event.local_start_time[:3]
+def convert_times_to_nearest_quarter(hour, minute):
+    time_nearest_quarter = hour
 
-        if 53 <= int(event.local_start_time[3:]) <= 59:
-            if int(start_time_nearest_quarter[:2]) < 10:
-                start_time_nearest_quarter = str(int(start_time_nearest_quarter[:2]) + 1) + ":"
-            else:
-                start_time_nearest_quarter = str(int(start_time_nearest_quarter[:2]) + 1) + ":"
-            start_time_nearest_quarter += "00"
+    if 53 <= int(minute) <= 59:
+        if int(time_nearest_quarter[:2]) < 10:
+            time_nearest_quarter = str(int(time_nearest_quarter[:2]) + 1) + ":"
+        else:
+            time_nearest_quarter = str(int(time_nearest_quarter[:2]) + 1) + ":"
+        time_nearest_quarter += "00"
 
-        elif int(event.local_start_time[3:]) <= 7:
-            start_time_nearest_quarter += "00"
+    elif int(minute) <= 7:
+        time_nearest_quarter += "00"
 
-        elif 8 <= int(event.local_start_time[3:]) <= 22:
-            start_time_nearest_quarter += "15"
+    elif 8 <= int(minute) <= 22:
+        time_nearest_quarter += "15"
 
-        elif 23 <= int(event.local_start_time[3:]) <= 37:
-            start_time_nearest_quarter += "30"
+    elif 23 <= int(minute) <= 37:
+        time_nearest_quarter += "30"
 
-        elif 38 <= int(event.local_start_time[3:]) <= 52:
-            start_time_nearest_quarter += "45"
+    elif 38 <= int(minute) <= 52:
+        time_nearest_quarter += "45"
 
-        row_index = time_slots.index(start_time_nearest_quarter)
-
-        convert_beijing_time_to_local(event)
-
-        time_slots_with_date = ["2022-02-02 " + time for time in time_slots]
-        date_time_slots = [datetime.datetime.strptime(time, "%Y-%m-%d %H:%M") for time in time_slots_with_date]
-        local_time_slots = convert_time_slot_to_local(date_time_slots)
-
-        schedule[row_index][col_index] = event
-
-    return schedule, disciplines, local_time_slots
+    return time_nearest_quarter
 
 
 def convert_time_slot_to_local(beijing_time_slots):
@@ -98,23 +84,76 @@ def convert_beijing_time_to_local(event):
     event.local_end_time = target_time_end.strftime("%Y-%m-%d %H:%M")
 
 
-# def create_schedules():
-#     empty_schedule, disciplines, time_slots = create_empty_schedule()
-#     all_day_schedules = []
-#     for i in range(2, 21):
-#         date = "2022-02-"
-#         if i < 10:
-#             date += "0" + str(i)
-#         else:
-#             date += str(i)
-#         all_day_schedules.append(create_schedule(date, empty_schedule, disciplines, time_slots))
-#     return all_day_schedules, disciplines, time_slots
+def event_output(event):
+    event_string = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]}\n {event.discipline} "
+
+    if len(event.sex) == 2:
+        event_string += f"{event.sex[0]}, {event.sex[1]}.\n"
+    else:
+        event_string += f"{event.sex}.\n"
+
+    if event.description == "":
+        if len(event.competition_type) == 2:
+            event_string += f"{event.competition_type[0].capitalize()}, {event.competition_type[1]}.\n"
+        else:
+            event_string += f"{event.competition_type.capitalize()}.\n"
+    else:
+        event_string += f"{event.description}, "
+        if len(event.competition_type) == 2:
+            event_string += f"{event.competition_type[0]}, {event.competition_type[1]}.\n"
+        else:
+            event_string += f"{event.competition_type}.\n"
+
+    if len(event.participating_countries) == 2:
+        event_string += f"{event.participating_countries[0]}-{event.participating_countries[1]}\n"
+
+    return event_string
+
+
+def create_schedule(date):
+    schedule, disciplines, time_slots = create_empty_schedule()
+    events = get_all_events_by_date(date)
+    for event in events:
+        col_index = disciplines.index(event.discipline)
+
+        start_time_nearest_quarter = convert_times_to_nearest_quarter(event.local_start_time[:3],
+                                                                      event.local_start_time[3:])
+        row_start_index = time_slots.index(start_time_nearest_quarter)
+
+        end_time_nearest_quarter = convert_times_to_nearest_quarter(event.local_end_time[:3], event.local_end_time[3:])
+        row_end_index = time_slots.index(end_time_nearest_quarter)
+
+        convert_beijing_time_to_local(event)
+
+        # Will this arbitrary date (to prevent the year to automatically be 1900) become a problem?
+        time_slots_with_date = ["2022-02-02 " + time for time in time_slots]
+        date_time_slots = [datetime.datetime.strptime(time, "%Y-%m-%d %H:%M") for time in time_slots_with_date]
+        local_time_slots = convert_time_slot_to_local(date_time_slots)
+
+        # Maybe better to just put the event in the schedule and fix what is printed in the html
+        if schedule[row_start_index][col_index] != "":
+            schedule[row_start_index][col_index] += "-".join(event.participating_countries) + "\n"
+        else:
+            schedule[row_start_index][col_index] = event_output(event)
+        row_index = row_start_index + 1
+        while row_index < row_end_index:
+            schedule[row_index][col_index] = event.discipline
+            row_index += 1
+
+    return schedule, disciplines, local_time_slots
+
+
+def create_all_schedules():
+    all_day_schedules = []
+    for i in range(2, 21):
+        date = "2022-02-"
+        if i < 10:
+            date += "0" + str(i)
+        else:
+            date += str(i)
+        all_day_schedules.append(create_schedule(date))
+    return all_day_schedules
 
 
 # def get_all_schedules():
 #     return sr.get_all_schedules()
-#
-#
-# def create_schedule():
-#     pass
-#     sr.create_schedule(schedule)

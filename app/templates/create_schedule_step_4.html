@@ -21,41 +21,7 @@
                         <tr>
                             <td>{{ time_slots[loop.index - 1] }} </td>
                             {% for event in row %}
-                                {% if event == "" %}
-                                    <td>{{ event }}</td>
-                                {% else %}
-                                    <td>
-{#                                        {{ event.date }}#}
-                                        {{ event.local_start_time }}-{{ event.local_end_time }}
-                                        {{ event.discipline }},
-
-                                        {% if event.sex|length == 2 %}
-                                            {{ event.sex[0] }}, {{ event.sex[1] }}.
-                                        {% else %}
-                                             {{ event.sex }}.
-                                        {% endif %}
-
-                                        {% if event.description == "" %}
-                                            {% if event.competition_type|length == 2 %}
-                                                {{ event.competition_type[0]|capitalize }}, {{ event.competition_type[1] }}.
-                                            {% else %}
-                                                {{ event.competition_type|capitalize }}.
-                                            {% endif %}
-
-                                        {% else %}
-                                            {{ event.description }},
-                                            {% if event.competition_type|length == 2 %}
-                                                {{ event.competition_type[0] }}, {{ event.competition_type[1] }}.
-                                            {% else %}
-                                                {{ event.competition_type }}.
-                                            {% endif %}
-                                        {%  endif %}
-
-                                        {% if event.participating_countries|length == 2 %}
-                                            {{ event.participating_countries[0] }}-{{ event.participating_countries[1] }}.
-                                        {% endif %}
-                                    </td>
-                                {% endif %}
+                                <td>{{ event }}</td>
                             {% endfor %}
                         </tr>
                     {% endfor %}
