@@ -62,8 +62,9 @@ def select_countries_post():
     # # if schedule_name == None:
     # schedule_name = "First"
     # add_country(email, country, schedule_name)
-    list_of_countries = request.json
-    return redirect(url_for("bp_user.select_countries_get"))
+    chosen_countries = request.json
+    print()
+    return render_template(url_for("bp_user.create_schedule/step4"))
 
 
 @bp_user.get("/create_schedule/step4")
@@ -72,6 +73,12 @@ def filtered_schedule_get():
     schedule, disciplines, time_slots = create_schedule("2022-02-03")
     return render_template("create_schedule_step_4.html", schedule=schedule, disciplines=disciplines,
                            time_slots=time_slots)
+
+
+@bp_user.post("/create_schedule/step4")
+def filtered_schedule_post():
+    chosen_countries = request.json
+    return redirect(url_for("bp_user.create_schedule/step4"))
 
 
 @bp_user.get("/my_schedule")

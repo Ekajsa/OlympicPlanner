@@ -37,6 +37,8 @@
               countries[i] = capCountries[i].toLowerCase();
             }
 
+        let chosenCountries = [];
+
         autocomplete(document.getElementById("myInput"), capCountries);
         //inList(document.getElementById("myInput").value);
 
@@ -70,14 +72,16 @@
             input = input.value.toLowerCase()
             console.log(input.value)
             if (input === 'united kingdom') {
-                input = 'Great Britain';
+                input = 'great britain';
             } else if(input === 'usa') {
-                input = 'United States of America';
+                input = 'united states of america';
             } else if(input === 'russia' | input ==='russian olympic committee') {
-                input = 'ROC';
+                input = 'roc';
             } else if(input === 'south korea') {
-                input = 'South Korea';
+                input = 'korea';
             }
+
+            chosenCountries.push(input);
 
             fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
 
@@ -228,13 +232,14 @@
 
         function submit() {
             // Du har din lista med valda länder...
-            fetch("http://127.0.0.1:5000/user/create_schedule/step3", {
+            fetch("http://127.0.0.1:5000/user/create_schedule/step4", {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json'
                 },
-                body: JSON.stringify(theListOfCountries);
+                body: JSON.stringify(chosenCountries),
             });
+            {#alert(`array content is: ${chosenCountries}`)#}
         }
     </script>
 
