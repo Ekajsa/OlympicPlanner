@@ -1,6 +1,9 @@
 # Schedule_controller is probably not needed anymore, since schedule is inserted into user db
 #
 # from app.persistence.repository import schedule_repository as sr
+import datetime
+import pytz
+from tzlocal import get_localzone
 
 from app.controllers.event_controller import get_all_events_by_date
 
@@ -53,9 +56,46 @@ def create_schedule(date):
             start_time_nearest_quarter += "45"
 
         row_index = time_slots.index(start_time_nearest_quarter)
+
+        convert_beijing_time_to_local(event)
+
+        time_slots_with_date = ["2022-02-02 " + time for time in time_slots]
+        date_time_slots = [datetime.datetime.strptime(time, "%Y-%m-%d %H:%M") for time in time_slots_with_date]
+        local_time_slots = convert_time_slot_to_local(date_time_slots)
+
         schedule[row_index][col_index] = event
 
-    return schedule, disciplines, time_slots
+    return schedule, disciplines, local_time_slots
+
+
+def convert_time_slot_to_local(beijing_time_slots):
+    local_time_slots = []
+    beijing_time_zone = pytz.timezone("Asia/Shanghai")
+
+    for beijing_time in beijing_time_slots:
+        beijing_time_with_time_zone = beijing_time_zone.localize(beijing_time)
+        target_time = beijing_time_with_time_zone.astimezone(get_localzone())
+        local_time_slots.append(target_time.strftime("%H:%M"))
+
+    return local_time_slots
+
+
+def convert_beijing_time_to_local(event):
+    beijing_date_time_start = datetime.datetime.strptime(f"{event.date} {event.local_start_time}:00.000000",
+                                                         "%Y-%m-%d %H:%M:%S.%f")
+    beijing_date_time_end = datetime.datetime.strptime(f"{event.date} {event.local_end_time}:00.000000",
+                                                       "%Y-%m-%d %H:%M:%S.%f")
+
+    beijing_time_zone = pytz.timezone("Asia/Shanghai")
+
+    beijing_start_time_with_time_zone = beijing_time_zone.localize(beijing_date_time_start)
+    target_time_start = beijing_start_time_with_time_zone.astimezone(get_localzone())
+
+    beijing_end_time_with_time_zone = beijing_time_zone.localize(beijing_date_time_end)
+    target_time_end = beijing_end_time_with_time_zone.astimezone(get_localzone())
+
+    event.local_start_time = target_time_start.strftime("%Y-%m-%d %H:%M")
+    event.local_end_time = target_time_end.strftime("%Y-%m-%d %H:%M")
 
 
 # def create_schedules():

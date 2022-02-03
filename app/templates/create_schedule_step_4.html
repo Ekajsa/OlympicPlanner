@@ -9,9 +9,7 @@
                     copy all of it to your personal schedule. If you want, you can fine tune the main schedule with
                     filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
                     drop to add events from the main schedule to your personal schedule. </p>
-            </div>
-    </div>
-            <div>
+                <p>2022-02-03</p>
                 <table>
                     <tr>
                         <th></th>
@@ -21,7 +19,7 @@
                     </tr>
                     {% for row in schedule %}
                         <tr>
-                            <td>{{ time_slots[loop.index-1] }} </td>
+                            <td>{{ time_slots[loop.index - 1] }} </td>
                             {% for event in row %}
                                 {% if event == "" %}
                                     <td>{{ event }}</td>
@@ -63,6 +61,9 @@
                     {% endfor %}
                 </table>
             </div>
+    </div>
+
+
  {% endblock %}
 
 {% block scripts %}
