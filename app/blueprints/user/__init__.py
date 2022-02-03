@@ -62,6 +62,7 @@ def select_countries_post():
     # # if schedule_name == None:
     # schedule_name = "First"
     # add_country(email, country, schedule_name)
+    list_of_countries = request.json
     return redirect(url_for("bp_user.select_countries_get"))
 
 
