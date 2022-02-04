@@ -9,51 +9,39 @@
                     copy all of it to your personal schedule. If you want, you can fine tune the main schedule with
                     filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
                     drop to add events from the main schedule to your personal schedule. </p>
-                <p>2022-02-03</p>
+                <p>2022-02-05</p>
             </div>
     </div>
 {% endblock %}
 {% block content8 %}
     <div>
-        <table>
-            <tr>
-                <th></th>
-                {% for discipline in disciplines %}
-                    <th>{{ discipline }}</th>
-                {% endfor %}
-            </tr>
-            {% for row in schedule %}
-                <tr>
-                    <td>{{ time_slots[loop.index - 1] }} </td>
-                    {% for event in row %}
-                        <td>{{ event }}</td>
-                    {% endfor %}
-                </tr>
-            {% endfor %}
-        </table>
+        {{ schedule | safe }}
     </div>
 {% endblock %}
 
-{% block content4 %}
-    <div>
-        <table>
-        <tr>
-            <th></th>
-            {% for column in priority_columns %}
-                <th>{{ column }}</th>
-            {% endfor %}
-        </tr>
-        {% for row in personal_schedule %}
-            <tr>
-                <td>{{ time_slots[loop.index - 1] }} </td>
-                {% for cell in row %}
-                    <td>{{ cell }}</td>
-                {% endfor %}
-            </tr>
-        {% endfor %}
-    </table>
-    </div>
-{% endblock %}
+
+
+
+{#{% block content4 %}#}
+{#    <div>#}
+{#        <table>#}
+{#        <tr>#}
+{#            <th></th>#}
+{#            {% for column in priority_columns %}#}
+{#                <th>{{ column }}</th>#}
+{#            {% endfor %}#}
+{#        </tr>#}
+{#        {% for row in personal_schedule %}#}
+{#            <tr>#}
+{#                <td>{{ time_slots[loop.index - 1] }} </td>#}
+{#                {% for cell in row %}#}
+{#                    <td>{{ cell }}</td>#}
+{#                {% endfor %}#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#    </table>#}
+{#    </div>#}
+{#{% endblock %}#}
 
 
 {% block scripts %}

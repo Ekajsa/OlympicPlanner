@@ -9,7 +9,6 @@ import dotenv
 dotenv.load_dotenv()
 create_app()
 
-from app.controllers.schedule_controller import create_empty_schedule, create_schedule
 from app.controllers.event_controller import get_all_events_by_date
 
 
@@ -35,9 +34,9 @@ from app.controllers.event_controller import get_all_events_by_date
     # print(the_event.local_end_time)
 
 
-events = get_all_events_by_date("2022-02-20")
-for event in events:
-    convert_string_to_date_time(event)
+# events = get_all_events_by_date("2022-02-20")
+# for event in events:
+#     convert_string_to_date_time(event)
     # print("Starts: ", event.local_start_time)
     # print("Ends: ", event.local_end_time)
 
@@ -123,3 +122,7 @@ for event in events:
 # for row in schedule:
 #     print(row)
 #
+
+text = "hej"
+print(text[-1])
+print(text[:-1])
