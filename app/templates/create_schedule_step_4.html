@@ -9,39 +9,28 @@
                     copy all of it to your personal schedule. If you want, you can fine tune the main schedule with
                     filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
                     drop to add events from the main schedule to your personal schedule. </p>
-
-                    {% for event in events %}
-                        {{ event.date }}
-                        {{ event.local_start_time }}-{{ event.local_end_time }}
-                        {{ event.discipline }},
-                        {% if event.sex|length == 2 %}
-                            {{ event.sex[0] }}, {{ event.sex[1] }}.
-                        {% else %}
-                             {{ event.sex }}.
-                        {% endif %}
-                        {% if event.description == "" %}
-                            {% if event.competition_type|length == 2 %}
-                                {{ event.competition_type[0]|capitalize }}, {{ event.competition_type[1] }}.
-                            {% else %}
-                                {{ event.competition_type|capitalize }}.
-                            {% endif %}
-                        {% else %}
-                            {{ event.description }},
-                            {% if event.competition_type|length == 2 %}
-                                {{ event.competition_type[0] }}, {{ event.competition_type[1] }}.
-                            {% else %}
-                                {{ event.competition_type }}.
-                            {% endif %}
-                        {%  endif %}
-                        {% if event.participating_countries|length == 2 %}
-                            {{ event.participating_countries[0] }}-{{ event.participating_countries[1] }}.
-                        {% endif %}
-                        </br>
+                <p>2022-02-03</p>
+                <table>
+                    <tr>
+                        <th></th>
+                        {% for discipline in disciplines %}
+                            <th>{{ discipline }}</th>
+                        {% endfor %}
+                    </tr>
+                    {% for row in schedule %}
+                        <tr>
+                            <td>{{ time_slots[loop.index - 1] }} </td>
+                            {% for event in row %}
+                                <td>{{ event }}</td>
+                            {% endfor %}
+                        </tr>
                     {% endfor %}
+                </table>
             </div>
     </div>
+
+
  {% endblock %}
 
 {% block scripts %}
-    <script></script>
 {% endblock %}
