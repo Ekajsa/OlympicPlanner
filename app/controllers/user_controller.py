@@ -1,9 +1,9 @@
 import datetime
 from passlib.hash import argon2
 from flask_login import login_user
-from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.security import check_password_hash
 
-from app.persistence.repository import user_repository as ur, user_repository
+from app.persistence.repository import user_repository as ur
 
 
 # Do we need this?
@@ -52,11 +52,11 @@ def create_user(first_name, last_name, email, password):
 
 
 def get_user_by_email(email):
-    return user_repository.get_user_by_email(email)
+    return ur.get_user_by_email(email)
 
 
 def verify_user(email, password):
-    user = user_repository.get_user_by_email(email)
+    user = ur.get_user_by_email(email)
     if user is None:
         return False
     if user.password.startswith('pbkdf2:sha256'):
@@ -76,6 +76,14 @@ def signin_user(email):
         user.save()
 
 
+def edit_user(first_name, last_name, email):
+    user = get_user_by_email(email)
+    if user is not None:
+        user.first_name = first_name
+        user.last_name = last_name
+        user.full_name = f"{first_name} {last_name}"
+        ur.create_user(user)
+
+
 def add_country(email, country, schedule_name):
     ur.add_country(email, country, schedule_name)
-
