@@ -2,7 +2,7 @@ Sprint week 1 (39h, from tuesday afternoon and forward minus lectures and meetin
 Issue Est. time Total Actual time         Total
 #006  1h        1           7:30          7:30
 #007  1h        2           1:15          8:15
-#008  1h        3           2:30 (so far) 10:45
+#008  1h        3           2:30          10:45
 #009  3h        6           7:30          18:15
 #010  2h        8           -             18:15
 #011  4h        12          -             18:15
@@ -24,26 +24,26 @@ Issue Est. time Total Actual time         Total
 #020  3h        28:00       - 
 #021  5h        33:00       -
 
-#010  -                     1:15(so far)  21:15
+#010  -                     1:15          21:15
 #011  -                     13h           34:15
 #020  -                     12h           46:15
 
 
 Sprint week 3 (34h, not including lectures and meetings, not including 1 days vab for Johanna and also som time withdrawn because she is sick) (Added 8 h and 30 min if some things go faster than estimated)
 Issue Est. time Total Actual time         Total               
-#021  12h       15:00       -
-#022  3h        03:00       - 
+#021  12h       12:00       07:30         07:30
+#022  3h        15:00       03:15         10:45    
 #023  3h        18:00
 #024  0:30      18:30
 #025  1:30      20:00
-#026  0:30      20:30
+#026  0:30      20:30       01:00
 #027  2h        22:30
 #028  1h        23:30
 #029  2h        25:30
-#030  0:30      26:00
+#030  0:30      26:00       00:15
 #031  3h        29:00
-#032  1h        30:00
-#033  1h        31:00
+#032  1h        30:00       00:10
+#033  1h        31:00       05:30
 #034  1h        32:00
 #035  0:30      32:30
 #036  1h        33:30
