@@ -305,10 +305,10 @@
     "competition_type": "team event",
     "sex": "men",
     "date": "2022-02-04",
-    "local_start_time": "10:02",
+    "local_start_time": "09:55",
     "local_end_time": "11:15",
     "participating_countries": ["Canada", "China", "Czech Republic", "Georgia", "Germany", "Italy", "Japan", "ROC",
-      "Ukraine", "USA"]
+      "USA"]
   },
   "event_29":
   {
@@ -317,7 +317,7 @@
     "competition_type": "team event",
     "sex": ["women", "men"],
     "date": "2022-02-04",
-    "local_start_time": "11:41",
+    "local_start_time": "11:35",
     "local_end_time": "12:54",
     "participating_countries": ["Canada", "China", "Czech Republic", "Georgia", "Germany", "Italy", "Japan", "ROC",
       "Ukraine", "USA"]
@@ -331,8 +331,8 @@
     "date": "2022-02-04",
     "local_start_time": "13:22",
     "local_end_time": "14:55",
-    "participating_countries": ["Canada", "China", "Czech Republic", "Georgia", "Germany", "Italy", "Japan", "ROC",
-      "Ukraine", "USA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Georgia", "Italy", "Japan", "ROC", "Ukraine",
+      "USA"]
   },
   "event_31":
   {
@@ -526,7 +526,7 @@
     "local_end_time": "18:30",
     "participating_countries": ["Australia", "Canada", "China", "Finland", "France", "Great Britain", "Japan",
       "Kazakhstan", "ROC", "Sweden", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_47":
   {
@@ -980,7 +980,7 @@
     "local_end_time": "18:30",
     "participating_countries": ["Australia", "Austria", "Brazil", "Canada", "China", "France", "Great Britain", "Japan",
       "Kazakhstan", "ROC", "USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_85":
   {
