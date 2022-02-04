@@ -54,20 +54,9 @@ def select_countries_get():
 
 @bp_user.post("/create_schedule/step3")
 def select_countries_post():
-    countries_json = request.form['chosenAsJson']
-    countries = json.loads(countries_json)
+    the_list = request.form["theList"]
+    countries = json.loads(the_list)
 
-    # countries = []
-    # # How do I return all countries who has been clicked and therefore has a value of true?
-    # country = request.form["country"]
-    # countries.append(country)
-    # country = request.form["myCountry"]
-    # email = current_user.email
-    # # schedule_name = ''  # How do we get this?
-    # # if schedule_name == None:
-    # schedule_name = "First"
-    # add_country(email, country, schedule_name)
-    # chosen_countries = request.json
     print()
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
