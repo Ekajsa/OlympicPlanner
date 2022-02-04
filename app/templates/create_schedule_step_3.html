@@ -9,14 +9,21 @@
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
             </div>
             <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list" disabled>
-            <input type="button" class="btn btn-primary" onclick="submit()" value="Next">
+            <input type="button" class="btn btn-primary" onclick="sendIt()" value="Next">
         </form><br>
 
 
         <div id="countries">Chosen countries:</div>
         {#    Should </div> be placed under the table?#}
         <table id="countryTable">
+        <form id="chosen-countries" action="{{ url_for("bp_user.select_countries_post") }}" method="POST" enctype="application/x-www-form-urlencoded">
+            <input type="text" name="citrus" id="chosenAsJson" />
+        </form>
 
+        <form id="plupps" action="{{ url_for("bp_user.select_countries_post") }}"  enctype="application/x-www-form-urlencoded">
+            <input type="text" name="alpha" id="alpha" />
+            <input type="text" name="gamma" id="beta" />
+        </form>
 {#        </table>#}
 {#        <ul id="countryList"></ul>#}
 {#        <table>#}
@@ -47,16 +54,18 @@
             console.log(input)
             input = input.toLowerCase();
             let notInList = true;
-            if(countries.includes(input)) {
-                console.log('includes')
-                notInList = false;
-            }
 
             for (let i = 0; i < countries.length; i++) {
                 console.log('length')
                 if(countries[i] === input) {
                     console.log('countries[i]')
-                    notInList = false;
+                    for (let j = 0; j < chosenCountries.length; j++) {
+                        if (chosenCountries[j] === input) {
+                            break;
+                        } else {
+                            notInList = false;
+                        }
+                    }
                 }
             }
             console.log(notInList)
@@ -230,8 +239,19 @@
           return string.charAt(0).toUpperCase() + string.slice(1);
         }
 
-        function submit() {
+        function sendIt() {
+
+            let chosenForm = document.getElementById("plupps");
+           /* let chosenInput = document.getElementById("chosenAsJson");
+            let jsonCountries = {
+                countries: chosenCountries
+            }
+            chosenInput.value = JSON.stringify(jsonCountries);
+            console.log(chosenInput);*/
+            chosenForm.submit();
+
             // Du har din lista med valda länder...
+            /*
             fetch("http://127.0.0.1:5000/user/create_schedule/step4", {
                 method: "POST",
                 headers: {
@@ -239,6 +259,8 @@
                 },
                 body: JSON.stringify(chosenCountries),
             });
+            */
+
             {#alert(`array content is: ${chosenCountries}`)#}
         }
     </script>

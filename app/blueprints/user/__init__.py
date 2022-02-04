@@ -1,3 +1,5 @@
+import json
+
 from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user, login_required
 
@@ -52,6 +54,9 @@ def select_countries_get():
 
 @bp_user.post("/create_schedule/step3")
 def select_countries_post():
+    countries_json = request.form['chosenAsJson']
+    countries = json.loads(countries_json)
+
     # countries = []
     # # How do I return all countries who has been clicked and therefore has a value of true?
     # country = request.form["country"]
@@ -62,9 +67,10 @@ def select_countries_post():
     # # if schedule_name == None:
     # schedule_name = "First"
     # add_country(email, country, schedule_name)
-    chosen_countries = request.json
+    # chosen_countries = request.json
     print()
-    return render_template(url_for("bp_user.create_schedule/step4"))
+    return redirect(url_for("bp_user.filtered_schedule_get"))
+
 
 
 @bp_user.get("/create_schedule/step4")
@@ -78,7 +84,7 @@ def filtered_schedule_get():
 @bp_user.post("/create_schedule/step4")
 def filtered_schedule_post():
     chosen_countries = request.json
-    return redirect(url_for("bp_user.create_schedule/step4"))
+    return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
 @bp_user.get("/my_schedule")

@@ -113,6 +113,7 @@ def event_output(event):
 def create_schedule(date):
     schedule, disciplines, time_slots = create_empty_schedule()
     events = get_all_events_by_date(date)
+    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline)
 
