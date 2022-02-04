@@ -387,7 +387,7 @@
     "local_start_time": "17:00",
     "local_end_time": "18:15",
     "participating_countries": ["Austria", "Belarus", "Bulgaria", "Canada", "China", "Czech Republic", "Estonia",
-      "Finland", "France", "Germany", "Italy", "Japan", "Norway", "Moldova", "ROC", "Slovakia", "Slovenia", "Sweden",
+      "Finland", "France", "Germany", "Italy", "Japan", "Norway", "ROC", "Slovakia", "Slovenia", "Sweden",
       "Switzerland", "Ukraine", "USA"]
   },
   "event_35":
@@ -399,11 +399,9 @@
     "date": "2022-02-05",
     "local_start_time": "15:45",
     "local_end_time": "16:45",
-    "participating_countries": ["Andorra", "Argentina", "Armenia", "Australia", "Austria", "Belarus",
-      "Bosnia Hercegovina", "Brazil", "Canada", "China", "Croatia", "Czech Republic", "Estonia", "Finland", "France",
-      "Germany", "Iceland", "Italy", "Japan", "Kazakhstan", "Latvia", "Lichtenstein", "Lithuania", "Mongolia",
-      "North Macedonia", "Norway", "Poland", "Korea", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland",
-      "Thailand", "Turkey", "Ukraine", "USA"]
+    "participating_countries": ["Andorra", "Australia", "Austria", "Canada", "China", "Czech Republic", "Estonia",
+      "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Latvia", "Lichtenstein", "Norway", "Poland",
+      "Korea", "ROC", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"]
   },
   "event_36":
   {
@@ -646,7 +644,8 @@
     "local_end_time": "22:00",
     "participating_countries": ["Australia", "Austria", "Bosnia Herzegovina", "Bulgaria", "Canada", "China",
       "Czech Republic", "Georgia", "Germany", "Great Britain", "Italy", "Japan", "Latvia", "Poland", "Korea", "ROC",
-      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"]
+      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"],
+    "participants_decided": "False"
   },
   "event_57":
   {
@@ -657,8 +656,8 @@
     "date": "2022-02-05",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "participating_countries": ["Belgium", "Croatia", "Czech Republic", "France", "Germany", "Great Britain", "Hungary",
-      "Japan", "Kazakhstan", "Netherlands", "Poland", "Korea", "ROC", "Ukraine", "USA"]
+    "participating_countries": ["Belgium", "Canada", "China", "Croatia", "Czech Republic", "France", "Great Britain",
+      "Hungary", "Italy", "Japan", "Netherlands", "Poland", "Korea", "ROC", "USA"]
   },
   "event_58":
   {
@@ -669,9 +668,8 @@
     "date": "2022-02-05",
     "local_start_time": "19:38",
     "local_end_time": "20:15",
-    "participating_countries": ["Australia", "Belgium", "Canada", "China", "France", "Great Britain", "Hong Kong",
-      "Hungary", "Israel", "Italy", "Japan", "Kazakhstan", "Latvia", "Netherlands", "Poland", "Korea", "ROC", "Turkey",
-      "Ukraine", "USA"]
+    "participating_countries": ["Australia", "Belgium", "Canada", "China", "France", "Great Britain", "Hungary",
+      "Israel", "Italy", "Japan", "Kazakhstan", "Latvia", "Netherlands", "Poland", "Korea", "ROC", "Turkey", "USA"]
   },
   "event_59":
   {
@@ -772,8 +770,8 @@
     "local_start_time": "10:45",
     "local_end_time": "11:40",
     "participating_countries": ["Australia", "Austria", "Belgium", "Canada", "China", "Croatia", "Czech Republic",
-      "Finland", "France", "Germany", "Great Britain", "Japan", "Netherlands", "New Zealand", "Norway", "Slovakia",
-      "Slovenia", "Switzerland", "USA"]
+      "Finland", "France", "Germany", "Great Britain", "Hungary", "Japan", "Netherlands", "New Zealand", "Norway",
+      "Slovakia", "Slovenia", "Switzerland", "USA"]
   },
   "event_67":
   {
