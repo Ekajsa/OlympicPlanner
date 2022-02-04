@@ -1,6 +1,6 @@
 import datetime
 from passlib.hash import argon2
-from flask_login import login_user
+from flask_login import login_user, current_user
 from werkzeug.security import check_password_hash
 
 from app.persistence.repository import user_repository as ur
@@ -77,11 +77,12 @@ def signin_user(email):
 
 
 def edit_user(first_name, last_name, email):
-    user = get_user_by_email(email)
+    user = get_user_by_email(current_user.email)
     if user is not None:
         user.first_name = first_name
         user.last_name = last_name
         user.full_name = f"{first_name} {last_name}"
+        user.email = email
         ur.create_user(user)
 
 
