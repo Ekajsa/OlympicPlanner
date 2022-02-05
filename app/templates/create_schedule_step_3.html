@@ -9,7 +9,7 @@
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
                 <input name="theList" type="hidden" id="theHidden" />
             </div>
-            <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list">
+            <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list" disabled>
             <input type="submit" class="btn btn-primary" onclick="sendIt()" value="Next">
         </form><br>
 
@@ -27,6 +27,10 @@
             for (let i = 0; i < capCountries.length; i++) {
               countries[i] = capCountries[i].toLowerCase();
             }
+            console.log(countries[0])
+            console.log(countries[1])
+            console.log(countries[2])
+            console.log(countries[3])
 
         let chosenCountries = [];
         document.getElementById("theForm").onsubmit = () => {
@@ -41,26 +45,40 @@
             console.log('inList')
             console.log(input)
             input = input.toLowerCase();
-            let notInList = true;
+            let isDisabled = true;
+            let inCountries;
+            let inChosenCountries;
 
             for (let i = 0; i < countries.length; i++) {
                 console.log('length')
-                if(countries[i] === input) {
-                    console.log('countries[i]')
-                    for (let j = 0; j < chosenCountries.length; j++) {
-                        if (chosenCountries[j] === input) {
-                            console.log('country already in list');
-                            break;
-                        } else {
-                            notInList = false;
-                            console.log('country not in list')
-                        }
-                    }
+                if (countries[i] === input) {
+                    console.log(countries[i])
+                    inCountries = true;
+                    console.log(inCountries)
                 }
             }
-            console.log(notInList)
+            console.log(inCountries)
+            if (chosenCountries.length === 0) {
+                console.log('in if chosenCountries')
+                inChosenCountries = false;
+            }
+            for (let i = 0; i < chosenCountries.length; i++) {
+                console.log('in for chosenCountries')
+                if (inCountries === true && chosenCountries[i] === input) {
+                    console.log('in if &&')
+                    inChosenCountries = true;
+                    console.log('country already in list');
+                    break;
+                } else {
+                    console.log('in else')
+                    inChosenCountries = false;
+                    console.log('country not in list')
+                }
+            }
 
-            document.getElementById("addCountry").disabled = notInList;
+            if (inCountries === true && inChosenCountries === false) {
+                document.getElementById("addCountry").disabled = false;
+            }
         }
 
 
@@ -94,6 +112,8 @@
             countryTable.innerHTML += "<tr><td>???</td><td>" + capCountries[countries.indexOf(input)] + "</td></tr>";
 
             });
+            let button = document.getElementById('addCountry');
+            button.disabled = true;
         }
 
         // functions for autocomplete
