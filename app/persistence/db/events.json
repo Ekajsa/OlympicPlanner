@@ -548,9 +548,8 @@
     "date": "2022-02-05",
     "local_start_time": "20:05",
     "local_end_time": "20:35",
-    "participating_countries": ["Australia", "Canada", "Finland", "France", "Japan", "Kazakhstan", "ROC", "Sweden",
-      "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Australia", "Canada", "France", "Japan", "Kazakhstan", "ROC", "Sweden", "USA"],
+    "participants_decided": "True"
   },
     "event_49":
   {
@@ -561,9 +560,8 @@
     "date": "2022-02-05",
     "local_start_time": "20:40",
     "local_end_time": "21:10",
-    "participating_countries": ["Australia", "Canada", "Finland", "France", "Japan", "Kazakhstan", "ROC", "Sweden",
-      "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Australia", "Canada", "France", "Japan", "Sweden", "USA"],
+    "participants_decided": "True"
   },
     "event_50":
   {
@@ -588,17 +586,6 @@
     "participating_countries": ["Japan", "Denmark"]
   },
   "event_52":
-  {
-    "discipline": "Ice hockey",
-    "description": "Group B",
-    "competition_type": "preliminary round",
-    "sex": "women",
-    "date": "2022-02-05",
-    "local_start_time": "16:40",
-    "local_end_time": "18:55",
-    "participating_countries": ["Czech Republic", "Sweden"]
-  },
-  "event_53":
   {
     "discipline": "Ice hockey",
     "description": "Group B",
@@ -644,8 +631,7 @@
     "local_end_time": "22:00",
     "participating_countries": ["Australia", "Austria", "Bosnia Herzegovina", "Bulgaria", "Canada", "China",
       "Czech Republic", "Georgia", "Germany", "Great Britain", "Italy", "Japan", "Latvia", "Poland", "Korea", "ROC",
-      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"],
-    "participants_decided": "False"
+      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"]
   },
   "event_57":
   {
@@ -692,9 +678,8 @@
     "date": "2022-02-05",
     "local_start_time": "20:53",
     "local_end_time": "21:10",
-    "participating_countries": ["Canada", "China", "France", "Hungary", "Italy", "Japan", "Kazakhstan", "Netherlands",
-      "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "China", "Hungary", "Italy", "Kazakhstan", "Netherlands", "ROC", "USA"],
+    "participants_decided": "True"
   },
   "event_61":
   {
@@ -705,9 +690,8 @@
     "date": "2022-02-05",
     "local_start_time": "21:18",
     "local_end_time": "21:24",
-    "participating_countries": ["Canada", "China", "France", "Hungary", "Italy", "Japan", "Kazakhstan", "Netherlands",
-      "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Kazakhstan", "Netherlands"],
+    "participants_decided": "True"
   },
   "event_62":
   {
@@ -718,9 +702,8 @@
     "date": "2022-02-05",
     "local_start_time": "21:26",
     "local_end_time": "21:50",
-    "participating_countries": ["Canada", "China", "France", "Hungary", "Italy", "Japan", "Kazakhstan", "Netherlands",
-      "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "China", "Hungary", "Italy"],
+    "participants_decided": "True"
   },
   "event_63":
   {
@@ -756,9 +739,9 @@
     "date": "2022-02-05",
     "local_start_time": "19:35",
     "local_end_time": "20:20",
-    "participating_countries": ["Austria", "Canada", "China", "Czech Republic", "Finland", "France", "Germany", "Italy",
-      "Japan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Sweden", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Canada", "Czech Republic", "Finland", "France", "Germany", "Italy", "Japan",
+      "Norway", "ROC", "Romania", "Slovenia", "Sweden"],
+    "participants_decided": "True"
   },
   "event_66":
   {
@@ -820,13 +803,10 @@
     "date": "2022-02-06",
     "local_start_time": "15:00",
     "local_end_time": "16:45",
-    "participating_countries": ["Andorra", "Argentina", "Armenia", "Australia", "Austria", "Belarus", "Belgium",
-      "Bolivia", "Bosnia Hercegovina", "Brazil", "Bulgaria", "Canada", "Chile", "China", "Colombia", "Croatia",
-      "Czech Republic", "Estonia", "Finland", "France", "Germany", "Great Britain", "Greece", "Hungary", "Iceland",
-      "Ireland", "Iran", "Italy", "Japan", "Kazakhstan", "Latvia", "Lebanon", "Lithuania", "Mexico", "Mongolia",
-      "Montenegro", "Nigeria", "North Macedonia", "Norway", "Poland", "Portugal", "Korea", "ROC", "Romania", "Slovakia",
-      "Slovenia", "Spain", "Sweden", "Switzerland", "Thailand", "Turkey", "Ukraine", "USA"]
-  },
+    "participating_countries": ["Andorra", "Argentina", "Armenia", "Australia", "Austria", "Belgium", "Brazil",
+      "Canada", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany", "Great Britain", "Iceland",
+      "Ireland", "Italy", "Japan", "Kazakhstan", "Latvia", "Norway", "Poland", "ROC", "Romania", "Slovakia",
+      "Slovenia", "Spain", "Sweden", "Switzerland", "Thailand", "Turkey"],
   "event_72":
   {
     "discipline": "Curling",
@@ -1059,7 +1039,9 @@
     "local_end_time": "22:10",
     "participating_countries": ["Australia", "Austria", "Bosnia Herzegovina", "Bulgaria", "Canada", "China",
       "Czech Republic", "Georgia", "Germany", "Great Britain", "Italy", "Japan", "Latvia", "Poland", "Korea", "ROC",
-      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"]
+      "Romania", "Slovakia", "Sweden", "Ukraine", "USA"],
+    "participants_decided": "False"
+
   },
  "event_92":
   {
@@ -1087,7 +1069,7 @@
     "participating_countries": ["Austria", "Bulgaria", "Canada", "Czech Republic", "Estonia", "Finland", "Germany",
       "Italy", "Japan", "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland",
       "Turkey", "Ukraine","USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_94":
   {
