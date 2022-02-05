@@ -22,7 +22,7 @@
     </div>
 
     <script>
-        let capCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        let capCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Taiwan", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
         let countries = [];
             for (let i = 0; i < capCountries.length; i++) {
               countries[i] = capCountries[i].toLowerCase();
@@ -88,16 +88,18 @@
             let input = document.getElementById("myInput");
             input = input.value.toLowerCase()
             console.log(input.value)
-            if (input === 'united kingdom') {
-                input = 'great britain';
-            } else if(input === 'usa') {
-                input = 'united states of america';
-            } else if(input === 'russia' | input ==='russian olympic committee') {
+
+            if(input === 'russia' | input ==='russian olympic committee') {
                 input = 'roc';
             } else if(input === 'south korea') {
                 input = 'korea';
+            } else if(input === 'chinese taipei') {
+                input = 'taiwan';
+            } else if(input === 'great britain') {
+                input = 'united kingdom';
+            } else if(input === 'usa') {
+                input = 'united states of america';
             }
-
             chosenCountries.push(input);
 
             fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
@@ -107,11 +109,19 @@
                 //console.log('Code: ', json.records[0].fields.iso2_code);
 
             let flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
+            if (input === 'taiwan') {
+                input = 'chinese taipei';
+            } else if(input === 'united states of america') {
+                input = 'usa';
+            } else if(input === 'united kingdom') {
+                input = 'great britain';
+            }
             countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + capCountries[countries.indexOf(input)]  + "</td></tr>";
             }).catch(function() {
             countryTable.innerHTML += "<tr><td>???</td><td>" + capCountries[countries.indexOf(input)] + "</td></tr>";
 
             });
+
             let button = document.getElementById('addCountry');
             button.disabled = true;
         }
@@ -137,36 +147,24 @@
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
                 this.parentNode.appendChild(a);
+
                 /*for each item in the array...*/
                 for (i = 0; i < arr.length; i++) {
                     /*check if the item contains the same letters as the text field value:*/
                     if ((arr[i].toUpperCase()).includes(val.toUpperCase())) {
                         /*create a DIV element for each matching element:*/
-
                         b = document.createElement("div");
-                        /*make the matching letters bold:*/
-                        {#pattern = "uni" pattern is my val#}
-                        {#country = "United Kingdom" country is my arr[i]#}
-                        {#start_idx = country.lower().index(pattern.lower())#}
-                        {#end_idx = start_idx + len(pattern)#}
-                        {#pattern = pattern if start_idx > 0 else pattern.title()#}
-                        {#output = country[:start_idx] + '<strong>' + pattern + '</strong>'  + country[end_idx:]#}
                         let start_idx = arr[i].toLowerCase().indexOf(val.toLowerCase());
                         let end_idx = start_idx + val.length;
                         let output = ""
                         if(arr[i] === 0) {
-                            {#val = val.title;#}
                             capitalizeFirstLetter(val);
-                            {#val = text.toLowerCase().replace(/(^\w{1})|(\s{1}\w{1})/g, match => match.toUpperCase());#}
                             output = "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         } else {
                             output = arr[i].substring(0,start_idx) + "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         }
 
                         b.innerHTML = output;
-
-                        {#let boldText = "<strong>" + val + "</strong>";#}
-                        {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
 
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
