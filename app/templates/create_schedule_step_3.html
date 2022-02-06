@@ -36,6 +36,7 @@
               countries[i] = capCountries[i].toLowerCase();
             }
 
+        //Adds countries to array when click on Add Country
         let chosenCountries = [];
         document.getElementById("theForm").onsubmit = () => {
             document.getElementById("theHidden").value = JSON.stringify(chosenCountries)
@@ -91,6 +92,8 @@
                 input = 'usa';
             }
             chosenCountries.push(input);
+            chosenCountries = chosenCountries.sort()
+
             let flag;
             if (input === 'roc') {
                 flag = '<img style="width:32px; height:24px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Olympic_flag.svg">';
