@@ -4,7 +4,7 @@
     <div class="content-section">
 
         <!--Make sure the form has the autocomplete function switched off:-->
-        <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_get") }}">
+        <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}">
             <div class="autocomplete" style="width:300px;">
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
                 <input name="theList" type="hidden" id="theHidden" />
@@ -230,6 +230,31 @@
 
         function capitalizeFirstLetter(string) {
           return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        function sendIt() {
+
+            let chosenForm = document.getElementById("theForm");
+           /* let chosenInput = document.getElementById("chosenAsJson");
+            let jsonCountries = {
+                countries: chosenCountries
+            }
+            chosenInput.value = JSON.stringify(jsonCountries);
+            console.log(chosenInput);*/
+            chosenForm.submit();
+            console.log('before href')
+            window.location.href = "{{ url_for('bp_user.select_countries_post') }}";
+            console.log('after href')
+            // Du har din lista med valda länder...
+            /*
+            fetch("http://127.0.0.1:5000/user/create_schedule/step4", {
+                method: "POST",
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(chosenCountries),
+            });
+            */
         }
     </script>
 

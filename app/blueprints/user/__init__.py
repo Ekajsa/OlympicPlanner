@@ -61,7 +61,6 @@ def select_countries_post():
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
-
 @bp_user.get("/create_schedule/step4")
 # @login_required
 def filtered_schedule_get():
