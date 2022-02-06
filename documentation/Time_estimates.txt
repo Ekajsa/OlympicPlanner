@@ -35,7 +35,7 @@ Issue Est. time Total Actual time         Total
 #022  3h        15:00       03:15         10:45    
 #023  3h        18:00
 #024  0:30      18:30
-#025  1:30      20:00
+#025  1:30      20:00       02:30
 #026  0:30      20:30       01:00
 #027  2h        22:30
 #028  1h        23:30
@@ -49,5 +49,10 @@ Issue Est. time Total Actual time         Total
 #036  1h        33:30
 #037  1h        34:30
 #038  1h        35:30
-#039  5h        40:30
+#039  5h        40:30       06:15, 5:15 (or 0:35 + 4:40 on #021/new issue?)
 #040  2h        42:30
+
+
+Sprint week 4 
+Issue Est. time Total Actual time         Total               
+
