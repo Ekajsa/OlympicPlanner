@@ -97,8 +97,8 @@
                 input = 'taiwan';
             } else if(input === 'great britain') {
                 input = 'united kingdom';
-            } else if(input === 'usa') {
-                input = 'united states of america';
+            } else if(input === 'united states of america') {
+                input = 'usa';
             }
             chosenCountries.push(input);
 
@@ -111,9 +111,7 @@
             let flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
             if (input === 'taiwan') {
                 input = 'chinese taipei';
-            } else if(input === 'united states of america') {
-                input = 'usa';
-            } else if(input === 'united kingdom') {
+            }  else if(input === 'united kingdom') {
                 input = 'great britain';
             }
             countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + capCountries[countries.indexOf(input)]  + "</td></tr>";
