@@ -4,7 +4,7 @@
     <div class="content-section">
 
         <!--Make sure the form has the autocomplete function switched off:-->
-        <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}">
+        <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}" method="POST">
             <div class="autocomplete" style="width:300px;">
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
                 <input name="theList" type="hidden" id="theHidden" />

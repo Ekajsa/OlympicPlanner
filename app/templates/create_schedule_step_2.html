@@ -15,7 +15,7 @@
         {#<a href="#" onclick="javascript:toggleCheck(false,this);" class="btn">Deselect All</a>#}
         {#<br>    #}
 
-        <form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form">
+        <form id="disciplines" action="{{url_for("bp_user.select_countries_get")}}" id="form" method="POST">
 
             <div class="checkbox-container">
               <input type="checkbox" id="d1" name="discipline" value="alpine">
