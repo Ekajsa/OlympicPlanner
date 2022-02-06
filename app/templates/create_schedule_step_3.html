@@ -83,25 +83,21 @@
                 input = 'usa';
             }
             chosenCountries.push(input);
-
-
             let flag;
-            console.log(input)
-            if (input === roc) {
-                console.log("roc")
-
+            if (input === 'roc') {
+                flag = '<img style="width:32px; height:24px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Olympic_flag.svg">';
+                countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + "ROC" + "</td></tr>";
             } else {
-                fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
+                            fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
+
                 return resp.json();
             }).then(json => {
-                console.log('Code: ', json.records[0].fields.iso2_code);
-                console.log("other")
-               flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
-            }
+                //console.log('Code: ', json.records[0].fields.iso2_code);
 
+            flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
             if (input === 'taiwan') {
                 input = 'chinese taipei';
-            }  else if(input === 'united kingdom') {
+            } else if(input === 'united kingdom') {
                 input = 'great britain';
             }
             countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + capCountries[countries.indexOf(input)]  + "</td></tr>";
@@ -109,6 +105,8 @@
             countryTable.innerHTML += "<tr><td>???</td><td>" + capCountries[countries.indexOf(input)] + "</td></tr>";
 
             });
+            }
+
 
             let button = document.getElementById('addCountry');
             button.disabled = true;
