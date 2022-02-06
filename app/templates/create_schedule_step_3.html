@@ -27,10 +27,6 @@
             for (let i = 0; i < capCountries.length; i++) {
               countries[i] = capCountries[i].toLowerCase();
             }
-            console.log(countries[0])
-            console.log(countries[1])
-            console.log(countries[2])
-            console.log(countries[3])
 
         let chosenCountries = [];
         document.getElementById("theForm").onsubmit = () => {
@@ -42,37 +38,25 @@
 
 
         function inList(input) {
-            console.log('inList')
-            console.log(input)
             input = input.toLowerCase();
             let isDisabled = true;
             let inCountries;
             let inChosenCountries;
 
             for (let i = 0; i < countries.length; i++) {
-                console.log('length')
                 if (countries[i] === input) {
-                    console.log(countries[i])
                     inCountries = true;
-                    console.log(inCountries)
                 }
             }
-            console.log(inCountries)
             if (chosenCountries.length === 0) {
-                console.log('in if chosenCountries')
                 inChosenCountries = false;
             }
             for (let i = 0; i < chosenCountries.length; i++) {
-                console.log('in for chosenCountries')
                 if (inCountries === true && chosenCountries[i] === input) {
-                    console.log('in if &&')
                     inChosenCountries = true;
-                    console.log('country already in list');
                     break;
                 } else {
-                    console.log('in else')
                     inChosenCountries = false;
-                    console.log('country not in list')
                 }
             }
 
@@ -83,11 +67,9 @@
 
 
         function ac() {
-            console.log("ac");
             let countryTable = document.getElementById("countryTable");
             let input = document.getElementById("myInput");
             input = input.value.toLowerCase()
-            console.log(input.value)
 
             if(input === 'russia' | input ==='russian olympic committee') {
                 input = 'roc';
@@ -102,13 +84,21 @@
             }
             chosenCountries.push(input);
 
-            fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
 
+            let flag;
+            console.log(input)
+            if (input === roc) {
+                console.log("roc")
+
+            } else {
+                fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
                 return resp.json();
             }).then(json => {
-                //console.log('Code: ', json.records[0].fields.iso2_code);
+                console.log('Code: ', json.records[0].fields.iso2_code);
+                console.log("other")
+               flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
+            }
 
-            let flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
             if (input === 'taiwan') {
                 input = 'chinese taipei';
             }  else if(input === 'united kingdom') {
