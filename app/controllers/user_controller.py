@@ -76,6 +76,10 @@ def signin_user(email):
         user.save()
 
 
-def add_country(email, country, schedule_name):
-    ur.add_country(email, country, schedule_name)
+def add_step2(email, disciplines):
+    user_repository.add_step2(email, disciplines)
+
+
+def add_step3(email, countries):
+    user_repository.add_step3(email, countries)
 

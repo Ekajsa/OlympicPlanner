@@ -5,6 +5,7 @@ from flask_login import logout_user, current_user, login_required
 
 # from app.controllers.user_controller import add_country, get_user_by_email
 from app.controllers.schedule_controller import create_schedule
+from app.controllers.user_controller import add_step3, add_step2
 
 bp_user = Blueprint("bp_user", __name__)
 
@@ -46,18 +47,28 @@ def select_disciplines_get():
     return render_template("create_schedule_step_2.html")
 
 
+@bp_user.post("/create_schedule/step2")
+def select_disciplines_post():
+    email = current_user.email
+    the_list = request.form["hiddenList"]
+    disciplines = json.loads(the_list)
+    add_step2(email, disciplines)
+    return redirect(url_for('bp_user.select_countries_get'))
+
+
 @bp_user.get("/create_schedule/step3")
 def select_countries_get():
-    # countries = get_country()  # Continue here!
     return render_template("create_schedule_step_3.html")
 
 
 @bp_user.post("/create_schedule/step3")
 def select_countries_post():
+    email = current_user.email
     the_list = request.form["theList"]
     countries = json.loads(the_list)
 
     print()
+    add_step3(email, countries)
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 

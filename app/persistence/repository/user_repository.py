@@ -1,3 +1,5 @@
+import datetime
+
 from app.persistence.model import User
 
 
@@ -15,12 +17,19 @@ def get_user_by_email(email):
     return user
 
 
-def add_country(email, country, schedule_name):
+def add_step2(email, disciplines):
     user = get_user_by_email(email)
-    if len(user.personal_schedules) == 0:
-        user.personal_schedules.schedule_name = "First"
-    if user.personal_schedules.schedule_name == "First":
-        user.personal_schedules.countries.append(country)
+    user.personal_schedules.disciplines = disciplines
+    user.save()
+
+
+def add_step3(email, countries):
+    user = get_user_by_email(email)
+    user.personal_schedules.countries = countries
+    date = datetime.datetime.now()
+    user.personal_schedules.schedule_name = f'Created {date}'
+    user.save()
+
 
 
 
