@@ -1,6 +1,14 @@
 {% extends "base_template.html" %}
 
 {% block content12 %}
+    <style>
+        table, tr {border: hidden;}
+        td, th {border: hidden;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+    </style>
+
     <div class="content-section">
 
         <!--Make sure the form has the autocomplete function switched off:-->
@@ -16,7 +24,7 @@
 
         <div id="countries">Chosen countries:</div>
         {#    Should </div> be placed under the table?#}
-        <table id="countryTable">
+        <table id="countryTable" style="border: hidden;" >
 
         </table>
     </div>
