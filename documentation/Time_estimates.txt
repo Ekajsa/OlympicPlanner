@@ -52,9 +52,12 @@ Issue Est. time Total Actual time         Total
 #039  5h        40:30       00:35
 #040  2h        42:30       08:00
 
+#042  -         42:30       04:00
+
 
 Sprint week 4 
 Issue Est. time Total Actual time         Total   
 #034    2h        
 #040    2h
+#042    3h
 
