@@ -1,3 +1,66 @@
+import datetime
+
+import pytz
+from tzlocal import get_localzone
+
+
+def convert_time_slot_to_local(beijing_time_slots):
+    converted_time_slots = []
+    beijing_time_zone = pytz.timezone("Asia/Shanghai")
+
+    for beijing_time in beijing_time_slots:
+        beijing_time_with_time_zone = beijing_time_zone.localize(beijing_time)
+        target_time = beijing_time_with_time_zone.astimezone(get_localzone())
+        converted_time_slots.append(target_time.strftime("%H:%M"))
+
+    return converted_time_slots
+
+time_slots = ["08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00",
+              "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:30", "13:45",
+              "14:00", "14:15", "14:30", "14:45", "15:00", "15:15", "15:30", "15:45", "16:00", "16:15", "16:30",
+              "16:45", "17:00", "17:15", "17:30", "17:45", "18:00", "18:15", "18:30", "18:45", "19:00", "19:15",
+              "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00", "21:15", "21:30", "21:45", "22:00",
+              "22:15", "22:30", "22:45", "23:00", "23:15", "23:30", "23:45"]
+
+# Will this arbitrary date (to prevent the year to automatically be 1900) become a problem?
+time_slots_with_date = ["2022-02-02 " + time for time in time_slots]
+date_time_slots = [datetime.datetime.strptime(time, "%Y-%m-%d %H:%M") for time in time_slots_with_date]
+local_time_slots = convert_time_slot_to_local(date_time_slots)
+disciplines = ["Alpine skiing", "Biathlon", "Bobsleigh", "Cross-country skiing", "Curling", "Figure skating",
+                   "Freestyle skiing", "Ice hockey", "Luge", "Nordic combined", "Short track speed skating",
+                   "Skeleton", "Ski jumping", "Snowboard", "Speed skating", "Ceremony"]
+
+
+schedule = [["",
+             "<span class='alpine'>" + "Alpine skiing" + "</span>",
+             "<span class='biathlon'>" + "Biathlon" + "</span>",
+             "<span class='bobsleigh'>" + "Bobsleigh" + "</span>",
+             "<span class='cross-country'>" + "Cross-country skiing" + "</span>",
+             "<span class='curling'>" + "Curling" + "</span>",
+             "<span class='figure-skating'>" + "Figure skating" + "</span>",
+             "<span class='freestyle'>" + "Freestyle skiing" + "</span>",
+             "<span class='ice-hockey'>" + "Ice hockey" + "</span>",
+             "<span class='luge'>" + "Luge" + "</span>",
+             "<span class='noc'>" + "Nordic combined" + "</span>",
+             "<span class='short-track'>" + "Short track speed skating" + "</span>",
+             "<span class='skeleton'>" + "Skeleton" + "</span>",
+             "<span class='ski-jumping'>" + "Ski jumping" + "</span>",
+             "<span class='snowboard'>" + "Snowboard" + "</span>",
+             "<span class='speed-skating'>" + "Speed skating" + "</span>",
+             "<span class='ceremony'>" + "Ceremony" + "</span>"]]
+
+for i in range(len(local_time_slots)):
+    row = ["<span class='time-slot'>" + local_time_slots[i] + "</span>"]
+    for _ in range(len(disciplines)):
+        row.append("")
+    schedule.append(row)
+
+# print(schedule)
+for row in schedule:
+    print(row)
+# disciplines, local_time_slots
+
+
 # import datetime
 # import pytz
 # from tzlocal import get_localzone  # $ pip install tzlocal
