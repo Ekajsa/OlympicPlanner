@@ -54,5 +54,7 @@ Issue Est. time Total Actual time         Total
 
 
 Sprint week 4 
-Issue Est. time Total Actual time         Total               
+Issue Est. time Total Actual time         Total   
+#034    2h        
+#040    2h
 
