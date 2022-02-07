@@ -106,7 +106,7 @@ def convert_beijing_time_to_local(event):
 
 
 def event_html(event):
-    event_html_string = f"<div id='{event._id}'>"
+    event_html_string = f"<div class='event' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
 
