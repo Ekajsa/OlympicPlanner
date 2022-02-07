@@ -59,4 +59,7 @@ table, th, td {
 /*	opacity: 0.8;*/
 /*	border-radius: 6px;*/
 /*	background-color: #2E87DE;}*/
->>>>>>> main
+.curling-is-fun {
+    color: red;
+    font-weight: bold;
+}
