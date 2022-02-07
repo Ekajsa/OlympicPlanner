@@ -55,7 +55,7 @@ def create_empty_base_schedule():
 
     for i in range(len(local_time_slots)):
         row = ["<span class='time-slot'>" + local_time_slots[i] + "</span>"]
-        for _ in range(len(disciplines) - 1):
+        for _ in range(len(disciplines)):
             row.append("")
         schedule.append(row)
 
@@ -146,9 +146,10 @@ def schedule_html(schedule):
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
                 else:
-                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    # table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    table_html += "<td>"
                     if len(cell) == 2:
-                        table_html += cell[0] + "</td>"
+                        table_html += cell[0]
                     else:
                         for i in range(0, len(cell), 2):
                             table_html += cell[i]
