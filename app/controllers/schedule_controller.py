@@ -67,7 +67,7 @@ def convert_times_to_nearest_quarter(hour, minute):
 
     if 53 <= int(minute) <= 59:
         if int(time_nearest_quarter[:2]) < 10:
-            time_nearest_quarter = str(int(time_nearest_quarter[:2]) + 1) + ":"
+            time_nearest_quarter = "0" + str(int(time_nearest_quarter[:2]) + 1) + ":"
         else:
             time_nearest_quarter = str(int(time_nearest_quarter[:2]) + 1) + ":"
         time_nearest_quarter += "00"
