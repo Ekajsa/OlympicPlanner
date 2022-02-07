@@ -77,13 +77,16 @@ def signin_user(email):
 
 
 def edit_user(first_name, last_name, email):
-    user = get_user_by_email(current_user.email)
-    if user is not None:
+    user = current_user
+    if first_name:
         user.first_name = first_name
+    if last_name:
         user.last_name = last_name
-        user.full_name = f"{first_name} {last_name}"
+    user.full_name = f"{user.first_name} {user.last_name}"
+    if email:
         user.email = email
-        ur.create_user(user)
+    user.save()
+    signin_user(user.email)
 
 
 def add_country(email, country, schedule_name):

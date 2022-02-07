@@ -16,33 +16,40 @@
             Name: <span id="name">{{ current_user.full_name }}</span> <br/>
             E-mail: {{ current_user.email }} <br/>
             Avatar: <a href="{{ current_user.avatar }}"></a> <br/>  <!-- Make the avatar work! -->
+            <br><br>
+{#              <form action="{{ url_for("bp_user.profile_post") }}" method="POST">#}
+{#                <input type="text" class="form-control" placeholder="First Name" name="first_name"/> <br/>#}
+{#                <input type="text" class="form-control" placeholder="Last Name" name="last_name"/> <br/>#}
+{#                <input type="email" class="form-control" placeholder="Email Address" name="email"/> <br/>#}
+{#                <input type="submit" class="btn btn-primary" id="submit" value="Save changes"/>#}
+{#              </form>#}
         </div><br><br>
-{#        <div class="container">#}
+        <div class="container">
                 <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Please update as applicable!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
-                    <input type="text" class="form-control" placeholder="First Name" name="first_name"/> <br/>
-                    <input type="text" class="form-control" placeholder="Last Name" name="last_name"/> <br/>
-                    <input type="email" class="form-control" placeholder="Email Address" name="email"/> <br/>
-                  </div>
-                  <div class="modal-footer">
                       <form action="{{ url_for("bp_user.profile_post") }}" method="POST">
-                        <input type="submit" class="btn btn-primary" value="Save changes"/>
+                          <div class="modal-body">
+                            <input type="text" class="form-control" placeholder={{ current_user.first_name }} name="first_name"/> <br/>
+                            <input type="text" class="form-control" placeholder={{ current_user.last_name }} name="last_name"/> <br/>
+                            <input type="email" class="form-control" placeholder={{ current_user.email }} name="email"/> <br/>
+                          </div>
+                          <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" id="submit" value="Save changes"/>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
                       </form>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
                 </div>
               </div>
             </div>
-{#        </div>#}
+        </div>
     </div>
 {% endblock %}
 

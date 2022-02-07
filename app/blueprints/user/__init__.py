@@ -33,9 +33,10 @@ def profile_get():
 
 @bp_user.post("/profile")
 def profile_post():
-    first_name = request.form["first_name"]
-    last_name = request.form["last_name"]
-    email = request.form["email"]
+    # old_email = current_user.email
+    first_name = request.form.get("first_name")
+    last_name = request.form.get("last_name")
+    email = request.form.get("email")
 
     edit_user(first_name, last_name, email)
     return redirect(url_for("bp_user.profile_get"))
