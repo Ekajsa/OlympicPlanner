@@ -70,6 +70,5 @@ Issue Est. time Total Actual time         Total
 #053    10h       60h         
 #054    6h        66h
 Remaining 19 hours for filters, removing chosen country and fixing avatar
-
-#041    
+  
 
