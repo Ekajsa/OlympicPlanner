@@ -149,8 +149,8 @@ def schedule_html(schedule):
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
                 else:
-                    # table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
-                    table_html += "<td>"
+                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    # table_html += "<td>"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
