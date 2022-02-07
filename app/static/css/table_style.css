@@ -1,0 +1,22 @@
+img {
+  width: 50%;
+  height: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th
+{
+  vertical-align: bottom;
+  text-align: center;
+}
+
+th span
+{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+}

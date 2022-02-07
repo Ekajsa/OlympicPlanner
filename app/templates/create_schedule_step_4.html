@@ -1,6 +1,10 @@
 {% extends "base_template.html" %}
 {% set active_page = "schedules" %}
 
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/table_style.css") }}">
+{% endblock %}
+
 {%  block content12 %}
     <div class="content-section">
         <h1>Congratulations!</h1>
