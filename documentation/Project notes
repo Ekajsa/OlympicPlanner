@@ -42,7 +42,7 @@ Sprint planning
   -Startdatum:
   -Slutdatum:
   -Backlogg: Se Time_estimates.txt
-* Uppskatta tillgänglig tid för gruppen i nästa sprint.
+* Uppskatta tillgänglig tid för gruppen i nästa sprint. 57h 
 * Vad ska ingå i nästa veckas sprint?
 
 ************************************************************************************************************************************************
@@ -73,13 +73,14 @@ Sprint review
 
 Sprint planning
 * Beskriv det övergripande målet med sprinten:
-  -Namn: Stylingveckan!
-  -Beskrivning:
-  -Startdatum:
-  -Slutdatum:
+  -Namn: Styling- (och funktions-)veckan!
+  -Beskrivning: Vi kör halva tiden funktion och sen byter vi till styling sista spurten.
+  -Startdatum: 2022-02-07
+  -Slutdatum: 2022-02-15
   -Backlogg: Se Time_estimates.txt
-* Uppskatta tillgänglig tid för gruppen i nästa sprint.
-* Vad ska ingå i nästa veckas sprint?
+* Uppskatta tillgänglig tid för gruppen i nästa sprint. 85h
+	
+* Vad ska ingå i nästa veckas sprint? Se kanban
 
 ************************************************************************************************************************************************
 Daily 2022-02-03
