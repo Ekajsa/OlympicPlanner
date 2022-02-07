@@ -1,7 +1,7 @@
-from flask import Blueprint, redirect, url_for, render_template
+from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user
 
-# from app.controllers.user_controller import add_country, get_user_by_email
+from app.controllers.user_controller import edit_user
 from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule
 
 bp_user = Blueprint("bp_user", __name__)
@@ -30,11 +30,20 @@ def profile_get():
     return render_template("profile.html")
 
 
+@bp_user.post("/profile")
+def profile_post():
+    # old_email = current_user.email
+    first_name = request.form.get("first_name")
+    last_name = request.form.get("last_name")
+    email = request.form.get("email")
+
+    edit_user(first_name, last_name, email)
+    return redirect(url_for("bp_user.profile_get"))
+
+
 @bp_user.get("/create_schedule/step1")
 # @login_required
 def schedules_get():
-    # list of schedules, only for test purpose
-    # schedules = [{"name": "My first schedule"}, {"name": "My second schedule"}]
     schedules = ["My first schedule", "My second schedule"]
     return render_template("create_schedule_step_1.html", schedules=schedules)
 
