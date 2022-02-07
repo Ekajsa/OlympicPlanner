@@ -106,8 +106,9 @@ def convert_beijing_time_to_local(event):
 
 
 def event_html(event):
-    event_html_string = f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
-                   f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
+    event_html_string = f"<div id='{event._id}'>"
+    event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
+                         f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
 
     if len(event.sex) == 2:
         event_html_string += f"<span class='sex'>{event.sex[0]}, {event.sex[1]}</span>. "
@@ -131,6 +132,8 @@ def event_html(event):
     if len(event.participating_countries) == 2:
         event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
                              f"{event.participating_countries[1]}</p>"
+
+    event_html_string += "</div>"
 
     return event_html_string
 
