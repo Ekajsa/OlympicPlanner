@@ -31,23 +31,44 @@ Issue Est. time Total Actual time         Total
 
 Sprint week 3 (34h, not including lectures and meetings, not including 1 days vab for Johanna and also som time withdrawn because she is sick) (Added 8 h and 30 min if some things go faster than estimated)
 Issue Est. time Total Actual time         Total               
-#021  12h       12:00       07:30         07:30
-#022  3h        15:00       03:15         10:45    
-#023  3h        18:00
-#024  0:30      18:30
-#025  1:30      20:00
-#026  0:30      20:30       01:00
-#027  2h        22:30
-#028  1h        23:30
-#029  2h        25:30
-#030  0:30      26:00       00:15
-#031  3h        29:00
-#032  1h        30:00       00:10
-#033  1h        31:00       05:30
-#034  1h        32:00
-#035  0:30      32:30
-#036  1h        33:30
-#037  1h        34:30
-#038  1h        35:30
-#039  5h        40:30
-#040  2h        42:30
+#021  12h       12:00       12h           12h
+#022  3h        15:00       03:15         15:15    
+#023  3h        18:00       -             15:15
+#024  0:30      18:30       02:00         17:15
+#025  1:30      20:00       02:30         19:45
+#026  0:30      20:30       01:00         20:45
+#027  2h        22:30       07:45         28:30
+#028  1h        23:30       02:00         30:30
+#029  2h        25:30       01:00         31:30
+#030  0:30      26:00       00:15         31:45
+#031  3h        29:00       -             31:45
+#032  1h        30:00       00:10         31:55
+#033  1h        31:00       05:30         37:25
+#034  1h        32:00       02:00         39:25
+#035  0:30      32:30       02:00         41:25     
+#036  1h        33:30       02:30         43:55              
+#037  1h        34:30       02:30         46:25
+#038  1h        35:30       01:00         47:25
+#039  5h        40:30       00:35         48h
+#040  2h        42:30       08:00         56h
+
+#042  -         42:30       04:00         60h
+
+
+Sprint week 4 (85h, not including lectures and meetings)
+Issue Est. time Total Actual time         Total 
+#025    4h        4
+#034    2h        6
+#040    2h        8
+#041    2h        10
+#042    3h        13
+#043    2h        15
+#044    2h        17
+#045-#050 12h     29h
+#051    15h       44h
+#052    6h        50h
+#053    10h       60h         
+#054    6h        66h
+Remaining 19 hours for filters, removing chosen country and fixing avatar
+  
+

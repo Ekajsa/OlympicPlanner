@@ -54,9 +54,26 @@ table, th, td {
   border: 1px solid black;
 }
 
+th
+{
+  vertical-align: bottom;
+  text-align: center;
+}
+
+th span
+{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+}
+
 /*Styling from BritneyBob for the pencil button*/
 /*#edit_info{*/
 /*	opacity: 0.8;*/
 /*	border-radius: 6px;*/
 /*	background-color: #2E87DE;}*/
->>>>>>> main
+.curling-is-fun {
+    color: red;
+    font-weight: bold;
+}

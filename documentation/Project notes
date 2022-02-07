@@ -42,8 +42,45 @@ Sprint planning
   -Startdatum:
   -Slutdatum:
   -Backlogg: Se Time_estimates.txt
-* Uppskatta tillgänglig tid för gruppen i nästa sprint.
+* Uppskatta tillgänglig tid för gruppen i nästa sprint. 57h 
 * Vad ska ingå i nästa veckas sprint?
+
+************************************************************************************************************************************************
+
+Möte 2022-02-07
+
+Sprint review
+* Blev alla issues klara? Nej, fast vissa som inte var tänkta kom till och blev klara
+   - Om inte, varför?
+   	#023 ångrade vi oss med - wont fix.
+	#025 är meningen att den ska ligga över flera veckor
+	#031 var en dubblering av #040
+	#034 inte klar pga sjukdom och inte superprioriterad
+	#039 
+* Icke klara issues återförs till backlog, efter att de har uppdaterats.
+	Följande issues återförs: #034, #040, #042
+	#025 ligger kvar på in progress.
+  - Har vissa delar klarats av? se kanban
+  - Skall vi ha en ny tidsuppskattning? se kanban
+  - Vad behövs för att vi skall klara detta issue nästa gång? se kanban
+* Har det kommit upp nya saker som skall läggas till på er backlog? 
+	Det har tillkommit under veckan som har gått. De har vi lagt till löpande.
+* Bedöm vad ni kan göra bättre i nästa sprint
+	Små issues var bra, men vi behöver kanske ha en annan regel för vad som blir en branch. Man kan lägga flera siffror på samma branch.
+	Bli bättre på att uppskatta tid för gruppen
+	Missade några issues på sprint-planeringen, planera bättre! Det var mycket issues som följde på varandra, så vi blev tvugna att lägga till
+	andra spår i mitten av veckan
+
+Sprint planning
+* Beskriv det övergripande målet med sprinten:
+  -Namn: Styling- (och funktions-)veckan!
+  -Beskrivning: Vi kör halva tiden funktion och sen byter vi till styling sista spurten.
+  -Startdatum: 2022-02-07
+  -Slutdatum: 2022-02-15
+  -Backlogg: Se Time_estimates.txt
+* Uppskatta tillgänglig tid för gruppen i nästa sprint. 85h
+	
+* Vad ska ingå i nästa veckas sprint? Se kanban
 
 ************************************************************************************************************************************************
 Daily 2022-02-03
