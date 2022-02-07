@@ -787,9 +787,9 @@
     "description": "Downhill",
     "competition_type": "gold medal event",
     "sex": "men",
-    "date": "2022-02-06",
-    "local_start_time": "11:00",
-    "local_end_time": "13:30",
+    "date": "2022-02-07",
+    "local_start_time": "12:00",
+    "local_end_time": "14:30",
     "participating_countries": ["Austria", "Bolivia", "Canada", "Chile", "China", "France", "Germany", "Ireland",
       "Israel", "Italy", "Kosovo", "Liechtenstein", "Monaco", "Norway", "Serbia", "Slovenia", "Spain", "Switzerland",
       "Ukraine", "USA"]
@@ -1164,8 +1164,8 @@
     "competition_type": ["run 2", "gold medal event"],
     "sex": "women",
     "date": "2022-02-07",
-    "local_start_time": "14:30",
-    "local_end_time": "16:35",
+    "local_start_time": "14:45",
+    "local_end_time": "16:50",
     "participating_countries": ["Argentina", "Austria", "Bosnia Hercegovina", "Bulgaria", "Canada", "Chile", "China",
       "Croatia", "Czech Republic", "Ecuador", "Estonia", "Finland", "France", "Georgia", "Germany", "Great Britain",
       "Greece", "Hungary", "Iceland", "Ireland", "Israel", "Italy", "Japan", "Kosovo", "Lebanon", "Luxembourg",
@@ -1241,9 +1241,8 @@
     "date": "2022-02-07",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "participating_countries": ["Australia", "Canada", "China", "Great Britain", "Italy", "Norway", "Switzerland",
-      "Sweden", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Norway", "Great Britain"],
+    "participants_decided": "True"
   },
     "event_108":
   {
@@ -1254,9 +1253,8 @@
     "date": "2022-02-07",
     "local_start_time": "20:05",
     "local_end_time": "22:00",
-    "participating_countries": ["Australia", "Canada", "China", "Great Britain", "Italy", "Norway", "Switzerland",
-      "Sweden", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Italy", "Sweden"],
+    "participants_decided": "True"
   },
   "event_109":
   {
