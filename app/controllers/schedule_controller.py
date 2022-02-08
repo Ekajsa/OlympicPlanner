@@ -205,16 +205,20 @@ def create_empty_personal_schedule():
             row.append("")
         schedule.append(row)
 
-    return schedule
+    return schedule_html(schedule)
 
 
 def create_all_schedules():
     all_day_schedules = []
+    all_personal_schedules = []
     for i in range(2, 21):
         date = "2022-02-"
         if i < 10:
             date += "0" + str(i)
         else:
             date += str(i)
-        all_day_schedules.append(create_base_schedule(date))
-    return all_day_schedules
+        base_schedule = create_base_schedule(date)
+        all_day_schedules.append((date, base_schedule))
+        personal_schedule = create_empty_personal_schedule()
+        all_personal_schedules.append((date, personal_schedule))
+    return all_day_schedules, all_personal_schedules
