@@ -205,7 +205,7 @@ def create_empty_personal_schedule():
             row.append("")
         schedule.append(row)
 
-    return schedule
+    return schedule_html(schedule)
 
 
 def create_all_schedules():
