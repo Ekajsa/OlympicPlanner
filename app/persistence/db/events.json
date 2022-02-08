@@ -1719,8 +1719,8 @@
     "date": "2022-02-08",
     "local_start_time": "19:47",
     "local_end_time": "19:55",
-    "participating_countries": ["Germany", "Norway", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Sweden", "Switzerland", "USA"],
+    "participants_decided": "True"
   },
   "event_147":
   {
