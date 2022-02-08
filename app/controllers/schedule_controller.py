@@ -224,3 +224,11 @@ def create_all_schedules():
         personal_schedule = create_empty_personal_schedule(date)
         all_personal_schedules.append(("<p class='schedule-date'>" + date + "</p>", personal_schedule))
     return all_day_schedules, all_personal_schedules
+
+
+def show_day_schedule(personal_schedule, chosen_date):
+    for day_schedule in personal_schedule:
+        if day_schedule[0] != chosen_date:
+            continue
+        else:
+            return day_schedule

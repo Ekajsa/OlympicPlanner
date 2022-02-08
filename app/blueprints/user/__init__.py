@@ -3,7 +3,7 @@ from flask_login import logout_user, current_user
 
 from app.controllers.user_controller import edit_user
 from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule, \
-    create_all_schedules
+    create_all_schedules, show_day_schedule
 
 bp_user = Blueprint("bp_user", __name__)
 
@@ -82,6 +82,13 @@ def filtered_schedule_get():
     # personal_schedule = create_empty_personal_schedule()
     return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules)
 
+
+# @bp_user.get("/my_schedule")
+# # @login_required
+# def my_schedule_get():
+#     _, personal_schedules = create_all_schedules()  # Should be replaced by getting a saved schedule from the database
+#     # day_schedule = show_day_schedule(personal_schedule, chosen_date)
+#     return render_template("my_schedule.html", personal_schedules=personal_schedules)
 
 @bp_user.get("/my_schedule")
 # @login_required

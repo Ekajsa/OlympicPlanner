@@ -1,3 +1,6 @@
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+cffi==1.15.0
 click==8.0.3
 colorama==0.4.4
 Flask==2.0.2
@@ -6,12 +9,13 @@ Flask-WTF==1.0.0
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
-passlib~=1.7.4
+passlib==1.7.4
+pycparser==2.21
 pymongo==4.0.1
 python-dotenv==0.19.2
-Werkzeug==2.0.2
+pytz==2021.3
+pytz-deprecation-shim==0.1.0.post0
+tzdata==2021.5
+tzlocal==4.1
+Werkzeug==2.0.3
 WTForms==3.0.1
-
-
-pytz~=2021.3
-tzlocal~=4.1
