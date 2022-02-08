@@ -7,7 +7,6 @@ from app.controllers.user_controller import edit_user, add_step3, add_step2
 from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule
 
 
-
 bp_user = Blueprint("bp_user", __name__)
 
 

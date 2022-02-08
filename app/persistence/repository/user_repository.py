@@ -31,6 +31,3 @@ def add_step3(email, countries):
     user.save()
 
 
-
-
->>>>>>> d5ce7695cba489a9f38e41299e996492140e4c7a
