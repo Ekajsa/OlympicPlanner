@@ -138,8 +138,9 @@ def event_html(event):
     return event_html_string
 
 
-def schedule_html(schedule):
-    table_html = " <table> "
+def schedule_html(schedule, date):
+    table_html = f"<div id='{date}'>"
+    table_html += " <table> "
     for row in schedule:
         table_html += "<tr>"
         for cell in row:
@@ -159,6 +160,7 @@ def schedule_html(schedule):
                     table_html += "</td>"
         table_html += "</tr>"
     table_html += "</table>"
+    table_html += "</div>"
 
     return table_html
 
@@ -188,10 +190,10 @@ def create_base_schedule(date):
         row_span = row_end_index - row_start_index + 1
         schedule[row_start_index][col_index].append(str(row_span))
 
-    return schedule_html(schedule)
+    return schedule_html(schedule, date)
 
 
-def create_empty_personal_schedule():
+def create_empty_personal_schedule(date):
     schedule = [["",
                  "<span class='first-prio'>" + "First priority" + "</span>",
                  "<span class='second-prio'>" + "Second priority" + "</span>",
@@ -205,7 +207,7 @@ def create_empty_personal_schedule():
             row.append("")
         schedule.append(row)
 
-    return schedule_html(schedule)
+    return schedule_html(schedule, date)
 
 
 def create_all_schedules():
@@ -219,6 +221,6 @@ def create_all_schedules():
             date += str(i)
         base_schedule = create_base_schedule(date)
         all_day_schedules.append((date, base_schedule))
-        personal_schedule = create_empty_personal_schedule()
+        personal_schedule = create_empty_personal_schedule(date)
         all_personal_schedules.append(("<p class='schedule-date'>" + date + "</p>", personal_schedule))
     return all_day_schedules, all_personal_schedules
