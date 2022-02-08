@@ -12,7 +12,7 @@
             </div>
     </div>
     {% for schedule in schedules %}
-        <p>{{ schedule[0] }}</p>
+        {{ schedule[0] | safe }}
         <div class="base-schedule">
             {{ schedule[1] | safe }}
         </div>
