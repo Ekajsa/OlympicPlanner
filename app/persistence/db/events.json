@@ -2666,9 +2666,9 @@
     "date": "2022-02-10",
     "local_start_time": "09:30",
     "local_end_time": "13:30",
-    "participating_countries": ["Australia", "Azerbaijan", "Belarus", "Canada", "China", "Czech Republic", "Estonia",
-      "France", "Georgia", "Israel", "Italy", "Japan", "Latvia", "Mexico", "Korea", "ROC", "Sweden", "Switzerland",
-      "Ukraine", "USA"]
+    "participating_countries": ["Australia", "Azerbaijan", "Belarus", "Canada", "China", "France", "Georgia", "Italy",
+      "Japan", "Latvia", "Mexico", "Korea", "ROC", "Sweden", "Switzerland", "Ukraine", "USA"],
+    "participants_decided": "True"
   },
   "event_224":
   {
