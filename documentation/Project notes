@@ -46,7 +46,40 @@ Sprint planning
 * Vad ska ingå i nästa veckas sprint?
 
 ************************************************************************************************************************************************
+<Mall för daily stand-up>
+Daily 2022-02-08
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Började med #040 men fick snart byta fokus till att försöka lösa problem med att inte komma åt webbsidorna
+*   Vad ska jag göra till nästa avstämning?
+	
+*   Behöver jag hjälp med något?
+	
 
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Fixat en bugg med att vissa discipliner hamnat i fel kolumn. Problemet verkar vara rowspan som lägger till en kolumn.
+	Vinklat headers 90 grader, lagt in disciplinbilder istället för text, försökt fixa så att cellerna blir lika stora. Har gjort så att varje
+	event i det filtrerade schemat ligger i en div och div:en har samma id som eventet har i databasen. 
+*   Vad ska jag göra till nästa avstämning?
+	Ska fixa med buggen som Kajsa lyfte fram, #048 (tooltip) och om det går bra fortsätta med layouten, alternativt jobba med click and copy.
+*   Behöver jag hjälp med något?
+	Nej
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Gjort färdigt #042. Skapat en ny buggfix för att placeholdern inte förstår om användarens namn innehåller mellanrum.
+	Lågt prioriterat. :) Jobbat med #043, funkar nu fint att komma vidare från step1 till step2. 
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätter jobba med #054.
+*   Behöver jag hjälp med något?
+	Fixa buggen med att de personliga schemana inte går att hämta (Britta fixar) så att det går att göra länkarna klickbara.
+	
+
+Övrigt
+* xxx
+
+************************************************************************************************************************************************
 Möte 2022-02-07
 
 Sprint review
@@ -83,6 +116,7 @@ Sprint planning
 * Vad ska ingå i nästa veckas sprint? Se kanban
 
 ************************************************************************************************************************************************
+
 Daily 2022-02-03
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
