@@ -1,8 +1,12 @@
+import json
+
 from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user
 
-from app.controllers.user_controller import edit_user
+from app.controllers.user_controller import edit_user, add_step3, add_step2
 from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule
+
+
 
 bp_user = Blueprint("bp_user", __name__)
 
@@ -53,25 +57,29 @@ def select_disciplines_get():
     return render_template("create_schedule_step_2.html")
 
 
+@bp_user.post("/create_schedule/step2")
+def select_disciplines_post():
+    email = current_user.email
+    the_list = request.form["hiddenList"]
+    disciplines = json.loads(the_list)
+    add_step2(email, disciplines)
+    return redirect(url_for('bp_user.select_countries_get'))
+
+
 @bp_user.get("/create_schedule/step3")
 def select_countries_get():
-    # countries = get_country()  # Continue here!
     return render_template("create_schedule_step_3.html")
 
 
 @bp_user.post("/create_schedule/step3")
 def select_countries_post():
-    # countries = []
-    # # How do I return all countries who has been clicked and therefore has a value of true?
-    # country = request.form["country"]
-    # countries.append(country)
-    # country = request.form["myCountry"]
-    # email = current_user.email
-    # # schedule_name = ''  # How do we get this?
-    # # if schedule_name == None:
-    # schedule_name = "First"
-    # add_country(email, country, schedule_name)
-    return redirect(url_for("bp_user.select_countries_get"))
+    email = current_user.email
+    the_list = request.form["theList"]
+    countries = json.loads(the_list)
+
+    print()
+    add_step3(email, countries)
+    return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
 @bp_user.get("/create_schedule/step4")
@@ -80,6 +88,12 @@ def filtered_schedule_get():
     schedule = create_base_schedule("2022-02-07")
     personal_schedule = create_empty_personal_schedule()
     return render_template("create_schedule_step_4.html", schedule=schedule, personal_schedule=personal_schedule)
+
+
+@bp_user.post("/create_schedule/step4")
+def filtered_schedule_post():
+    chosen_countries = request.json
+    return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
 @bp_user.get("/my_schedule")

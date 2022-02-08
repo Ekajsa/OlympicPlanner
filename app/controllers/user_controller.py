@@ -91,3 +91,13 @@ def edit_user(first_name, last_name, email):
 
 def add_country(email, country, schedule_name):
     ur.add_country(email, country, schedule_name)
+
+
+def add_step2(email, disciplines):
+    ur.add_step2(email, disciplines)
+
+
+def add_step3(email, countries):
+    ur.add_step3(email, countries)
+
+

@@ -166,6 +166,7 @@ def schedule_html(schedule):
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = get_all_events_by_date(date)
+    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
