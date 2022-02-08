@@ -220,5 +220,5 @@ def create_all_schedules():
         base_schedule = create_base_schedule(date)
         all_day_schedules.append((date, base_schedule))
         personal_schedule = create_empty_personal_schedule()
-        all_personal_schedules.append((date, personal_schedule))
+        all_personal_schedules.append(("<p class='schedule-date'>" + date + "</p>", personal_schedule))
     return all_day_schedules, all_personal_schedules
