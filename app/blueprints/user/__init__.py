@@ -77,7 +77,7 @@ def select_countries_post():
 @bp_user.get("/create_schedule/step4")
 # @login_required
 def filtered_schedule_get():
-    schedule = create_base_schedule("2022-02-07")
+    schedule = create_base_schedule("2022-02-08")
     personal_schedule = create_empty_personal_schedule()
     return render_template("create_schedule_step_4.html", schedule=schedule, personal_schedule=personal_schedule)
 
