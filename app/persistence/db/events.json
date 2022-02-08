@@ -1953,9 +1953,9 @@
     "date": "2022-02-08",
     "local_start_time": "14:48",
     "local_end_time": "15:05",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Germany", "Italy", "Poland", "Korea", "ROC",
-      "Slovenia", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Bulgaria", "Germany", "Italy", "Poland", "Korea", "ROC", "Slovenia",
+      "Switzerland"],
+    "participants_decided": "True"
   },
   "event_166":
   {
@@ -1978,9 +1978,8 @@
     "date": "2022-02-08",
     "local_start_time": "15:15",
     "local_end_time": "15:22",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Germany", "Italy", "Poland", "Korea", "ROC",
-      "Slovenia", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Italy", "Poland", "Korea", "ROC", "Slovenia"],
+    "participants_decided": "True"
   },
   "event_168":
   {
@@ -2003,9 +2002,8 @@
     "date": "2022-02-08",
     "local_start_time": "15:30",
     "local_end_time": "15:35",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Germany", "Italy", "Poland", "Korea", "ROC",
-      "Slovenia", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Italy", "ROC", "Slovenia"],
+    "participants_decided": "True"
   },
   "event_170":
   {
@@ -2040,9 +2038,8 @@
     "date": "2022-02-08",
     "local_start_time": "15:43",
     "local_end_time": "15:46",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Germany", "Italy", "Poland", "Korea", "ROC",
-      "Slovenia", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Italy", "ROC"],
+    "participants_decided": "True"
   },
   "event_173":
   {
@@ -2053,9 +2050,8 @@
     "date": "2022-02-08",
     "local_start_time": "15:47",
     "local_end_time": "16:10",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Germany", "Italy", "Poland", "Korea", "ROC",
-      "Slovenia", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Slovenia"],
+    "participants_decided": "True"
   },
   "event_174":
   {
