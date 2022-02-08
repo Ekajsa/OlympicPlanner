@@ -138,7 +138,7 @@ def event_html(event):
     return event_html_string
 
 
-def schedule_html(schedule, date):
+def schedule_html(schedule, date, tooltip_title):
     table_html = f"<div id='{date}'>"
     table_html += " <table> "
     for row in schedule:
@@ -150,14 +150,14 @@ def schedule_html(schedule, date):
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
                 else:
-                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
-                    # table_html += "<td>"
+                    # table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    table_html += "<td><a href='#' data-toggle='tooltip' title='"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
                         for i in range(0, len(cell), 2):
                             table_html += cell[i]
-                    table_html += "</td>"
+                    table_html += f"'>{tooltip_title}<a/></td>"
         table_html += "</tr>"
     table_html += "</table>"
     table_html += "</div>"
@@ -168,6 +168,7 @@ def schedule_html(schedule, date):
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = get_all_events_by_date(date)
+    tooltip_hover_text = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -187,10 +188,12 @@ def create_base_schedule(date):
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
-        row_span = row_end_index - row_start_index + 1
-        schedule[row_start_index][col_index].append(str(row_span))
+        # row_span = row_end_index - row_start_index + 1
+        # schedule[row_start_index][col_index].append(str(row_span))
 
-    return schedule_html(schedule, date)
+        tooltip_hover_text = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]} {event.discipline}"
+
+    return schedule_html(schedule, date, tooltip_hover_text)
 
 
 def create_empty_personal_schedule(date):
@@ -207,7 +210,9 @@ def create_empty_personal_schedule(date):
             row.append("")
         schedule.append(row)
 
-    return schedule_html(schedule, date)
+    tooltip_hover_text = ""
+
+    return schedule_html(schedule, date, tooltip_hover_text)
 
 
 def create_all_schedules():
