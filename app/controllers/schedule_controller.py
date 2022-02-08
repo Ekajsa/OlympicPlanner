@@ -138,6 +138,32 @@ def event_html(event):
     return event_html_string
 
 
+def get_tooltip_title(event):
+    tooltip_title = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]} {event.discipline}"
+
+    if len(event.sex) == 2:
+        tooltip_title += f"{event.sex[0]}, {event.sex[1]}. "
+    else:
+        tooltip_title += f"{event.sex}. "
+
+    if event.description == "":
+        if len(event.competition_type) == 2:
+            tooltip_title += f"{event.competition_type[0].capitalize()}, {event.competition_type[1]}."
+        else:
+            tooltip_title += f"{event.competition_type.capitalize()}. "
+    else:
+        tooltip_title += f"{event.description}, "
+        if len(event.competition_type) == 2:
+            tooltip_title += f"{event.competition_type[0]}, {event.competition_type[1]}. "
+        else:
+            tooltip_title += f"{event.competition_type}. "
+
+    if len(event.participating_countries) == 2:
+        tooltip_title += f"{event.participating_countries[0]}-{event.participating_countries[1]}"
+
+    return tooltip_title
+
+
 def schedule_html(schedule, date, tooltip_text_when_hover, tooltip_title):
     table_html = f"<div id='{date}'>"
     table_html += " <table> "
@@ -151,14 +177,13 @@ def schedule_html(schedule, date, tooltip_text_when_hover, tooltip_title):
                     table_html += "<td>" + cell + "</td>"
                 else:
                     # table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
-                    table_html += "<td><a href='#' data-toggle='tooltip' title='tooltip_title'>" \
-                                  "{tooltip_text_when_hover}<a/></td>"
+                    table_html += f"<td><a href='#' data-toggle='tooltip' title='{tooltip_title}'>" \
+                                  f"{tooltip_text_when_hover}<a/></td>"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
                         for i in range(0, len(cell), 2):
                             table_html += cell[i]
-                    # table_html += f"'>{tooltip_text_when_hover}<a/></td>"
         table_html += "</tr>"
     table_html += "</table>"
     table_html += "</div>"
@@ -170,6 +195,7 @@ def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = get_all_events_by_date(date)
     tooltip_hover_text = None
+    tooltip_title = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -194,29 +220,7 @@ def create_base_schedule(date):
 
         tooltip_hover_text = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]} {event.discipline}"
 
-        tooltip_title = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]} {event.discipline}"
-
-        if len(event.sex) == 2:
-            tooltip_title += f"{event.sex[0]}, {event.sex[1]}. "
-        else:
-            tooltip_title += f"{event.sex}. "
-
-        if event.description == "":
-            if len(event.competition_type) == 2:
-                tooltip_title += f"{event.competition_type[0].capitalize()}, {event.competition_type[1]}."
-            else:
-                event_html_string += f"<span class='competition_type'>{event.competition_type.capitalize()}</span>. "
-        else:
-            event_html_string += f"<span class='description'>{event.description}</span>, "
-            if len(event.competition_type) == 2:
-                event_html_string += f"<span class='competition_type'>{event.competition_type[0]}, " \
-                                     f"{event.competition_type[1]}</span>. "
-            else:
-                event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
-
-        if len(event.participating_countries) == 2:
-            event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
-                                 f"{event.participating_countries[1]}</p>"
+        tooltip_title = get_tooltip_title(event)
 
     return schedule_html(schedule, date, tooltip_hover_text, tooltip_title)
 
@@ -236,8 +240,9 @@ def create_empty_personal_schedule(date):
         schedule.append(row)
 
     tooltip_hover_text = ""
+    tooltip_title = ""
 
-    return schedule_html(schedule, date, tooltip_hover_text)
+    return schedule_html(schedule, date, tooltip_hover_text, tooltip_title)
 
 
 def create_all_schedules():
