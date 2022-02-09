@@ -108,8 +108,8 @@ def convert_beijing_time_to_local(event):
 
 
 def event_html(event):
-    discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
-    discipline_class = discipline_class.lower().replace(" ", "-")
+    # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
+    # discipline_class = discipline_class.lower().replace(" ", "-")
     event_html_string = f"<div class='event' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
@@ -154,7 +154,9 @@ def schedule_html(schedule, date):
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
                 else:
-                    table_html += "<td class='{discipline_class}-event' rowspan =" + "'" + cell[-1] + "'>"
+                    discipline_class = re.sub(r"discipline'>(.*?)<", "", cell[0])
+                    discipline_class = discipline_class.lower().replace(" ", "-")
+                    table_html += f"<td class='{discipline_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     # table_html += "<td>"
                     if len(cell) == 2:
                         table_html += cell[0]

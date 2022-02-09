@@ -78,11 +78,19 @@ th span
     font-weight: bold;
 }
 
-.alpine-skiing-event {
+table td.alpine-skiing-event {
     background-color: #ED9C22;
 
 }
 
-.speed-skating-event {
+td.speed-skating-event {
     background-color: #FFFF00FF;
 }
+
+/*th {*/
+/*    background-color: #2E87DE;*/
+/*}*/
+
+/*td {*/
+/*    background-color: red;*/
+/*}*/
