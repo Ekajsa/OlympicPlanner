@@ -151,7 +151,7 @@ def schedule_html(schedule, date):
             if schedule.index(row) == 0:
                 table_html += "<th>" + cell + "</th>"
             else:
-                if row.index(cell) == 0 or cell == "":col
+                if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
                 else:
                     td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
