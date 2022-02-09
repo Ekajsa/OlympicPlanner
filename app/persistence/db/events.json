@@ -2326,7 +2326,7 @@
     "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "09:30",
-    "local_end_time": "10:19",
+    "local_end_time": "10:15",
     "participating_countries": ["Australia", "Canada", "China", "Czech Republic", "Germany", "Hungary", "Japan",
       "Malta", "Korea", "Spain", "Switzerland", "USA"]
   },
@@ -2338,7 +2338,7 @@
     "sex": "women",
     "date": "2022-02-09",
     "local_start_time": "10:21",
-    "local_end_time": "11:10",
+    "local_end_time": "10:55",
     "participating_countries": ["Australia", "Canada", "China", "Czech Republic", "Germany", "Hungary", "Japan",
       "Malta", "Korea", "Spain", "Switzerland", "USA"]
   },
@@ -5618,7 +5618,7 @@
     "sex": "men",
     "date": "2022-02-17",
     "local_start_time": "13:21",
-    "local_end_time": "14:10",
+    "local_end_time": "14:00",
     "participating_countries": ["Austria", "Canada", "China", "Finland", "France", "Ireland", "New Zealand", "Norway",
       "Korea", "ROC", "Switzerland", "USA"]
   },
