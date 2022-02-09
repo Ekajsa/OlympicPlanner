@@ -37,6 +37,24 @@ def create_empty_base_schedule():
                    "Freestyle skiing", "Ice hockey", "Luge", "Nordic combined", "Short track speed skating",
                    "Skeleton", "Ski jumping", "Snowboard", "Speed skating", "Ceremony"]
 
+    formatted_disciplines = []
+    for d in disciplines:
+        d = d.replace(" ", "-").lower()
+        formatted_disciplines.append(d)
+
+    chosen_disciplines = ["Alpine skiing", "Biathlon", "Bobsleigh", "Freestyle skiing", "Ice hockey", "Luge"]
+    schedule_tags = []
+    start_tag = "\"<span class='"
+    middle_tag = "'>\""
+    end_tag = "\"</span"
+    for discipline in chosen_disciplines:
+        tag = ", " + '"<span class=\'' + discipline.replace(" ", "-").lower() + '\'>"' + discipline + '"</span"'
+        schedule_tags.append(tag)
+    # for discipline in chosen_disciplines:
+    #     tag = ", " + start_tag + discipline.replace(" ", "-").lower() + middle_tag + discipline + end_tag
+    #     schedule_tags.append(tag)
+    print()
+
     schedule = [["",
                  "<span class='alpine'>" + "Alpine skiing" + "</span>",
                  "<span class='biathlon'>" + "Biathlon" + "</span>",
