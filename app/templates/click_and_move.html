@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+
+        height: 500px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    #to {
+        margin: 0 auto;
+        width: 50%;
+        height: 500px;
+        background-color: rgb(151, 147, 147);
+    }
+
+    #from {
+        margin: 0 auto;
+        width: 50%;
+        height: 500px;
+        background-color: rgb(199, 23, 23);
+    }
+
+    .clonable {
+        width: 75px;
+        height: 50px;
+        background-color: lightseagreen;
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div id="to">
+            <table id="to-table">
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr id="t-one">
+                    <td>09:00-09:15
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr id="t-two">
+                    <td>09:15-09:30
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr id="t-three">
+                    <td>09:30-09:45
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="from">
+            <table id="from-table">
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr id="f-one">
+                    <td>09:00-09:15
+                    </td>
+                    <td>
+                        <div id="first" class="clone-me clonable">AAA</div>
+                    </td>
+                </tr>
+                <tr id="f-two">
+                    <td>09:15-09:30
+                    </td>
+                    <td>
+                        <div id="second" class="clone-me clonable">BBB</div>
+                    </td>
+                </tr>
+                <tr id="f-three">
+                    <td>09:30-09:45
+                    </td>
+                    <td>
+                        <div id="third" class="clone-me clonable">CCC</div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <script>
+            const clonableDivs = document.querySelectorAll(".clone-me");
+            clonableDivs.forEach(div => {
+
+
+                div.addEventListener("click", moveIt);
+            });
+
+
+            function moveIt(e) {
+                let targetDiv = e.target;
+                let parentRowId = targetDiv.parentElement.parentElement.id;
+                let destinationRowId = 't' + parentRowId.substring(1);
+
+                let toTable = document.getElementById("to-table");
+                targetDiv.parentElement.removeChild(e.target);
+                for (let row of toTable.rows) {
+                    if(row.id === destinationRowId){
+                        row.cells[1].appendChild(targetDiv);
+                    }
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
