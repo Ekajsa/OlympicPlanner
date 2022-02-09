@@ -142,6 +142,20 @@ def event_html(event):
     return event_html_string
 
 
+def shorter_event_html(event):
+    event_html_string = f"<div class='event' id='{event._id}'>"
+    event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
+                         f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
+
+    if len(event.participating_countries) == 2:
+        event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
+                             f"{event.participating_countries[1]}</p>"
+
+    event_html_string += "</div>"
+
+    return event_html_string
+
+
 def schedule_html(schedule, date):
     table_html = f"<div id='{date}'>"
     table_html += " <table> "
@@ -188,14 +202,17 @@ def create_base_schedule(date):
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
-        if schedule[row_start_index][col_index] != "":
-            try:
-                schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                            "-".join(event.participating_countries) + "</p>")
-            except AttributeError:
-                pass
-        else:
-            schedule[row_start_index][col_index] = [event_html(event)]
+        # if schedule[row_start_index][col_index] != "":
+        #     try:
+        #         schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+        #                                                     "-".join(event.participating_countries) + "</p>")
+        #     except AttributeError:
+        #         pass
+        # else:
+        #     schedule[row_start_index][col_index] = [shorter_event_html(event)]
+        #     # schedule[row_start_index][col_index] = [event_html(event)]
+
+        schedule[row_start_index][col_index] = [shorter_event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
         try:
