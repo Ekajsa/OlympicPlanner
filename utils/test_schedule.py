@@ -1,3 +1,16 @@
+import re
+
+text = "<div class=' event ' id='62022c811853fe6c508b52ef'><span class='start-time'>02:05</span>-<span " \
+       "class='end-time'>04:00</span><span class='discipline'>Alpine skiing</span><span class='sex'>women, men</span>. <span" \
+       " class='description'>Mixed doubles</span>,<span class='competition_type'>round robin, session 2</span>. <p " \
+       "class='participating-countries'>Australia-China</p></div>"
+
+text_after = text.partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+
+
+# text_after = text_after.lower().replace(" ", "-")
+print(text_after)
+
 # import datetime
 #
 # import pytz
