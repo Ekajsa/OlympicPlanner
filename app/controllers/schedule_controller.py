@@ -145,9 +145,11 @@ def schedule_html(schedule):
             else:
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
+                elif cell == "ROWSPAN":
+                    pass
                 else:
-                    # table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
-                    table_html += "<td>"
+                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    # table_html += "<td>"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
@@ -184,6 +186,10 @@ def create_base_schedule(date):
 
         row_span = row_end_index - row_start_index + 1
         schedule[row_start_index][col_index].append(str(row_span))
+        row_counter = row_start_index + 1
+        while row_counter < row_end_index:
+            schedule[row_counter][col_index] = "ROWSPAN"
+            row_counter += 1
 
     return schedule_html(schedule)
 
