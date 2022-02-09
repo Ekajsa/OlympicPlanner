@@ -202,25 +202,26 @@ def create_base_schedule(date):
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
-        # if schedule[row_start_index][col_index] != "":
-        #     try:
-        #         schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-        #                                                     "-".join(event.participating_countries) + "</p>")
-        #     except AttributeError:
-        #         pass
-        # else:
-        #     schedule[row_start_index][col_index] = [shorter_event_html(event)]
-        #     # schedule[row_start_index][col_index] = [event_html(event)]
+        if schedule[row_start_index][col_index] != "":
+            try:
+                schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+                                                            "-".join(event.participating_countries) + "</p>")
+            except AttributeError:
+                pass
+        else:
+            # schedule[row_start_index][col_index] = [shorter_event_html(event)]
+            schedule[row_start_index][col_index] = [event_html(event)]
 
-        schedule[row_start_index][col_index] = [shorter_event_html(event)]
+        # schedule[row_start_index][col_index] = [shorter_event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
         try:
             schedule[row_start_index][col_index].append(str(row_span))
         except AttributeError:
             pass
+
         row_index = row_start_index + 1
-        while row_index < row_end_index:
+        while row_index < row_end_index - 1:
             schedule[row_index][col_index] = "ROWSPAN"
             row_index += 1
 
