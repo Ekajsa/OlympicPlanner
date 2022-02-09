@@ -82,7 +82,7 @@ def add_step2(email, disciplines):
     return ur.add_step2(email, disciplines)
 
 
-def add_step3(email, countries):
-    ur.add_step3(email, countries)
+def add_step3(email, schedule_name, countries):
+    ur.add_step3(email, schedule_name, countries)
 
 

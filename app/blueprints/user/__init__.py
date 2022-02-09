@@ -82,7 +82,7 @@ def select_disciplines_post():
 
 @bp_user.get("/create_schedule/step3")
 def select_countries_get():
-    schedule_name = request.agrs['schedule_name']
+    schedule_name = request.args['schedule_name']
     return render_template("create_schedule_step_3.html", schedule_name=schedule_name)
 
 
@@ -94,7 +94,7 @@ def select_countries_post():
     countries = json.loads(the_list)
 
     print()
-    # add_step3(email, countries)
+    add_step3(email, schedule_name, countries)
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 

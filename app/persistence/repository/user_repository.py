@@ -21,16 +21,23 @@ def add_step2(email, disciplines):
     user = get_user_by_email(email)
     date = datetime.datetime.now()
     name = f'Created {date}'
-    user.schedules.schedule_name = name
-    user.schedules.disciplines = disciplines
+    num_of_schedules = len(user.schedules)
+    new_schedule = {
+            "schedule_name": name,
+            "disciplines": disciplines,
+            "countries": [],
+            "events": []
+    }
+    user.schedules.append(new_schedule)
     user.save()
     return name
 
 
-def add_step3(email, countries):
+def add_step3(email, schedule_name, countries):
     user = get_user_by_email(email)
-    user.schedules.countries = countries
-
+    for schedule in user.schedules:
+        if schedule["schedule_name"] == schedule_name:
+            schedule["countries"] = countries
     user.save()
 
 
