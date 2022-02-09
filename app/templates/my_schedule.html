@@ -16,22 +16,15 @@
 {% endblock %}
 {%  block content8 %}
     <div class="content-section overflow-auto">
-        <h1>This is the page where {{ current_user.first_name }} will find the personal schedule!</h1>
+        <h1>{{ current_user.first_name }}'s personal schedule for {{ shown_date }}</h1>
         <div class="container">
-          <ul class="pagination">
-{#            {% for day_schedule in personal_schedule %}#}
-                <li class="page-item"><a class="page-link" id="shown_date" type="button" >{{ shown_date }}</a></li>
-                <li class="page-item"><a class="page-link" id="date_pick" type="button" >Next</a></li>
-                <!-- Working versions below! -->
-{#                <li class="page-item"><a class="page-link" type="button" onclick="alert('Hello world')">{{ day_schedule[0] | safe }}</a></li>#}
-{#                <li class="page-item"><a class="page-link" href="{{ url_for("bp_user.my_schedules_get") }}">{{ day_schedule[0] | safe }}</a></li>#}
-{#            {% endfor %}#}
-{#            <li class="page-item"><a class="page-link" href="#">Previous</a></li>#}
-{#            <li class="page-item"><a class="page-link" href="#">1</a></li>#}
-{#            <li class="page-item"><a class="page-link" href="#">2</a></li>#}
-{#            <li class="page-item"><a class="page-link" href="#">3</a></li>#}
-{#            <li class="page-item"><a class="page-link" href="#">Next</a></li>#}
-          </ul>
+
+        <form class="col-md-4" action="{{ url_for("bp_user.my_schedules_post") }}" method="POST">
+{#            <input type="submit" class="form-control" name="shown_date" value="{{ shown_date }}"/> <br/>#}
+            <input type="submit" class="form-control" name="date_action" value="Next"/> <br/>
+            <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+        </form>
+
         <div class="content-section">
             {% for day_schedule in personal_schedule %}
                 {% if shown_date in day_schedule[0] %}
