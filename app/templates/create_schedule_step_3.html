@@ -16,6 +16,7 @@
             <div class="autocomplete" style="width:300px;">
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
                 <input name="theList" type="hidden" id="theHidden" />
+                <input name="schedule_name" type="hidden" id="theHidden" value="{{ schedule_name }}"/>
             </div>
             <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list" disabled>
             <input type="submit" class="btn btn-primary" onclick="sendIt()" value="Next">

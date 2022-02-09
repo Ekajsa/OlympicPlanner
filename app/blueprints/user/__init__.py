@@ -1,3 +1,4 @@
+import datetime
 import json
 
 from flask import Blueprint, redirect, url_for, render_template, request
@@ -53,30 +54,43 @@ def schedules_get():
 
 @bp_user.get("/create_schedule/step2")
 def select_disciplines_get():
-    return render_template("create_schedule_step_2.html")
+    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
+    return render_template("create_schedule_step_2.html", disciplines=disciplines)
 
 
 @bp_user.post("/create_schedule/step2")
 def select_disciplines_post():
+    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
+    chosen = []
+    for discipline in disciplines:
+        if discipline in request.form:
+            chosen.append(discipline)
+    print()
+    # print('Are we ever here 1?')
     email = current_user.email
-    the_list = request.form["hiddenList"]
-    disciplines = json.loads(the_list)
+
+    # print('Are we ever here 2?')
+    # the_list = request.form["discipline"]
+    # print('Are we ever here 3?')
+    # disciplines = json.loads(the_list)
+    # print('Are we ever here 4?')
     # app_step2 adds schedule_name and disciplines in db but returns only schedule_name, needed for step 3
     schedule_name = add_step2(email, disciplines)
-    print()
-    return redirect(url_for('bp_user.select_countries_get'))  # , schedule_name
+
+    return redirect(url_for('bp_user.select_countries_get', schedule_name=schedule_name))  # , schedule_name
 
 
 @bp_user.get("/create_schedule/step3")
 def select_countries_get():
-    # schedule_name = schedule_name
-    return render_template("create_schedule_step_3.html")
+    schedule_name = request.agrs['schedule_name']
+    return render_template("create_schedule_step_3.html", schedule_name=schedule_name)
 
 
 @bp_user.post("/create_schedule/step3")
 def select_countries_post():
     email = current_user.email
     the_list = request.form["theList"]
+    schedule_name = request.form['schedule_name']
     countries = json.loads(the_list)
 
     print()

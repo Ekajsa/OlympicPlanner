@@ -16,66 +16,13 @@
         {#<br>    #}
 
         <form id="disciplines" action="{{url_for("bp_user.select_disciplines_post")}}" method="POST">
-            <div class="checkbox-container">
-              <input type="checkbox" id="d1" name="discipline" value="alpine">
-              <label for="d1">Alpine Skiing</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d2" name="discipline" value="biathlon">
-              <label for="d2">Biathlon</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d3" name="discipline" value="bobsleigh">
-              <label for="d3">Bobsleigh</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d4" name="discipline" value="cross-country">
-              <label for="d4">Cross-Country Skiing</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d5" name="discipline" value="curling">
-              <label for="d5">Curling</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d6" name="discipline" value="figure_skating">
-              <label for="d6">Figure Skating</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d7" name="discipline" value="freestyle">
-              <label for="d7">Freestyle Skiing</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d8" name="discipline" value="ice_hockey">
-              <label for="d8">Ice Hockey</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d9" name="discipline" value="luge">
-              <label for="d9">Luge</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d10" name="discipline" value="nordic">
-              <label for="d10">Nordic Combined</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d11" name="discipline" value="short_track">
-              <label for="d11">Short Track Speed Skating</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d12" name="discipline" value="skeleton">
-              <label for="d12">Skeleton</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d13" name="discipline" value="ski_jumping">
-              <label for="d13">Ski Jumping</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d14" name="discipline" value="snowboard">
-              <label for="d14">Snowboard</label>
-            </div>
-            <div class="checkbox-container">
-              <input type="checkbox" id="d15" name="discipline" value="speed_skating">
-              <label for="d15">Speed Skating</label>
-            </div>
+            {% for discipline in disciplines %}
+                <div class="checkbox-container">
+                    <input type="checkbox" id="d{{ loop.index }}" name="{{ discipline }}" value="{{ discipline }}">
+                    <label for="d{{ loop.index }}">{{ discipline }}</label>
+                </div>
+            {% endfor %}
+
             <div>
                 <input name="hiddenList" type="hidden" id="isHidden" />
                 <input type="submit" class="btn btn-primary" onclick="sendIt()" value="Select And Go To Next Step">
@@ -155,14 +102,14 @@ function toggleCheck(state, elem) {
 {#    }#}
 {# });#}
 function sendIt() {
-    console.log('sendIt')
-    let discipline = document.forms[0]; {# Why [0]? #}
-    let discipline_array = [];
-    for (let i = 0; i < discipline.length; i++) {
-        if (discipline[i].checked) {
-            discipline_array.push(discipline[i].value);
-        }
-    }
+    //console.log('sendIt')
+    //let discipline = document.forms[0]; {# Why [0]? #}
+    //let discipline_array = [];
+    //for (let i = 0; i < discipline.length; i++) {
+        //if (discipline[i].checked) {
+            //discipline_array.push(discipline[i].value);
+        //}
+    //}
     let chosenForm = document.getElementById("disciplines");
     chosenForm.submit();
 }
