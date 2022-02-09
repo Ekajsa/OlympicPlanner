@@ -19,15 +19,17 @@ def get_user_by_email(email):
 
 def add_step2(email, disciplines):
     user = get_user_by_email(email)
-    user.personal_schedules.disciplines = disciplines
+    date = datetime.datetime.now()
+    name = f'Created {date}'
+    user.schedules.schedule_name = name
+    user.schedules.disciplines = disciplines
     user.save()
 
 
 def add_step3(email, countries):
     user = get_user_by_email(email)
-    user.personal_schedules.countries = countries
-    date = datetime.datetime.now()
-    user.personal_schedules.schedule_name = f'Created {date}'
+    user.schedules.countries = countries
+
     user.save()
 
 

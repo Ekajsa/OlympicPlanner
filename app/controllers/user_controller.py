@@ -25,25 +25,10 @@ def create_user(first_name, last_name, email, password):
         "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random",
         "schedules": [
             {
-                "schedule_name": "My first schedule",
-                "events": [
-                    {
-                        "event_no": "104",  # Should be event numbers from mongodb
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "098",
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "086",
-                        "priority_col": "2"
-                    },
-                    {
-                        "event_no": "076",
-                        "priority_col": "2"
-                    }
-                ]
+                "schedule_name": "",
+                "disciplines": [],
+                "countries": [],
+                "events": []
             }
           ]
         }
