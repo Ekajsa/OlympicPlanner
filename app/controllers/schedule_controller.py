@@ -151,12 +151,11 @@ def schedule_html(schedule, date):
             if schedule.index(row) == 0:
                 table_html += "<th>" + cell + "</th>"
             else:
-                if row.index(cell) == 0 or cell == "":
+                if row.index(cell) == 0 or cell == "":col
                     table_html += "<td>" + cell + "</td>"
                 else:
-                    discipline_class = re.sub(r"discipline'>(.*?)<", "", cell[0])
-                    discipline_class = discipline_class.lower().replace(" ", "-")
-                    table_html += f"<td class='{discipline_class}-event' rowspan =" + "'" + cell[-1] + "'>"
+                    td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+                    table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     # table_html += "<td>"
                     if len(cell) == 2:
                         table_html += cell[0]
