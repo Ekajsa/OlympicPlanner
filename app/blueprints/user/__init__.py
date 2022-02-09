@@ -61,12 +61,15 @@ def select_disciplines_post():
     email = current_user.email
     the_list = request.form["hiddenList"]
     disciplines = json.loads(the_list)
-    add_step2(email, disciplines)
-    return redirect(url_for('bp_user.select_countries_get'))
+    # app_step2 adds schedule_name and disciplines in db but returns only schedule_name, needed for step 3
+    schedule_name = add_step2(email, disciplines)
+    print()
+    return redirect(url_for('bp_user.select_countries_get'))  # , schedule_name
 
 
 @bp_user.get("/create_schedule/step3")
 def select_countries_get():
+    # schedule_name = schedule_name
     return render_template("create_schedule_step_3.html")
 
 
@@ -77,7 +80,7 @@ def select_countries_post():
     countries = json.loads(the_list)
 
     print()
-    add_step3(email, countries)
+    # add_step3(email, countries)
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 

@@ -24,6 +24,7 @@ def add_step2(email, disciplines):
     user.schedules.schedule_name = name
     user.schedules.disciplines = disciplines
     user.save()
+    return name
 
 
 def add_step3(email, countries):

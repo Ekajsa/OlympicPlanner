@@ -79,7 +79,7 @@ def add_country(email, country, schedule_name):
 
 
 def add_step2(email, disciplines):
-    ur.add_step2(email, disciplines)
+    return ur.add_step2(email, disciplines)
 
 
 def add_step3(email, countries):
