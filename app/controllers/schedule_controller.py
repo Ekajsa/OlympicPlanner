@@ -157,8 +157,10 @@ def schedule_html(schedule, date):
                     pass
                 else:
                     td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
-                    table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
-                    # table_html += "<td>"
+                    if cell[-1] is None:
+                        table_html += f"<td class='{td_class}-event'>"
+                    else:
+                        table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
@@ -189,20 +191,29 @@ def create_base_schedule(date):
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
-        if schedule[row_start_index][col_index] != "":
-            try:
-                schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                            "-".join(event.participating_countries) + "</p>")
-            except AttributeError:
-                pass
+        if schedule[row_start_index][col_index] != "" and isinstance(schedule[row_start_index][col_index], list):
+            if "Curling" in schedule[row_start_index][col_index][0] \
+                    or "Ice hockey" in schedule[row_start_index][col_index][0]:
+                try:
+                    schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+                                                                "-".join(event.participating_countries) + "</p>")
+                except AttributeError:
+                    pass
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
+        if row_span == 0:
+            row_span = 1
+
+        if row_end_index == row_start_index:
+            row_span = None
+
         try:
             schedule[row_start_index][col_index].append(str(row_span))
         except AttributeError:
             pass
+
         row_index = row_start_index + 1
         while row_index <= row_end_index:
             schedule[row_index][col_index] = "ROWSPAN"
