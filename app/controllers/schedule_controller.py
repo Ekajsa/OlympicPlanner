@@ -203,7 +203,7 @@ def create_base_schedule(date):
         except AttributeError:
             pass
         row_index = row_start_index + 1
-        while row_index < row_end_index:
+        while row_index <= row_end_index:
             schedule[row_index][col_index] = "ROWSPAN"
             row_index += 1
 
