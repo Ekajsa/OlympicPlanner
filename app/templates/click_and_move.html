@@ -117,6 +117,9 @@
                 let toTable = document.getElementById("to-table");
                 targetDiv.parentElement.removeChild(e.target);
                 for (let row of toTable.rows) {
+                    for(let col of row.cols){
+                        console.log(col);
+                    }
                     if(row.id === destinationRowId){
                         row.cells[1].appendChild(targetDiv);
                     }
