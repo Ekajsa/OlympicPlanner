@@ -1,3 +1,9 @@
+import re
+
+text_after = re.sub(r"<(.*?)>", "", "<span class='alpine'>" + "Alpine skiing" + "</span>")
+text_after = text_after.lower().replace(" ", "-")
+print(text_after)
+
 # import datetime
 #
 # import pytz
