@@ -1,4 +1,6 @@
 import datetime
+import re
+
 import pytz
 from tzlocal import get_localzone
 
@@ -106,6 +108,8 @@ def convert_beijing_time_to_local(event):
 
 
 def event_html(event):
+    # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
+    # discipline_class = discipline_class.lower().replace(" ", "-")
     event_html_string = f"<div class='event' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
@@ -152,7 +156,8 @@ def schedule_html(schedule, date):
                 elif cell == "ROWSPAN":
                     pass
                 else:
-                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+                    table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     # table_html += "<td>"
                     if len(cell) == 2:
                         table_html += cell[0]
