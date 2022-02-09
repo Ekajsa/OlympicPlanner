@@ -63,8 +63,8 @@ def select_disciplines_get():
 def select_disciplines_post():
     disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
     chosen = []
-    for discipline in disciplines:
-        if discipline in request.form:
+    for discipline in request.form:
+        if discipline in disciplines:
             chosen.append(discipline)
     print()
     # print('Are we ever here 1?')
@@ -76,7 +76,7 @@ def select_disciplines_post():
     # disciplines = json.loads(the_list)
     # print('Are we ever here 4?')
     # app_step2 adds schedule_name and disciplines in db but returns only schedule_name, needed for step 3
-    schedule_name = add_step2(email, disciplines)
+    schedule_name = add_step2(email, chosen)
 
     return redirect(url_for('bp_user.select_countries_get', schedule_name=schedule_name))  # , schedule_name
 
