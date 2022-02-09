@@ -184,17 +184,23 @@ def create_base_schedule(date):
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
         if schedule[row_start_index][col_index] != "":
-            schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                        "-".join(event.participating_countries) + "</p>")
+            try:
+                schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+                                                            "-".join(event.participating_countries) + "</p>")
+            except AttributeError:
+                pass
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
-        schedule[row_start_index][col_index].append(str(row_span))
-        row_counter = row_start_index + 1
-        while row_counter < row_end_index:
-            schedule[row_counter][col_index] = "ROWSPAN"
-            row_counter += 1
+        try:
+            schedule[row_start_index][col_index].append(str(row_span))
+        except AttributeError:
+            pass
+        row_index = row_start_index + 1
+        while row_index < row_end_index:
+            schedule[row_index][col_index] = "ROWSPAN"
+            row_index += 1
 
     return schedule_html(schedule, date)
 
