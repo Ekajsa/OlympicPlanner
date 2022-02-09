@@ -29,6 +29,7 @@ def create_user(first_name, last_name, email, password):
                 "disciplines": [],
                 "countries": [],
                 "events": []
+
             }
           ]
         }

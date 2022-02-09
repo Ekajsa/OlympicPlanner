@@ -1,4 +1,6 @@
 import datetime
+import re
+
 import pytz
 from tzlocal import get_localzone
 
@@ -106,6 +108,8 @@ def convert_beijing_time_to_local(event):
 
 
 def event_html(event):
+    # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
+    # discipline_class = discipline_class.lower().replace(" ", "-")
     event_html_string = f"<div class='event' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
@@ -138,8 +142,9 @@ def event_html(event):
     return event_html_string
 
 
-def schedule_html(schedule):
-    table_html = " <table> "
+def schedule_html(schedule, date):
+    table_html = f"<div id='{date}'>"
+    table_html += " <table> "
     for row in schedule:
         table_html += "<tr>"
         for cell in row:
@@ -148,8 +153,11 @@ def schedule_html(schedule):
             else:
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
+                elif cell == "ROWSPAN":
+                    pass
                 else:
-                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
+                    td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+                    table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     # table_html += "<td>"
                     if len(cell) == 2:
                         table_html += cell[0]
@@ -159,6 +167,7 @@ def schedule_html(schedule):
                     table_html += "</td>"
         table_html += "</tr>"
     table_html += "</table>"
+    table_html += "</div>"
 
     return table_html
 
@@ -181,18 +190,28 @@ def create_base_schedule(date):
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
         if schedule[row_start_index][col_index] != "":
-            schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                        "-".join(event.participating_countries) + "</p>")
+            try:
+                schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+                                                            "-".join(event.participating_countries) + "</p>")
+            except AttributeError:
+                pass
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
-        schedule[row_start_index][col_index].append(str(row_span))
+        try:
+            schedule[row_start_index][col_index].append(str(row_span))
+        except AttributeError:
+            pass
+        row_index = row_start_index + 1
+        while row_index <= row_end_index:
+            schedule[row_index][col_index] = "ROWSPAN"
+            row_index += 1
 
-    return schedule_html(schedule)
+    return schedule_html(schedule, date)
 
 
-def create_empty_personal_schedule():
+def create_empty_personal_schedule(date):
     schedule = [["",
                  "<span class='first-prio'>" + "First priority" + "</span>",
                  "<span class='second-prio'>" + "Second priority" + "</span>",
@@ -206,16 +225,20 @@ def create_empty_personal_schedule():
             row.append("")
         schedule.append(row)
 
-    return schedule
+    return schedule_html(schedule, date)
 
 
 def create_all_schedules():
     all_day_schedules = []
+    all_personal_schedules = []
     for i in range(2, 21):
         date = "2022-02-"
         if i < 10:
             date += "0" + str(i)
         else:
             date += str(i)
-        all_day_schedules.append(create_base_schedule(date))
-    return all_day_schedules
+        base_schedule = create_base_schedule(date)
+        all_day_schedules.append((date, base_schedule))
+        personal_schedule = create_empty_personal_schedule(date)
+        all_personal_schedules.append(("<p class='schedule-date'>" + date + "</p>", personal_schedule))
+    return all_day_schedules, all_personal_schedules

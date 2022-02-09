@@ -5,7 +5,8 @@ from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user
 
 from app.controllers.user_controller import edit_user, add_step3, add_step2
-from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule
+from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule, \
+    create_all_schedules
 
 
 bp_user = Blueprint("bp_user", __name__)
@@ -101,9 +102,9 @@ def select_countries_post():
 @bp_user.get("/create_schedule/step4")
 # @login_required
 def filtered_schedule_get():
-    schedule = create_base_schedule("2022-02-07")
-    personal_schedule = create_empty_personal_schedule()
-    return render_template("create_schedule_step_4.html", schedule=schedule, personal_schedule=personal_schedule)
+    schedules, personal_schedules = create_all_schedules()
+    # personal_schedule = create_empty_personal_schedule()
+    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules)
 
 
 @bp_user.post("/create_schedule/step4")
@@ -115,5 +116,5 @@ def filtered_schedule_post():
 @bp_user.get("/my_schedule")
 # @login_required
 def my_schedules_get():
-    schedule = create_empty_personal_schedule()
-    return render_template("my_schedule.html", schedule=schedule)
+    _, personal_schedules = create_all_schedules()
+    return render_template("my_schedule.html", personal_schedules=personal_schedules)

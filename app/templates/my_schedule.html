@@ -5,24 +5,13 @@
     <div class="content-section">
         <h1>This is the page where {{ current_user.first_name }} will find the personal schedule!</h1>
         <div class="container-fluid">
-                <p>2022-02-03</p>
-                <table>
-                    <tr>
-                        <th></th>
-                        {% for column in priority_columns %}
-                            <th>{{ column }}</th>
-                        {% endfor %}
-                    </tr>
-                    {% for row in schedule %}
-                        <tr>
-                            <td>{{ time_slots[loop.index - 1] }} </td>
-                            {% for cell in row %}
-                                <td>{{ cell }}</td>
-                            {% endfor %}
-                        </tr>
-                    {% endfor %}
-                </table>
-            </div>
+            {% for personal_schedule in personal_schedules %}
+                {{ personal_schedule[0] | safe }}
+                <div class="personal-schedule">
+                    {{ personal_schedule[1] | safe }}
+                </div>
+    {% endfor %}
+        </div>
     </div>
 {% endblock %}
 
