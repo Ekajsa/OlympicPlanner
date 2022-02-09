@@ -13,6 +13,7 @@ def init_db(app):
     :return: None
     """
     global client, db
+    print("WTF are you ding here?")
     username = app.config["DB_USER"]
     password = app.config["DB_PASSWORD"]
     host = app.config["DB_HOST"]

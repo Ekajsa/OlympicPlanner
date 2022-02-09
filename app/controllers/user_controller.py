@@ -25,37 +25,11 @@ def create_user(first_name, last_name, email, password):
         "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random",
         "schedules": [
             {
-                "schedule_name": "My first schedule",
-                "events": [
-                    {
-                        "event_no": "104",  # Should be event numbers from mongodb
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "098",
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "086",
-                        "priority_col": "2"
-                    },
-                    {
-                        "event_no": "076",
-                        "priority_col": "2"
-                    }
-                ]},
-            {
-                "schedule_name": "My second schedule",
-                "events": [
-                    {
-                        "event_no": "104",  # Should be event numbers from mongodb
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "098",
-                        "priority_col": "1"
-                    },
-                ]
+                "schedule_name": "",
+                "disciplines": [],
+                "countries": [],
+                "events": []
+
             }
           ]
         }
@@ -103,3 +77,13 @@ def edit_user(first_name, last_name, email):
 
 def add_country(email, country, schedule_name):
     ur.add_country(email, country, schedule_name)
+
+
+def add_step2(email, disciplines):
+    return ur.add_step2(email, disciplines)
+
+
+def add_step3(email, schedule_name, countries):
+    ur.add_step3(email, schedule_name, countries)
+
+
