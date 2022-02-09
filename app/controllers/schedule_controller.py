@@ -198,6 +198,8 @@ def create_base_schedule(date):
             schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
+        if row_span == 0:
+            row_span = 1
         try:
             schedule[row_start_index][col_index].append(str(row_span))
         except AttributeError:
