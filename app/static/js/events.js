@@ -7,15 +7,7 @@ $(document).ready(function() {
     });
 
 
-document.body.onclick = function(e) {   //when the document body is clicked
-        e = e.target;                   //assign the element clicked to e
 
-    if (e.className && e.className.indexOf('event') != -1) {
-        //if the element has a class name, and that is 'event' then...
-        copyToPersonalSchedule();
-        //... or maybe on of the options below
-    }
-}
 
 
 //https://stackoverflow.com/questions/4002671/how-to-clone-content-of-a-div-to-another-div
@@ -29,7 +21,7 @@ $(".from").click(function () {
      $(".from").removeClass("CloneMe");
      $("#to").html('');
      $(this).addClass("CloneMe");
-     $(".CloneMe").clone().appendTo("#to");
+     $(".CloneMe").clone().appendTo("#container priority");
      //How do I prevent the user to append it to a schedule with some or all of the time slots occupied?
 });
 
@@ -40,9 +32,7 @@ $("#from").clone().appendTo($("#to"));
 $("#from").clone().appendTo($("#to"));
 $("#from").remove();
 
-//Or this: html() returns the content, the innerHTML. When this method is used to return content,
-// it returns the content of the FIRST matched element. Can this cause problems? or could we use the event _id?
-$('#selectorDestination').html($('#selectorSource').html());
+
 
 
 function copyToPersonalSchedule() {
