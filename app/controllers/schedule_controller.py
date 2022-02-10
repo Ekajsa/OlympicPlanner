@@ -191,14 +191,23 @@ def create_base_schedule(date):
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
-        if schedule[row_start_index][col_index] != "" and isinstance(schedule[row_start_index][col_index], list):
-            if "Curling" in schedule[row_start_index][col_index][0] \
-                    or "Ice hockey" in schedule[row_start_index][col_index][0]:
-                try:
-                    schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                                "-".join(event.participating_countries) + "</p>")
-                except AttributeError:
-                    pass
+        # if schedule[row_start_index][col_index] != "" and isinstance(schedule[row_start_index][col_index], list):
+        #     if "Curling" in schedule[row_start_index][col_index][0] \
+        #             or "Ice hockey" in schedule[row_start_index][col_index][0]:
+        #         try:
+        #             schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+        #                                                         "-".join(event.participating_countries) + "</p>")
+        #         except AttributeError:
+        #             pass
+        # else:
+        #     schedule[row_start_index][col_index] = [event_html(event)]
+
+        if schedule[row_start_index][col_index] != "":
+            try:
+                schedule[row_start_index][col_index].append(event_html(event))
+            except AttributeError:
+                pass
+
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
