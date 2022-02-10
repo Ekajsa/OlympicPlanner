@@ -14,7 +14,7 @@ Britta
 	Fixat 044 - buggen och 050 - färgerna på disciplinerna
 *   Vad ska jag göra till nästa avstämning?
 	Fixa så alla events skickas med när flera på samma tid + lösa layouten på det (056).
-	Fortsätta med 48, 49, 54.
+	Fortsätta med 48, 49, 54, 57.
 *   Behöver jag hjälp med något?
 	Nej
 
@@ -27,7 +27,8 @@ Kajsa
 	Nej
 
 Övrigt
-* xxx
+* Skapat ny issue 058 för att filtrera fram schema utifrån val av discipliner och länder i databasen
+  Skapat ny issue 059, lösa bugg med att alla länderna är undefined
 
 ************************************************************************************************************************************************
 
