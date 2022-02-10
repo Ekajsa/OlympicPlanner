@@ -2,16 +2,36 @@
 {% set active_page = "/user/my_schedule" %}
 
 {%  block content12 %}
-    <div class="content-section">
-        <h1>This is the page where {{ current_user.first_name }} will find the personal schedule!</h1>
-        <div class="container-fluid">
-            {% for personal_schedule in personal_schedules %}
-                {{ personal_schedule[0] | safe }}
-                <div class="personal-schedule">
-                    {{ personal_schedule[1] | safe }}
+    <div class="content-section" style="max-height: inherit">
+    <h1>{{ current_user.first_name }}'s personal schedule for {{ shown_date }}</h1><br>
+        <div class="container overflow-auto p-3" style="max-height: 80%">
+            {% for day_schedule in personal_schedule %}
+                {% if shown_date in day_schedule[0] %}
+                    <div class="personal-schedule">
+                        {{ day_schedule[1] | safe }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="container">
+            <form class="col-md-12 my-4" action="{{ url_for("bp_user.my_schedules_post") }}" method="POST">
+                <div class="btn-group" role="group" aria-label="Change date-buttons">
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Today"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="First day"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Previous"/> <br/>
+                    <input type="submit" class="form-control btn-info mr-2" name="date_action" value=" Showing: {{ shown_date }}"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Next"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Last day"/> <br/>
+                    <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
                 </div>
-    {% endfor %}
+            </form>
         </div>
     </div>
 {% endblock %}
 
+{% block scripts %}
+    <script>
+
+    </script>
+
+{% endblock %}

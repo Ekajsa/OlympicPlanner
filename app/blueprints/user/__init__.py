@@ -1,12 +1,9 @@
-import datetime
 import json
-
 from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user
 
 from app.controllers.user_controller import edit_user, add_step3, add_step2
-from app.controllers.schedule_controller import create_base_schedule, create_empty_personal_schedule, \
-    create_all_schedules
+from app.controllers.schedule_controller import create_all_schedules, set_shown_date
 
 
 bp_user = Blueprint("bp_user", __name__)
@@ -37,7 +34,6 @@ def profile_get():
 
 @bp_user.post("/profile")
 def profile_post():
-    # old_email = current_user.email
     first_name = request.form.get("first_name")
     last_name = request.form.get("last_name")
     email = request.form.get("email")
@@ -116,5 +112,16 @@ def filtered_schedule_post():
 @bp_user.get("/my_schedule")
 # @login_required
 def my_schedules_get():
-    _, personal_schedules = create_all_schedules()
-    return render_template("my_schedule.html", personal_schedules=personal_schedules)
+    _, personal_schedule = create_all_schedules()  # Should be replaced by function to get a personal schedule from the database
+    shown_date = set_shown_date()
+    return render_template("my_schedule.html", personal_schedule=personal_schedule, shown_date=shown_date)
+
+
+@bp_user.post("/my_schedule/")
+# @login_required
+def my_schedules_post():
+    _, personal_schedule = create_all_schedules()  # Should be replaced by function to get a personal schedule from the database
+    date_action = request.form.get("date_action")
+    shown_date = request.form.get("shown_date")
+    new_shown_date = set_shown_date(shown_date, date_action)
+    return render_template("my_schedule.html", personal_schedule=personal_schedule, shown_date=new_shown_date)
