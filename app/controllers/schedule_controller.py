@@ -1,4 +1,6 @@
 import datetime
+import re
+
 import pytz
 from tzlocal import get_localzone
 
@@ -106,6 +108,8 @@ def convert_beijing_time_to_local(event):
 
 
 def event_html(event):
+    # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
+    # discipline_class = discipline_class.lower().replace(" ", "-")
     event_html_string = f"<div class='event' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
@@ -149,9 +153,14 @@ def schedule_html(schedule, date):
             else:
                 if row.index(cell) == 0 or cell == "":
                     table_html += "<td>" + cell + "</td>"
+                elif cell == "ROWSPAN":
+                    pass
                 else:
-                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
-                    # table_html += "<td>"
+                    td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+                    if cell[-1] is None:
+                        table_html += f"<td class='{td_class}-event'>"
+                    else:
+                        table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
@@ -168,6 +177,7 @@ def schedule_html(schedule, date):
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = get_all_events_by_date(date)
+    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -181,14 +191,42 @@ def create_base_schedule(date):
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
+        # if schedule[row_start_index][col_index] != "" and isinstance(schedule[row_start_index][col_index], list):
+        #     if "Curling" in schedule[row_start_index][col_index][0] \
+        #             or "Ice hockey" in schedule[row_start_index][col_index][0]:
+        #         try:
+        #             schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
+        #                                                         "-".join(event.participating_countries) + "</p>")
+        #         except AttributeError:
+        #             pass
+        # else:
+        #     schedule[row_start_index][col_index] = [event_html(event)]
+
         if schedule[row_start_index][col_index] != "":
-            schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                        "-".join(event.participating_countries) + "</p>")
+            try:
+                schedule[row_start_index][col_index].append(event_html(event))
+            except AttributeError:
+                pass
+
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
-        schedule[row_start_index][col_index].append(str(row_span))
+        if row_span == 0:
+            row_span = 1
+
+        if row_end_index == row_start_index:
+            row_span = None
+
+        try:
+            schedule[row_start_index][col_index].append(str(row_span))
+        except AttributeError:
+            pass
+
+        row_index = row_start_index + 1
+        while row_index <= row_end_index:
+            schedule[row_index][col_index] = "ROWSPAN"
+            row_index += 1
 
     return schedule_html(schedule, date)
 

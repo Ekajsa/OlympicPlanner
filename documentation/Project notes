@@ -3,21 +3,32 @@
 Daily 2022-xx-xx
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
+	Blivit klar med 040 - spara länder och discipliner för personal schedule till databasen. Några buggar kvar, inget jätteviktigt.
+	051 - Click and move. Ok att det inte är copy tycker vi!
 *   Vad ska jag göra till nästa avstämning?
+	Fortsätta med 051.
 *   Behöver jag hjälp med något?
 
 Britta
 *   Vad har jag gjort sedan avstämningen igår?
+	Fixat 044 - buggen och 050 - färgerna på disciplinerna
 *   Vad ska jag göra till nästa avstämning?
+	Fixa så alla events skickas med när flera på samma tid + lösa layouten på det (056).
+	Fortsätta med 48, 49, 54, 57.
 *   Behöver jag hjälp med något?
+	Nej
 
 Kajsa
 *   Vad har jag gjort sedan avstämningen igår?
+	Kämpat med datumväxlingar på personal schedule (054). Löste det på slutet!
 *   Vad ska jag göra till nästa avstämning?
+	Fixa datumväxlingar på create schedule-sidan också (fortsätta med 054)
 *   Behöver jag hjälp med något?
+	Nej
 
 Övrigt
-* xxx
+* Skapat ny issue 058 för att filtrera fram schema utifrån val av discipliner och länder i databasen
+  Skapat ny issue 059, lösa bugg med att alla länderna är undefined
 
 ************************************************************************************************************************************************
 
@@ -44,9 +55,74 @@ Sprint planning
   -Backlogg: Se Time_estimates.txt
 * Uppskatta tillgänglig tid för gruppen i nästa sprint. 57h 
 * Vad ska ingå i nästa veckas sprint?
+************************************************************************************************************************************************
+
+Daily 2022-02-10
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Klar med 040. Börjat med 051.
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätta med 051.
+*   Behöver jag hjälp med något?
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Fixat buggen 044 och och färger discipliner 050
+*   Vad ska jag göra till nästa avstämning?
+	Jobba med 48, 49, 56, 57 (layot och buggfix tabellen)
+*   Behöver jag hjälp med något?
+	Nej
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Blivit klar med datumväxlare på personal schedule(054)! 
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätta med 054 på create scheduyla page
+*   Behöver jag hjälp med något?	
+	Nej
+
+Övrigt
+* xxx
 
 ************************************************************************************************************************************************
-<Mall för daily stand-up>
+
+
+Daily 2022-02-09
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+    Startat om med nytt projekt och allt funkar utom flask run. 
+    Läst på om click & copy (051) och ska stämma av olika varianter med Joakim. 
+*   Vad ska jag göra till nästa avstämning?
+    Ska försöka lösa så att det går att komma vidare från select countries (040). 
+    Kolla med Joakim angående lämpliga lösningar på 051. 
+*   Behöver jag hjälp med något?
+    Mötet tittade på och löste en fråga om att spara countries i db.
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+    Har grejat med tooltips (048). Har löst det, men är inte nöjd med lösningen. Har dock fått lite idéer.
+    Småfix, bland annat för att lösa bug i My schedules.
+    Lagt in data (025)
+    Har börjat försöka få färger på disciplinerna (050).
+*   Vad ska jag göra till nästa avstämning?
+    Be Joakim om hjälp med det som strular, framför allt rowspan-buggen (044).
+    Testa nya idéer för tooltips (048).
+*   Behöver jag hjälp med något?
+    Mötet tittade på och löste fråga om stylesheet.
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+    Jobbat med datumväljare på My schedules (054).
+*   Vad ska jag göra till nästa avstämning?
+    Fortsätta med 054, förhoppningsvis hjälpt av lite idéer som kom under natten.
+*   Behöver jag hjälp med något?
+    Mötet tittade på och löste tangentbordsfråga.
+
+Övrigt
+* xxx
+
+************************************************************************************************************************************************
+
 Daily 2022-02-08
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
