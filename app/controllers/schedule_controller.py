@@ -235,11 +235,26 @@ def set_shown_date(shown_date="", date_action=""):
     if shown_date == "":
         shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
         return shown_date
+    min_index = 0
+    max_index = len(date_strings) - 1
 
     shown_date_index = date_strings.index(shown_date)
     if date_action == "Next":
-        shown_date = date_strings[shown_date_index + 1]
+        shown_date_index = min(shown_date_index + 1, max_index)
+        shown_date = date_strings[shown_date_index]
+        return shown_date
+    elif date_action == "Previous":
+        shown_date_index = max(shown_date_index - 1, min_index)
+        shown_date = date_strings[shown_date_index]
+        return shown_date
+    elif date_action == "First day":
+        shown_date = date_strings[min_index]
+        return shown_date
+    elif date_action == "Last day":
+        shown_date = date_strings[max_index]
+        return shown_date
+    elif date_action == "Today":
+        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
         return shown_date
     else:
-        shown_date = "2022-02-02"
         return shown_date
