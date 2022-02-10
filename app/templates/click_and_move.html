@@ -191,6 +191,7 @@
 
             function moveIt(e) {
                 // Get the div that we clicked
+                //Is targetDiv the div or an element inside it?
                 let targetDiv = e.target;
                 // Get the cell hosting the div in the from table
                 let targetCell = targetDiv.parentElement;
@@ -205,7 +206,7 @@
                 // Get the destination table
                 let toTable = document.getElementById("to-table");
                 
-                // Remove the div from the origianl table
+                // Remove the div from the original table
                 targetDiv.parentElement.removeChild(targetDiv);
 
                 // Iterate over the destination table row by row
@@ -214,10 +215,10 @@
                     if(row.id === destinationRowId){
                         // Add the div in the correct column
                         row.cells[targetCell.cellIndex].appendChild(targetDiv);
-                        // Add the rowspan we want to this column. If no rospan
+                        // Add the rowspan we want to this column. If no rowspan
                         // was given, the value will be 1
                         row.cells[targetCell.cellIndex].rowSpan = rowspan;
-                        // If we have a rowsapn we need to delete the td's for as many
+                        // If we have a rowspan we need to delete the td's for as many
                         // rows as the span is
                         if(rowspan > 1) {
                             // Get the current row index

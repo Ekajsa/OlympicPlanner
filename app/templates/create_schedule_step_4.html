@@ -17,70 +17,18 @@
     </div>
     {% for schedule in schedules %}
         {{ schedule[0] | safe }}
-        <div class="base-schedule">
+        <div class="base-schedule" id="base-schedule">
             {{ schedule[1] | safe }}
         </div>
     {% endfor %}
     {% for personal_schedule in personal_schedules %}
-        <div class="personal-schedule">
+        <div class="personal-schedule" id="personal-schedule">
             {{ personal_schedule[1] | safe }}
         </div>
     {% endfor %}
 {% endblock %}
 
-{% block scripts %}
-    const clonableDivs = document.querySelectorAll(".clone-me");
-    clonableDivs.forEach(div => {
-        div.addEventListener("click", moveIt);
-    });
 
-
-    function moveIt(e) {
-        // Get the div that we clicked
-        let targetDiv = e.target;
-        // Get the cell hosting the div in the from table
-        let targetCell = targetDiv.parentElement;
-        // Get the id of the row containing the div
-        let parentRowId = targetDiv.parentElement.parentElement.id;
-        // Get the id of the row in the destination table
-        let destinationRowId = 't' + parentRowId.substring(1);
-
-        // Get the current cells rowspan
-        let rowspan = targetCell.rowSpan;
-
-        // Get the destination table
-        let toTable = document.getElementById("to-table");
-
-        // Remove the div from the origianl table
-        targetDiv.parentElement.removeChild(targetDiv);
-
-        // Iterate over the destination table row by row
-        for (let row of toTable.rows) {
-            // If we have found our destination row
-            if(row.id === destinationRowId){
-                // Add the div in the correct column
-                row.cells[targetCell.cellIndex].appendChild(targetDiv);
-                // Add the rowspan we want to this column. If no rospan
-                // was given, the value will be 1
-                row.cells[targetCell.cellIndex].rowSpan = rowspan;
-                // If we have a rowsapn we need to delete the td's for as many
-                // rows as the span is
-                if(rowspan > 1) {
-                    // Get the current row index
-                    let rowIndex = targetCell.parentElement.rowIndex;
-                    // and the column index
-                    let cellIndex = targetCell.cellIndex;
-                    // For each row below the one we inserted the div in
-                    // we can now delete the td's
-                    for(let i = 1; i < rowspan; i++) {
-                        let row = toTable.rows[rowIndex + i];
-                        row.deleteCell(cellIndex);
-                    }
-                }
-            }
-        }
-    }
-{% endblock %}
 
 
 
@@ -107,4 +55,70 @@
 
 
 {% block scripts %}
+<script>
+    {#//Get all td with class 'event' and add class 'clone-me'#}
+    {#let td_with_class = document.querySelectorAll("td.event");#}
+    {#console.log(td_with_class)#}
+    {#td_with_class.forEach(giveCloneMeId);#}
+    {##}
+    {#function giveCloneMeId(element) {#}
+    {#    console.log('in giveCloneMeId')#}
+    {#    element.classList.add("clone-me");#}
+    {#}#}
+
+    //Get all clone-me-td's and add moveIt() on click
+    const clonableTds = document.querySelectorAll(".clone-me");
+    clonableTds.forEach(div => {
+        div.addEventListener("click", moveIt);
+    });
+
+
+
+    function moveIt(e) {
+        // Get the div that we clicked
+        let targetDiv = e.path[1];
+        // Get the cell hosting the div in the from table
+        let targetCell = targetDiv.parentElement;
+        // Get the id of the row containing the div
+        let parentRowId = targetDiv.parentElement.parentElement.id;
+        // Get the id of the row in the destination table
+        let destinationRowId = 't' + parentRowId.substring(1);
+
+        // Get the current cells rowspan
+        let rowspan = targetCell.rowSpan;
+
+        // Get the destination table
+        let toTable = document.getElementById("personal-schedule");
+
+        // Remove the div from the original table
+        targetDiv.parentElement.removeChild(targetDiv);
+
+        // Iterate over the destination table row by row
+        for (let row of toTable.rows) {
+            // If we have found our destination row
+            if(row.id === destinationRowId){
+                // Add the div in the correct column
+                //Here I want to add it to the second column (or the third if the second is occupied a.s.o.)
+                row.cells[targetCell].appendChild(targetDiv);
+                // Add the rowspan we want to this column. If no rowspan
+                // was given, the value will be 1
+                row.cells[targetCell.cellIndex].rowSpan = rowspan;
+                // If we have a rowspan we need to delete the td's for as many
+                // rows as the span is
+                if(rowspan > 1) {
+                    // Get the current row index
+                    let rowIndex = targetCell.parentElement.rowIndex;
+                    // and the column index
+                    let cellIndex = targetCell.cellIndex;
+                    // For each row below the one we inserted the div in
+                    // we can now delete the td's
+                    for(let i = 1; i < rowspan; i++) {
+                        let row = toTable.rows[rowIndex + i];
+                        row.deleteCell(cellIndex);
+                    }
+                }
+            }
+        }
+    }
+</script>
 {% endblock %}

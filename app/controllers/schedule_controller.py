@@ -37,24 +37,6 @@ def create_empty_base_schedule():
                    "Freestyle skiing", "Ice hockey", "Luge", "Nordic combined", "Short track speed skating",
                    "Skeleton", "Ski jumping", "Snowboard", "Speed skating", "Ceremony"]
 
-    formatted_disciplines = []
-    for d in disciplines:
-        d = d.replace(" ", "-").lower()
-        formatted_disciplines.append(d)
-
-    chosen_disciplines = ["Alpine skiing", "Biathlon", "Bobsleigh", "Freestyle skiing", "Ice hockey", "Luge"]
-    schedule_tags = []
-    start_tag = "\"<span class='"
-    middle_tag = "'>\""
-    end_tag = "\"</span"
-    for discipline in chosen_disciplines:
-        tag = ", " + '"<span class=\'' + discipline.replace(" ", "-").lower() + '\'>"' + discipline + '"</span"'
-        schedule_tags.append(tag)
-    # for discipline in chosen_disciplines:
-    #     tag = ", " + start_tag + discipline.replace(" ", "-").lower() + middle_tag + discipline + end_tag
-    #     schedule_tags.append(tag)
-    print()
-
     schedule = [["",
                  "<span class='alpine'>" + "Alpine skiing" + "</span>",
                  "<span class='biathlon'>" + "Biathlon" + "</span>",
@@ -128,7 +110,7 @@ def convert_beijing_time_to_local(event):
 def event_html(event):
     # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
     # discipline_class = discipline_class.lower().replace(" ", "-")
-    event_html_string = f"<div class='event' id='{event._id}'>"
+    event_html_string = f"<div class='event clone-me' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
 
@@ -152,8 +134,8 @@ def event_html(event):
             event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
 
     if len(event.participating_countries) == 2:
-        event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
-                             f"{event.participating_countries[1]}</p>"
+            event_html_string += f"<p class='participating-countries'>{event.participating_countries[i+0]}-" \
+                             f"{event.participating_countries[i+1]}</p>"
 
     event_html_string += "</div>"
 
@@ -194,6 +176,7 @@ def schedule_html(schedule, date):
 
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
+    # function get_all_events_by_filter_and_date()
     events = get_all_events_by_date(date)
     local_time_slots = None
     for event in events:
