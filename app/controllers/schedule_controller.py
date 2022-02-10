@@ -266,18 +266,18 @@ def create_all_schedules():
 
 
 def set_shown_date(shown_date="", date_action=""):
+    if shown_date == "":
+        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
+        return shown_date
+
     date_strings = ["2022-02-02", "2022-02-03", "2022-02-04", "2022-02-05", "2022-02-06",
                     "2022-02-07", "2022-02-08", "2022-02-09", "2022-02-10", "2022-02-11",
                     "2022-02-12", "2022-02-13", "2022-02-14", "2022-02-15", "2022-02-16",
                     "2022-02-17", "2022-02-18", "2022-02-19", "2022-02-20"]
-
-    if shown_date == "":
-        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
-        return shown_date
     min_index = 0
     max_index = len(date_strings) - 1
-
     shown_date_index = date_strings.index(shown_date)
+
     if date_action == "Next":
         shown_date_index = min(shown_date_index + 1, max_index)
         shown_date = date_strings[shown_date_index]

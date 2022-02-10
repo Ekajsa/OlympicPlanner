@@ -56,7 +56,7 @@ table, th, td {
 
 th
 {
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -65,14 +65,10 @@ th span
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  white-space: nowrap;
+  white-space: break-spaces;
+  height: 120px;
 }
 
-/*Styling from BritneyBob for the pencil button*/
-/*#edit_info{*/
-/*	opacity: 0.8;*/
-/*	border-radius: 6px;*/
-/*	background-color: #2E87DE;}*/
 .curling-is-fun {
     color: red;
     font-weight: bold;

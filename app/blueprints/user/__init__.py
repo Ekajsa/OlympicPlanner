@@ -99,14 +99,24 @@ def select_countries_post():
 # @login_required
 def filtered_schedule_get():
     schedules, personal_schedules = create_all_schedules()
+    shown_date = set_shown_date()
     # personal_schedule = create_empty_personal_schedule()
-    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules)
+    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=shown_date)
+
+
+# @bp_user.post("/create_schedule/step4")
+# def filtered_schedule_post():
+#     chosen_countries = request.json
+#     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
 @bp_user.post("/create_schedule/step4")
-def filtered_schedule_post():
-    chosen_countries = request.json
-    return redirect(url_for("bp_user.filtered_schedule_get"))
+def change_date_post():
+    schedules, personal_schedules = create_all_schedules()
+    date_action = request.form.get("date_action")
+    shown_date = request.form.get("shown_date")
+    new_shown_date = set_shown_date(shown_date, date_action)
+    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=new_shown_date)
 
 
 @bp_user.get("/my_schedule")
