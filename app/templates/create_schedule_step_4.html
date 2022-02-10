@@ -65,18 +65,24 @@
     function moveIt(e) {
         // Get the div that we clicked
         let targetDiv = e.path[1];
+        console.log('e:')
+        console.log(e)
         console.log('targetDiv')
         console.log(targetDiv)
         // Get the cell hosting the div in the from table
         let targetCell = targetDiv.parentElement;
-        //Can I use jquery below to find parent table id?
-        $(this).closest('table').attr('id')
         console.log('targetCell:')
         console.log(targetCell)
+        let targetTable = e.path[7];
         console.log('targetTable:')
         console.log(targetTable)
+        let targetTableId = targetTable.id;
+        console.log('targetTableId:')
+        console.log(targetTableId)
+        //Can I use jquery below to find parent table id?
+        $(this).closest('table').attr('id')
         // Get the id of the row containing the div
-        let parentRowId = targetDiv.parentElement.parentElement.id;
+        let parentRowId = e.path[3].rowIndex;
         console.log('parentRowId:')
         console.log(parentRowId)
         // Get the id of the row in the destination table
