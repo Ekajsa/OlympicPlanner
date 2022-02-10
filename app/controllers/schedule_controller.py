@@ -1,5 +1,4 @@
 import datetime
-import re
 
 import pytz
 from tzlocal import get_localzone
@@ -106,47 +105,6 @@ def convert_beijing_time_to_local(event):
     event.local_start_time = target_time_start.strftime("%Y-%m-%d %H:%M")
     event.local_end_time = target_time_end.strftime("%Y-%m-%d %H:%M")
 
-
-def event_html(event):
-    # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
-    # discipline_class = discipline_class.lower().replace(" ", "-")
-    event_html_string = f"<div class='event' id='{event._id}'>"
-    event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
-                         f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
-
-    if len(event.sex) == 2:
-        event_html_string += f"<span class='sex'>{event.sex[0]}, {event.sex[1]}</span>. "
-    else:
-        event_html_string += f"<span class='sex'>{event.sex}</span>. "
-
-    if event.description == "":
-        if len(event.competition_type) == 2:
-            event_html_string += f"<span class='competition_type'>{event.competition_type[0].capitalize()}, " \
-                                 f"{event.competition_type[1]}</span>."
-        else:
-            event_html_string += f"<span class='competition_type'>{event.competition_type.capitalize()}</span>. "
-    else:
-        event_html_string += f"<span class='description'>{event.description}</span>, "
-        if len(event.competition_type) == 2:
-            event_html_string += f"<span class='competition_type'>{event.competition_type[0]}, " \
-                                 f"{event.competition_type[1]}</span>. "
-        else:
-            event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
-
-    event_html_string += "<p class='participating-countries'>"
-    if len(event.participating_countries) == 2:
-        event_html_string += f"{event.participating_countries[0]}-{event.participating_countries[1]}"
-    else:
-        for country in event.participating_countries:
-            event_html_string += f"{country}, "
-        event_html_string = event_html_string[:-2]
-    event_html_string += "</p>"
-
-    event_html_string += "</div>"
-
-    return event_html_string
-
-
 def schedule_html(schedule, date):
     table_html = f"<div id='{date}'>"
     table_html += " <table> "
@@ -165,38 +123,40 @@ def schedule_html(schedule, date):
                     end_time = cell[0].local_end_time[-5:]
                     discipline = cell[0].discipline
                     td_class = discipline.lower().replace(" ", "-")
-                    # td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
                     if cell[-1] is None:
                         table_html += f"<td class='{td_class}-event'>"
                     else:
                         table_html += f"<td class='{td_class}-event' rowspan ='{cell[-1]}'> "
                     for i in range(0, len(cell), 2):
-                        sex = cell[i].sex
-                        description = cell[i].description
-                        competition_type = cell[i].competition_type
-                        countries = cell[i].participating_countries
+                        if len(cell[i].sex) == 2:
+                            sex = f"{cell[i].sex[0]}, {cell[i].sex[1]}"
+                        else:
+                            sex = cell[i].sex
+                        if cell[i].description == "":
+                            if len(cell[i].competition_type) == 2:
+                                description_competition_type = f"{cell[i].competition_type[0].capitalize()}, " \
+                                                               f"{cell[i].competition_type[1]}."
+                            else:
+                                description_competition_type = f"{cell[i].competition_type.capitalize()}. "
+                        else:
+                            description_competition_type = f"{cell[i].description}, "
+                            if len(cell[i].competition_type) == 2:
+                                description_competition_type += f"{cell[i].competition_type[0]}, " \
+                                                               f"{cell[i].competition_type[1]}. "
+                            else:
+                                description_competition_type += f"{cell[i].competition_type}. "
+                        if len(cell[i].participating_countries) == 2:
+                            countries = f"{cell[i].participating_countries[0]}-{cell[i].participating_countries[1]}"
+                        else:
+                            countries = ""
+                            for country in cell[i].participating_countries:
+                                countries += f"{country}, "
+                            countries = countries[:-2]
+                        # noinspection PyProtectedMember
                         event_id = cell[i]._id
                         table_html += f"<div class='event' id='{event_id}'><a href='#' data-toggle='tooltip' " \
                                       f"title='{countries}'>{start_time}-" \
-                                      f"{end_time} {discipline} {sex} {description} {competition_type}<a/></div>"
-                    # start_time = cell[0].partition("start-time'>")[2].partition("</span>")[0]
-                    # end_time = cell[0].partition("end-time'>")[2].partition("</span>")[0]
-                    # discipline = cell[0].partition("discipline'>")[2].partition("</span>")[0]
-                    # td_class = discipline.lower().replace(" ", "-")
-                    # # td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
-                    # if cell[-1] is None:
-                    #     table_html += f"<td class='{td_class}-event'>"
-                    # else:
-                    #     table_html += f"<td class='{td_class}-event' rowspan ='{cell[-1]}'> "
-                    # for i in range(0, len(cell), 2):
-                    #     sex = cell[i].partition("sex'>")[2].partition("</span>")[0]
-                    #     description = cell[i].partition("description'>")[2].partition("</span>")[0]
-                    #     competition_type = cell[i].partition("competition_type'>")[2].partition("</span>")[0]
-                    #     countries = cell[i].partition("countries'>")[2].partition('</p>')[0]
-                    #     event_id = cell[i].partition("id='")[2].partition("'>")[0]
-                    #     table_html += f"<div class='event' id='{event_id}'><a href='#' data-toggle='tooltip' " \
-                    #                   f"title='{countries}'>{start_time}-" \
-                    #                   f"{end_time} {discipline} {sex} {description} {competition_type}<a/></div>"
+                                      f"{end_time} {discipline} {sex} {description_competition_type}<a/></div>"
                     table_html += "</td>"
         table_html += "</tr>"
     table_html += "</table>"
@@ -220,15 +180,6 @@ def create_base_schedule(date):
         end_time_nearest_quarter = convert_times_to_nearest_quarter(event.local_end_time[11:14],
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
-
-        # if schedule[row_start_index][col_index] != "":
-        #     try:
-        #         schedule[row_start_index][col_index].append(event_html(event))
-        #     except AttributeError:
-        #         pass
-        #
-        # else:
-        #     schedule[row_start_index][col_index] = [event_html(event)]
 
         if schedule[row_start_index][col_index] != "":
             try:
