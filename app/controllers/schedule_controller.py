@@ -133,9 +133,14 @@ def event_html(event):
         else:
             event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
 
+    event_html_string += "<p class='participating-countries'>"
     if len(event.participating_countries) == 2:
-        event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
-                             f"{event.participating_countries[1]}</p>"
+        event_html_string += f"{event.participating_countries[0]}-{event.participating_countries[1]}"
+    else:
+        for country in event.participating_countries:
+            event_html_string += f"{country}, "
+        event_html_string = event_html_string[:-2]
+    event_html_string += "</p>"
 
     event_html_string += "</div>"
 
@@ -156,9 +161,9 @@ def schedule_html(schedule, date):
                 elif cell == "ROWSPAN":
                     pass
                 else:
-                    start_time = cell[0].partition("start-time'>")[2].partition("</span>")[0]
-                    end_time = cell[0].partition("end-time'>")[2].partition("</span>")[0]
-                    discipline = cell[0].partition("discipline'>")[2].partition("</span>")[0]
+                    start_time = cell[0].local_start_time[-5:]
+                    end_time = cell[0].local_end_time[-5:]
+                    discipline = cell[0].discipline
                     td_class = discipline.lower().replace(" ", "-")
                     # td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
                     if cell[-1] is None:
@@ -166,14 +171,32 @@ def schedule_html(schedule, date):
                     else:
                         table_html += f"<td class='{td_class}-event' rowspan ='{cell[-1]}'> "
                     for i in range(0, len(cell), 2):
-                        sex = cell[i].partition("sex'>")[2].partition("</span>")[0]
-                        description = cell[i].partition("description'>")[2].partition("</span>")[0]
-                        competition_type = cell[i].partition("competition_type'>")[2].partition("</span>")[0]
-                        countries = cell[i].partition("countries'>")[2].partition('</p>')[0]
-                        event_id = cell[i].partition("id='")[2].partition("'>")[0]
+                        sex = cell[i].sex
+                        description = cell[i].description
+                        competition_type = cell[i].competition_type
+                        countries = cell[i].participating_countries
+                        event_id = cell[i]._id
                         table_html += f"<div class='event' id='{event_id}'><a href='#' data-toggle='tooltip' " \
-                                      f"title='{sex} {description} {competition_type} {countries}'>{start_time}-" \
-                                      f"{end_time} {discipline}<a/></div>"
+                                      f"title='{countries}'>{start_time}-" \
+                                      f"{end_time} {discipline} {sex} {description} {competition_type}<a/></div>"
+                    # start_time = cell[0].partition("start-time'>")[2].partition("</span>")[0]
+                    # end_time = cell[0].partition("end-time'>")[2].partition("</span>")[0]
+                    # discipline = cell[0].partition("discipline'>")[2].partition("</span>")[0]
+                    # td_class = discipline.lower().replace(" ", "-")
+                    # # td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+                    # if cell[-1] is None:
+                    #     table_html += f"<td class='{td_class}-event'>"
+                    # else:
+                    #     table_html += f"<td class='{td_class}-event' rowspan ='{cell[-1]}'> "
+                    # for i in range(0, len(cell), 2):
+                    #     sex = cell[i].partition("sex'>")[2].partition("</span>")[0]
+                    #     description = cell[i].partition("description'>")[2].partition("</span>")[0]
+                    #     competition_type = cell[i].partition("competition_type'>")[2].partition("</span>")[0]
+                    #     countries = cell[i].partition("countries'>")[2].partition('</p>')[0]
+                    #     event_id = cell[i].partition("id='")[2].partition("'>")[0]
+                    #     table_html += f"<div class='event' id='{event_id}'><a href='#' data-toggle='tooltip' " \
+                    #                   f"title='{countries}'>{start_time}-" \
+                    #                   f"{end_time} {discipline} {sex} {description} {competition_type}<a/></div>"
                     table_html += "</td>"
         table_html += "</tr>"
     table_html += "</table>"
@@ -198,14 +221,23 @@ def create_base_schedule(date):
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
+        # if schedule[row_start_index][col_index] != "":
+        #     try:
+        #         schedule[row_start_index][col_index].append(event_html(event))
+        #     except AttributeError:
+        #         pass
+        #
+        # else:
+        #     schedule[row_start_index][col_index] = [event_html(event)]
+
         if schedule[row_start_index][col_index] != "":
             try:
-                schedule[row_start_index][col_index].append(event_html(event))
+                schedule[row_start_index][col_index].append(event)
             except AttributeError:
                 pass
 
         else:
-            schedule[row_start_index][col_index] = [event_html(event)]
+            schedule[row_start_index][col_index] = [event]
 
         row_span = row_end_index - row_start_index + 1
         if row_span == 0:
