@@ -17,12 +17,12 @@
     </div>
     {% for schedule in schedules %}
         {{ schedule[0] | safe }}
-        <div class="base-schedule" id="base-schedule">
+        <div class="base-schedule" id="base-schedule{{ loop.index }}">
             {{ schedule[1] | safe }}
         </div>
     {% endfor %}
     {% for personal_schedule in personal_schedules %}
-        <div class="personal-schedule" id="personal-schedule">
+        <div class="personal-schedule" id="personal-schedule{{ loop.index }}">
             {{ personal_schedule[1] | safe }}
         </div>
     {% endfor %}
@@ -56,40 +56,42 @@
 
 {% block scripts %}
 <script>
-    {#//Get all td with class 'event' and add class 'clone-me'#}
-    {#let td_with_class = document.querySelectorAll("td.event");#}
-    {#console.log(td_with_class)#}
-    {#td_with_class.forEach(giveCloneMeId);#}
-    {##}
-    {#function giveCloneMeId(element) {#}
-    {#    console.log('in giveCloneMeId')#}
-    {#    element.classList.add("clone-me");#}
-    {#}#}
-
     //Get all clone-me-td's and add moveIt() on click
     const clonableTds = document.querySelectorAll(".clone-me");
     clonableTds.forEach(div => {
         div.addEventListener("click", moveIt);
     });
 
-
-
     function moveIt(e) {
         // Get the div that we clicked
         let targetDiv = e.path[1];
+        console.log('targetDiv')
+        console.log(targetDiv)
         // Get the cell hosting the div in the from table
         let targetCell = targetDiv.parentElement;
+        //Can I use jquery below to find parent table id?
+        $(this).closest('table').attr('id')
+        console.log('targetCell:')
+        console.log(targetCell)
+        console.log('targetTable:')
+        console.log(targetTable)
         // Get the id of the row containing the div
         let parentRowId = targetDiv.parentElement.parentElement.id;
+        console.log('parentRowId:')
+        console.log(parentRowId)
         // Get the id of the row in the destination table
         let destinationRowId = 't' + parentRowId.substring(1);
-
+        console.log('destinationRowId:')
+        console.log(destinationRowId)
         // Get the current cells rowspan
         let rowspan = targetCell.rowSpan;
-
+        console.log('rowspan:')
+        console.log(rowspan)
         // Get the destination table
+        let fromTable = null;
         let toTable = document.getElementById("personal-schedule");
-
+        console.log('toTable:')
+        console.log(toTable)
         // Remove the div from the original table
         targetDiv.parentElement.removeChild(targetDiv);
 
