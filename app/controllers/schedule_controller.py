@@ -142,32 +142,6 @@ def event_html(event):
     return event_html_string
 
 
-def get_tooltip_title(event):
-    tooltip_title = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]} {event.discipline}"
-
-    if len(event.sex) == 2:
-        tooltip_title += f"{event.sex[0]}, {event.sex[1]}. "
-    else:
-        tooltip_title += f"{event.sex}. "
-
-    if event.description == "":
-        if len(event.competition_type) == 2:
-            tooltip_title += f"{event.competition_type[0].capitalize()}, {event.competition_type[1]}."
-        else:
-            tooltip_title += f"{event.competition_type.capitalize()}. "
-    else:
-        tooltip_title += f"{event.description}, "
-        if len(event.competition_type) == 2:
-            tooltip_title += f"{event.competition_type[0]}, {event.competition_type[1]}. "
-        else:
-            tooltip_title += f"{event.competition_type}. "
-
-    if len(event.participating_countries) == 2:
-        tooltip_title += f"{event.participating_countries[0]}-{event.participating_countries[1]}"
-
-    return tooltip_title
-
-
 def schedule_html(schedule, date):
     table_html = f"<div id='{date}'>"
     table_html += " <table> "
@@ -182,32 +156,24 @@ def schedule_html(schedule, date):
                 elif cell == "ROWSPAN":
                     pass
                 else:
-                    start_time = cell[0].partition("start-time'>")[2].partition('</span>')[0]
-                    end_time = cell[0].partition("end-time'>")[2].partition('</span>')[0]
-                    discipline = cell[0].partition("discipline'>")[2].partition('</span>')[0]
-                    sex = cell[0].partition("sex'>")[2].partition('</span>')[0]
-                    description = cell[0].partition("description'>")[2].partition('</span>')[0]
-                    competition_type = cell[0].partition("competition_type'>")[2].partition('</span>')[0]
-                    countries = cell[0].partition("countries'>")[2].partition('</p>')[0]
+                    start_time = cell[0].partition("start-time'>")[2].partition("</span>")[0]
+                    end_time = cell[0].partition("end-time'>")[2].partition("</span>")[0]
+                    discipline = cell[0].partition("discipline'>")[2].partition("</span>")[0]
                     td_class = discipline.lower().replace(" ", "-")
                     # td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
                     if cell[-1] is None:
-                        # table_html += f"<td class='{td_class}-event'>"
-                        table_html += f"<td class='{td_class}-event'><a href='#' data-toggle='tooltip' " \
-                                      f"title='{sex} {description} {competition_type} {countries}'>" \
-                                      f"{start_time}-{end_time} {discipline}<a/>"
+                        table_html += f"<td class='{td_class}-event'>"
                     else:
-                        table_html += f"<td class='{td_class}-event' rowspan =" + \
-                                      "'" + cell[-1] + f"'><a href='#' data-toggle='tooltip' " \
-                                      f"title='{sex} {description} {competition_type} {countries}'>" \
-                                      f"{start_time}-{end_time} {discipline}<a/>"
-                    # table_html += f"<td><a href='#' data-toggle='tooltip' title='{tooltip_text_when_hover}'>"\
-                    #               f"{start_time}-{end_time}{discipline}<a/>"
-                    # if len(cell) == 2:
-                    #     table_html += cell[0]
-                    # else:
-                    #     for i in range(0, len(cell), 2):
-                    #         table_html += cell[i]
+                        table_html += f"<td class='{td_class}-event' rowspan ='{cell[-1]}'> "
+                    for i in range(0, len(cell), 2):
+                        sex = cell[i].partition("sex'>")[2].partition("</span>")[0]
+                        description = cell[i].partition("description'>")[2].partition("</span>")[0]
+                        competition_type = cell[i].partition("competition_type'>")[2].partition("</span>")[0]
+                        countries = cell[i].partition("countries'>")[2].partition('</p>')[0]
+                        event_id = cell[i].partition("id='")[2].partition("'>")[0]
+                        table_html += f"<div class='event' id='{event_id}'><a href='#' data-toggle='tooltip' " \
+                                      f"title='{sex} {description} {competition_type} {countries}'>{start_time}-" \
+                                      f"{end_time} {discipline}<a/></div>"
                     table_html += "</td>"
         table_html += "</tr>"
     table_html += "</table>"
@@ -219,9 +185,6 @@ def schedule_html(schedule, date):
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = get_all_events_by_date(date)
-    local_time_slots = None
-    tooltip_hover_text = None
-    tooltip_title = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -234,17 +197,6 @@ def create_base_schedule(date):
         end_time_nearest_quarter = convert_times_to_nearest_quarter(event.local_end_time[11:14],
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
-
-        # if schedule[row_start_index][col_index] != "" and isinstance(schedule[row_start_index][col_index], list):
-        #     if "Curling" in schedule[row_start_index][col_index][0] \
-        #             or "Ice hockey" in schedule[row_start_index][col_index][0]:
-        #         try:
-        #             schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-        #                                                         "-".join(event.participating_countries) + "</p>")
-        #         except AttributeError:
-        #             pass
-        # else:
-        #     schedule[row_start_index][col_index] = [event_html(event)]
 
         if schedule[row_start_index][col_index] != "":
             try:
@@ -272,10 +224,6 @@ def create_base_schedule(date):
             schedule[row_index][col_index] = "ROWSPAN"
             row_index += 1
 
-        # tooltip_hover_text = f"{event.local_start_time[-5:]}-{event.local_end_time[-5:]} {event.discipline}"
-        #
-        # tooltip_title = get_tooltip_title(event)
-
     return schedule_html(schedule, date)
 
 
@@ -292,9 +240,6 @@ def create_empty_personal_schedule(date):
         for _ in range(len(schedule[0]) - 1):
             row.append("")
         schedule.append(row)
-
-    # tooltip_hover_text = ""
-    # tooltip_title = ""
 
     return schedule_html(schedule, date)
 

@@ -68,14 +68,22 @@ th span
   white-space: nowrap;
 }
 
-/*Styling from BritneyBob for the pencil button*/
-/*#edit_info{*/
-/*	opacity: 0.8;*/
-/*	border-radius: 6px;*/
-/*	background-color: #2E87DE;}*/
-.curling-is-fun {
-    color: red;
-    font-weight: bold;
+.tooltip-inner {
+    background-color: #2f4fff;
+    box-shadow: 0px 0px 4px black;
+    opacity: 1 !important;
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: #000000 !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: #000000 !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #000000 !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #000000 !important;
 }
 
 td.alpine-skiing-event {
