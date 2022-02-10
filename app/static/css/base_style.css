@@ -56,7 +56,7 @@ table, th, td {
 
 th
 {
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -65,7 +65,8 @@ th span
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  white-space: nowrap;
+  white-space: break-spaces;
+  height: 120px;
 }
 
 .event {
@@ -164,10 +165,3 @@ td.ceremony-event {
 
 }
 
-/*th {*/
-/*    background-color: #2E87DE;*/
-/*}*/
-
-/*td {*/
-/*    background-color: red;*/
-/*}*/

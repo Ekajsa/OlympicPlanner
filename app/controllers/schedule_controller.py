@@ -258,3 +258,37 @@ def create_all_schedules():
         personal_schedule = create_empty_personal_schedule(date)
         all_personal_schedules.append(("<p class='schedule-date'>" + date + "</p>", personal_schedule))
     return all_day_schedules, all_personal_schedules
+
+
+def set_shown_date(shown_date="", date_action=""):
+    if shown_date == "":
+        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
+        return shown_date
+
+    date_strings = ["2022-02-02", "2022-02-03", "2022-02-04", "2022-02-05", "2022-02-06",
+                    "2022-02-07", "2022-02-08", "2022-02-09", "2022-02-10", "2022-02-11",
+                    "2022-02-12", "2022-02-13", "2022-02-14", "2022-02-15", "2022-02-16",
+                    "2022-02-17", "2022-02-18", "2022-02-19", "2022-02-20"]
+    min_index = 0
+    max_index = len(date_strings) - 1
+    shown_date_index = date_strings.index(shown_date)
+
+    if date_action == "Next":
+        shown_date_index = min(shown_date_index + 1, max_index)
+        shown_date = date_strings[shown_date_index]
+        return shown_date
+    elif date_action == "Previous":
+        shown_date_index = max(shown_date_index - 1, min_index)
+        shown_date = date_strings[shown_date_index]
+        return shown_date
+    elif date_action == "First day":
+        shown_date = date_strings[min_index]
+        return shown_date
+    elif date_action == "Last day":
+        shown_date = date_strings[max_index]
+        return shown_date
+    elif date_action == "Today":
+        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
+        return shown_date
+    else:
+        return shown_date
