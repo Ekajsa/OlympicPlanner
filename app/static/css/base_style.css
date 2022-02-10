@@ -68,6 +68,10 @@ th span
   white-space: nowrap;
 }
 
+.event {
+    border: 1px solid black;
+}
+
 .tooltip-inner {
     background-color: #2f4fff;
     box-shadow: 0px 0px 4px black;
