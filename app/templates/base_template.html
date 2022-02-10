@@ -18,7 +18,7 @@
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand mr-4" href="/">The Olympic Planner</a>
 {#            This button becomes visible when you use a small screen. Then the menu options will show as a dropdown from a button instead of a navigation bar.#}
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +42,8 @@
                 {% if current_user.is_authenticated %}
 {#                    <a href="{{ url_for('bp_user.profile_get') }}"><a href="{{ current_user.avatar }}"></a> </a>#}
                     <a class="nav-item nav-link" href="{{ url_for("bp_user.profile_get") }}">
-                        <img src="../static/img/avatar.png" alt="My profile" width="40px" height="40px">
+                        <img src="{{ url_for('static', filename='/img/avatar.png') }}" alt="My profile" width="40px" height="40px">
                     </a>
-                {% else %}
-    {#              <a class="nav-item nav-link" href="{{ url_for("bp_open.signup_get") }}">Sign Up</a>#}
-    {#              <a class="nav-item nav-link" href="{{ url_for("bp_open.signin_get") }}">Sign In</a>#}
                 {% endif %}
             </div>
           </div>
@@ -54,24 +51,25 @@
       </nav>
     </header>
 
-    <main role="main" class="container" style="max-height: 85vh">
+    <main role="main" class="container-fluid" style="max-height: 85vh">
         <div class="row" style="max-height: inherit">
             <div class="col-md-12" style="max-height: inherit">
               {% block content12 %}{% endblock %}
               <div class="row" style="max-height: inherit">
+                <div class="col-md-2" style="max-height: inherit">
+                  {% block content2l %}{% endblock %}
+                </div>
                 <div class="col-md-8" style="max-height: inherit">
                   {% block content8 %}{% endblock %}
                 </div>
-                <div class="col-md-4" style="max-height: inherit">
-                  {% block content4 %}{% endblock %}
+                <div class="col-md-2" style="max-height: inherit">
+                  {% block content2r %}{% endblock %}
                 </div>
               </div>
             </div>
         </div>
-{#      <footer class="container-fluid text-center">#}
-{#        <p>Footer Text</p>#}
-{#      </footer>#}
     </main>
+
 
     {% block scripts %}
     {% endblock %}
