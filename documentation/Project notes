@@ -3,18 +3,28 @@
 Daily 2022-xx-xx
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
+	Blivit klar med 040 - spara länder och discipliner för personal schedule till databasen. Några buggar kvar, inget jätteviktigt.
+	051 - Click and move. Ok att det inte är copy tycker vi!
 *   Vad ska jag göra till nästa avstämning?
+	Fortsätta med 051.
 *   Behöver jag hjälp med något?
 
 Britta
 *   Vad har jag gjort sedan avstämningen igår?
+	Fixat 044 - buggen och 050 - färgerna på disciplinerna
 *   Vad ska jag göra till nästa avstämning?
+	Fixa så alla events skickas med när flera på samma tid + lösa layouten på det (056).
+	Fortsätta med 48, 49, 54.
 *   Behöver jag hjälp med något?
+	Nej
 
 Kajsa
 *   Vad har jag gjort sedan avstämningen igår?
+	Kämpat med datumväxlingar på personal schedule (054). Löste det på slutet!
 *   Vad ska jag göra till nästa avstämning?
+	Fixa datumväxlingar på create schedule-sidan också (fortsätta med 054)
 *   Behöver jag hjälp med något?
+	Nej
 
 Övrigt
 * xxx
@@ -45,6 +55,28 @@ Sprint planning
 * Uppskatta tillgänglig tid för gruppen i nästa sprint. 57h 
 * Vad ska ingå i nästa veckas sprint?
 ************************************************************************************************************************************************
+
+Daily 2022-02-10
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+*   Vad ska jag göra till nästa avstämning?
+*   Behöver jag hjälp med något?
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+*   Vad ska jag göra till nästa avstämning?
+*   Behöver jag hjälp med något?
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+*   Vad ska jag göra till nästa avstämning?
+*   Behöver jag hjälp med något?
+
+Övrigt
+* xxx
+
+************************************************************************************************************************************************
+
 
 Daily 2022-02-09
 Johanna
