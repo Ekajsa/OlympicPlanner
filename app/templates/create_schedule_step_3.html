@@ -49,7 +49,6 @@
 
         function inList(input) {
             input = input.toLowerCase();
-            let isDisabled = true;
             let inCountries;
             let inChosenCountries;
 
@@ -81,7 +80,7 @@
             let input = document.getElementById("myInput");
             input = input.value.toLowerCase()
 
-            if(input === 'russia' | input ==='russian olympic committee') {
+            if(input === 'russia' || input ==='russian olympic committee') {
                 input = 'roc';
             } else if(input === 'south korea') {
                 input = 'korea';
@@ -100,7 +99,7 @@
                 flag = '<img style="width:32px; height:24px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Olympic_flag.svg">';
                 countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + "ROC" + "</td></tr>";
             } else {
-                            fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
+                fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
 
                 return resp.json();
             }).then(json => {

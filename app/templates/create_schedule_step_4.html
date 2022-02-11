@@ -94,66 +94,62 @@
         }
         //document.getElementById("demo").innerHTML = text;
     }
+    //Right-click menu!
+    //document.getElementById("clicker").addEventListener('contextmenu', function(ev) {
+            //ev.preventDefault();
+            //alert('success!');
+            //return false;
+        //}, false);
+
+
     function moveIt(e) {
         // Get the div that we clicked
         let targetDiv = e.path[1];
-        console.log('e:')
-        console.log(e)
-        console.log('targetDiv')
-        console.log(targetDiv)
         // Get the cell hosting the div in the from table
         let targetCell = targetDiv.parentElement;
-        console.log('targetCell:')
-        console.log(targetCell)
         let targetTable = e.path[7];
-        console.log('targetTable:')
-        console.log(targetTable)
         let targetTableId = targetTable.id;
-        console.log('targetTableId:')
-        console.log(targetTableId)
         // Get the id of the row containing the div
         let parentRowId = e.path[3].rowIndex;
-        console.log('parentRowId:')
-        console.log(parentRowId)
         // Get the id of the row in the destination table
         //let destinationRowId = 't' + parentRowId.substring(1);
         let destinationRowId = parentRowId;
-        console.log('destinationRowId:')
-        console.log(destinationRowId)
         // Get the current cells rowspan
         let rowspan = targetCell.rowSpan;
-        console.log('rowspan:')
-        console.log(rowspan)
         // Get the destination table
         let no = targetTableId.substring(13);
-        console.log('no:')
-        console.log(no)
+        console.log(e)
         let toTableDiv = document.getElementById("personal-schedule" + no);
         console.log('toTableDiv:')
         console.log(toTableDiv)
         let toTableDivId = toTableDiv.id;
         console.log('toTableDivId:')
         console.log(toTableDivId)
-        let toTable = e.path[3];
+        let toTable = document.getElementById(toTableDivId).getElementsByTagName('table');
         console.log('toTable:')
         console.log(toTable)
         // Remove the div from the original table
         targetDiv.parentElement.removeChild(targetDiv);
-
+        console.log('Here 1')
         // Iterate over the destination table row by row
-        console.log('before for loop')
-        for (let row in toTable) {
-            console.log('in for loop')
+        for (let row in toTable[0].firstElementChild.childNodes) {
+            console.log('row')
             console.log(row)
             // If we have found our destination row
-            if(row.id === destinationRowId){
-                console.log('in if condition')
+            if(row == destinationRowId){
+                console.log('Here 3')
                 // Add the div in the correct column
                 //Here I want to add it to the second column (or the third if the second is occupied a.s.o.)
-                row.cells[targetCell].appendChild(targetDiv);
+                toTable.rows[row].cells[targetCell.cellIndex].appendChild(targetDiv);
+                console.log('toTable.rows[row]:')
+                console.log(toTable.rows[row])
+                console.log('toTable[row]:')
+                console.log(toTable[row])
+                console.log('Cell index:')
+                console.log(targetCell.cellIndex)
                 // Add the rowspan we want to this column. If no rowspan
                 // was given, the value will be 1
-                row.cells[targetCell.cellIndex].rowSpan = rowspan;
+                toTable.rows[row].cells[targetCell.cellIndex].rowSpan = rowspan;
                 // If we have a rowspan we need to delete the td's for as many
                 // rows as the span is
                 if(rowspan > 1) {
@@ -164,10 +160,10 @@
                     // For each row below the one we inserted the div in
                     // we can now delete the td's
                     for(let i = 1; i < rowspan; i++) {
-                        let row = toTableDiv.rows[rowIndex + i];
+                        let row = toTable.rows[rowIndex + i];
                         row.deleteCell(cellIndex);
                     }
-                }
+                } break;
             }
         }
     }
