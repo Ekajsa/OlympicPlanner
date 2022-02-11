@@ -133,32 +133,24 @@
         console.log('Here 1')
         // Iterate over the destination table row by row
         for (let row in toTable[0].firstElementChild.childNodes) {
-            console.log('row')
-            console.log(row)
             // If we have found our destination row
             if(row == destinationRowId){
-                console.log('Here 3')
                 // Add the div in the first available column
                 toTable[0].firstElementChild.childNodes[row].cells[1].appendChild(targetDiv);
-                let counter = 0;
-                let cellsToRemove = [];
-                console.log(toTable.rows)
-                for (let cell in toTable.rows[row].cells) {
-                    console.log('in for')
-                    counter++;
-                    if (counter > 5) {
-                        console.log('in if')
-                        cellsToRemove.push(cell);
-                    }
-                }
-                console.log(cellsToRemove)
-                for (let cell in cellsToRemove) {
-                    row.removeChild(cell);
-                }
+
                 //Delete the last td in row
-                //let lastCell = toTable[0].firstElementChild.childNodes[row].cells.at(-1);
-                //toTable[0].firstElementChild.childNodes[0].cells.length
-                // toTable[0].firstElementChild.childNodes[row].removeChild(rowLength - 1);
+                {#let table = document.getElementById("my-table");#}
+                {#        let rows = table.getElementsByTagName("tr");#}
+                {#        //console.log(rows);#}
+                {#        for(let i = 0; i < rows.length; i++) {#}
+                {#            let row = rows[i];#}
+                {#            let cells = row.children;#}
+                {#            let l = row.children.length;#}
+                {#            for(let j = 2; j < l; j++) {#}
+                {#                row.deleteCell(row.children.length-1);#}
+                {#            }#}
+                {#        }#}
+
                 // Add the rowspan we want to this column. If no rowspan
                 // was given, the value will be 1
                 toTable[0].firstElementChild.childNodes[row].cells[1].rowSpan = rowspan;
@@ -172,6 +164,7 @@
                     // For each row below the one we inserted the div in
                     // we can now delete the td's
                     for(let i = 1; i < rowspan; i++) {
+                        //Row below: Uncaught TypeError: Cannot read properties of undefined (reading '12') at HTMLDivElement.moveIt
                         let row = toTable.rows[rowIndex + i];
                         row.deleteCell(cellIndex);
                     }
