@@ -83,7 +83,17 @@
     clonableTds.forEach(div => {
         div.addEventListener("click", moveIt);
     });
-
+    let priorityColumn;
+    function priorityCheck() {
+        let text;
+        priorityColumn = parseInt(prompt("Which priority column do you wish to move the event to?", "Choose 1-5"), 10);
+        if (priorityColumn > 0 && priorityColumn < 6) {
+            moveIt();
+        } else {
+            priorityCheck();
+        }
+        //document.getElementById("demo").innerHTML = text;
+    }
     function moveIt(e) {
         // Get the div that we clicked
         let targetDiv = e.path[1];
