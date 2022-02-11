@@ -3,32 +3,29 @@
 Daily 2022-xx-xx
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
-	Blivit klar med 040 - spara länder och discipliner för personal schedule till databasen. Några buggar kvar, inget jätteviktigt.
-	051 - Click and move. Ok att det inte är copy tycker vi!
+	
 *   Vad ska jag göra till nästa avstämning?
-	Fortsätta med 051.
+	
 *   Behöver jag hjälp med något?
 
 Britta
 *   Vad har jag gjort sedan avstämningen igår?
-	Fixat 044 - buggen och 050 - färgerna på disciplinerna
+	
 *   Vad ska jag göra till nästa avstämning?
-	Fixa så alla events skickas med när flera på samma tid + lösa layouten på det (056).
-	Fortsätta med 48, 49, 54, 57.
+	
 *   Behöver jag hjälp med något?
-	Nej
+	
 
 Kajsa
 *   Vad har jag gjort sedan avstämningen igår?
-	Kämpat med datumväxlingar på personal schedule (054). Löste det på slutet!
+	
 *   Vad ska jag göra till nästa avstämning?
-	Fixa datumväxlingar på create schedule-sidan också (fortsätta med 054)
+	
 *   Behöver jag hjälp med något?
-	Nej
+	
 
 Övrigt
-* Skapat ny issue 058 för att filtrera fram schema utifrån val av discipliner och länder i databasen
-  Skapat ny issue 059, lösa bugg med att alla länderna är undefined
+* 
 
 ************************************************************************************************************************************************
 
@@ -56,33 +53,70 @@ Sprint planning
 * Uppskatta tillgänglig tid för gruppen i nästa sprint. 57h 
 * Vad ska ingå i nästa veckas sprint?
 ************************************************************************************************************************************************
+Daily 2022-02-11
+Johanna
+*   Vad har jag gjort sedan avstämningen igår?
+	Jobbat med #051. Svårt med debuggern så det gick trögt men har börjat lossna lite nu att få ut värden. 
+*   Vad ska jag göra till nästa avstämning?
+	Fortsätta med #051. Fixa prioriteringen och flytt till personliga schemat (så låg prioritering som möjligt).
+*   Behöver jag hjälp med något?
+	Behöver hjälp av Joakim.
+
+Britta
+*   Vad har jag gjort sedan avstämningen igår?
+	Fixat tooltip (deltagande länder syns) men fick då ta bort event_html. Så ska vi använda den öht? Bara klassen på diven kvar men kanske räcker.
+	Vi kör utan tooltip i main så länge för att minimera risken för problem. Branchen finns kvar, vi kanske mergar in den vid ett senare tillfälle.
+	Inramning av enskilda event som ligger inom samma block (t.ex. gruppspel i curling).
+*   Vad ska jag göra till nästa avstämning?
+	#047, ta bort tomma kolumner. Eventuellt #049.
+*   Behöver jag hjälp med något?
+	Kanske behöver hjälp från Kajsa med layout av time slots och equal sizing.
+
+Kajsa
+*   Vad har jag gjort sedan avstämningen igår?
+	Fixat scrollbars samt knappar för att bläddra mellan datum. Började på #058 med filtrering, land funkar för tillfället.
+*   Vad ska jag göra till nästa avstämning?
+	#058, disciplinerna ska fixas till. Om tid finns börja med #053 samt #041, att kunna plocka in sparat schema samt byta mellan sparade scheman på My Schedules.
+*   Behöver jag hjälp med något?
+	Nej.
+	
+
+Övrigt
+*   Ny issue: går det att byta plats på events i olika prioriteringskolumner som ligger på samma tid. Går det att högerklicka/hover och få en dropdown?
+    Försök att skilja vänsterklick (flytta element från basschema till personligt (och eventuellt v.v.) från högerklick.
+    
+
+************************************************************************************************************************************************
 
 Daily 2022-02-10
 Johanna
 *   Vad har jag gjort sedan avstämningen igår?
-	Klar med 040. Börjat med 051.
+	Blivit klar med 040 - spara länder och discipliner för personal schedule till databasen. Några buggar kvar, inget jätteviktigt.
+	051 - Click and move. Ok att det inte är copy tycker vi!
 *   Vad ska jag göra till nästa avstämning?
 	Fortsätta med 051.
 *   Behöver jag hjälp med något?
 
 Britta
 *   Vad har jag gjort sedan avstämningen igår?
-	Fixat buggen 044 och och färger discipliner 050
+	Fixat 044 - buggen och 050 - färgerna på disciplinerna
 *   Vad ska jag göra till nästa avstämning?
-	Jobba med 48, 49, 56, 57 (layot och buggfix tabellen)
+	Fixa så alla events skickas med när flera på samma tid + lösa layouten på det (056).
+	Fortsätta med 48, 49, 54, 57.
 *   Behöver jag hjälp med något?
 	Nej
 
 Kajsa
 *   Vad har jag gjort sedan avstämningen igår?
-	Blivit klar med datumväxlare på personal schedule(054)! 
+	Kämpat med datumväxlingar på personal schedule (054). Löste det på slutet!
 *   Vad ska jag göra till nästa avstämning?
-	Fortsätta med 054 på create scheduyla page
-*   Behöver jag hjälp med något?	
+	Fixa datumväxlingar på create schedule-sidan också (fortsätta med 054)
+*   Behöver jag hjälp med något?
 	Nej
 
 Övrigt
-* xxx
+* Skapat ny issue 058 för att filtrera fram schema utifrån val av discipliner och länder i databasen
+  Skapat ny issue 059, lösa bugg med att alla länderna är undefined
 
 ************************************************************************************************************************************************
 

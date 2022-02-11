@@ -138,18 +138,30 @@
             // If we have found our destination row
             if(row == destinationRowId){
                 console.log('Here 3')
-                // Add the div in the correct column
-                //Here I want to add it to the second column (or the third if the second is occupied a.s.o.)
-                toTable.rows[row].cells[targetCell.cellIndex].appendChild(targetDiv);
-                console.log('toTable.rows[row]:')
-                console.log(toTable.rows[row])
-                console.log('toTable[row]:')
-                console.log(toTable[row])
-                console.log('Cell index:')
-                console.log(targetCell.cellIndex)
+                // Add the div in the first available column
+                toTable[0].firstElementChild.childNodes[row].cells[1].appendChild(targetDiv);
+                let counter = 0;
+                let cellsToRemove = [];
+                console.log(toTable.rows)
+                for (let cell in toTable.rows[row].cells) {
+                    console.log('in for')
+                    counter++;
+                    if (counter > 5) {
+                        console.log('in if')
+                        cellsToRemove.push(cell);
+                    }
+                }
+                console.log(cellsToRemove)
+                for (let cell in cellsToRemove) {
+                    row.removeChild(cell);
+                }
+                //Delete the last td in row
+                //let lastCell = toTable[0].firstElementChild.childNodes[row].cells.at(-1);
+                //toTable[0].firstElementChild.childNodes[0].cells.length
+                // toTable[0].firstElementChild.childNodes[row].removeChild(rowLength - 1);
                 // Add the rowspan we want to this column. If no rowspan
                 // was given, the value will be 1
-                toTable.rows[row].cells[targetCell.cellIndex].rowSpan = rowspan;
+                toTable[0].firstElementChild.childNodes[row].cells[1].rowSpan = rowspan;
                 // If we have a rowspan we need to delete the td's for as many
                 // rows as the span is
                 if(rowspan > 1) {
