@@ -1,6 +1,4 @@
 import datetime
-import re
-
 import pytz
 from tzlocal import get_localzone
 
@@ -107,9 +105,8 @@ def convert_beijing_time_to_local(event):
     event.local_end_time = target_time_end.strftime("%Y-%m-%d %H:%M")
 
 
+# noinspection PyProtectedMember
 def event_html(event):
-    # discipline_class = re.sub(r"<(.*?)>", "", event.discipline)
-    # discipline_class = discipline_class.lower().replace(" ", "-")
     event_html_string = f"<div class='event' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
@@ -174,10 +171,27 @@ def schedule_html(schedule, date):
     return table_html
 
 
+def remove_columns(schedule):
+    new_schedule = []
+    empty_columns = {i: True for i in range(17)}
+
+    for j in range(len(schedule[0])):
+        if any(not "" == row[j] for row in schedule[1:]):
+            empty_columns[j] = False
+
+    for row in schedule:
+        row_copy = []
+        for j, cell in enumerate(row):
+            if not empty_columns[j]:
+                row_copy.append(row[j])
+        new_schedule.append(row_copy)
+
+    return new_schedule
+
+
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = get_all_events_by_date(date)
-    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -190,17 +204,6 @@ def create_base_schedule(date):
         end_time_nearest_quarter = convert_times_to_nearest_quarter(event.local_end_time[11:14],
                                                                     event.local_end_time[14:])
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
-
-        # if schedule[row_start_index][col_index] != "" and isinstance(schedule[row_start_index][col_index], list):
-        #     if "Curling" in schedule[row_start_index][col_index][0] \
-        #             or "Ice hockey" in schedule[row_start_index][col_index][0]:
-        #         try:
-        #             schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-        #                                                         "-".join(event.participating_countries) + "</p>")
-        #         except AttributeError:
-        #             pass
-        # else:
-        #     schedule[row_start_index][col_index] = [event_html(event)]
 
         if schedule[row_start_index][col_index] != "":
             try:
@@ -227,6 +230,8 @@ def create_base_schedule(date):
         while row_index <= row_end_index:
             schedule[row_index][col_index] = "ROWSPAN"
             row_index += 1
+
+    schedule = remove_columns(schedule)
 
     return schedule_html(schedule, date)
 
