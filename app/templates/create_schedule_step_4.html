@@ -83,17 +83,14 @@
     clonableTds.forEach(div => {
         div.addEventListener("click", moveIt);
     });
-    let priorityColumn;
-    function priorityCheck() {
-        let text;
-        priorityColumn = parseInt(prompt("Which priority column do you wish to move the event to?", "Choose 1-5"), 10);
-        if (priorityColumn > 0 && priorityColumn < 6) {
-            moveIt();
-        } else {
-            priorityCheck();
-        }
-        //document.getElementById("demo").innerHTML = text;
+
+    let emptyTimeSlots = [["false", "false", "false", "false", "false", "false"]];
+    for (let i = 1; i < 63; i++) {
+        let defaultRow = ["false", "true", "true", "true", "true", "true"];
+        emptyTimeSlots.push(defaultRow)
     }
+    console.log(emptyTimeSlots)
+
     //Right-click menu!
     //document.getElementById("clicker").addEventListener('contextmenu', function(ev) {
             //ev.preventDefault();
@@ -107,37 +104,36 @@
         let targetDiv = e.path[1];
         // Get the cell hosting the div in the from table
         let targetCell = targetDiv.parentElement;
-        let targetTable = e.path[7];
-        let targetTableId = targetTable.id;
         // Get the id of the row containing the div
         let parentRowId = e.path[3].rowIndex;
+        //Get the target table id
+        let targetTableId = e.path[5].id;
         // Get the id of the row in the destination table
-        //let destinationRowId = 't' + parentRowId.substring(1);
         let destinationRowId = parentRowId;
         // Get the current cells rowspan
         let rowspan = targetCell.rowSpan;
-        // Get the destination table
-        let no = targetTableId.substring(13);
-        console.log(e)
-        let toTableDiv = document.getElementById("personal-schedule" + no);
-        console.log('toTableDiv:')
-        console.log(toTableDiv)
-        let toTableDivId = toTableDiv.id;
-        console.log('toTableDivId:')
-        console.log(toTableDivId)
-        let toTable = document.getElementById(toTableDivId).getElementsByTagName('table');
-        console.log('toTable:')
-        console.log(toTable)
+        // Get the destination table using using target table id
+        let targetTableIdWithoutType = targetTableId.substring(1);
+        let toTable = document.getElementById("p" + targetTableIdWithoutType);
         // Remove the div from the original table
         targetDiv.parentElement.removeChild(targetDiv);
-        console.log('Here 1')
         // Iterate over the destination table row by row
-        for (let row in toTable[0].firstElementChild.childNodes) {
+        for (let row in toTable.rows) {
+        //for (let row in toTable[0].firstElementChild.childNodes) {
             // If we have found our destination row
             if(row == destinationRowId){
+                console.log('targetCell:')
+                console.log(targetCell)
+                console.log('targetCell.cellIndex:')
+                console.log(targetCell.cellIndex)
                 // Add the div in the first available column
-                toTable[0].firstElementChild.childNodes[row].cells[1].appendChild(targetDiv);
-
+                //toTable[0].firstElementChild.childNodes[row].cells[1].appendChild(targetDiv);
+                toTable.rows[row].cells[1].appendChild(targetDiv);
+                //row.cells[targetCell.cellIndex].appendChild(targetDiv);
+                // Add the rowspan we want to this column. If no rowspan
+                // was given, the value will be 1
+                //toTable[0].firstElementChild.childNodes[row].cells[1].rowSpan = rowspan;
+                toTable.rows[row].cells[1].rowSpan = rowspan;
                 //Delete the last td in row
                 {#let table = document.getElementById("my-table");#}
                 {#        let rows = table.getElementsByTagName("tr");#}
@@ -151,9 +147,7 @@
                 {#            }#}
                 {#        }#}
 
-                // Add the rowspan we want to this column. If no rowspan
-                // was given, the value will be 1
-                toTable[0].firstElementChild.childNodes[row].cells[1].rowSpan = rowspan;
+
                 // If we have a rowspan we need to delete the td's for as many
                 // rows as the span is
                 if(rowspan > 1) {
