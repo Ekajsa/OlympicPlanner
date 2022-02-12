@@ -121,19 +121,18 @@
         let lastEmptyTimeSlotRow = null;
         let lastEmptyTimeSlotColumn = null;
         let available = false;
-        for (let i = 1; i < emptyTimeSlots[i].length; i++) {
-            if (emptyTimeSlots[parentRowId][i] === "true") {
-                lastEmptyTimeSlotRow = parentRowId++;
-                for (let j = 1; j < rowspan; j++) {
-                    if (emptyTimeSlots[lastEmptyTimeSlotRow][i] === "true") {
-                        lastEmptyTimeSlotRow++;
-                        lastEmptyTimeSlotColumn = i;
+        let column = 0;
+        for (let i = 1; i < emptyTimeSlots[0].length; i++) {
+            column++;
+            if (emptyTimeSlots[parentRowId][column] === "true") {
+                lastEmptyTimeSlotRow = parentRowId;
+                for (let j = 0; j < rowspan; j++) {
+                    lastEmptyTimeSlotRow++;
+                    if (emptyTimeSlots[lastEmptyTimeSlotRow][column] === "true") {
+                        lastEmptyTimeSlotColumn = column;
                         if (j === rowspan - 1) {
                             available = true;
                         }
-                    }
-                    else {
-                        lastEmptyTimeSlotRow = parentRowId;
                     }
                 }
             }
@@ -154,7 +153,12 @@
 
         // If we have a rowspan > 1 and are in priority column 2 or higher we need to
         // delete the td's for as many rows as the span is
+        console.log('lastEmptyTimeSlotColumn:')
+        console.log(lastEmptyTimeSlotColumn)
+        console.log('rowspan:')
+        console.log(rowspan)
         if(lastEmptyTimeSlotColumn >= 2 && rowspan > 1) {
+            console.log('inside if')
             // Get the current row index
             let rowIndex = targetCell.parentElement.rowIndex;
             // and the column index
@@ -167,6 +171,7 @@
                 row.deleteCell(cellIndex);
             }
         }
+
     }
 </script>
 {% endblock %}
