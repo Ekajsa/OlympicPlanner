@@ -142,9 +142,14 @@ def event_html(event):
     return event_html_string
 
 
-def schedule_html(schedule, date):
-    table_html = f"<div id='{date}'>"
-    table_html += " <table> "
+def schedule_html(schedule, date, schedule_type):
+    schedule_type = schedule_type
+    if schedule_type == 'base':
+        table_html = f"<div id='bdiv-{date}'>"
+        table_html += f"<table id='btable-{date}'>"
+    else:
+        table_html = f"<div id='pdiv-{date}'>"
+        table_html += f"<table id='ptable-{date}'>"
     for row in schedule:
         table_html += "<tr>"
         for cell in row:
@@ -236,8 +241,9 @@ def create_base_schedule(date):
             row_index += 1
 
     schedule = remove_columns(schedule)
+    schedule_type = 'base'
 
-    return schedule_html(schedule, date)
+    return schedule_html(schedule, date, schedule_type)
 
 
 def create_empty_personal_schedule(date):
@@ -253,8 +259,8 @@ def create_empty_personal_schedule(date):
         for _ in range(len(schedule[0]) - 1):
             row.append("")
         schedule.append(row)
-
-    return schedule_html(schedule, date)
+    schedule_type = 'personal'
+    return schedule_html(schedule, date, schedule_type)
 
 
 def create_all_schedules():
