@@ -87,10 +87,9 @@
     let emptyTimeSlots = [["false", "false", "false", "false", "false", "false"]];
     for (let i = 1; i < 63; i++) {
         let defaultRow = ["false", "true", "true", "true", "true", "true"];
-        emptyTimeSlots.push(defaultRow)
+        emptyTimeSlots.push(defaultRow);
     }
     console.log(emptyTimeSlots)
-
     //Right-click menu!
     //document.getElementById("clicker").addEventListener('contextmenu', function(ev) {
             //ev.preventDefault();
@@ -117,52 +116,55 @@
         let toTable = document.getElementById("p" + targetTableIdWithoutType);
         // Remove the div from the original table
         targetDiv.parentElement.removeChild(targetDiv);
-        // Iterate over the destination table row by row
-        for (let row in toTable.rows) {
-        //for (let row in toTable[0].firstElementChild.childNodes) {
-            // If we have found our destination row
-            if(row == destinationRowId){
-                console.log('targetCell:')
-                console.log(targetCell)
-                console.log('targetCell.cellIndex:')
-                console.log(targetCell.cellIndex)
-                // Add the div in the first available column
-                //toTable[0].firstElementChild.childNodes[row].cells[1].appendChild(targetDiv);
-                toTable.rows[row].cells[1].appendChild(targetDiv);
-                //row.cells[targetCell.cellIndex].appendChild(targetDiv);
-                // Add the rowspan we want to this column. If no rowspan
-                // was given, the value will be 1
-                //toTable[0].firstElementChild.childNodes[row].cells[1].rowSpan = rowspan;
-                toTable.rows[row].cells[1].rowSpan = rowspan;
-                //Delete the last td in row
-                {#let table = document.getElementById("my-table");#}
-                {#        let rows = table.getElementsByTagName("tr");#}
-                {#        //console.log(rows);#}
-                {#        for(let i = 0; i < rows.length; i++) {#}
-                {#            let row = rows[i];#}
-                {#            let cells = row.children;#}
-                {#            let l = row.children.length;#}
-                {#            for(let j = 2; j < l; j++) {#}
-                {#                row.deleteCell(row.children.length-1);#}
-                {#            }#}
-                {#        }#}
 
-
-                // If we have a rowspan we need to delete the td's for as many
-                // rows as the span is
-                if(rowspan > 1) {
-                    // Get the current row index
-                    let rowIndex = targetCell.parentElement.rowIndex;
-                    // and the column index
-                    let cellIndex = targetCell.cellIndex;
-                    // For each row below the one we inserted the div in
-                    // we can now delete the td's
-                    for(let i = 1; i < rowspan; i++) {
-                        //Row below: Uncaught TypeError: Cannot read properties of undefined (reading '12') at HTMLDivElement.moveIt
-                        let row = toTable.rows[rowIndex + i];
-                        row.deleteCell(cellIndex);
+        //Look for available time slots from priority column 1 through 5
+        let lastEmptyTimeSlotRow = null;
+        let lastEmptyTimeSlotColumn = null;
+        let available = false;
+        for (let i = 1; i < emptyTimeSlots[i].length; i++) {
+            if (emptyTimeSlots[parentRowId][i] === "true") {
+                lastEmptyTimeSlotRow = parentRowId++;
+                for (let j = 1; j < rowspan; j++) {
+                    if (emptyTimeSlots[lastEmptyTimeSlotRow][i] === "true") {
+                        lastEmptyTimeSlotRow++;
+                        lastEmptyTimeSlotColumn = i;
+                        if (j === rowspan - 1) {
+                            available = true;
+                        }
                     }
-                } break;
+                    else {
+                        lastEmptyTimeSlotRow = parentRowId;
+                    }
+                }
+            }
+            if (available === true) {
+                break;
+            }
+        }
+
+        for (let i = rowspan; i > 0; i--) {
+            emptyTimeSlots[lastEmptyTimeSlotRow][lastEmptyTimeSlotColumn] = "false";
+            lastEmptyTimeSlotRow--;
+        }
+        console.log(emptyTimeSlots)
+
+        //Add div to the first available priority column, checked in emptyTimeSlots
+        toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
+        toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
+
+        // If we have a rowspan > 1 and are in priority column 2 or higher we need to
+        // delete the td's for as many rows as the span is
+        if(lastEmptyTimeSlotColumn >= 2 && rowspan > 1) {
+            // Get the current row index
+            let rowIndex = targetCell.parentElement.rowIndex;
+            // and the column index
+            let cellIndex = targetCell.cellIndex;
+            // For each row below the one we inserted the div in
+            // we can now delete the td's
+            for(let i = 1; i < rowspan; i++) {
+                //Row below: Uncaught TypeError: Cannot read properties of undefined (reading '12') at HTMLDivElement.moveIt
+                let row = toTable.rows[rowIndex + i];
+                row.deleteCell(cellIndex);
             }
         }
     }
