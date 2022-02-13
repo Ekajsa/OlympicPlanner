@@ -1115,7 +1115,7 @@
     "local_start_time": "12:30",
     "local_end_time": "13:30",
     "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"]
+      "Netherlands", "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"]
   },
   "event_98":
   {
@@ -1127,7 +1127,7 @@
     "local_start_time": "13:33",
     "local_end_time": "14:35",
     "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"]
+      "Netherlands", "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"]
   },
   "event_99":
   {
@@ -3116,7 +3116,7 @@
   "event_264":
   {
     "discipline": "Short track speed skating",
-    "description": "1000m",
+    "description": "500m",
     "competition_type": "heats",
     "sex": "men",
     "date": "2022-02-11",
@@ -3158,8 +3158,8 @@
     "date": "2022-02-11",
     "local_start_time": "20:37",
     "local_end_time": "20:42",
-    "participating_countries": ["Belgium", "Hungary", "Japan", "Netherlands", "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Hungary", "Netherlands", "Korea", "USA"],
+    "participants_decided": "True"
   },
   "event_268":
   {
@@ -3170,8 +3170,8 @@
     "date": "2022-02-11",
     "local_start_time": "20:43",
     "local_end_time": "20:49",
-    "participating_countries": ["Belgium", "Hungary", "Japan", "Netherlands", "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Belgium", "Italy", "Netherlands", "Korea", "USA"],
+    "participants_decided": "True"
   },
   "event_269":
   {
@@ -3218,9 +3218,9 @@
     "date": "2022-02-11",
     "local_start_time": "21:55",
     "local_end_time": "22:40",
-    "participating_countries": ["American Samoa", "Australia", "Austria", "Canada", "China", "Germany", "Great Britain", "Italy",
-      "Latvia", "Korea", "ROC", "Spain", "Switzerland", "Ukraine", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["American Samoa", "Austria", "Canada", "China", "Germany", "Great Britain", "Italy",
+      "Latvia", "Korea", "ROC", "Ukraine"],
+    "participants_decided": "True"
   },
   "event_274":
   {
@@ -3293,7 +3293,7 @@
     "local_end_time": "18:15",
     "participating_countries": ["Austria", "Belarus", "Belgium", "Bulgaria", "Canada", "China", "Czech Republic",
       "Estonia", "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Lithuania", "New Zealand", "Norway",
-    "Moldova", "Korea", "Poland", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"]
+      "Moldova", "Korea", "Poland", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"]
   },
   "event_280":
   {
@@ -3305,7 +3305,7 @@
     "local_start_time": "15:30",
     "local_end_time": "16:45",
     "participating_countries": ["Canada", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany", "Italy",
-      "Japan", "Kazakhstan", "Latvia", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"]
+      "Japan", "Kazakhstan", "Latvia", "Norway", "Poland", "ROC", "Sweden", "Switzerland", "Ukraine", "USA"]
   },
   "event_281":
   {
@@ -3530,7 +3530,8 @@
     "local_start_time": "21:55",
     "local_end_time": "22:40",
     "participating_countries": ["Australia", "Austria", "Belgium", "Canada", "China", "Czech Republic", "Germany",
-      "Great Britain", "Italy", "Latvia", "Netherlands", "Puerto Rico", "Korea", "ROC", "USA", "Virgin Islands"]
+      "Great Britain", "Italy", "Latvia", "ROC", "USA"],
+    "participants_decided": "True"
   },
   "event_301":
   {
@@ -3541,10 +3542,9 @@
     "date": "2022-02-12",
     "local_start_time": "19:00",
     "local_end_time": "19:55",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Czech Republic", "Estonia", "Finland",
-      "Germany", "Italy", "Japan", "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland",
-      "Turkey", "Ukraine","USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Bulgaria", "Canada", "Czech Republic", "Estonia", "Finland", "Germany",
+      "Italy", "Japan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland", "Turkey", "Ukraine","USA"],
+    "participants_decided": "True"
   },
   "event_302":
   {
@@ -3555,15 +3555,14 @@
     "date": "2022-02-12",
     "local_start_time": "20:00",
     "local_end_time": "20:33",
-    "participating_countries": ["Austria", "Bulgaria", "Canada", "China", "Czech Republic", "Estonia", "Finland",
-      "Germany", "Italy", "Japan", "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland",
-      "Turkey", "Ukraine","USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Estonia", "Finland", "Germany", "Japan", "Norway", "Poland", "ROC",
+      "Slovenia", "Switzerland"],
+    "participants_decided": "True"
   },
   "event_303":
   {
     "discipline": "Snowboard",
-    "description": "Cross",
+    "description": "Mixed team cross",
     "competition_type": "quarterfinals",
     "sex": ["women", "men"],
     "date": "2022-02-12",
@@ -3575,40 +3574,37 @@
   "event_304":
   {
     "discipline": "Snowboard",
-    "description": "Cross",
+    "description": "Mixed team cross",
     "competition_type": "semifinals",
     "sex": ["women", "men"],
     "date": "2022-02-12",
     "local_start_time": "10:28",
     "local_end_time": "10:43",
-    "participating_countries": ["Australia", "Austria", "Canada", "Czech Republic", "France", "Germany",
-      "Great Britain", "Italy", "Japan", "ROC", "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "Germany", "Great Britain", "Italy", "ROC", "Switzerland", "USA"],
+    "participants_decided": "True"
   },
   "event_305":
   {
     "discipline": "Snowboard",
-    "description": "Cross",
+    "description": "Mixed team cross",
     "competition_type": "small final",
     "sex": ["women", "men"],
     "date": "2022-02-12",
     "local_start_time": "10:50",
     "local_end_time": "10:55",
-    "participating_countries": ["Australia", "Austria", "Canada", "Czech Republic", "France", "Germany",
-      "Great Britain", "Italy", "Japan", "ROC", "Switzerland", "USA"],
+    "participating_countries": ["Germany", "Great Britain", "ROC", "Switzerland"],
     "participants_decided": "False"
   },
   "event_306":
   {
     "discipline": "Snowboard",
-    "description": "Cross",
+    "description": "Mixed team cross",
     "competition_type": ["big final", "gold medal event"],
     "sex": ["women", "men"],
     "date": "2022-02-12",
     "local_start_time": "10:55",
     "local_end_time": "11:15",
-    "participating_countries": ["Australia", "Austria", "Canada", "Czech Republic", "France", "Germany",
-      "Great Britain", "Italy", "Japan", "ROC", "Switzerland", "USA"],
+    "participating_countries": ["Canada", "Italy", "USA"],
     "participants_decided": "False"
   },
   "event_307":
@@ -3620,9 +3616,7 @@
     "date": "2022-02-12",
     "local_start_time": "16:00",
     "local_end_time": "16:23",
-    "participating_countries": ["Belarus", "Belgium", "Canada", "China", "Colombia", "Czech Republic",
-      "Germany", "Italy", "Japan", "Kazakhstan", "Netherlands", "Norway", "Poland", "Korea", "ROC", "Switzerland",
-      "USA"]
+    "participating_countries": ["Belarus", "Canada", "China", "Japan", "Netherlands", "Norway", "Poland", "ROC"]
   },
   "event_308":
   {
@@ -3646,14 +3640,12 @@
     "local_start_time": "10:15",
     "local_end_time": "12:15",
     "participating_countries": ["Albania", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Belgium",
-      "Bolivia", "Bosnia Hercegovina", "Brazil", "Bulgaria", "Canada", "Chile", "China", "Chinese Taipei", "Colombia",
-      "Croatia", "Cyprus", "Czech Republic", "Denmark", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany",
-      "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Ireland", "Iran",
-      "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein",
-      "Lithuania", "Luxembourg", "Madagaskar", "Malaysia", "Mexico", "Monaco", "Montenegro", "Morocco", "Netherlands",
-      "North Macedonia", "Norway", "Pakistan", "Philippines", "Poland", "Portugal", "Puerto Rico", "Korea", "ROC",
-      "Romania", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland",
-      "Thailand", "Timor-Leste", "Turkey", "Ukraine", "USA", "Uzbekistan"]
+      "Bosnia Hercegovina", "Brazil", "Bulgaria", "Canada", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic",
+      "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Greece", "Haiti", "Hong Kong",
+      "Hungary", "India", "Ireland", "Israel", "Italy", "Jamaica", "Kazakhstan", "Kosovo", "Kyrgyzstan", "Latvia",
+      "Lebanon", "Lithuania", "Luxembourg", "Madagaskar", "Mexico", "Montenegro", "Morocco", "Netherlands", "Norway",
+      "Philippines", "Poland", "Portugal", "Puerto Rico", "Korea", "ROC", "Romania", "San Marino", "Slovakia",
+      "Slovenia", "Sweden", "Switzerland", "Thailand", "Timor-Leste", "Turkey", "USA", "Uzbekistan"]
   },
   "event_310":
   {
@@ -3664,16 +3656,12 @@
     "date": "2022-02-13",
     "local_start_time": "13:45",
     "local_end_time": "15:50",
-    "participating_countries": ["Albania", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Belgium",
-      "Bolivia", "Bosnia Hercegovina", "Brazil", "Bulgaria", "Canada", "Chile", "China", "Chinese Taipei", "Colombia",
-      "Croatia", "Cyprus", "Czech Republic", "Denmark", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany",
-      "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Ireland", "Iran",
-      "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein",
-      "Lithuania", "Luxembourg", "Madagaskar", "Malaysia", "Mexico", "Monaco", "Montenegro", "Morocco", "Netherlands",
-      "North Macedonia", "Norway", "Pakistan", "Philippines", "Poland", "Portugal", "Puerto Rico", "Korea", "ROC",
-      "Romania", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland",
-      "Thailand", "Timor-Leste", "Turkey", "Ukraine", "USA", "Uzbekistan"],
-    "participants_decided": "False"
+    "participating_countries": ["Andorra", "Australia", "Austria", "Bosnia Hercegovina", "Bulgaria", "Canada", "China",
+      "Colombia", "Croatia", "Cyprus", "Czech Republic", "Eritrea", "France", "Germany", "Hungary", "India", "Ireland",
+      "Israel", "Italy", "Jamaica", "Kosovo", "Kyrgyzstan", "Latvia", "Lithuania", "Luxembourg", "Mexico", "Montenegro",
+      "Netherlands", "Norway", "Portugal", "Puerto Rico", "Romania", "San Marino", "Slovakia", "Slovenia", "Sweden",
+      "Switzerland", "Thailand", "Timor-Leste", "Turkey", "USA", "Uzbekistan"],
+    "participants_decided": "True"
   },
   "event_311":
   {
@@ -3685,10 +3673,9 @@
     "local_start_time": "17:00",
     "local_end_time": "17:40",
     "participating_countries": ["Austria", "Belarus", "Belgium", "Bulgaria", "Canada", "China", "Czech Republic",
-      "Denmark","Estonia", "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Latvia", "Lithuania",
-      "Norway", "Moldova", "Korea", "Poland", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland",
-      "Ukraine", "USA"],
-    "participants_decided": "False"
+      "Estonia", "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Latvia", "Norway", "Moldova", "Korea",
+      "Poland", "ROC", "Slovakia", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"],
+    "participants_decided": "True"
   },
   "event_312":
   {
@@ -3699,10 +3686,10 @@
     "date": "2022-02-13",
     "local_start_time": "18:45",
     "local_end_time": "19:25",
-    "participating_countries": ["Austria", "Belarus", "Belgium", "Bulgaria", "Canada", "China", "Czech Republic",
-      "Estonia", "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Lithuania", "New Zealand", "Norway",
-    "Moldova", "Korea", "Poland", "ROC", "Romania", "Slovakia", "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Belarus", "Bulgaria", "Canada", "China", "Czech Republic", "Estonia",
+      "Finland", "France", "Germany", "Italy", "Japan", "Kazakhstan", "Lithuania", "Norway", "Poland", "ROC",
+      "Slovenia", "Sweden", "Switzerland", "Ukraine", "USA"],
+    "participants_decided": "True"
   },
   "event_313":
   {
@@ -3737,8 +3724,8 @@
     "date": "2022-02-13",
     "local_start_time": "15:00",
     "local_end_time": "16:40",
-    "participating_countries": ["Australia", "Canada", "China", "Czech Republic", "Estonia", "Finland", "France",
-      "Germany", "Italy", "Japan", "Norway", "Poland", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"]
+    "participating_countries": ["Canada", "China", "Czech Republic", "Estonia", "Finland", "France", "Germany", "Italy",
+      "Japan", "Norway", "ROC", "Slovenia", "Sweden", "Switzerland", "USA"]
   },
   "event_316":
   {
@@ -3867,7 +3854,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "qualification run 1",
     "sex": "women",
-    "date": "2022-02-13",
+    "date": "2022-02-14",
     "local_start_time": "10:00",
     "local_end_time": "11:00",
     "participating_countries": ["Australia", "Austria", "Canada", "Chile", "China", "Estonia", "Finland", "France",
@@ -3879,7 +3866,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "qualification run 2",
     "sex": "women",
-    "date": "2022-02-13",
+    "date": "2022-02-14",
     "local_start_time": "11:01",
     "local_end_time": "12:00",
     "participating_countries": ["Australia", "Austria", "Canada", "Chile", "China", "Estonia", "Finland", "France",
@@ -3888,24 +3875,24 @@
   "event_329":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": "qualification 1",
     "sex": "women",
-    "date": "2022-02-13",
-    "local_start_time": "19:00",
-    "local_end_time": "19:30",
+    "date": "2022-02-14",
+    "local_start_time": "15:00",
+    "local_end_time": "15:30",
     "participating_countries": ["Australia", "Belarus", "Canada", "China", "Germany", "Kazakhstan", "ROC", "Switzerland"
     , "Ukraine", "USA"]
   },
   "event_330":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": "qualification 2",
     "sex": "women",
     "date": "2022-02-13",
-    "local_start_time": "19:45",
-    "local_end_time": "20:15",
+    "local_start_time": "15:45",
+    "local_end_time": "16:15",
     "participating_countries": ["Australia", "Belarus", "Canada", "China", "Germany", "Kazakhstan", "ROC", "Switzerland"
     , "Ukraine", "USA"]
   },
@@ -3962,9 +3949,9 @@
     "date": "2022-02-13",
     "local_start_time": "19:00",
     "local_end_time": "19:25",
-    "participating_countries": ["Australia", "Belgium", "Canada", "China", "France", "Great Britain", "Hong Kong",
-      "Hungary", "Israel", "Italy", "Japan", "Kazakhstan", "Latvia", "Netherlands", "Poland", "Korea", "ROC", "Turkey",
-      "Ukraine", "USA"]
+    "participating_countries": ["Belgium", "Canada", "China", "France", "Hungary", "Italy", "Israel", "Kazakhstan",
+      "Korea", "Latvia", "ROC", "USA"],
+    "participants_decided": "True"
   },
   "event_336":
   {
@@ -3975,10 +3962,8 @@
     "date": "2022-02-13",
     "local_start_time": "19:27",
     "local_end_time": "19:33",
-    "participating_countries": ["Australia", "Belgium", "Canada", "China", "France", "Great Britain", "Hong Kong",
-      "Hungary", "Israel", "Italy", "Japan", "Kazakhstan", "Latvia", "Netherlands", "Poland", "Korea", "ROC", "Turkey",
-      "Ukraine", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "China", "Hungary", "Italy", "Kazakhstan", "Korea", "Latvia", "ROC"],
+    "participants_decided": "True"
   },
   "event_337":
   {
@@ -3989,8 +3974,8 @@
     "date": "2022-02-13",
     "local_start_time": "19:35",
     "local_end_time": "19:43",
-    "participating_countries": ["Canada", "China", "Italy", "Netherlands", "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Italy", "Poland", "ROC", "USA"],
+    "participants_decided": "True"
   },
   "event_338":
   {
@@ -4001,8 +3986,8 @@
     "date": "2022-02-13",
     "local_start_time": "19:44",
     "local_end_time": "19:55",
-    "participating_countries": ["Canada", "China", "Italy", "Netherlands", "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "China", "Netherlands", "Korea"],
+    "participants_decided": "True"
   },
   "event_339":
   {
@@ -4013,10 +3998,8 @@
     "date": "2022-02-13",
     "local_start_time": "20:09",
     "local_end_time": "20:13",
-    "participating_countries": ["Australia", "Belgium", "Canada", "China", "France", "Great Britain", "Hong Kong",
-      "Hungary", "Israel", "Italy", "Japan", "Kazakhstan", "Latvia", "Netherlands", "Poland", "Korea", "ROC", "Turkey",
-      "Ukraine", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["China", "Kazakhstan", "Latvia", "ROC"],
+    "participants_decided": "True"
   },
   "event_340":
   {
@@ -4027,10 +4010,8 @@
     "date": "2022-02-13",
     "local_start_time": "20:14",
     "local_end_time": "20:19",
-    "participating_countries": ["Australia", "Belgium", "Canada", "China", "France", "Great Britain", "Hong Kong",
-      "Hungary", "Israel", "Italy", "Japan", "Kazakhstan", "Latvia", "Netherlands", "Poland", "Korea", "ROC", "Turkey",
-      "Ukraine", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "Hungary", "Italy", "Kazakhstan", "ROC"],
+    "participants_decided": "True"
   },
   "event_341":
   {
@@ -4078,7 +4059,8 @@
     "local_start_time": "11:00",
     "local_end_time": "11:50",
     "participating_countries": ["Australia", "Austria", "Canada", "China", "France", "Germany", "Italy", "Jamaica",
-      "Netherlands", "Korea", "ROC", "Romania", "Slovakia", "Switzerland", "Ukraine", "USA"]
+      "Netherlands", "Korea", "ROC", "Romania", "Slovakia", "Switzerland", "Ukraine", "USA"],
+    "participants_decided": "False"
   },
   "event_345":
   {
@@ -4237,7 +4219,8 @@
     "local_start_time": "09:15",
     "local_end_time": "12:36",
     "participating_countries": ["Armenia", "Canada", "China", "Czech Republic", "Finland", "France", "Georgia",
-      "Germany", "Great Britain", "Italy", "Japan", "Lithuania", "Poland", "ROC", "Spain", "Ukraine", "USA"]
+      "Great Britain", "Italy", "Poland", "ROC", "Spain", "Ukraine", "USA"],
+    "participants_decided": "True"
   },
   "event_359":
   {
@@ -4245,7 +4228,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "final run 1",
     "sex": "women",
-    "date": "2022-02-14",
+    "date": "2022-02-15",
     "local_start_time": "09:30",
     "local_end_time": "09:50",
     "participating_countries": ["Australia", "Austria", "Canada", "Chile", "China", "Estonia", "Finland", "France",
@@ -4258,7 +4241,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "final run 2",
     "sex": "women",
-    "date": "2022-02-14",
+    "date": "2022-02-15",
     "local_start_time": "09:57",
     "local_end_time": "10:20",
     "participating_countries": ["Australia", "Austria", "Canada", "Chile", "China", "Estonia", "Finland", "France",
@@ -4271,7 +4254,7 @@
     "description": "Freeski slopestyle",
     "competition_type": ["final run 3", "gold medal event"],
     "sex": "women",
-    "date": "2022-02-14",
+    "date": "2022-02-15",
     "local_start_time": "10:24",
     "local_end_time": "10:49",
     "participating_countries": ["Australia", "Austria", "Canada", "Chile", "China", "Estonia", "Finland", "France",
@@ -4284,7 +4267,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "qualification run 1",
     "sex": "men",
-    "date": "2022-02-14",
+    "date": "2022-02-15",
     "local_start_time": "12:30",
     "local_end_time": "13:29",
     "participating_countries": ["Austria", "Canada", "China", "Finland", "France", "Great Britain", "Italy",
@@ -4296,7 +4279,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "qualification run 2",
     "sex": "men",
-    "date": "2022-02-14",
+    "date": "2022-02-15",
     "local_start_time": "13:33",
     "local_end_time": "14:32",
     "participating_countries": ["Austria", "Canada", "China", "Finland", "France", "Great Britain", "Italy",
@@ -4305,7 +4288,7 @@
   "event_364":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": "final 1",
     "sex": "women",
     "date": "2022-02-14",
@@ -4318,7 +4301,7 @@
   "event_365":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": ["final 2", "gold medal event"],
     "sex": "women",
     "date": "2022-02-14",
@@ -4337,9 +4320,8 @@
     "date": "2022-02-14",
     "local_start_time": "12:10",
     "local_end_time": "14:25",
-    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
-      "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Canada", "Switzerland"],
+    "participants_decided": "True"
   },
   "event_367":
   {
@@ -4350,9 +4332,8 @@
     "date": "2022-02-14",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "participating_countries": ["Canada", "China", "Czech Republic", "Denmark", "Finland", "Japan", "ROC", "Sweden",
-      "Switzerland", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["USA", "Finland"],
+    "participants_decided": "True"
   },
   "event_368":
   {
@@ -4363,8 +4344,8 @@
     "date": "2022-02-14",
     "local_start_time": "19:00",
     "local_end_time": "20:00",
-    "participating_countries": ["Austria", "Canada", "Czech Republic", "Estonia", "Finland", "Germany", "Japan",
-      "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland", "Ukraine","USA"]
+    "participating_countries": ["Austria", "China", "Czech Republic", "Germany", "Japan", "Norway", "Poland", "ROC",
+      "Slovenia", "Switzerland", "USA"]
   },
   "event_369":
   {
@@ -4375,8 +4356,9 @@
     "date": "2022-02-14",
     "local_start_time": "20:06",
     "local_end_time": "20:42",
-    "participating_countries": ["Austria", "Canada", "Czech Republic", "Estonia", "Finland", "Germany", "Japan",
-      "Kazakhstan", "Norway", "Poland", "ROC", "Romania", "Slovenia", "Switzerland", "Ukraine","USA"]
+    "participating_countries": ["Austria", "China", "Czech Republic", "Germany", "Japan", "Norway", "Poland", "ROC",
+      "Slovenia", "Switzerland", "USA"],
+    "participants_decided": "False"
   },
   "event_370":
   {
@@ -4388,8 +4370,8 @@
     "local_start_time": "09:30",
     "local_end_time": "10:15",
     "participating_countries": ["Australia", "Austria", "Belgium", "Canada", "China", "Croatia", "Czech Republic",
-      "Finland", "France", "Germany", "Great Britain", "Japan", "Netherlands", "New Zealand", "Norway", "Slovakia",
-      "Slovenia", "Switzerland", "USA"]
+      "Finland", "France", "Germany", "Great Britain", "Hungary", "Japan", "Netherlands", "New Zealand", "Norway",
+      "Slovakia", "Slovenia", "Switzerland", "USA"]
   },
   "event_371":
   {
@@ -4401,8 +4383,8 @@
     "local_start_time": "10:15",
     "local_end_time": "11:00",
     "participating_countries": ["Australia", "Austria", "Belgium", "Canada", "China", "Croatia", "Czech Republic",
-      "Finland", "France", "Germany", "Great Britain", "Japan", "Netherlands", "New Zealand", "Norway", "Slovakia",
-      "Slovenia", "Switzerland", "USA"]
+      "Finland", "France", "Germany", "Great Britain", "Hungary", "Japan", "Netherlands", "New Zealand", "Norway",
+      "Slovakia", "Slovenia", "Switzerland", "USA"]
   },
   "event_372":
   {
@@ -4414,8 +4396,8 @@
     "local_start_time": "11:00",
     "local_end_time": "11:45",
     "participating_countries": ["Australia", "Austria", "Belgium", "Canada", "China", "Croatia", "Czech Republic",
-      "Finland", "France", "Germany", "Great Britain", "Japan", "Netherlands", "New Zealand", "Norway", "Slovakia",
-      "Slovenia", "Switzerland", "USA"]
+      "Finland", "France", "Germany", "Great Britain", "Hungary", "Japan", "Netherlands", "New Zealand", "Norway",
+      "Slovakia", "Slovenia", "Switzerland", "USA"]
   },
   "event_373":
   {
@@ -4426,8 +4408,8 @@
     "date": "2022-02-14",
     "local_start_time": "13:30",
     "local_end_time": "14:15",
-    "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"]
+    "participating_countries": ["Australia", "Canada", "China", "Finland", "Germany", "Italy", "Japan", "Netherlands",
+      "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"]
   },
   "event_374":
   {
@@ -4438,8 +4420,8 @@
     "date": "2022-02-14",
     "local_start_time": "14:15",
     "local_end_time": "15:00",
-    "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"]
+    "participating_countries": ["Australia", "Canada", "China", "Finland", "Germany", "Italy", "Japan", "Netherlands",
+      "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"]
   },
   "event_375":
   {
@@ -4450,8 +4432,8 @@
     "date": "2022-02-14",
     "local_start_time": "15:00",
     "local_end_time": "15:45",
-    "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"]
+    "participating_countries": ["Australia", "Canada", "China", "Finland", "Germany", "Italy", "Japan", "Netherlands",
+      "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"]
   },
   "event_376":
   {
@@ -4660,7 +4642,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "final run 1",
     "sex": "men",
-    "date": "2022-02-15",
+    "date": "2022-02-16",
     "local_start_time": "09:30",
     "local_end_time": "09:55",
     "participating_countries": ["Austria", "Canada", "China", "Finland", "France", "Great Britain", "Italy",
@@ -4673,7 +4655,7 @@
     "description": "Freeski slopestyle",
     "competition_type": "final run 2",
     "sex": "men",
-    "date": "2022-02-15",
+    "date": "2022-02-16",
     "local_start_time": "09:58",
     "local_end_time": "10:20",
     "participating_countries": ["Austria", "Canada", "China", "Finland", "France", "Great Britain", "Italy",
@@ -4686,7 +4668,7 @@
     "description": "Freeski slopestyle",
     "competition_type": ["final run 3", "gold medal event"],
     "sex": "men",
-    "date": "2022-02-15",
+    "date": "2022-02-16",
     "local_start_time": "10:26",
     "local_end_time": "10:50",
     "participating_countries": ["Austria", "Canada", "China", "Finland", "France", "Great Britain", "Italy",
@@ -4696,7 +4678,7 @@
   "event_396":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": "qualification 1",
     "sex": "men",
     "date": "2022-02-15",
@@ -4708,7 +4690,7 @@
   "event_397":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": "qualification 2",
     "sex": "men",
     "date": "2022-02-15",
@@ -4845,7 +4827,7 @@
     "local_start_time": "13:00",
     "local_end_time": "13:20",
     "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"],
+      "Netherlands", "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"],
     "participants_decided": "False"
   },
   "event_408":
@@ -4858,7 +4840,7 @@
     "local_start_time": "13:22",
     "local_end_time": "10:42",
     "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"],
+      "Netherlands", "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"],
     "participants_decided": "False"
   },
   "event_409":
@@ -4871,7 +4853,7 @@
     "local_start_time": "13:45",
     "local_end_time": "14:05",
     "participating_countries": ["Australia", "Austria", "Canada", "China", "Finland", "Germany", "Italy", "Japan",
-      "Netherlands", "New Zealand", "Norway", "Roc", "Sweden", "Switzerland", "USA"],
+      "Netherlands", "New Zealand", "Norway", "ROC", "Sweden", "Switzerland", "USA"],
     "participants_decided": "False"
   },
   "event_410":
@@ -5230,7 +5212,7 @@
   "event_438":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": "final 1",
     "sex": "men",
     "date": "2022-02-16",
@@ -5243,7 +5225,7 @@
   "event_439":
   {
     "discipline": "Freestyle skiing",
-    "description": "aerials",
+    "description": "Aerials",
     "competition_type": ["final 2", "gold medal event"],
     "sex": "women",
     "date": "2022-02-16",
