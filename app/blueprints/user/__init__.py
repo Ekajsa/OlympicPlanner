@@ -45,8 +45,7 @@ def profile_post():
 @bp_user.get("/create_schedule/step1")
 # @login_required
 def schedules_get():
-    schedules = ["My first schedule", "My second schedule"]
-    return render_template("create_schedule_step_1.html", schedules=schedules)
+    return render_template("create_schedule_step_1.html")
 
 
 @bp_user.get("/create_schedule/step2")

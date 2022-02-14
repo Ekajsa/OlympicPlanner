@@ -54,8 +54,36 @@ table, th, td {
   border: 1px solid black;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+    /*font-size: 14px;*/
+    table-layout: fixed;
+    width: 100%;
+    height: 100%
+}
+
+td {
+    width: 25px;
+    /*height: 20px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+tr {
+    height: 20px;
+}
+
+.event {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+}
+
 th
 {
+  height: 20px;
   vertical-align: middle;
   text-align: center;
 }
@@ -68,90 +96,3 @@ th span
   white-space: break-spaces;
   height: 120px;
 }
-
-.curling-is-fun {
-    color: red;
-    font-weight: bold;
-}
-
-td.alpine-skiing-event {
-    background-color: #ED9C22;
-
-}
-
-td.biathlon-event {
-    background-color: lightcoral;
-
-}
-
-td.bobsleigh-event {
-    background-color: lightseagreen;
-
-}
-
-td.cross-country-skiing-event {
-    background-color: #EE82EE;
-
-}
-
-td.curling-event {
-    background-color: #00FFFF;
-
-}
-
-td.figure-skating-event {
-    background-color: lightsalmon;
-
-}
-
-td.freestyle-skiing-event {
-    background-color: #00FF00;
-
-}
-
-td.ice-hockey-event {
-    background-color: #ADD8E6;
-
-}
-
-td.luge-event {
-    background-color: #28C041;
-
-}
-td.nordic-combined-event {
-    background-color: #40E0D0;
-
-}
-td.short-track-speed-skating-event {
-    background-color: #B884E7;
-
-}
-td.skeleton-event {
-    background-color: #808000;
-
-}
-td.ski-jumping-event {
-    background-color: #FF8C00;
-
-}
-td.snowboard-event {
-    background-color: #FFC0CB;
-
-}
-
-td.speed-skating-event {
-    background-color: #FFFF00FF;
-}
-
-td.ceremony-event {
-    background-color: #A9A9A9;
-
-}
-
-/*th {*/
-/*    background-color: #2E87DE;*/
-/*}*/
-
-/*td {*/
-/*    background-color: red;*/
-/*}*/

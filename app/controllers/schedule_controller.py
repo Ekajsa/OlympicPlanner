@@ -3,6 +3,7 @@ import pytz
 from tzlocal import get_localzone
 
 from app.controllers.event_controller import get_all_events_by_date
+from app.controllers.user_controller import get_chosen_countries_and_disciplines
 
 
 def convert_time_slot_to_local(beijing_time_slots):
@@ -107,7 +108,8 @@ def convert_beijing_time_to_local(event):
 
 # noinspection PyProtectedMember
 def event_html(event):
-    event_html_string = f"<div class='event' id='{event._id}'>"
+    discipline_class = event.discipline.lower().replace(" ", "-") + "-event"
+    event_html_string = f"<div class='event {discipline_class}' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
 
@@ -171,6 +173,25 @@ def schedule_html(schedule, date):
     return table_html
 
 
+# Version with outer join
+def filter_events(date):
+    events = get_all_events_by_date(date)
+    countries, disciplines = get_chosen_countries_and_disciplines()
+    filtered_events = []
+    if len(countries) == 0 | len(disciplines) == 0:
+        filtered_events = events
+    else:
+        for event in events:
+            event_countries = [post.lower() for post in event.participating_countries]
+            if event.discipline.lower() in disciplines:
+                filtered_events.append(event)
+            else:
+                for country in event_countries:
+                    if country in countries:
+                        filtered_events.append(event)
+    return filtered_events
+
+
 def remove_columns(schedule):
     new_schedule = []
     empty_columns = {i: True for i in range(17)}
@@ -191,7 +212,9 @@ def remove_columns(schedule):
 
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
-    events = get_all_events_by_date(date)
+    events = filter_events(date)
+    # events = get_all_events_by_date(date)
+    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
