@@ -84,12 +84,13 @@
         div.addEventListener("click", moveIt);
     });
 
+    //Create boolean array of arrays-table for keeping track of which cells that are available (=true)
     let emptyTimeSlots = [["false", "false", "false", "false", "false", "false"]];
     for (let i = 1; i < 63; i++) {
         let defaultRow = ["false", "true", "true", "true", "true", "true"];
         emptyTimeSlots.push(defaultRow);
     }
-    console.log(emptyTimeSlots)
+
     //Right-click menu!
     //document.getElementById("clicker").addEventListener('contextmenu', function(ev) {
             //ev.preventDefault();
@@ -97,7 +98,7 @@
             //return false;
         //}, false);
 
-
+    //Function for moving the div from base schedule to personal schedule
     function moveIt(e) {
         // Get the div that we clicked
         let targetDiv = e.path[1];
@@ -150,28 +151,78 @@
         //Add div to the first available priority column, checked in emptyTimeSlots
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
+        targetDiv.classList.remove("clone-me");
+        targetDiv.classList.add("click-me")
+    }
 
-        // If we have a rowspan > 1 and are in priority column 2 or higher we need to
-        // delete the td's for as many rows as the span is
-        console.log('lastEmptyTimeSlotColumn:')
-        console.log(lastEmptyTimeSlotColumn)
-        console.log('rowspan:')
-        console.log(rowspan)
-        if(lastEmptyTimeSlotColumn >= 2 && rowspan > 1) {
-            console.log('inside if')
-            // Get the current row index
-            let rowIndex = targetCell.parentElement.rowIndex;
-            // and the column index
-            let cellIndex = targetCell.cellIndex;
-            // For each row below the one we inserted the div in
-            // we can now delete the td's
-            for(let i = 1; i < rowspan; i++) {
-                //Row below: Uncaught TypeError: Cannot read properties of undefined (reading '12') at HTMLDivElement.moveIt
-                let row = toTable.rows[rowIndex + i];
-                row.deleteCell(cellIndex);
+    // Add event listeners for all
+    let events = document.getElementsByClassName("click-me");
+
+    // Attach the event listeners for the click event on all divs
+    for (let i = 0; i < events.length; i++) {
+        events[i].addEventListener('click', clickEvent, false);
+    }
+
+    function clickEvent(e) {
+        // Get the table
+        let currentTableId = e.path[5].id;
+
+        // Calculate the start and end row for the clicked event
+        let clickedStartRow = e.path[2].rowIndex;
+        let clickedEndRow = e.path[1].rowSpan + clickedStartRow - 1;
+
+        // Generate a set with the rows in the clicked event
+        let sequenceClicked = [];
+        for (let i = clickedStartRow; i <= clickedEndRow; i++) {
+            sequenceClicked.push(i);
+        }
+        let clickedColumn = new Set(sequenceClicked);
+
+        // Get the rows for the checked column and store it in a set
+        for (let col = 1; col < 6; col++) {
+            let sequenceChecked = [];
+            for (let row = 0; row <= clickedEndRow; row++) {
+
+                if(!currentTableId[row][col]) {
+                    // If we need to check if the current event is the clicked
+                    // But do we want that???
+                    //if(table.rows[row].cells[col]=== e.path[1]) {
+                         //console.log(row, col, "Me");
+                    // }
+                    sequenceChecked.push(row);
+                }
+            }
+
+            let checkedColumn = new Set(sequenceChecked);
+
+            // If we have an intersection we can't place the selected event in
+            // this column
+            if(intersection(clickedColumn, checkedColumn).size > 0) {
+                //console.log("Can't place in column ", col);
+            }
+            else {
+                // But here we can. Yay!!!!
+                console.log("Can place in column ", col);
+                // Move it here
+                break;
             }
         }
+    }
 
+    // Function to check set intersections (the same td in two rowspan)
+    function intersection(setA, setB) {
+        let _intersection = new Set()
+        for (let elem of setB) {
+            if (setA.has(elem)) {
+                _intersection.add(elem)
+            }
+        }
+        return _intersection
+    }
+
+    // Function to check if a cell in the table is empty
+    function elementIsEmpty(el) {
+        return (/^(\s|&nbsp;)*$/.test(el.innerHTML));
     }
 </script>
 {% endblock %}
