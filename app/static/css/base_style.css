@@ -54,8 +54,36 @@ table, th, td {
   border: 1px solid black;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+    /*font-size: 14px;*/
+    table-layout: fixed;
+    width: 100%;
+    height: 100%
+}
+
+td {
+    width: 25px;
+    /*height: 20px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+tr {
+    height: 20px;
+}
+
+.event {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+}
+
 th
 {
+  height: 20px;
   vertical-align: middle;
   text-align: center;
 }
