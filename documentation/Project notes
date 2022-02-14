@@ -55,27 +55,37 @@ Sprint planning
 ************************************************************************************************************************************************
 Daily 2022-02-14
 Johanna
-*   Vad har jag gjort sedan avstämningen igår?
-	
+*   Vad har jag gjort sedan förra avstämningen?
+    Fortsatt med 051, att få click and move att funka. Problem att när det är rowspan så blir kolumnen fel.
+    059 är klar.
+    
 *   Vad ska jag göra till nästa avstämning?
-	
+    Prio ett är att lösa problemet med rowspan 051. Har assignat sig på några issues i sprintbackloggen som är relaterade till "egen kod".
+    
 *   Behöver jag hjälp med något?
-	
+    Ja, av Joakim.
+    
 Britta
-*   Vad har jag gjort sedan avstämningen igår?
+*   Vad har jag gjort sedan förra avstämningen?
+    047 är klar, att få bort de kolumner som ej är aktuella för dagen.
+    025, uppdaterat ikapp datan.
 	
 *   Vad ska jag göra till nästa avstämning?
-	
+    Få jämn storlek på kolumner och rader 049.
+    I mån av tid påbörja ett filter på competition type 060.
+    
 *   Behöver jag hjälp med något?
-	
+    Kanske av Joakim.
 
 Kajsa
-*   Vad har jag gjort sedan avstämningen igår?
-	
+*   Vad har jag gjort sedan förra avstämningen?
+    058, filtrering på länder och discipliner är klar, men inte inmergad än.
+    
 *   Vad ska jag göra till nästa avstämning?
-	
+    Påbörja 053 och 51, att kunna plocka in sparat schema samt byta mellan sparade scheman på My Schedules.
+    
 *   Behöver jag hjälp med något?
-	
+    Nej
 
 Övrigt
 * 
