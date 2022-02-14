@@ -4,7 +4,9 @@
 {%  block content12 %}
     <div class="content-section" style="max-height: inherit">
         <div class="container-fluid">
-            <p> Some text maybe. </p>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Filter
+           </button>
         </div>
         <div class="container-fluid">
             <form class="col-md-12 d-flex justify-content-left my-4" action="{{ url_for("bp_user.change_date_post") }}" method="POST">
@@ -41,34 +43,63 @@
                 </div>
             </div>
         </div>
+    <div class="container">
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Filter on competition types</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                      <form id="competition_types" action="{{ url_for("bp_user.select_competition_types_post") }}" method="POST">
+                          <div class="modal-body">
+                            {% for competition_type in competition_types %}
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="d{{ loop.index }}" name="{{ competition_type }}" value="{{ competition_type }}">
+                                    <label for="d{{ loop.index }}">{{ competition_type }}</label>
+                                </div>
+                            {% endfor %}
+                          </div>
+                          <div class="modal-footer">
+                            <input name="hiddenList" type="hidden" id="isHidden" />
+                            <input type="submit" class="btn btn-primary" id="submit" value="Save changes"/>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
 
-
-
-
-
-{#{% block content4 %}#}
-{#    <div>#}
-{#        <table>#}
-{#        <tr>#}
-{#            <th></th>#}
-{#            {% for column in priority_columns %}#}
-{#                <th>{{ column }}</th>#}
-{#            {% endfor %}#}
-{#        </tr>#}
-{#        {% for row in personal_schedule %}#}
-{#            <tr>#}
-{#                <td>{{ time_slots[loop.index - 1] }} </td>#}
-{#                {% for cell in row %}#}
-{#                    <td>{{ cell }}</td>#}
-{#                {% endfor %}#}
-{#            </tr>#}
-{#        {% endfor %}#}
-{#    </table>#}
-{#    </div>#}
-{#{% endblock %}#}
-
-
 {% block scripts %}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    let chosenCompetitionTypes = [];
+    document.getElementById("competition_types").onsubmit = () => {
+        document.getElementById("isHidden").checked = JSON.stringify(chosenCompetitionTypes)
+    }
+    function isChecked() {
+        let competition_type = document.forms[0]; {# Why [0]? #}
+        let competition_type_array = [];
+        for (let i = 0; i < competition_type.length; i++) {
+            if (competition_type[i].checked) {
+                competition_type_array.push(competition_type[i].value);
+            }
+        }
+    }
+
+    //Select or deselect all
+    function toggleCheck(state, elem) {
+      jQuery(elem).closest("form").find("input:checkbox").prop('checked', state);
+    }
+    function sendIt() {
+        let chosenForm = document.getElementById("competition_types");
+        chosenForm.submit();
+    }
+</script>
 {% endblock %}

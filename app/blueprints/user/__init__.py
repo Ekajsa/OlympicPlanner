@@ -50,13 +50,15 @@ def schedules_get():
 
 @bp_user.get("/create_schedule/step2")
 def select_disciplines_get():
-    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
+    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating",
+                   "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
     return render_template("create_schedule_step_2.html", disciplines=disciplines)
 
 
 @bp_user.post("/create_schedule/step2")
 def select_disciplines_post():
-    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
+    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating",
+                   "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
     chosen = []
     for discipline in request.form:
         if discipline in disciplines:
@@ -99,14 +101,8 @@ def select_countries_post():
 def filtered_schedule_get():
     schedules, personal_schedules = create_all_schedules()
     shown_date = set_shown_date()
-    # personal_schedule = create_empty_personal_schedule()
-    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=shown_date)
-
-
-# @bp_user.post("/create_schedule/step4")
-# def filtered_schedule_post():
-#     chosen_countries = request.json
-#     return redirect(url_for("bp_user.filtered_schedule_get"))
+    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules,
+                           shown_date=shown_date)
 
 
 @bp_user.post("/create_schedule/step4")
@@ -115,7 +111,31 @@ def change_date_post():
     date_action = request.form.get("date_action")
     shown_date = request.form.get("shown_date")
     new_shown_date = set_shown_date(shown_date, date_action)
-    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=new_shown_date)
+    return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules,
+                           shown_date=new_shown_date)
+
+
+@bp_user.get("/create_schedule/step4")
+def select_competition_types_get():
+    competition_types = ["qualification", "seeding", "elimination", "round robin",  "preliminary round", "first round",
+                         "heats", "heat 1", "heat 2", "heat 3", "run 1", "run 2", "run 3", "competition round",
+                         "1/8", "quarterfinals", "1/4", "semifinals",  "semi-final", "1/2", "bronze medal event",
+                         "final", "gold medal event"]
+    return render_template("create_schedule_step_2.html", competition_types=competition_types)
+
+
+@bp_user.post("/create_schedule/step4")
+def select_competition_types_post():
+    competition_types = ["qualification", "seeding", "elimination", "round robin", "preliminary round", "first round",
+                         "heats", "heat 1", "heat 2", "heat 3", "run 1", "run 2", "run 3", "competition round",
+                         "1/8", "quarterfinals", "1/4", "semifinals", "semi-final", "1/2", "bronze medal event",
+                         "final", "gold medal event"]
+    chosen = []
+    for competition_type in request.form:
+        if competition_type in competition_types:
+            chosen.append(competition_type)
+
+    return redirect(url_for('bp_user.filtered_schedule_get'))
 
 
 @bp_user.get("/my_schedule")
