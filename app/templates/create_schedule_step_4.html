@@ -10,7 +10,20 @@
                 filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
                 drop to add events from the main schedule to your personal schedule. </p>
         </div>
-        <div class="container-fluid overflow-auto" style="max-height: 80%">
+        <div class="container-fluid">
+            <form class="col-md-12 d-flex justify-content-left my-4" action="{{ url_for("bp_user.change_date_post") }}" method="POST">
+                <div class="btn-group" role="group" aria-label="Change date-buttons">
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Today"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="First day"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Previous"/> <br/>
+                    <input type="submit" class="form-control btn-info mr-2" name="date_action" value=" Showing: {{ shown_date }}"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Next"/> <br/>
+                    <input type="submit" class="form-control mr-2" name="date_action" value="Last day"/> <br/>
+                    <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid overflow-auto" style="max-height: 78%">
             <div class="row">
                 <div class="container col-md-7 overflow-auto">
                     {% for schedule in schedules %}
@@ -32,21 +45,6 @@
                 </div>
             </div>
         </div>
-    <div class="row">
-        <div class="container col-md-12">
-            <form class="col-md-12  d-flex justify-content-center my-4" action="{{ url_for("bp_user.change_date_post") }}" method="POST">
-                <div class="btn-group" role="group" aria-label="Change date-buttons">
-                    <input type="submit" class="form-control mr-2" name="date_action" value="Today"/> <br/>
-                    <input type="submit" class="form-control mr-2" name="date_action" value="First day"/> <br/>
-                    <input type="submit" class="form-control mr-2" name="date_action" value="Previous"/> <br/>
-                    <input type="submit" class="form-control btn-info mr-2" name="date_action" value=" Showing: {{ shown_date }}"/> <br/>
-                    <input type="submit" class="form-control mr-2" name="date_action" value="Next"/> <br/>
-                    <input type="submit" class="form-control mr-2" name="date_action" value="Last day"/> <br/>
-                    <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
-                </div>
-            </form>
-        </div>
-    </div>
     </div>
 {% endblock %}
 

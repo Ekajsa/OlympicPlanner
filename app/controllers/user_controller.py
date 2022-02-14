@@ -87,3 +87,15 @@ def add_step3(email, schedule_name, countries):
     ur.add_step3(email, schedule_name, countries)
 
 
+def get_chosen_countries_and_disciplines():
+    schedules = ur.get_user_schedules(current_user)
+    if schedules is None:
+        countries, disciplines = []
+        return countries, disciplines
+    else:
+        latest_schedule = schedules[len(schedules)-1]
+        countries = [country.lower() for country in latest_schedule["countries"]]
+        disciplines = [discipline.lower() for discipline in latest_schedule["disciplines"]]
+        # countries = latest_schedule["countries"]
+        # disciplines = latest_schedule["disciplines"]
+        return countries, disciplines
