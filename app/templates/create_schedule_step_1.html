@@ -3,7 +3,7 @@
 
 {%  block content8 %}
     <div class="content-section">
-        <div class="container col-md-6 float-left">
+        <div class="container-fluid col-md-6 float-left mb-md-5">
         <h2>Welcome {{ current_user.first_name }}!</h2>
         <p>Congratulations on your excellent decision to use The Olympic Planner!<br>Create a new schedule, or open an existing one.</p>
         <br>
@@ -11,7 +11,7 @@
                 <input type="submit" class="btn btn-primary" onclick="isChecked()" value="Create a new schedule">
             </form>
         </div>
-        <div class="container col-md-6 mr-auto">
+        <div class="container-fluid col-md-4 overflow-auto mr-auto">
             <h2>Saved Schedules</h2>
                 <div class="list-group">
                 {% for schedule in current_user.schedules %}
