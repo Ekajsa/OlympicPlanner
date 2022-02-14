@@ -3,6 +3,7 @@ import pytz
 from tzlocal import get_localzone
 
 from app.controllers.event_controller import get_all_events_by_date
+from app.controllers.user_controller import get_chosen_countries_and_disciplines
 
 
 def convert_time_slot_to_local(beijing_time_slots):
@@ -177,6 +178,25 @@ def schedule_html(schedule, date, schedule_type):
     return table_html
 
 
+# Version with outer join
+def filter_events(date):
+    events = get_all_events_by_date(date)
+    countries, disciplines = get_chosen_countries_and_disciplines()
+    filtered_events = []
+    if len(countries) == 0 | len(disciplines) == 0:
+        filtered_events = events
+    else:
+        for event in events:
+            event_countries = [post.lower() for post in event.participating_countries]
+            if event.discipline.lower() in disciplines:
+                filtered_events.append(event)
+            else:
+                for country in event_countries:
+                    if country in countries:
+                        filtered_events.append(event)
+    return filtered_events
+
+
 def remove_columns(schedule):
     new_schedule = []
     empty_columns = {i: True for i in range(17)}
@@ -197,8 +217,9 @@ def remove_columns(schedule):
 
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
-    # function get_all_events_by_filter_and_date()
-    events = get_all_events_by_date(date)
+    events = filter_events(date)
+    # events = get_all_events_by_date(date)
+    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
