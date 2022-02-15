@@ -79,9 +79,9 @@
     });
 
     //Create boolean array of arrays-table for keeping track of which cells that are available (=true)
-    let emptyTimeSlots = [["false", "false", "false", "false", "false", "false"]];
+    let emptyTimeSlots = [[false, false, false, false, false, false]];
     for (let i = 1; i < 63; i++) {
-        let defaultRow = ["false", "true", "true", "true", "true", "true"];
+        let defaultRow = [false, true, true, true, true, true];
         emptyTimeSlots.push(defaultRow);
     }
 
@@ -122,11 +122,11 @@
         let column = 0;
         for (let i = 1; i < emptyTimeSlots[0].length; i++) {
             column++;
-            if (emptyTimeSlots[parentRowId][column] === "true") {
+            if (emptyTimeSlots[parentRowId][column] === true) {
                 lastEmptyTimeSlotRow = parentRowId;
-                for (let j = 0; j < rowspan; j++) {
+                for (let j = 1; j < rowspan; j++) {
                     lastEmptyTimeSlotRow++;
-                    if (emptyTimeSlots[lastEmptyTimeSlotRow][column] === "true") {
+                    if (emptyTimeSlots[lastEmptyTimeSlotRow][column] === true) {
                         lastEmptyTimeSlotColumn = column;
                         if (j === rowspan - 1) {
                             available = true;
@@ -140,6 +140,8 @@
         }
 
         //Add div to the first available priority column, checked in emptyTimeSlots
+        console.log(lastEmptyTimeSlotColumn)
+        console.log('toTable.rows:', toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn])
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
         targetDiv.classList.remove("clone-me");
@@ -147,7 +149,7 @@
 
         //Update emptyTimeSlots for the cells the div occupy
         for (let i = rowspan; i > 0; i--) {
-            emptyTimeSlots[lastEmptyTimeSlotRow][lastEmptyTimeSlotColumn] = "false";
+            emptyTimeSlots[lastEmptyTimeSlotRow][lastEmptyTimeSlotColumn] = false;
             lastEmptyTimeSlotRow--;
         }
         console.log('rowspan:', rowspan)
@@ -182,7 +184,8 @@
         let currentDiv = e.path[1];
         let currentTd = e.path[2];
         let currentRow = e.path[3];
-        let currentTable = e.path[5].id;
+        let rowspan = currentTd.rowSpan;
+        let currentTable = e.path[5];
 
         // Calculate the start and end row for the clicked event
         let clickedStartRowId = currentRow.rowIndex;
@@ -228,12 +231,10 @@
                 console.log('Here 7')
                 // But here we can. Yay!!!!
                 console.log("Can place in column ", col);
-                console.log('e', e)
-                console.log('currentTable:', currentTable)
-                console.log('row:', clickedStartRowId)
-                console.log('col:', col)
+
+                console.log(currentTable)
                 currentTable.rows[clickedStartRowId].cells[col].appendChild(currentDiv);
-                currentTable.rows[clickedStartRowId].cells[col].rowSpan = clickedEndRow;
+                currentTable.rows[clickedStartRowId].cells[col].rowSpan = rowspan;
                 // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
                 // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
                 break;
