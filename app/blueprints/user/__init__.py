@@ -88,7 +88,6 @@ def select_countries_post():
     schedule_name = request.form['schedule_name']
     countries = json.loads(the_list)
     uc.add_step3(email, schedule_name, countries)
-    # print('getting here?')
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
@@ -108,6 +107,11 @@ def change_date_post():
     shown_date = request.form.get("shown_date")
     new_shown_date = sc.set_shown_date(shown_date, date_action)
     return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=new_shown_date)
+
+
+def save_schedule_post():
+
+    return redirect(url_for("bp_user.my_schedules_get"))
 
 
 @bp_user.get("/my_schedule")

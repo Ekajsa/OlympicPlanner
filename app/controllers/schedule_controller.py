@@ -133,7 +133,7 @@ def event_html(event):
             event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
 
     if len(event.participating_countries) == 2:
-            event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
+        event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
                              f"{event.participating_countries[1]}</p>"
 
     event_html_string += "</div>"
@@ -194,6 +194,7 @@ def filter_events(date):
                 for country in event_countries:
                     if country in countries:
                         filtered_events.append(event)
+                        break
     return filtered_events
 
 
