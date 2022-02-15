@@ -4,6 +4,7 @@ import pytz
 from tzlocal import get_localzone
 
 from app.controllers.event_controller import get_all_events_by_date
+from app.controllers.user_controller import get_chosen_countries_and_disciplines
 
 
 def convert_time_slot_to_local(beijing_time_slots):
@@ -105,6 +106,42 @@ def convert_beijing_time_to_local(event):
     event.local_start_time = target_time_start.strftime("%Y-%m-%d %H:%M")
     event.local_end_time = target_time_end.strftime("%Y-%m-%d %H:%M")
 
+
+# noinspection PyProtectedMember
+def event_html(event):
+    discipline_class = event.discipline.lower().replace(" ", "-") + "-event"
+    event_html_string = f"<div class='event {discipline_class}' id='{event._id}'>"
+    event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
+                         f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
+
+    if len(event.sex) == 2:
+        event_html_string += f"<span class='sex'>{event.sex[0]}, {event.sex[1]}</span>. "
+    else:
+        event_html_string += f"<span class='sex'>{event.sex}</span>. "
+
+    if event.description == "":
+        if len(event.competition_type) == 2:
+            event_html_string += f"<span class='competition_type'>{event.competition_type[0].capitalize()}, " \
+                                 f"{event.competition_type[1]}</span>."
+        else:
+            event_html_string += f"<span class='competition_type'>{event.competition_type.capitalize()}</span>. "
+    else:
+        event_html_string += f"<span class='description'>{event.description}</span>, "
+        if len(event.competition_type) == 2:
+            event_html_string += f"<span class='competition_type'>{event.competition_type[0]}, " \
+                                 f"{event.competition_type[1]}</span>. "
+        else:
+            event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
+
+    if len(event.participating_countries) == 2:
+        event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
+                             f"{event.participating_countries[1]}</p>"
+
+    event_html_string += "</div>"
+
+    return event_html_string
+
+
 def schedule_html(schedule, date):
     table_html = f"<div id='{date}'>"
     table_html += " <table> "
@@ -112,9 +149,14 @@ def schedule_html(schedule, date):
         table_html += "<tr>"
         for cell in row:
             if schedule.index(row) == 0:
-                table_html += "<th>" + cell + "</th>"
+                if row.index(cell) == 0:
+                    table_html += "<th class='time'>" + cell + "</th>"
+                else:
+                    table_html += "<th>" + cell + "</th>"
             else:
-                if row.index(cell) == 0 or cell == "":
+                if row.index(cell) == 0:
+                    table_html += "<td class='time'>" + cell + "</td>"
+                elif cell == "":
                     table_html += "<td>" + cell + "</td>"
                 elif cell == "ROWSPAN":
                     pass
@@ -165,9 +207,46 @@ def schedule_html(schedule, date):
     return table_html
 
 
+# Version with outer join
+def filter_events(date):
+    events = get_all_events_by_date(date)
+    countries, disciplines = get_chosen_countries_and_disciplines()
+    filtered_events = []
+    if len(countries) == 0 | len(disciplines) == 0:
+        filtered_events = events
+    else:
+        for event in events:
+            event_countries = [post.lower() for post in event.participating_countries]
+            if event.discipline.lower() in disciplines:
+                filtered_events.append(event)
+            else:
+                for country in event_countries:
+                    if country in countries:
+                        filtered_events.append(event)
+    return filtered_events
+
+
+def remove_columns(schedule):
+    new_schedule = []
+    empty_columns = {i: True for i in range(17)}
+
+    for j in range(len(schedule[0])):
+        if any(not "" == row[j] for row in schedule[1:]):
+            empty_columns[j] = False
+
+    for row in schedule:
+        row_copy = []
+        for j, cell in enumerate(row):
+            if not empty_columns[j]:
+                row_copy.append(row[j])
+        new_schedule.append(row_copy)
+
+    return new_schedule
+
+
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
-    events = get_all_events_by_date(date)
+    events = filter_events(date)
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -183,12 +262,12 @@ def create_base_schedule(date):
 
         if schedule[row_start_index][col_index] != "":
             try:
-                schedule[row_start_index][col_index].append(event)
+                schedule[row_start_index][col_index].append(event_html(event))
             except AttributeError:
                 pass
 
         else:
-            schedule[row_start_index][col_index] = [event]
+            schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
         if row_span == 0:
@@ -206,6 +285,8 @@ def create_base_schedule(date):
         while row_index <= row_end_index:
             schedule[row_index][col_index] = "ROWSPAN"
             row_index += 1
+
+    schedule = remove_columns(schedule)
 
     return schedule_html(schedule, date)
 
