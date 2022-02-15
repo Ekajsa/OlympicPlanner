@@ -42,5 +42,5 @@ def get_user_schedules(user):
 
 
 def save_personal_schedule(schedule_to_save, user, actual_schedule):
-    actual_schedule["events"] = schedule_to_save
+    actual_schedule["layout"] = schedule_to_save
     user.save()

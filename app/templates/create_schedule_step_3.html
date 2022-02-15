@@ -11,6 +11,8 @@
 
     <div class="content-section" style="max-height: inherit">
         <div class="container-fluid overflow-auto">
+        <h3>Please select the countries of interest!</h3>
+        <p>Hint: Leave blank and click Next to get all countries.</p>
 
             <!--Make sure the form has the autocomplete function switched off:-->
             <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}" method="POST">
