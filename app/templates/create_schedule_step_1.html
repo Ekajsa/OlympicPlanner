@@ -11,7 +11,7 @@
                 <input type="submit" class="btn btn-primary" onclick="isChecked()" value="Create a new schedule">
             </form>
         </div>
-        <div class="container-fluid col-md-4 overflow-auto mr-auto">
+        <div class="container-fluid col-md-4 overflow-auto mr-auto" style="max-height: 100%">
             <h2>Saved Schedules</h2>
                 <div class="list-group">
                 {% for schedule in current_user.schedules %}

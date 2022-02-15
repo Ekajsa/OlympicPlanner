@@ -96,6 +96,15 @@ def get_chosen_countries_and_disciplines():
         latest_schedule = schedules[len(schedules)-1]
         countries = [country.lower() for country in latest_schedule["countries"]]
         disciplines = [discipline.lower() for discipline in latest_schedule["disciplines"]]
-        # countries = latest_schedule["countries"]
-        # disciplines = latest_schedule["disciplines"]
         return countries, disciplines
+
+
+def get_saved_schedule(schedule_name=""):
+    schedules = ur.get_user_schedules(current_user)
+    if schedule_name == "":
+        saved_schedule = schedules[len(schedules)-1]
+        return saved_schedule
+    for schedule in schedules:
+        if schedule_name.lower() == schedule["schedule_name"].lower():
+            saved_schedule = schedule
+            return saved_schedule
