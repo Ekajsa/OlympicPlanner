@@ -89,8 +89,8 @@ def select_countries_post():
     schedule_name = request.form['schedule_name']
     countries = json.loads(the_list)
 
-    print()
     add_step3(email, schedule_name, countries)
+    print('getting here?')
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 

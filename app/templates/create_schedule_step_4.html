@@ -89,6 +89,8 @@
         emptyTimeSlots.push(defaultRow);
     }
 
+    let events;
+
     //Right-click menu!
     //document.getElementById("clicker").addEventListener('contextmenu', function(ev) {
             //ev.preventDefault();
@@ -98,6 +100,7 @@
 
     //Function for moving the div from base schedule to personal schedule
     function moveIt(e) {
+        console.log('inside moveIt')
         // Get the div that we clicked
         let targetDiv = e.path[1];
         // Get the cell hosting the div in the from table
@@ -144,26 +147,40 @@
             emptyTimeSlots[lastEmptyTimeSlotRow][lastEmptyTimeSlotColumn] = "false";
             lastEmptyTimeSlotRow--;
         }
-        console.log(emptyTimeSlots)
 
         //Add div to the first available priority column, checked in emptyTimeSlots
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
         targetDiv.classList.remove("clone-me");
-        targetDiv.classList.add("click-me")
-    }
+        targetDiv.classList.add("click-me");
 
-    // Add event listeners for all
-    let events = document.getElementsByClassName("click-me");
+        //Remove old event listener
+        let targetDivId = targetDiv.id;
+        document.getElementById(targetDivId).removeEventListener("click", moveIt);
 
-    // Attach the event listeners for the click event on all divs
-    for (let i = 0; i < events.length; i++) {
-        events[i].addEventListener('click', clickEvent, false);
+        // Add new event listeners for all
+        events = document.getElementsByClassName("click-me");
+
+        // Attach the event listeners for the click event on all divs
+        for (let i = 0; i < events.length; i++) {
+            events[i].addEventListener("click", clickEvent, false);
+        }
+
+
+        //Remove added td's
+        // Get the id of the row containing the div
+        let currentRow = targetDiv.parentElement.parentElement;
+        for (let i = 1; i < currentRow.length; i++ ) {
+            //Something else is needed, check clickEvent()
+        }
+
+
     }
 
     function clickEvent(e) {
+        console.log('inside clickEvent')
         // Get the table
-        let currentTableId = e.path[5].id;
+        let currentTable = e.path[5].id;
 
         // Calculate the start and end row for the clicked event
         let clickedStartRow = e.path[2].rowIndex;
@@ -181,12 +198,12 @@
             let sequenceChecked = [];
             for (let row = 0; row <= clickedEndRow; row++) {
 
-                if(!currentTableId[row][col]) {
+                if(!currentTable[row][col]) {
                     // If we need to check if the current event is the clicked
                     // But do we want that???
-                    //if(table.rows[row].cells[col]=== e.path[1]) {
-                         //console.log(row, col, "Me");
-                    // }
+                    if(currentTable.rows[row].cells[col]=== e.path[1]) {
+                         console.log(row, col, "Me");
+                     }
                     sequenceChecked.push(row);
                 }
             }
@@ -201,7 +218,12 @@
             else {
                 // But here we can. Yay!!!!
                 console.log("Can place in column ", col);
-                // Move it here
+                console.log('e', e)
+                console.log('currentTable:', currentTable)
+                currentTable.rows[clickedStartRow].cells[col].appendChild(e.path[1]);
+                currentTable.rows[clickedStartRow].cells[col].rowSpan = clickedEndRow;
+                // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
+                // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
                 break;
             }
         }
