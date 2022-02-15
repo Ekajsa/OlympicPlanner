@@ -109,9 +109,9 @@ def change_date_post():
     return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=new_shown_date)
 
 
-def save_schedule_post():
-
-    return redirect(url_for("bp_user.my_schedules_get"))
+    # def save_schedule_post():
+    #     saved_schedule = request.form.get("saved_schedule")
+    #     return redirect(url_for("bp_user.my_schedules_get"))
 
 
 @bp_user.get("/my_schedule")

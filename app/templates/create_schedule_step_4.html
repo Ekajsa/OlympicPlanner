@@ -31,11 +31,15 @@
                     {% endfor %}
                 </div>
                 <div class="container col-md-4 overflow-auto">
+{#                    <form action="{{ url_for("bp_user.save_schedule_post") }}" method="POST">#}
+{#                        <input type="submit" class="form-control mr-2" value="Save this schedule">#}
+{#                        <input type="hidden" name="saved_schedule" value="{{ personal_schedules }}">#}
+{#                    </form>#}
                     {% for personal_schedule in personal_schedules %}
                         {% if shown_date in personal_schedule[0] %}
-                            <div class="personal-schedule" id="personal-schedule{{ loop.index }}">
-                                {{ personal_schedule[1] | safe }}
-                            </div>
+                                <div class="personal-schedule" id="personal-schedule{{ loop.index }}">
+                                    {{ personal_schedule[1] | safe }}
+                                </div>
                         {% endif %}
                     {% endfor %}
                 </div>
