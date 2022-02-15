@@ -50,13 +50,13 @@ def schedules_get():
 
 @bp_user.get("/create_schedule/step2")
 def select_disciplines_get():
-    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
+    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating", "Ceremony"]
     return render_template("create_schedule_step_2.html", disciplines=disciplines)
 
 
 @bp_user.post("/create_schedule/step2")
 def select_disciplines_post():
-    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating"]
+    disciplines = ["Alpine Skiing", "Biathlon", "Bobsleigh", "Cross-Country Skiing", "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Snowboard", "Speed Skating", "Ceremony"]
     chosen = []
     for discipline in request.form:
         if discipline in disciplines:
@@ -88,9 +88,8 @@ def select_countries_post():
     the_list = request.form["theList"]
     schedule_name = request.form['schedule_name']
     countries = json.loads(the_list)
-
-    print()
     uc.add_step3(email, schedule_name, countries)
+    print('getting here?')
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
