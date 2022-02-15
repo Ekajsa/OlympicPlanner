@@ -6,11 +6,6 @@ from werkzeug.security import check_password_hash
 from app.persistence.repository import user_repository as ur
 
 
-# Do we need this?
-def get_all_users():
-    return ur.get_all_users()
-
-
 def create_user(first_name, last_name, email, password):
     user = {
         "first_name": first_name,
@@ -23,15 +18,7 @@ def create_user(first_name, last_name, email, password):
         "status": "offline",
         "activated": False,
         "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random",
-        "schedules": [
-            {
-                "schedule_name": "",
-                "disciplines": [],
-                "countries": [],
-                "events": []
-
-            }
-          ]
+        "schedules": []
         }
 
     ur.create_user(user)

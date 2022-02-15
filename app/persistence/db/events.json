@@ -2093,7 +2093,7 @@
       "Chinese Taipei", "Croatia", "Czech Republic", "Finland", "France", "Georgia", "Germany", "Great Britain",
       "Hungary", "Iceland", "Ireland", "Iran", "Israel", "Italy", "Latvia", "Lebanon", "Madagaskar", "Norway", "Peru",
       "Portugal", "Korea", "ROC", "Slovakia", "Slovenia", "Sweden", "Switzerland", "Turkey", "USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_177":
   {
@@ -3135,8 +3135,8 @@
     "date": "2022-02-11",
     "local_start_time": "19:55",
     "local_end_time": "20:03",
-    "participating_countries": ["Belgium", "Hungary", "Japan", "Netherlands", "Poland", "Korea", "ROC", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Belgium", "Hungary", "Netherlands", "Korea", "USA"],
+    "participants_decided": "True"
   },
   "event_266":
   {
@@ -3593,7 +3593,7 @@
     "local_start_time": "10:50",
     "local_end_time": "10:55",
     "participating_countries": ["Germany", "Great Britain", "ROC", "Switzerland"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_306":
   {
@@ -3605,7 +3605,7 @@
     "local_start_time": "10:55",
     "local_end_time": "11:15",
     "participating_countries": ["Canada", "Italy", "USA"],
-    "participants_decided": "False"
+    "participants_decided": "True"
   },
   "event_307":
   {
@@ -4480,9 +4480,9 @@
     "date": "2022-02-15",
     "local_start_time": "21:50",
     "local_end_time": "22:35",
-    "participating_countries": ["Austria", "Brazil", "Canada", "China", "Czech Republic", "France", "Germany",
-      "Great Britain", "Italy", "Jamaica", "Latvia", "Monaco", "Netherlands", "Korea", "ROC", "Romania", "Switzerland",
-      "Trinidad & Tobago", "USA"]
+    "participating_countries": ["Austria", "Canada", "China", "Czech Republic", "France", "Germany", "Great Britain",
+      "Latvia", "Monaco", "Korea", "ROC", "Romania", "Switzerland", "Trinidad & Tobago", "USA"],
+    "participants_decided": "True"
   },
   "event_380":
   {
@@ -5177,21 +5177,19 @@
     "date": "2022-02-16",
     "local_start_time": "19:00",
     "local_end_time": "19:30",
-    "participating_countries": ["Belarus", "Canada", "China", "Great Britain", "Kazakhstan", "ROC", "Switzerland",
-      "Ukraine", "USA"],
-    "participants_decided": "False"
+    "participating_countries": ["Belarus", "China", "ROC", "Switzerland", "Ukraine", "USA"],
+    "participants_decided": "True"
   },
   "event_439":
   {
     "discipline": "Freestyle skiing",
     "description": "Aerials",
     "competition_type": ["final 2", "gold medal event"],
-    "sex": "women",
+    "sex": "men",
     "date": "2022-02-16",
     "local_start_time": "20:00",
     "local_end_time": "20:15",
-    "participating_countries": ["Belarus", "Canada", "China", "Great Britain", "Kazakhstan", "ROC", "Switzerland",
-      "Ukraine", "USA"],
+    "participating_countries": ["Belarus", "China", "ROC", "Switzerland", "Ukraine", "USA"],
     "participants_decided": "False"
   },
     "event_440":
@@ -5251,8 +5249,8 @@
     "date": "2022-02-16",
     "local_start_time": "21:30",
     "local_end_time": "23:45",
-    "participating_countries": ["Canada", "China", "Sweden"],
-    "participants_decided": "False"
+    "participating_countries": ["Sweden", "Canada"],
+    "participants_decided": "True"
   },
   "event_445":
   {
@@ -5487,9 +5485,10 @@
     "date": "2022-02-17",
     "local_start_time": "18:00",
     "local_end_time": "21:57",
-    "participating_countries": ["Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bulgaria", "Canada",
-      "China", "Czech Republic", "Estonia", "Finland", "Georgia", "Germany", "Great Britain", "Japan", "Netherlands",
-      "Poland", "Korea", "ROC", "Sweden", "Switzerland", "Ukraine", "USA"]
+    "participating_countries": ["Austria", "Azerbaijan", "Belarus", "Belgium", "Bulgaria", "Canada", "Czech Republic",
+      "Estonia", "Finland", "Georgia", "Germany", "Japan", "Netherlands", "Poland", "Korea", "ROC", "Switzerland",
+      "USA"],
+     "participants_decided": "True"
   },
   "event_464":
   {
@@ -5672,8 +5671,9 @@
     "date": "2022-02-18",
     "local_start_time": "17:00",
     "local_end_time": "17:45",
-    "participating_countries": ["Belarus", "Finland", "France", "Norway", "Germany", "ROC", "Sweden"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Belarus", "Canada", "Czech Republic", "Finland", "France", "Germany", "Italy", "Norway",
+      "ROC", "Slovenia", "Sweden", "Ukraine"],
+    "participants_decided": "True"
   },
   "event_479":
   {
@@ -5874,7 +5874,7 @@
     "date": "2022-02-18",
     "local_start_time": "12:10",
     "local_end_time": "16:25",
-    "participating_countries": ["Canada", "China", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
+    "participating_countries": ["Canada", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
       "USA"],
     "participants_decided": "False"
   },
@@ -5887,7 +5887,7 @@
     "date": "2022-02-18",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "participating_countries": ["Canada", "China", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
+    "participating_countries": ["Canada", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
       "USA"],
     "participants_decided": "False"
   },
@@ -5976,8 +5976,9 @@
     "date": "2022-02-19",
     "local_start_time": "17:00",
     "local_end_time": "17:45",
-    "participating_countries": ["Austria", "Belarus", "Czech Republic", "France", "Italy", "Norway", "ROC", "Sweden"],
-    "participants_decided": "False"
+    "participating_countries": ["Austria", "Belarus", "Czech Republic", "France", "Germany", "Italy", "Moldova",
+      "Norway", "Poland", "ROC", "Slovakia", "Sweden", "Switzerland", "Ukraine", "USA"],
+    "participants_decided": "True"
   },
   "event_504":
   {
@@ -6129,7 +6130,7 @@
     "date": "2022-02-19",
     "local_start_time": "21:10",
     "local_end_time": "23:25",
-    "participating_countries": ["Canada", "China", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
+    "participating_countries": ["Canada", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
       "USA"],
     "participants_decided": "False"
   },
@@ -6246,7 +6247,7 @@
     "date": "2022-02-20",
     "local_start_time": "12:10",
     "local_end_time": "14:35",
-    "participating_countries": ["Canada", "China", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
+    "participating_countries": ["Canada", "Denmark", "Finland", "ROC", "Slovakia", "Sweden", "Switzerland",
       "USA"],
     "participants_decided": "False"
   },
