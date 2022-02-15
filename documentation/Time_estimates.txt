@@ -57,18 +57,26 @@ Issue Est. time Total Actual time         Total
 
 Sprint week 4 (85h, not including lectures and meetings)
 Issue Est. time Total Actual time         Total 
-#025    4h        4
+#025    4h        4         8h              8
 #034    2h        6
 #040    2h        8
 #041    2h        10
 #042    3h        13
 #043    2h        15
 #044    2h        17
-#045-#050 12h     29h
+#045-#050 12h     29h        
 #051    15h       44h
 #052    6h        50h
 #053    10h       60h         
 #054    6h        66h
 Remaining 19 hours for filters, removing chosen country and fixing avatar
+
+Actual time 
+045: 00:50
+046:  0
+047:  2:30
+048:  3:50
+049:  1:45
+050:  2:50
   
 
