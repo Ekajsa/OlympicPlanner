@@ -179,49 +179,57 @@
 
     function clickEvent(e) {
         console.log('inside clickEvent')
-        // Get the table
+        // Get the div, td, row and table
+        let currentDiv = e.path[1];
+        let currentTd = e.path[2];
+        let currentRow = e.path[3];
         let currentTable = e.path[5].id;
 
         // Calculate the start and end row for the clicked event
-        let clickedStartRow = e.path[2].rowIndex;
-        let clickedEndRow = e.path[1].rowSpan + clickedStartRow - 1;
+        let clickedStartRowId = currentRow.rowIndex;
+        let clickedEndRow = currentTd.rowSpan + clickedStartRowId - 1;
 
-        // Generate a set with the rows in the clicked event
+
+        // Get the row(s) for the div in an array and then generate a set of the array
         let sequenceClicked = [];
-        for (let i = clickedStartRow; i <= clickedEndRow; i++) {
+        for (let i = clickedStartRowId; i <= clickedEndRow; i++) {
             sequenceClicked.push(i);
         }
         let clickedColumn = new Set(sequenceClicked);
+        console.log('clickedColumn:', clickedColumn)
 
-        // Get the rows for the checked column and store it in a set
+        // Get the rows for the checked column until clickedEndRow and store it in a set
         for (let col = 1; col < 6; col++) {
             let sequenceChecked = [];
             for (let row = 0; row <= clickedEndRow; row++) {
-
                 if(!currentTable[row][col]) {
                     // If we need to check if the current event is the clicked
                     // But do we want that???
-                    if(currentTable.rows[row].cells[col]=== e.path[1]) {
-                         console.log(row, col, "Me");
+                    if(currentTable[row][col] === currentDiv) {
+                        console.log('Here 4')
+                        console.log(row, col, "Me");
                      }
                     sequenceChecked.push(row);
                 }
             }
 
             let checkedColumn = new Set(sequenceChecked);
-
             // If we have an intersection we can't place the selected event in
             // this column
             if(intersection(clickedColumn, checkedColumn).size > 0) {
+                console.log('Here 6')
                 //console.log("Can't place in column ", col);
             }
             else {
+                console.log('Here 7')
                 // But here we can. Yay!!!!
                 console.log("Can place in column ", col);
                 console.log('e', e)
                 console.log('currentTable:', currentTable)
-                currentTable.rows[clickedStartRow].cells[col].appendChild(e.path[1]);
-                currentTable.rows[clickedStartRow].cells[col].rowSpan = clickedEndRow;
+                console.log('row:', clickedStartRowId)
+                console.log('col:', col)
+                currentTable.rows[clickedStartRowId].cells[col].appendChild(currentDiv);
+                currentTable.rows[clickedStartRowId].cells[col].rowSpan = clickedEndRow;
                 // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
                 // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
                 break;
