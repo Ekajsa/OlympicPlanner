@@ -6,11 +6,6 @@ from werkzeug.security import check_password_hash
 from app.persistence.repository import user_repository as ur
 
 
-# Do we need this?
-def get_all_users():
-    return ur.get_all_users()
-
-
 def create_user(first_name, last_name, email, password):
     user = {
         "first_name": first_name,
@@ -23,15 +18,7 @@ def create_user(first_name, last_name, email, password):
         "status": "offline",
         "activated": False,
         "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random",
-        "schedules": [
-            {
-                "schedule_name": "",
-                "disciplines": [],
-                "countries": [],
-                "events": []
-
-            }
-          ]
+        "schedules": []
         }
 
     ur.create_user(user)
@@ -69,6 +56,7 @@ def edit_user(first_name, last_name, email):
     if last_name:
         user.last_name = last_name
     user.full_name = f"{user.first_name} {user.last_name}"
+    user.avatar = f"https://eu.ui-avatars.com/api/?name={user.first_name}+{user.last_name}&background=random"
     if email:
         user.email = email
     user.save()
@@ -87,8 +75,26 @@ def get_chosen_countries_and_disciplines():
     schedules = ur.get_user_schedules(current_user)
     if schedules is None:
         countries, disciplines = [], []
+        return countries, disciplines
     else:
         latest_schedule = schedules[len(schedules)-1]
         countries = [country.lower() for country in latest_schedule["countries"]]
         disciplines = [discipline.lower() for discipline in latest_schedule["disciplines"]]
-    return countries, disciplines
+        return countries, disciplines
+
+
+def get_saved_schedule(schedule_name=""):
+    schedules = ur.get_user_schedules(current_user)
+    if schedule_name == "":
+        saved_schedule = schedules[len(schedules)-1]
+        return saved_schedule
+    for schedule in schedules:
+        if schedule_name.lower() == schedule["schedule_name"].lower():
+            saved_schedule = schedule
+            return saved_schedule
+
+
+def save_personal_schedule(schedule_to_save):
+    user = current_user
+    actual_schedule = get_saved_schedule()
+    ur.save_personal_schedule(schedule_to_save, user, actual_schedule)
