@@ -106,3 +106,8 @@ def get_saved_schedule(schedule_name=""):
             saved_schedule = schedule
             return saved_schedule
 
+
+def save_personal_schedule(schedule_to_save):
+    user = current_user
+    actual_schedule = get_saved_schedule()
+    ur.save_personal_schedule(schedule_to_save, user, actual_schedule)

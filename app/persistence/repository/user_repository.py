@@ -44,3 +44,8 @@ def add_step3(email, schedule_name, countries):
 def get_user_schedules(user):
     schedules = user.schedules
     return schedules
+
+
+def save_personal_schedule(schedule_to_save, user, actual_schedule):
+    actual_schedule["events"] = schedule_to_save
+    user.save()

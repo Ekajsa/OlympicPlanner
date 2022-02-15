@@ -101,17 +101,14 @@ def filtered_schedule_get():
 
 
 @bp_user.post("/create_schedule/step4")
-def change_date_post():
+def step4_post():
     schedules, personal_schedules = sc.create_all_schedules()
     date_action = request.form.get("date_action")
     shown_date = request.form.get("shown_date")
     new_shown_date = sc.set_shown_date(shown_date, date_action)
+    schedule_to_save = request.form.get("schedule_to_save")
+    uc.save_personal_schedule(schedule_to_save)
     return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules, shown_date=new_shown_date)
-
-
-    # def save_schedule_post():
-    #     saved_schedule = request.form.get("saved_schedule")
-    #     return redirect(url_for("bp_user.my_schedules_get"))
 
 
 @bp_user.get("/my_schedule")
