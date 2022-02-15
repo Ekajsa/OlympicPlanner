@@ -3,22 +3,24 @@
 
 {%  block content8 %}
     <div class="content-section">
-        <h1>Welcome {{ current_user.first_name }}!</h1>
-        <p>Congratulations on your excellent decision to use The Olympic Planner! Click next to create a new schedule, or open an existing one.</p>
+        <div class="container-fluid col-md-6 float-left mb-md-5">
+        <h2>Welcome {{ current_user.first_name }}!</h2>
+        <p>Congratulations on your excellent decision to use The Olympic Planner!<br>Create a new schedule, or open an existing one.</p>
+        <br>
+            <form action="{{ url_for("bp_user.select_disciplines_get") }}">
+                <input type="submit" class="btn btn-primary" onclick="isChecked()" value="Create a new schedule">
+            </form>
+        </div>
+        <div class="container-fluid col-md-4 overflow-auto mr-auto">
+            <h2>Saved Schedules</h2>
+                <div class="list-group">
+                {% for schedule in current_user.schedules %}
+    {#                The class used in the list is a Bootstrap class.#}
+                    <a href="{{ url_for("bp_user.my_schedules_get") }}" class="list-group-item list-group-item-action">{{ schedule.schedule_name }}</a>
+                {% endfor %}
+                </div>
+        </div>
     </div>
- {% endblock %}
 
-{%  block content4 %}
-    <div class="content-section">
-        <h3>Saved Schedules</h3>
-        <p class='text-muted'>If you have any saved schedules, they will show here:</p>
-            <ul class="list-group">
-{#            {% for schedule in current_user.schedules %}#}
-            {% for schedule in schedules %}
-{#                The class used in the list is a Bootstrap class.#}
-                <li class="list-group-item list-group-item-light">{{ schedule }}</li>
-            {% endfor %}
-            </ul>
-    </div>
-{% endblock %}
+ {% endblock %}
 

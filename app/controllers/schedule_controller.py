@@ -3,6 +3,7 @@ import pytz
 from tzlocal import get_localzone
 
 from app.controllers.event_controller import get_all_events_by_date
+from app.controllers.user_controller import get_chosen_countries_and_disciplines
 
 
 def convert_time_slot_to_local(beijing_time_slots):
@@ -122,8 +123,10 @@ def convert_beijing_time_to_local(event):
     event.local_end_time = target_time_end.strftime("%Y-%m-%d %H:%M")
 
 
+# noinspection PyProtectedMember
 def event_html(event):
-    event_html_string = f"<div class='event' id='{event._id}'>"
+    discipline_class = event.discipline.lower().replace(" ", "-") + "-event"
+    event_html_string = f"<div class='event {discipline_class}' id='{event._id}'>"
     event_html_string += f"<span class='start-time'>{event.local_start_time[-5:]}</span>-<span class='end-time'>" \
                          f"{event.local_end_time[-5:]}</span>\n <span class='discipline'>{event.discipline}</span> "
 
@@ -155,19 +158,30 @@ def event_html(event):
     return event_html_string
 
 
-def schedule_html(schedule):
-    table_html = " <table> "
+def schedule_html(schedule, date):
+    table_html = f"<div id='{date}'>"
+    table_html += " <table> "
     for row in schedule:
         table_html += "<tr>"
         for cell in row:
             if schedule.index(row) == 0:
-                table_html += "<th>" + cell + "</th>"
-            else:
-                if row.index(cell) == 0 or cell == "":
-                    table_html += "<td>" + cell + "</td>"
+                if row.index(cell) == 0:
+                    table_html += "<th class='time'>" + cell + "</th>"
                 else:
-                    table_html += "<td rowspan =" + "'" + cell[-1] + "'>"
-                    # table_html += "<td>"
+                    table_html += "<th>" + cell + "</th>"
+            else:
+                if row.index(cell) == 0:
+                    table_html += "<td class='time'>" + cell + "</td>"
+                elif cell == "":
+                    table_html += "<td>" + cell + "</td>"
+                elif cell == "ROWSPAN":
+                    pass
+                else:
+                    td_class = cell[0].partition("discipline'>")[2].partition('</span>')[0].lower().replace(" ", "-")
+                    if cell[-1] is None:
+                        table_html += f"<td class='{td_class}-event'>"
+                    else:
+                        table_html += f"<td class='{td_class}-event' rowspan =" + "'" + cell[-1] + "'>"
                     if len(cell) == 2:
                         table_html += cell[0]
                     else:
@@ -176,13 +190,53 @@ def schedule_html(schedule):
                     table_html += "</td>"
         table_html += "</tr>"
     table_html += "</table>"
+    table_html += "</div>"
 
     return table_html
 
 
+# Version with outer join
+def filter_events(date):
+    events = get_all_events_by_date(date)
+    countries, disciplines = get_chosen_countries_and_disciplines()
+    filtered_events = []
+    if len(countries) == 0 | len(disciplines) == 0:
+        filtered_events = events
+    else:
+        for event in events:
+            event_countries = [post.lower() for post in event.participating_countries]
+            if event.discipline.lower() in disciplines:
+                filtered_events.append(event)
+            else:
+                for country in event_countries:
+                    if country in countries:
+                        filtered_events.append(event)
+    return filtered_events
+
+
+def remove_columns(schedule):
+    new_schedule = []
+    empty_columns = {i: True for i in range(17)}
+
+    for j in range(len(schedule[0])):
+        if any(not "" == row[j] for row in schedule[1:]):
+            empty_columns[j] = False
+
+    for row in schedule:
+        row_copy = []
+        for j, cell in enumerate(row):
+            if not empty_columns[j]:
+                row_copy.append(row[j])
+        new_schedule.append(row_copy)
+
+    return new_schedule
+
+
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
-    events = get_all_events_by_date(date)
+    events = filter_events(date)
+    # events = get_all_events_by_date(date)
+    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
@@ -197,18 +251,37 @@ def create_base_schedule(date):
         row_end_index = converted_time_slots.index(end_time_nearest_quarter[-5:])
 
         if schedule[row_start_index][col_index] != "":
-            schedule[row_start_index][col_index].append("<p class='participating_countries'>" +
-                                                        "-".join(event.participating_countries) + "</p>")
+            try:
+                schedule[row_start_index][col_index].append(event_html(event))
+            except AttributeError:
+                pass
+
         else:
             schedule[row_start_index][col_index] = [event_html(event)]
 
         row_span = row_end_index - row_start_index + 1
-        schedule[row_start_index][col_index].append(str(row_span))
+        if row_span == 0:
+            row_span = 1
 
-    return schedule_html(schedule)
+        if row_end_index == row_start_index:
+            row_span = None
+
+        try:
+            schedule[row_start_index][col_index].append(str(row_span))
+        except AttributeError:
+            pass
+
+        row_index = row_start_index + 1
+        while row_index <= row_end_index:
+            schedule[row_index][col_index] = "ROWSPAN"
+            row_index += 1
+
+    schedule = remove_columns(schedule)
+
+    return schedule_html(schedule, date)
 
 
-def create_empty_personal_schedule():
+def create_empty_personal_schedule(date):
     schedule = [["",
                  "<span class='first-prio'>" + "First priority" + "</span>",
                  "<span class='second-prio'>" + "Second priority" + "</span>",
@@ -222,16 +295,54 @@ def create_empty_personal_schedule():
             row.append("")
         schedule.append(row)
 
-    return schedule
+    return schedule_html(schedule, date)
 
 
 def create_all_schedules():
     all_day_schedules = []
+    all_personal_schedules = []
     for i in range(2, 21):
         date = "2022-02-"
         if i < 10:
             date += "0" + str(i)
         else:
             date += str(i)
-        all_day_schedules.append(create_base_schedule(date))
-    return all_day_schedules
+        base_schedule = create_base_schedule(date)
+        all_day_schedules.append((date, base_schedule))
+        personal_schedule = create_empty_personal_schedule(date)
+        all_personal_schedules.append(("<p class='schedule-date'>" + date + "</p>", personal_schedule))
+    return all_day_schedules, all_personal_schedules
+
+
+def set_shown_date(shown_date="", date_action=""):
+    if shown_date == "":
+        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
+        return shown_date
+
+    date_strings = ["2022-02-02", "2022-02-03", "2022-02-04", "2022-02-05", "2022-02-06",
+                    "2022-02-07", "2022-02-08", "2022-02-09", "2022-02-10", "2022-02-11",
+                    "2022-02-12", "2022-02-13", "2022-02-14", "2022-02-15", "2022-02-16",
+                    "2022-02-17", "2022-02-18", "2022-02-19", "2022-02-20"]
+    min_index = 0
+    max_index = len(date_strings) - 1
+    shown_date_index = date_strings.index(shown_date)
+
+    if date_action == "Next":
+        shown_date_index = min(shown_date_index + 1, max_index)
+        shown_date = date_strings[shown_date_index]
+        return shown_date
+    elif date_action == "Previous":
+        shown_date_index = max(shown_date_index - 1, min_index)
+        shown_date = date_strings[shown_date_index]
+        return shown_date
+    elif date_action == "First day":
+        shown_date = date_strings[min_index]
+        return shown_date
+    elif date_action == "Last day":
+        shown_date = date_strings[max_index]
+        return shown_date
+    elif date_action == "Today":
+        shown_date = datetime.datetime.today().strftime("%Y-%m-%d")
+        return shown_date
+    else:
+        return shown_date

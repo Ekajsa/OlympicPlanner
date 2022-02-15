@@ -1,56 +1,129 @@
 {% extends "base_template.html" %}
 
-{% block content12 %}
+{% block content8 %}
+    <style>
+        table, tr {border: hidden;}
+        td, th {border: hidden;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+    </style>
+
     <div class="content-section">
 
         <!--Make sure the form has the autocomplete function switched off:-->
-        <form autocomplete="off" class="countries" id="countries1" action="{{ url_for("bp_user.select_countries_get") }}">
+        <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}" method="POST">
             <div class="autocomplete" style="width:300px;">
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
+                <input name="theList" type="hidden" id="theHidden" />
+                <input name="schedule_name" type="hidden" id="theHidden" value="{{ schedule_name }}"/>
             </div>
-            <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list">
-            <input type="submit" class="btn btn-primary" value="Next">
+            <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list" disabled>
+            <input type="submit" class="btn btn-primary" onclick="sendIt()" value="Next">
         </form><br>
 
 
         <div id="countries">Chosen countries:</div>
         {#    Should </div> be placed under the table?#}
-        <table id="countryTable">
+        <table id="countryTable" style="border: hidden;" >
 
-        </table>
-        <ul id="countryList"></ul>
-        <table>
-            <tr>
-                {% for country in countries %}
-                    <td>Country flag</td>
-                    <td>{{ country }}</td>
-                    <td>Bin</td>
-                {% endfor %}
-            </tr>
         </table>
     </div>
 
     <script>
+        let capCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Taiwan", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        let countries = [];
+            for (let i = 0; i < capCountries.length; i++) {
+              countries[i] = capCountries[i].toLowerCase();
+            }
+
+        //Adds countries to array when click on Add Country
+        let chosenCountries = [];
+        document.getElementById("theForm").onsubmit = () => {
+            document.getElementById("theHidden").value = JSON.stringify(chosenCountries)
+        }
+
+        autocomplete(document.getElementById("myInput"), capCountries);
+        inList(document.getElementById("myInput").value);
+
+
+        function inList(input) {
+            input = input.toLowerCase();
+            let isDisabled = true;
+            let inCountries;
+            let inChosenCountries;
+
+            for (let i = 0; i < countries.length; i++) {
+                if (countries[i] === input) {
+                    inCountries = true;
+                }
+            }
+            if (chosenCountries.length === 0) {
+                inChosenCountries = false;
+            }
+            for (let i = 0; i < chosenCountries.length; i++) {
+                if (inCountries === true && chosenCountries[i] === input) {
+                    inChosenCountries = true;
+                    break;
+                } else {
+                    inChosenCountries = false;
+                }
+            }
+
+            if (inCountries === true && inChosenCountries === false) {
+                document.getElementById("addCountry").disabled = false;
+            }
+        }
+
+
         function ac() {
-            console.log("!");
             let countryTable = document.getElementById("countryTable");
             let input = document.getElementById("myInput");
-            fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input.value).then(resp => {
+            input = input.value.toLowerCase()
+
+            if(input === 'russia' | input ==='russian olympic committee') {
+                input = 'roc';
+            } else if(input === 'south korea') {
+                input = 'korea';
+            } else if(input === 'chinese taipei') {
+                input = 'taiwan';
+            } else if(input === 'great britain') {
+                input = 'united kingdom';
+            } else if(input === 'united states of america') {
+                input = 'usa';
+            }
+            chosenCountries.push(input);
+            chosenCountries = chosenCountries.sort()
+
+            let flag;
+            if (input === 'roc') {
+                flag = '<img style="width:32px; height:24px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Olympic_flag.svg">';
+                countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + "ROC" + "</td></tr>";
+            } else {
+                            fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
 
                 return resp.json();
             }).then(json => {
                 //console.log('Code: ', json.records[0].fields.iso2_code);
-            let flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
-            countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + input.value + "</td></tr>";
+
+            flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
+            if (input === 'taiwan') {
+                input = 'chinese taipei';
+            } else if(input === 'united kingdom') {
+                input = 'great britain';
+            }
+            countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + capCountries[countries.indexOf(input)]  + "</td></tr>";
             }).catch(function() {
-            countryTable.innerHTML += "<tr><td>???</td><td>" + input.value + "</td></tr>";
+            countryTable.innerHTML += "<tr><td>???</td><td>" + capCountries[countries.indexOf(input)] + "</td></tr>";
 
             });
+            }
+
+
+            let button = document.getElementById('addCountry');
+            button.disabled = true;
+            document.getElementById('myInput').value = '';
         }
-
-        var countries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain/United Kingdom", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC/Russia", "Romania", "San Marino", "Saudi Arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United States of America", "Uzbekistan"];
-        autocomplete(document.getElementById("myInput"), countries);
-
 
         // functions for autocomplete
         function autocomplete(inp, arr) {
@@ -60,6 +133,7 @@
             /*execute a function when someone writes in the text field:*/
             inp.addEventListener("input", function (e) {
                 var a, b, i, val = this.value;
+                inList(val);
                 /*close any already open lists of autocompleted values*/
                 closeAllLists();
                 if (!val) {
@@ -72,36 +146,24 @@
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
                 this.parentNode.appendChild(a);
+
                 /*for each item in the array...*/
                 for (i = 0; i < arr.length; i++) {
                     /*check if the item contains the same letters as the text field value:*/
                     if ((arr[i].toUpperCase()).includes(val.toUpperCase())) {
                         /*create a DIV element for each matching element:*/
-
                         b = document.createElement("div");
-                        /*make the matching letters bold:*/
-                        {#pattern = "uni" pattern is my val#}
-                        {#country = "United Kingdom" country is my arr[i]#}
-                        {#start_idx = country.lower().index(pattern.lower())#}
-                        {#end_idx = start_idx + len(pattern)#}
-                        {#pattern = pattern if start_idx > 0 else pattern.title()#}
-                        {#output = country[:start_idx] + '<strong>' + pattern + '</strong>'  + country[end_idx:]#}
                         let start_idx = arr[i].toLowerCase().indexOf(val.toLowerCase());
                         let end_idx = start_idx + val.length;
                         let output = ""
                         if(arr[i] === 0) {
-                            {#val = val.title;#}
                             capitalizeFirstLetter(val);
-                            {#val = text.toLowerCase().replace(/(^\w{1})|(\s{1}\w{1})/g, match => match.toUpperCase());#}
                             output = "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         } else {
                             output = arr[i].substring(0,start_idx) + "<strong>" + val + "</strong>" + arr[i].substring(end_idx,);
                         }
 
                         b.innerHTML = output;
-
-                        {#let boldText = "<strong>" + val + "</strong>";#}
-                        {#b.innerHTML = arr[i].slice(0, arr[i].indexOf(val)) + boldText + arr[i].slice(arr[i].indexOf(val) + val.length);#}
 
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
@@ -111,6 +173,7 @@
                             inp.value = this.getElementsByTagName("input")[0].value;
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
+                            inList(document.getElementById("myInput").value);
                             closeAllLists();
                         });
                         a.appendChild(b);
@@ -182,7 +245,11 @@
           return string.charAt(0).toUpperCase() + string.slice(1);
         }
 
-
+        //The function of the submit button
+        function sendIt() {
+            let chosenForm = document.getElementById("theForm");
+            chosenForm.submit();
+        }
     </script>
 
 {% endblock %}

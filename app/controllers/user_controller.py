@@ -1,9 +1,9 @@
 import datetime
 from passlib.hash import argon2
-from flask_login import login_user
-from werkzeug.security import check_password_hash, generate_password_hash
+from flask_login import login_user, current_user
+from werkzeug.security import check_password_hash
 
-from app.persistence.repository import user_repository as ur, user_repository
+from app.persistence.repository import user_repository as ur
 
 
 # Do we need this?
@@ -25,25 +25,11 @@ def create_user(first_name, last_name, email, password):
         "avatar": f"https://eu.ui-avatars.com/api/?name={first_name}+{last_name}&background=random",
         "schedules": [
             {
-                "schedule_name": "My first schedule",
-                "events": [
-                    {
-                        "event_no": "104",  # Should be event numbers from mongodb
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "098",
-                        "priority_col": "1"
-                    },
-                    {
-                        "event_no": "086",
-                        "priority_col": "2"
-                    },
-                    {
-                        "event_no": "076",
-                        "priority_col": "2"
-                    }
-                ]
+                "schedule_name": "",
+                "disciplines": [],
+                "countries": [],
+                "events": []
+
             }
           ]
         }
@@ -52,11 +38,11 @@ def create_user(first_name, last_name, email, password):
 
 
 def get_user_by_email(email):
-    return user_repository.get_user_by_email(email)
+    return ur.get_user_by_email(email)
 
 
 def verify_user(email, password):
-    user = user_repository.get_user_by_email(email)
+    user = ur.get_user_by_email(email)
     if user is None:
         return False
     if user.password.startswith('pbkdf2:sha256'):
@@ -76,10 +62,40 @@ def signin_user(email):
         user.save()
 
 
+def edit_user(first_name, last_name, email):
+    user = current_user
+    if first_name:
+        user.first_name = first_name
+    if last_name:
+        user.last_name = last_name
+    user.full_name = f"{user.first_name} {user.last_name}"
+    if email:
+        user.email = email
+    user.save()
+    signin_user(user.email)
+
+
 def add_country(email, country, schedule_name):
     ur.add_country(email, country, schedule_name)
 
 
-# def get_personal_schedules():
-#     return sr.get_all_schedules()
+def add_step2(email, disciplines):
+    return ur.add_step2(email, disciplines)
 
+
+def add_step3(email, schedule_name, countries):
+    ur.add_step3(email, schedule_name, countries)
+
+
+def get_chosen_countries_and_disciplines():
+    schedules = ur.get_user_schedules(current_user)
+    if schedules is None:
+        countries, disciplines = []
+        return countries, disciplines
+    else:
+        latest_schedule = schedules[len(schedules)-1]
+        countries = [country.lower() for country in latest_schedule["countries"]]
+        disciplines = [discipline.lower() for discipline in latest_schedule["disciplines"]]
+        # countries = latest_schedule["countries"]
+        # disciplines = latest_schedule["disciplines"]
+        return countries, disciplines
