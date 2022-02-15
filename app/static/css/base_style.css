@@ -81,6 +81,11 @@ tr {
     height: 20px;
 }
 
+.time {
+    width: 45px;
+    white-space: nowrap;
+}
+
 .event {
     overflow: hidden;
     text-overflow: ellipsis;
