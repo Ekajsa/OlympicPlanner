@@ -79,8 +79,6 @@
 
     //Function for moving the div from base schedule to personal schedule
     function moveIt(e) {
-        console.log('inside moveIt')
-        console.log(e)
         // Get the div that we clicked
         let targetDiv = e.path[1];
         // Get the cell hosting the div in the from table
@@ -124,8 +122,6 @@
         }
 
         //Add div to the first available priority column, checked in emptyTimeSlots
-        console.log(lastEmptyTimeSlotColumn)
-        console.log('toTable.rows:', toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn])
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
         toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
         targetDiv.classList.remove("clone-me");
@@ -136,8 +132,6 @@
             emptyTimeSlots[lastEmptyTimeSlotRow][lastEmptyTimeSlotColumn] = false;
             lastEmptyTimeSlotRow--;
         }
-        console.log('rowspan:', rowspan)
-        console.log('emptyTimeSlots:', emptyTimeSlots)
 
         //Remove old event listener
         let targetDivId = targetDiv.id;
@@ -155,7 +149,6 @@
 
         //Remove added td's because of rowspan
         let tbody = toTable.childNodes[0];
-        console.log(destinationRowId)
         for (let i = 1; i < rowspan; i++) {
             let currentRow = tbody.childNodes[parentRowId + i];
             currentRow.deleteCell(-1);
@@ -163,7 +156,6 @@
     }
 
     function clickEvent(e) {
-        console.log('inside clickEvent')
         // Get the div, td, row and table
         let currentDiv = e.path[1];
         let currentTd = e.path[2];
@@ -182,41 +174,27 @@
             sequenceClicked.push(i);
         }
         let clickedColumn = new Set(sequenceClicked);
-        console.log('clickedColumn:', clickedColumn)
 
 
         // Get the rows for the checked column until clickedEndRow and store it in a set
         for (let col = 1; col < 6; col++) {
             let sequenceChecked = [];
-            console.log('sequenceChecked in the beginning of the loop:', col, sequenceChecked)
             for (let row = 1; row <= clickedEndRow; row++) {
-                //console.log(currentTable, row, col)
-                //console.log('currentTable[row][col]:', currentTable[row][col])
                 if(emptyTimeSlots[row][col] === false) {
-                    console.log('false row, col', row, col)
                     // If we need to check if the current event is the clicked
                     // But do we want that???
                     if(emptyTimeSlots[row][col] === currentDiv) {
-                        console.log('Here 4')
-                        console.log(row, col, "Me");
                      }
                     sequenceChecked.push(row);
                 }
             }
             let checkedColumn = new Set(sequenceChecked);
-            console.log('checkedColumn after Set(sequenceChecked:', checkedColumn)
             // If we have an intersection we can't place the selected event in
             // this column
             if(intersection(clickedColumn, checkedColumn).size > 0) {
-                console.log('Here 6')
-                console.log("Can't place in column ", col);
             }
             else {
-                console.log('Here 7')
                 // But here we can. Yay!!!!
-                console.log("Can place in column ", col);
-
-                console.log(currentTable)
                 currentTable.rows[clickedStartRowId].cells[col].appendChild(currentDiv);
                 currentTable.rows[clickedStartRowId].cells[col].rowSpan = rowspan;
                 // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);

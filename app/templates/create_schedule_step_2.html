@@ -6,16 +6,6 @@
         <h3>Please select the disciplines of interest!</h3>
         <p>Hint: Leave all checkboxes blank to get all disciplines.</p>
 
-        {#<input type="button" onclick="selects()" value="Select All">#}
-        {#<br>#}
-        {#<input type="button" onclick="deSelect()" value="Deselect All">#}
-        {#<br>#}
-
-        {#<a href="#" onclick="javascript:toggleCheck(true,this);" class="btn">Select All</a>&nbsp;#}
-        {#<br>#}
-        {#<a href="#" onclick="javascript:toggleCheck(false,this);" class="btn">Deselect All</a>#}
-        {#<br>    #}
-
         <form id="disciplines" action="{{url_for("bp_user.select_disciplines_post")}}" method="POST">
             {% for discipline in disciplines %}
                 <div class="checkbox-container">
@@ -38,79 +28,17 @@ document.getElementById("disciplines").onsubmit = () => {
     document.getElementById("isHidden").checked = JSON.stringify(chosenDisciplines)
 }
 function isChecked() {
-    let discipline = document.forms[0]; {# Why [0]? #}
+    let discipline = document.forms[0];
     let discipline_array = [];
     for (let i = 0; i < discipline.length; i++) {
         if (discipline[i].checked) {
             discipline_array.push(discipline[i].value);
         }
     }
-    console.log(discipline_list)
-    {#Loop through the id:s and add all with true value to a list?#}
 }
 
-//The function of the submit button
 
-    {#Don't need the one below?#}
-    {#document.getElementById("continue").onclick = function () {#}
-    {#    location.href = "{{ url_for('bp_user.select_countries_get') }}";#}
-{
-    #}
-    #}
-
-
-
-}
-   {#document.getElementById("continue").onclick = function () {#}
-   {#     location.href = "{{ url_for("bp_user.select_countries_get") }}";#}
-   {# };#}
-
-
-
-
-//Select or deselect all
-function toggleCheck(state, elem) {
-  jQuery(elem).closest("form").find("input:checkbox").prop('checked', state);
-}
-            {#function selects(){#}
-            {#    var ele=document.getElementsByName('discipline');#}
-            {#    for(var i=0; i<ele.length; i++){#}
-            {#        if(ele[i].type=='checkbox')#}
-            {#            ele[i].checked=true;#}
-            {#    }#}
-            {# }#}
-            {#function deSelect(){#}
-            {#    var ele=document.getElementsByName('discipline');#}
-            {#    for(var i=0; i<ele.length; i++){#}
-            {#        if(ele[i].type=='checkbox')#}
-            {#            ele[i].checked=false;#}
-            {##}
-            {#    }#}
-            {# }#}
-            {##}
-
-{#// Listen for click on toggle checkbox#}
-{#$('#all').click(function(event) {#}
-{#    if(this.checked) {#}
-{#        // Iterate each checkbox#}
-{#        $(':checkbox').each(function() {#}
-{#            this.checked = true;#}
-{#        });#}
-{#    } else {#}
-{#        $(':checkbox').each(function() {#}
-{#            this.checked = false;#}
-{#        });#}
-{#    }#}
-{# });#}
 function sendIt() {
-    //console.log('sendIt')
-    //let discipline = document.forms[0]; {# Why [0]? #}
-    //let discipline_array = [];
-    //for (let i = 0; i < discipline.length; i++) {
-        //if (discipline[i].checked) {
-            //discipline_array.push(discipline[i].value);
-        //}
-    //}
     let chosenForm = document.getElementById("disciplines");
     chosenForm.submit();
 }

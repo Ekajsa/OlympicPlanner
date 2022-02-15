@@ -36,7 +36,6 @@ def profile_post():
 
 
 @bp_user.get("/create_schedule/step1")
-# @login_required
 def schedules_get():
     return render_template("create_schedule_step_1.html")
 
