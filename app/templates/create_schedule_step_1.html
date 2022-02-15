@@ -3,24 +3,36 @@
 
 {%  block content8 %}
     <div class="content-section">
-        <div class="container-fluid col-md-6 float-left mb-md-5">
-        <h2>Welcome {{ current_user.first_name }}!</h2>
-        <p>Congratulations on your excellent decision to use The Olympic Planner!<br>Create a new schedule, or open an existing one.</p>
-        <br>
-            <form action="{{ url_for("bp_user.select_disciplines_get") }}">
-                <input type="submit" class="btn btn-primary" onclick="isChecked()" value="Create a new schedule">
-            </form>
-        </div>
-        <div class="container-fluid col-md-4 overflow-auto mr-auto" style="max-height: 100%">
-            <h2>Saved Schedules</h2>
-                <div class="list-group">
-                {% for schedule in current_user.schedules %}
-    {#                The class used in the list is a Bootstrap class.#}
-                    <a href="{{ url_for("bp_user.my_schedules_get") }}" class="list-group-item list-group-item-action">{{ schedule.schedule_name }}</a>
-                {% endfor %}
-                </div>
+        <div class="container-fluid float-left mb-md-5">
+            <h2>Welcome {{ current_user.first_name }}!</h2>
+            <p>Congratulations on your excellent decision to use The Olympic Planner!<br>Create a new schedule, or open an existing one.</p>
+            <br>
+            <div class="container col-md-2 float-left mr-3">
+                <form action="{{ url_for("bp_user.select_disciplines_get") }}">
+                    <input type="submit" class="btn btn-primary" onclick="isChecked()" value="Create a new schedule">
+                </form>
+            </div>
+            <div class="container col-md-3 float-left">
+                <form action="{{ url_for("bp_user.my_schedules_post") }}" method="POST">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Open a saved schedule</button>
+                        <ul class="dropdown-menu" role="menu">
+                                {% for schedule in current_user.schedules %}
+                                    <a><input type="submit" class="dropdown-item" name="schedule_name" value="{{ schedule.schedule_name }}"/></a>
+                                {% endfor %}
+                                <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+                        </ul>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
  {% endblock %}
 
+        <form action="{{ url_for("bp_user.my_schedules_post") }}" method="POST">
+        {% for schedule in current_user.schedules %}
+            <a><input type="submit" class="dropdown-item" name="schedule_name" value="{{ schedule.schedule_name }}"/></a>
+        {% endfor %}
+            <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+        </form>

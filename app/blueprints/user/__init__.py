@@ -37,7 +37,6 @@ def profile_post():
     first_name = request.form.get("first_name")
     last_name = request.form.get("last_name")
     email = request.form.get("email")
-
     uc.edit_user(first_name, last_name, email)
     return redirect(url_for("bp_user.profile_get"))
 
@@ -89,7 +88,7 @@ def select_countries_post():
     schedule_name = request.form['schedule_name']
     countries = json.loads(the_list)
     uc.add_step3(email, schedule_name, countries)
-    print('getting here?')
+    # print('getting here?')
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 

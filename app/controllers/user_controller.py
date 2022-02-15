@@ -69,14 +69,15 @@ def edit_user(first_name, last_name, email):
     if last_name:
         user.last_name = last_name
     user.full_name = f"{user.first_name} {user.last_name}"
+    user.avatar = f"https://eu.ui-avatars.com/api/?name={user.first_name}+{user.last_name}&background=random"
     if email:
         user.email = email
     user.save()
     signin_user(user.email)
 
 
-def add_country(email, country, schedule_name):
-    ur.add_country(email, country, schedule_name)
+# def add_country(email, country, schedule_name):
+#     ur.add_country(email, country, schedule_name)
 
 
 def add_step2(email, disciplines):
@@ -90,7 +91,8 @@ def add_step3(email, schedule_name, countries):
 def get_chosen_countries_and_disciplines():
     schedules = ur.get_user_schedules(current_user)
     if schedules is None:
-        countries, disciplines = []
+        countries = []
+        disciplines = []
         return countries, disciplines
     else:
         latest_schedule = schedules[len(schedules)-1]
