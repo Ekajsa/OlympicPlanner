@@ -76,10 +76,6 @@ def edit_user(first_name, last_name, email):
     signin_user(user.email)
 
 
-# def add_country(email, country, schedule_name):
-#     ur.add_country(email, country, schedule_name)
-
-
 def add_step2(email, disciplines):
     return ur.add_step2(email, disciplines)
 
@@ -91,8 +87,7 @@ def add_step3(email, schedule_name, countries):
 def get_chosen_countries_and_disciplines():
     schedules = ur.get_user_schedules(current_user)
     if schedules is None:
-        countries = []
-        disciplines = []
+        countries, disciplines = [], []
         return countries, disciplines
     else:
         latest_schedule = schedules[len(schedules)-1]
@@ -110,3 +105,4 @@ def get_saved_schedule(schedule_name=""):
         if schedule_name.lower() == schedule["schedule_name"].lower():
             saved_schedule = schedule
             return saved_schedule
+
