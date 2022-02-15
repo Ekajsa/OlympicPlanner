@@ -40,6 +40,7 @@ def add_step3(email, schedule_name, countries):
             schedule["countries"] = countries
     user.save()
 
+
 def get_user_schedules(user):
     schedules = user.schedules
     return schedules

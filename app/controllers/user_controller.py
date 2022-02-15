@@ -75,10 +75,6 @@ def edit_user(first_name, last_name, email):
     signin_user(user.email)
 
 
-def add_country(email, country, schedule_name):
-    ur.add_country(email, country, schedule_name)
-
-
 def add_step2(email, disciplines):
     return ur.add_step2(email, disciplines)
 
@@ -90,12 +86,9 @@ def add_step3(email, schedule_name, countries):
 def get_chosen_countries_and_disciplines():
     schedules = ur.get_user_schedules(current_user)
     if schedules is None:
-        countries, disciplines = []
-        return countries, disciplines
+        countries, disciplines = [], []
     else:
         latest_schedule = schedules[len(schedules)-1]
         countries = [country.lower() for country in latest_schedule["countries"]]
         disciplines = [discipline.lower() for discipline in latest_schedule["disciplines"]]
-        # countries = latest_schedule["countries"]
-        # disciplines = latest_schedule["disciplines"]
-        return countries, disciplines
+    return countries, disciplines
