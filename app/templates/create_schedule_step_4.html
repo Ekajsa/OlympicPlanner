@@ -72,6 +72,7 @@
     //Function for moving the div from base schedule to personal schedule
     function moveIt(e) {
         console.log('inside moveIt')
+        console.log(e)
         // Get the div that we clicked
         let targetDiv = e.path[1];
         // Get the cell hosting the div in the from table
@@ -143,12 +144,13 @@
         }
 
 
-        //Remove added td's
-        // Get the id of the row containing the div
-        //let currentRow = targetDiv.parentElement.parentElement;
-        //for (let i = 1; i < currentRow.length; i++ ) {
-            //Something else is needed, check clickEvent()
-        //}
+        //Remove added td's because of rowspan
+        let tbody = toTable.childNodes[0];
+        console.log(destinationRowId)
+        for (let i = 1; i < rowspan; i++) {
+            let currentRow = tbody.childNodes[parentRowId + i];
+            currentRow.deleteCell(-1);
+        }
 
 
     }
