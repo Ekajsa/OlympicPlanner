@@ -153,9 +153,14 @@ def schedule_html(schedule, date, schedule_type):
         table_html += "<tr>"
         for cell in row:
             if schedule.index(row) == 0:
-                table_html += "<th>" + cell + "</th>"
+                if row.index(cell) == 0:
+                    table_html += "<th class='time'>" + cell + "</th>"
+                else:
+                    table_html += "<th>" + cell + "</th>"
             else:
-                if row.index(cell) == 0 or cell == "":
+                if row.index(cell) == 0:
+                    table_html += "<td class='time'>" + cell + "</td>"
+                elif cell == "":
                     table_html += "<td>" + cell + "</td>"
                 elif cell == "ROWSPAN":
                     pass
