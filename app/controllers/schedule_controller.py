@@ -89,11 +89,26 @@ def convert_times_to_nearest_quarter(hour, minute):
 
 
 def convert_beijing_time_to_local(event):
+    # try:
+    #     beijing_date_time_start = datetime.datetime.strptime(f"{event.date} {event.local_start_time}:00.000000",
+    #                                                          "%Y-%m-%d %H:%M:%S.%f")
+    # except ValueError:
+    #     event.date = event.date[:10]
+    #     beijing_date_time_start = datetime.datetime.strptime(f"{event.date} {event.local_start_time}:00.000000",
+    #                                                          "%Y-%m-%d %H:%M:%S.%f")
+    #
+    # try:
+    #     beijing_date_time_end = datetime.datetime.strptime(f"{event.date} {event.local_end_time}:00.000000",
+    #                                                        "%Y-%m-%d %H:%M:%S.%f")
+    # except ValueError:
+    #     event.date = event.date[:10]
+    #     beijing_date_time_end = datetime.datetime.strptime(f"{event.date} {event.local_end_time}:00.000000",
+    #                                                        "%Y-%m-%d %H:%M:%S.%f")
+
     beijing_date_time_start = datetime.datetime.strptime(f"{event.date} {event.local_start_time}:00.000000",
                                                          "%Y-%m-%d %H:%M:%S.%f")
     beijing_date_time_end = datetime.datetime.strptime(f"{event.date} {event.local_end_time}:00.000000",
                                                        "%Y-%m-%d %H:%M:%S.%f")
-
     beijing_time_zone = pytz.timezone("Asia/Shanghai")
 
     beijing_start_time_with_time_zone = beijing_time_zone.localize(beijing_date_time_start)
@@ -192,13 +207,14 @@ def filter_events(date):
         filtered_events = events
     else:
         for event in events:
-            event_countries = [post.lower() for post in event.participating_countries]
+            event_countries = [country.lower() for country in event.participating_countries]
             if event.discipline.lower() in disciplines:
                 filtered_events.append(event)
             else:
                 for country in event_countries:
                     if country in countries:
                         filtered_events.append(event)
+                        break
     return filtered_events
 
 
@@ -223,8 +239,6 @@ def remove_columns(schedule):
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = filter_events(date)
-    # events = get_all_events_by_date(date)
-    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
