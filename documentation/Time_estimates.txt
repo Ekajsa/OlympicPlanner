@@ -58,20 +58,32 @@ Issue Est. time Total Actual time         Total
 Sprint week 4 (85h, not including lectures and meetings)
 Issue Est. time Total Actual time         Total 
 #025    4h        4         8h              8
-#034    2h        6
-#040    2h        8
-#041    2h        10
-#042    3h        13
-#043    2h        15
-#044    2h        17
-#045-#050 12h     29h        
-#051    15h       44h
-#052    6h        50h
-#053    10h       60h         
-#054    6h        66h
+#034    2h        6         -
+#040    2h        8         6h
+#041    2h        10        Kajsa
+#042    3h        13        4:30
+#043    2h        15        1
+#044    2h        17        5
+#045-#050 12h     29h       11   
+#051    15h       44h       28? (15/2) Johanna
+#052    6h        50h       -
+#053    10h       60h       Kajsa  
+#054    6h        66h       17:30
 Remaining 19 hours for filters, removing chosen country and fixing avatar
 
-Actual time 
+Added issues:
+#055  0
+#056  1:05
+#057  0
+#058  Kajsa
+#059  3:25
+#060  1:30
+#061  0:15
+#062  0:20
+#063  0:30
+#064  1:30
+
+045-050:
 045: 00:50
 046:  0
 047:  2:30
