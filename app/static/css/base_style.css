@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 1px 2px 5px #5f788a;
 }
 
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
 #edit_info {
   opacity: 0.8;
   border-radius: 6px;
