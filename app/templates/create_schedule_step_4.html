@@ -4,14 +4,12 @@
 {%  block content12 %}
     <div class="content-section" style="max-height: inherit">
         <div class="container-fluid">
-        <h1>Congratulations!</h1>
-            <p> Here is a filtered version of the main schedule. If you like it as it is, you can
-                copy all of it to your personal schedule. If you want, you can fine tune the main schedule with
-                filters. Then you can either copy the whole main schedule to your personal schedule, or drag and
-                drop to add events from the main schedule to your personal schedule. </p>
+            <h3>Olympic Schedule</h3>
+            <p> Click on events to move them to your personal schedule on the right. </p>
         </div>
-        <div class="container-fluid">
-            <form class="col-md-12 d-flex justify-content-left my-4" action="{{ url_for("bp_user.change_date_post") }}" method="POST">
+        <div class="row">
+        <div class="container col-md-7">
+            <form class="col-md-7 d-flex justify-content-left my-4" action="{{ url_for("bp_user.step4_post") }}" method="POST">
                 <div class="btn-group" role="group" aria-label="Change date-buttons">
                     <input type="submit" class="form-control mr-2" name="date_action" value="Today"/> <br/>
                     <input type="submit" class="form-control mr-2" name="date_action" value="First day"/> <br/>
@@ -22,6 +20,16 @@
                     <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
                 </div>
             </form>
+        </div>
+        <div class="container col-md-4">
+            <form class="col-md-3 float-left d-flex justify-content-right my-4" action="{{ url_for("bp_user.step4_post") }}" method="POST">
+                <div class="btn-group" role="group" aria-label="Change date-buttons">
+                    <input type="submit" class="btn btn-primary" value="Save this schedule">
+                    <input type="hidden" name="schedule_to_save" value="{{ personal_schedules }}">
+                    <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+                </div>
+            </form>
+        </div>
         </div>
         <div class="container-fluid overflow-auto" style="max-height: 78%">
             <div class="row">
@@ -37,41 +45,18 @@
                 <div class="container col-md-4 overflow-auto">
                     {% for personal_schedule in personal_schedules %}
                         {% if shown_date in personal_schedule[0] %}
-                            <div class="personal-schedule" id="personal-schedule{{ loop.index }}">
-                                {{ personal_schedule[1] | safe }}
-                            </div>
+                                <div class="personal-schedule" id="personal-schedule{{ loop.index }}">
+                                    {{ personal_schedule[1] | safe }}
+                                </div>
                         {% endif %}
                     {% endfor %}
                 </div>
             </div>
         </div>
+            <div class="container">
+            </div>
     </div>
 {% endblock %}
-
-
-
-
-
-{#{% block content4 %}#}
-{#    <div>#}
-{#        <table>#}
-{#        <tr>#}
-{#            <th></th>#}
-{#            {% for column in priority_columns %}#}
-{#                <th>{{ column }}</th>#}
-{#            {% endfor %}#}
-{#        </tr>#}
-{#        {% for row in personal_schedule %}#}
-{#            <tr>#}
-{#                <td>{{ time_slots[loop.index - 1] }} </td>#}
-{#                {% for cell in row %}#}
-{#                    <td>{{ cell }}</td>#}
-{#                {% endfor %}#}
-{#            </tr>#}
-{#        {% endfor %}#}
-{#    </table>#}
-{#    </div>#}
-{#{% endblock %}#}
 
 
 {% block scripts %}

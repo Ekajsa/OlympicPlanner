@@ -3,11 +3,6 @@ import datetime
 from app.persistence.model import User
 
 
-# Do we need this?
-def get_all_users():
-    return User.all()
-
-
 def create_user(user):
     User(user).save()
 
@@ -40,6 +35,12 @@ def add_step3(email, schedule_name, countries):
             schedule["countries"] = countries
     user.save()
 
+
 def get_user_schedules(user):
     schedules = user.schedules
     return schedules
+
+
+def save_personal_schedule(schedule_to_save, user, actual_schedule):
+    actual_schedule["layout"] = schedule_to_save
+    user.save()

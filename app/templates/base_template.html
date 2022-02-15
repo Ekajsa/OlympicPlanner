@@ -7,6 +7,8 @@
 
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Our stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename='css/base_style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/event_style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/step2.css') }}">
@@ -17,35 +19,49 @@
     <script type="text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
     {% block head %}{% endblock %}
 </head>
+
 <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand mr-4" href="/">The Olympic Planner</a>
-{#            This button becomes visible when you use a small screen. Then the menu options will show as a dropdown from a button instead of a navigation bar.#}
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- This button becomes visible when you use a small screen. -->
+        <!-- Then the menu options will show as a dropdown from a button instead of a navigation bar. -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                      aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
+        <!-- Navigation tabs -->
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-            <!-- From Olympic planner, but added class from test bootstrap -->
-{#                <a class="nav-item nav-link" href="{{ url_for("bp_open.index") }}">Home</a>#}
                 {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link" href="{{ url_for('bp_user.schedules_get') }}">Create Schedule</a>
-                    <a class="nav-item nav-link" href="{{ url_for('bp_user.my_schedules_get') }}">My Schedules</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ url_for('bp_user.my_schedules_get') }}"
+                           id="navbardrop" data-toggle="dropdown">My Schedules</a>
+                            <div class="dropdown-menu">
+                                <form action="{{ url_for("bp_user.my_schedules_post") }}" method="POST">
+                                {% for schedule in current_user.schedules %}
+                                    <a><input type="submit" class="dropdown-item" name="schedule_name" value="{{ schedule.schedule_name }}"/></a>
+                                {% endfor %}
+                                    <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+                                </form>
+                            </div>
+                    </li>
                     <a class="nav-item nav-link ml-auto" href="{{ url_for('bp_user.signout_get') }}">Sign Out</a>
                 {% else %}
                     <a class="nav-item nav-link" href="{{ url_for("bp_open.signup_get") }}">Sign Up</a>
                     <a class="nav-item nav-link" href="{{ url_for("bp_open.signin_get") }}">Sign In</a>
                 {% endif %}
             </div>
+
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
                 {% if current_user.is_authenticated %}
-{#                    <a href="{{ url_for('bp_user.profile_get') }}"><a href="{{ current_user.avatar }}"></a> </a>#}
-                    <a class="nav-item nav-link" href="{{ url_for("bp_user.profile_get") }}">
-                        <img src="{{ url_for('static', filename='/img/avatar.png') }}" alt="My profile" width="40px" height="40px">
-                    </a>
+                   <a class="nav-item nav-link" href="{{ url_for("bp_user.profile_get") }}">
+                        <img src="{{ current_user.avatar }}" alt="My profile" class="avatar">
+                   </a>
                 {% endif %}
             </div>
           </div>

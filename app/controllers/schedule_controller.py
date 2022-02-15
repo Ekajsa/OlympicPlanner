@@ -25,7 +25,6 @@ time_slots = ["08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10
               "19:30", "19:45", "20:00", "20:15", "20:30", "20:45", "21:00", "21:15", "21:30", "21:45", "22:00",
               "22:15", "22:30", "22:45", "23:00", "23:15", "23:30", "23:45"]
 
-# Will this arbitrary date (to prevent the year to automatically be 1900) become a problem?
 time_slots_with_date = ["2022-02-02 " + time for time in time_slots]
 date_time_slots = [datetime.datetime.strptime(time, "%Y-%m-%d %H:%M") for time in time_slots_with_date]
 local_time_slots = convert_time_slot_to_local(date_time_slots)
@@ -93,7 +92,6 @@ def convert_beijing_time_to_local(event):
                                                          "%Y-%m-%d %H:%M:%S.%f")
     beijing_date_time_end = datetime.datetime.strptime(f"{event.date} {event.local_end_time}:00.000000",
                                                        "%Y-%m-%d %H:%M:%S.%f")
-
     beijing_time_zone = pytz.timezone("Asia/Shanghai")
 
     beijing_start_time_with_time_zone = beijing_time_zone.localize(beijing_date_time_start)
@@ -133,7 +131,7 @@ def event_html(event):
             event_html_string += f"<span class='competition_type'>{event.competition_type}</span>. "
 
     if len(event.participating_countries) == 2:
-            event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
+        event_html_string += f"<p class='participating-countries'>{event.participating_countries[0]}-" \
                              f"{event.participating_countries[1]}</p>"
 
     event_html_string += "</div>"
@@ -153,9 +151,14 @@ def schedule_html(schedule, date, schedule_type):
         table_html += "<tr>"
         for cell in row:
             if schedule.index(row) == 0:
-                table_html += "<th>" + cell + "</th>"
+                if row.index(cell) == 0:
+                    table_html += "<th class='time'>" + cell + "</th>"
+                else:
+                    table_html += "<th>" + cell + "</th>"
             else:
-                if row.index(cell) == 0 or cell == "":
+                if row.index(cell) == 0:
+                    table_html += "<td class='time'>" + cell + "</td>"
+                elif cell == "":
                     table_html += "<td>" + cell + "</td>"
                 elif cell == "ROWSPAN":
                     pass
@@ -178,7 +181,6 @@ def schedule_html(schedule, date, schedule_type):
     return table_html
 
 
-# Version with outer join
 def filter_events(date):
     events = get_all_events_by_date(date)
     countries, disciplines = get_chosen_countries_and_disciplines()
@@ -187,13 +189,14 @@ def filter_events(date):
         filtered_events = events
     else:
         for event in events:
-            event_countries = [post.lower() for post in event.participating_countries]
+            event_countries = [country.lower() for country in event.participating_countries]
             if event.discipline.lower() in disciplines:
                 filtered_events.append(event)
             else:
                 for country in event_countries:
                     if country in countries:
                         filtered_events.append(event)
+                        break
     return filtered_events
 
 
@@ -218,8 +221,6 @@ def remove_columns(schedule):
 def create_base_schedule(date):
     schedule, disciplines, converted_time_slots = create_empty_base_schedule()
     events = filter_events(date)
-    # events = get_all_events_by_date(date)
-    local_time_slots = None
     for event in events:
         col_index = disciplines.index(event.discipline) + 1
 
