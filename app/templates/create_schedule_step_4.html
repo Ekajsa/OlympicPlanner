@@ -4,10 +4,12 @@
 {%  block content12 %}
     <div class="content-section" style="max-height: inherit">
         <div class="container-fluid">
-            <p> Some text maybe. </p>
+            <h3>Olympic Schedule</h3>
+            <p> Click on events to move them to your personal schedule on the right. </p>
         </div>
-        <div class="container-fluid">
-            <form class="col-md-12 d-flex justify-content-left my-4" action="{{ url_for("bp_user.change_date_post") }}" method="POST">
+        <div class="row">
+        <div class="container col-md-7">
+            <form class="col-md-7 d-flex justify-content-left my-4" action="{{ url_for("bp_user.step4_post") }}" method="POST">
                 <div class="btn-group" role="group" aria-label="Change date-buttons">
                     <input type="submit" class="form-control mr-2" name="date_action" value="Today"/> <br/>
                     <input type="submit" class="form-control mr-2" name="date_action" value="First day"/> <br/>
@@ -19,12 +21,22 @@
                 </div>
             </form>
         </div>
+        <div class="container col-md-4">
+            <form class="col-md-3 float-left d-flex justify-content-right my-4" action="{{ url_for("bp_user.step4_post") }}" method="POST">
+                <div class="btn-group" role="group" aria-label="Change date-buttons">
+                    <input type="submit" class="btn btn-primary" value="Save this schedule">
+                    <input type="hidden" name="schedule_to_save" value="{{ personal_schedules }}">
+                    <input type="hidden" name="shown_date" value="{{ shown_date }}"/>
+                </div>
+            </form>
+        </div>
+        </div>
         <div class="container-fluid overflow-auto" style="max-height: 78%">
             <div class="row">
                 <div class="container col-md-7 overflow-auto">
                     {% for schedule in schedules %}
                         {% if shown_date in schedule[0] %}
-                            <div class="base-schedule">
+                            <div class="base-schedule" id="base-schedule{{ loop.index }}">
                                 {{ schedule[1] | safe }}
                             </div>
                         {% endif %}
@@ -33,21 +45,189 @@
                 <div class="container col-md-4 overflow-auto">
                     {% for personal_schedule in personal_schedules %}
                         {% if shown_date in personal_schedule[0] %}
-                            <div class="personal-schedule">
-                                {{ personal_schedule[1] | safe }}
-                            </div>
+                                <div class="personal-schedule" id="personal-schedule{{ loop.index }}">
+                                    {{ personal_schedule[1] | safe }}
+                                </div>
                         {% endif %}
                     {% endfor %}
                 </div>
             </div>
         </div>
+            <div class="container">
+            </div>
     </div>
 {% endblock %}
 
 
 {% block scripts %}
-    <script>
-        let element = document.getElementsByClassName("ceremony")
-        console.log(element);
-    </script>
+<script>
+    //Get all clone-me-td's and add moveIt() on click
+    const clonableTds = document.querySelectorAll(".clone-me");
+    clonableTds.forEach(div => {
+        div.addEventListener("click", moveIt);
+    });
+
+    //Create boolean array of arrays-table for keeping track of which cells that are available (=true)
+    let emptyTimeSlots = [["false", "false", "false", "false", "false", "false"]];
+    for (let i = 1; i < 63; i++) {
+        let defaultRow = ["false", "true", "true", "true", "true", "true"];
+        emptyTimeSlots.push(defaultRow);
+    }
+
+    let events;
+
+    //Right-click menu!
+    //document.getElementById("clicker").addEventListener('contextmenu', function(ev) {
+            //ev.preventDefault();
+            //alert('success!');
+            //return false;
+        //}, false);
+
+    //Function for moving the div from base schedule to personal schedule
+    function moveIt(e) {
+        console.log('inside moveIt')
+        // Get the div that we clicked
+        let targetDiv = e.path[1];
+        // Get the cell hosting the div in the from table
+        let targetCell = targetDiv.parentElement;
+        // Get the id of the row containing the div
+        let parentRowId = e.path[3].rowIndex;
+        //Get the target table id
+        let targetTableId = e.path[5].id;
+        // Get the id of the row in the destination table
+        let destinationRowId = parentRowId;
+        // Get the current cells rowspan
+        let rowspan = targetCell.rowSpan;
+        // Get the destination table using using target table id
+        let targetTableIdWithoutType = targetTableId.substring(1);
+        let toTable = document.getElementById("p" + targetTableIdWithoutType);
+        // Remove the div from the original table
+        targetDiv.parentElement.removeChild(targetDiv);
+
+        //Look for available time slots from priority column 1 through 5
+        let lastEmptyTimeSlotRow = null;
+        let lastEmptyTimeSlotColumn = null;
+        let available = false;
+        let column = 0;
+        for (let i = 1; i < emptyTimeSlots[0].length; i++) {
+            column++;
+            if (emptyTimeSlots[parentRowId][column] === "true") {
+                lastEmptyTimeSlotRow = parentRowId;
+                for (let j = 0; j < rowspan; j++) {
+                    lastEmptyTimeSlotRow++;
+                    if (emptyTimeSlots[lastEmptyTimeSlotRow][column] === "true") {
+                        lastEmptyTimeSlotColumn = column;
+                        if (j === rowspan - 1) {
+                            available = true;
+                        }
+                    }
+                }
+            }
+            if (available === true) {
+                break;
+            }
+        }
+
+        for (let i = rowspan; i > 0; i--) {
+            emptyTimeSlots[lastEmptyTimeSlotRow][lastEmptyTimeSlotColumn] = "false";
+            lastEmptyTimeSlotRow--;
+        }
+
+        //Add div to the first available priority column, checked in emptyTimeSlots
+        toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
+        toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
+        targetDiv.classList.remove("clone-me");
+        targetDiv.classList.add("click-me");
+
+        //Remove old event listener
+        let targetDivId = targetDiv.id;
+        document.getElementById(targetDivId).removeEventListener("click", moveIt);
+
+        // Add new event listeners for all
+        events = document.getElementsByClassName("click-me");
+
+        // Attach the event listeners for the click event on all divs
+        for (let i = 0; i < events.length; i++) {
+            events[i].addEventListener("click", clickEvent, false);
+        }
+
+
+        //Remove added td's
+        // Get the id of the row containing the div
+        let currentRow = targetDiv.parentElement.parentElement;
+        for (let i = 1; i < currentRow.length; i++ ) {
+            //Something else is needed, check clickEvent()
+        }
+
+
+    }
+
+    function clickEvent(e) {
+        console.log('inside clickEvent')
+        // Get the table
+        let currentTable = e.path[5].id;
+
+        // Calculate the start and end row for the clicked event
+        let clickedStartRow = e.path[2].rowIndex;
+        let clickedEndRow = e.path[1].rowSpan + clickedStartRow - 1;
+
+        // Generate a set with the rows in the clicked event
+        let sequenceClicked = [];
+        for (let i = clickedStartRow; i <= clickedEndRow; i++) {
+            sequenceClicked.push(i);
+        }
+        let clickedColumn = new Set(sequenceClicked);
+
+        // Get the rows for the checked column and store it in a set
+        for (let col = 1; col < 6; col++) {
+            let sequenceChecked = [];
+            for (let row = 0; row <= clickedEndRow; row++) {
+
+                if(!currentTable[row][col]) {
+                    // If we need to check if the current event is the clicked
+                    // But do we want that???
+                    if(currentTable.rows[row].cells[col]=== e.path[1]) {
+                         console.log(row, col, "Me");
+                     }
+                    sequenceChecked.push(row);
+                }
+            }
+
+            let checkedColumn = new Set(sequenceChecked);
+
+            // If we have an intersection we can't place the selected event in
+            // this column
+            if(intersection(clickedColumn, checkedColumn).size > 0) {
+                //console.log("Can't place in column ", col);
+            }
+            else {
+                // But here we can. Yay!!!!
+                console.log("Can place in column ", col);
+                console.log('e', e)
+                console.log('currentTable:', currentTable)
+                currentTable.rows[clickedStartRow].cells[col].appendChild(e.path[1]);
+                currentTable.rows[clickedStartRow].cells[col].rowSpan = clickedEndRow;
+                // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].appendChild(targetDiv);
+                // toTable.rows[parentRowId].cells[lastEmptyTimeSlotColumn].rowSpan = rowspan;
+                break;
+            }
+        }
+    }
+
+    // Function to check set intersections (the same td in two rowspan)
+    function intersection(setA, setB) {
+        let _intersection = new Set()
+        for (let elem of setB) {
+            if (setA.has(elem)) {
+                _intersection.add(elem)
+            }
+        }
+        return _intersection
+    }
+
+    // Function to check if a cell in the table is empty
+    function elementIsEmpty(el) {
+        return (/^(\s|&nbsp;)*$/.test(el.innerHTML));
+    }
+</script>
 {% endblock %}

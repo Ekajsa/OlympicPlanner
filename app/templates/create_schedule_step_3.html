@@ -4,65 +4,109 @@
     <style>
         table, tr {border: hidden;}
         td, th {border: hidden;
-            padding-top: 10px;
-            padding-right: 10px;
+            padding-top: 2px;
+            padding-right: 0px;
         }
     </style>
 
-    <div class="content-section">
+    <div class="content-section" style="max-height: inherit">
+        <div class="container-fluid overflow-auto">
+        <h3>Please select the countries of interest!</h3>
+        <p>Hint: Leave blank and click Next to get all countries.</p>
 
-        <!--Make sure the form has the autocomplete function switched off:-->
-        <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}" method="POST">
-            <div class="autocomplete" style="width:300px;">
-                <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
-                <input name="theList" type="hidden" id="theHidden" />
-                <input name="schedule_name" type="hidden" id="theHidden" value="{{ schedule_name }}"/>
+            <!--Make sure the form has the autocomplete function switched off:-->
+            <form autocomplete="off" class="countries" id="theForm" action="{{ url_for("bp_user.select_countries_post") }}" method="POST">
+                <div class="autocomplete" style="width:300px;">
+                    <input class="form-control" id="myInput" type="text" name="country" placeholder="Country">
+                    <input name="theList" type="hidden" id="theHidden" />
+                    <input name="schedule_name" type="hidden" id="theHidden" value="{{ schedule_name }}"/>
+                </div>
+                <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list" disabled>
+                <input type="submit" class="btn btn-primary" onclick="sendIt()" value="Next">
+            </form><br>
+
+
+            <div class="container col-md-4 float-left" id="countries">Chosen countries:
+                <table id="countryTable" style="border: hidden;" >
+                </table>
             </div>
-            <input type="button" class="btn btn-primary" id="addCountry" onclick="ac()" value="Add to list" disabled>
-            <input type="submit" class="btn btn-primary" onclick="sendIt()" value="Next">
-        </form><br>
-
-
-        <div id="countries">Chosen countries:</div>
-        {#    Should </div> be placed under the table?#}
-        <table id="countryTable" style="border: hidden;" >
-
-        </table>
+        </div>
     </div>
 
+
     <script>
-        let capCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Russian Olympic Committee", "Romania", "Russia", "San Marino", "Saudi arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Taiwan", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
+        //Arrays with participating countries, one capitalized and on lowered
+        // The lowered is used in the script and the capitalized in the UI
+        let capCountries = ["Albania", "American Samoa", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Bulgaria", "Canada", "Chinese Taipei", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czech Republic", "Denmark", "East Timor", "Ecuador", "Eritrea", "Estonia", "Finland", "France", "Georgia", "Germany", "Ghana", "Great Britain", "Greece", "Haiti", "Hong Kong", "Hungary", "Iceland", "India", "Iran", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Kazakhstan", "Korea", "Kosovo", "Kyrgyzstan", "Latvia", "Lebanon", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Malta", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "ROC", "Romania", "Russian Olympic Committee", "San Marino", "Saudi arabia", "Serbia", "Slovakia", "Slovenia", "South Korea", "Spain", "Sweden", "Switzerland", "Taiwan", "Thailand", "Trinidad and Tobago", "Turkey", "Ukraine", "United Kingdom", "United States of America", "USA", "Uzbekistan"];
         let countries = [];
-            for (let i = 0; i < capCountries.length; i++) {
-              countries[i] = capCountries[i].toLowerCase();
+        for (let i = 0; i < capCountries.length; i++) {
+                countries[i] = capCountries[i].toLowerCase();
             }
 
         //Adds countries to array when click on Add Country
         let chosenCountries = [];
         document.getElementById("theForm").onsubmit = () => {
-            document.getElementById("theHidden").value = JSON.stringify(chosenCountries)
-        }
+              document.getElementById("theHidden").value = JSON.stringify(chosenCountries)
+            }
 
+
+        //Activate autocomplete() on input
         autocomplete(document.getElementById("myInput"), capCountries);
+        //Activate inList() on input
         inList(document.getElementById("myInput").value);
 
-
+        //Compare value in input text field with saved strings in chosenCountries
         function inList(input) {
+            //Change some country names in chosenCountries to match the names in db
+            for (let i = 0; i < chosenCountries.length; i++) {
+                if(chosenCountries[i] === "united kingdom") {
+                    chosenCountries[i] = "great britain"
+                } else if(chosenCountries[i] === "south korea") {
+                    chosenCountries[i] = "korea"
+                } else if(chosenCountries[i] === "united states of america") {
+                    chosenCountries[i] = "usa"
+                } else if(chosenCountries[i] === "taiwan") {
+                    chosenCountries[i] = "chinese taipei"
+                } else if(chosenCountries[i] === "russian olympic committee") {
+                    chosenCountries[i] = "roc"
+                }
+            }
+
             input = input.toLowerCase();
-            let isDisabled = true;
+
+            //Booleans for eventual matches in the likewise named arrays (but without "in")
             let inCountries;
             let inChosenCountries;
 
+            //Check for valid country (existing in countries[])
             for (let i = 0; i < countries.length; i++) {
                 if (countries[i] === input) {
                     inCountries = true;
                 }
             }
+
+            //Check if input country already is chosen (existing in chosenCountries[]) ...
             if (chosenCountries.length === 0) {
                 inChosenCountries = false;
             }
+            // ... and prevent double input of countries in chosenCountries
             for (let i = 0; i < chosenCountries.length; i++) {
-                if (inCountries === true && chosenCountries[i] === input) {
+                if ((input === "roc" || input === "russian olympic committee") && chosenCountries.includes("roc")) {
+                    inChosenCountries = true;
+                    break;
+                } else if ((input === "great britain" || input === "united kingdom") && chosenCountries.includes("great britain")) {
+                    inChosenCountries = true;
+                    break;
+                } else if ((input === "south korea" || input === "korea") && chosenCountries.includes("korea")) {
+                    inChosenCountries = true;
+                    break;
+                } else if ((input === "taiwan" || input === "chinese taipei") && chosenCountries.includes("chinese taipei")) {
+                    inChosenCountries = true;
+                    break;
+                } else if ((input === "usa" || input === "united states of america") && chosenCountries.includes("usa")) {
+                    inChosenCountries = true;
+                    break;
+                } else if (inCountries === true && chosenCountries[i] === input) {
                     inChosenCountries = true;
                     break;
                 } else {
@@ -70,18 +114,20 @@
                 }
             }
 
+            //If valid country name and not already chosen: remove disabled on addCountry-button
             if (inCountries === true && inChosenCountries === false) {
                 document.getElementById("addCountry").disabled = false;
             }
         }
 
-
+        //Function for Add Country
         function ac() {
             let countryTable = document.getElementById("countryTable");
             let input = document.getElementById("myInput");
             input = input.value.toLowerCase()
 
-            if(input === 'russia' | input ==='russian olympic committee') {
+            //Changing some inputs to match the names in the API (roc is needed below but outside the API)
+            if(input ==='russian olympic committee') {
                 input = 'roc';
             } else if(input === 'south korea') {
                 input = 'korea';
@@ -93,35 +139,55 @@
                 input = 'usa';
             }
             chosenCountries.push(input);
-            chosenCountries = chosenCountries.sort()
 
+            //Get country flag by country code
             let flag;
+            //East Timor and North Macedonia are not in the country code API, so country code must be hard coded
+            if(input === 'east timor') {
+                input = 'tl';
+            } else if(input === 'north macedonia') {
+                input = 'mk';
+            }
+
+            //Russia competes under the olympic flag and Kosovo is not in the flag API
             if (input === 'roc') {
                 flag = '<img style="width:32px; height:24px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Olympic_flag.svg">';
                 countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + "ROC" + "</td></tr>";
-            } else {
-                            fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
-
-                return resp.json();
-            }).then(json => {
-                //console.log('Code: ', json.records[0].fields.iso2_code);
-
-            flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
-            if (input === 'taiwan') {
-                input = 'chinese taipei';
-            } else if(input === 'united kingdom') {
-                input = 'great britain';
+            } else if (input === 'kosovo') {
+                flag = '<img style="width:32px; height:24px;" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kosovo.svg">';
+                countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + "Kosovo" + "</td></tr>";
             }
-            countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + capCountries[countries.indexOf(input)]  + "</td></tr>";
-            }).catch(function() {
-            countryTable.innerHTML += "<tr><td>???</td><td>" + capCountries[countries.indexOf(input)] + "</td></tr>";
+            else {
+                //Get the country code
+                fetch("https://public.opendatasoft.com/api/records/1.0/search/?dataset=countries-codes&q=" + input).then(resp => {
+                    return resp.json();
+                }).then(json => {
+                    //Get the flag
+                    flag = '<img style="width:32px; height:24px;" src="https://flagcdn.com/' + json.records[0].fields.iso2_code.toLowerCase() + '.svg">';
+                    //Change back some country names to match db
+                    if (input === 'taiwan') {
+                        input = 'chinese taipei';
+                    } else if(input === 'united kingdom') {
+                        input = 'great britain';
+                    } else if(input === 'tl') {
+                        input = 'east timor';
+                    } else if(input === 'mk') {
+                        input = 'north macedonia';
+                    }
+                    //Print flag and country name
+                    countryTable.innerHTML += "<tr><td>" + flag + "</td><td>" + capCountries[countries.indexOf(input)]  + "</td></tr>";
+                }).catch(function() {
+                    //Print ??? if flag is not found
+                    countryTable.innerHTML += "<tr><td>???</td><td>" + capCountries[countries.indexOf(input)] + "</td></tr>";
+                });
 
-            });
+
             }
 
-
+            //Re-disable Add Country-button after click on it
             let button = document.getElementById('addCountry');
             button.disabled = true;
+            //Remove last input from text field
             document.getElementById('myInput').value = '';
         }
 
@@ -129,10 +195,10 @@
         function autocomplete(inp, arr) {
             /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
-            var currentFocus;
+            let currentFocus;
             /*execute a function when someone writes in the text field:*/
             inp.addEventListener("input", function (e) {
-                var a, b, i, val = this.value;
+                let a, b, i, val = this.value;
                 inList(val);
                 /*close any already open lists of autocompleted values*/
                 closeAllLists();
@@ -145,8 +211,8 @@
                 a.setAttribute("id", this.id + "autocomplete-list");
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
-                this.parentNode.appendChild(a);
 
+                this.parentNode.appendChild(a);
                 /*for each item in the array...*/
                 for (i = 0; i < arr.length; i++) {
                     /*check if the item contains the same letters as the text field value:*/
@@ -165,7 +231,7 @@
 
                         b.innerHTML = output;
 
-                        /*insert a input field that will hold the current array item's value:*/
+                        /*insert an input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                         /*execute a function when someone clicks on the item value (DIV element):*/
                         b.addEventListener("click", function (e) {
@@ -188,13 +254,13 @@
                     /*If the arrow DOWN key is pressed,
                     increase the currentFocus variable:*/
                     currentFocus++;
-                    /*and and make the current item more visible:*/
+                    /*and make the current item more visible:*/
                     addActive(x);
                 } else if (e.keyCode == 38) { //up
                     /*If the arrow UP key is pressed,
                     decrease the currentFocus variable:*/
                     currentFocus--;
-                    /*and and make the current item more visible:*/
+                    /*and make the current item more visible:*/
                     addActive(x);
                 } else if (e.keyCode == 13) {
                     /*If the ENTER key is pressed, prevent the form from being submitted,*/

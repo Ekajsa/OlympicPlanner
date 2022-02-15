@@ -2,8 +2,8 @@ import json
 from flask import Blueprint, redirect, url_for, render_template, request
 from flask_login import logout_user, current_user
 
-from app.controllers.user_controller import edit_user, add_step3, add_step2
-from app.controllers.schedule_controller import create_all_schedules, set_shown_date
+from app.controllers import user_controller as uc
+from app.controllers import schedule_controller as sc
 
 
 bp_user = Blueprint("bp_user", __name__)
@@ -31,8 +31,7 @@ def profile_post():
     first_name = request.form.get("first_name")
     last_name = request.form.get("last_name")
     email = request.form.get("email")
-
-    edit_user(first_name, last_name, email)
+    uc.edit_user(first_name, last_name, email)
     return redirect(url_for("bp_user.profile_get"))
 
 
@@ -61,7 +60,7 @@ def select_disciplines_post():
             chosen.append(discipline)
     print()
     email = current_user.email
-    schedule_name = add_step2(email, chosen)
+    schedule_name = uc.add_step2(email, chosen)
 
     return redirect(url_for('bp_user.select_countries_get', schedule_name=schedule_name))
 
@@ -78,39 +77,44 @@ def select_countries_post():
     the_list = request.form["theList"]
     schedule_name = request.form['schedule_name']
     countries = json.loads(the_list)
-    add_step3(email, schedule_name, countries)
+    uc.add_step3(email, schedule_name, countries)
     return redirect(url_for("bp_user.filtered_schedule_get"))
 
 
 @bp_user.get("/create_schedule/step4")
 def filtered_schedule_get():
-    schedules, personal_schedules = create_all_schedules()
-    shown_date = set_shown_date()
+    schedules, personal_schedules = sc.create_all_schedules()
+    shown_date = sc.set_shown_date()
     return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules,
                            shown_date=shown_date)
 
 
 @bp_user.post("/create_schedule/step4")
-def change_date_post():
-    schedules, personal_schedules = create_all_schedules()
+def step4_post():
+    schedules, personal_schedules = sc.create_all_schedules()
     date_action = request.form.get("date_action")
     shown_date = request.form.get("shown_date")
-    new_shown_date = set_shown_date(shown_date, date_action)
+    new_shown_date = sc.set_shown_date(shown_date, date_action)
+    schedule_to_save = request.form.get("schedule_to_save")
+    uc.save_personal_schedule(schedule_to_save)
     return render_template("create_schedule_step_4.html", schedules=schedules, personal_schedules=personal_schedules,
                            shown_date=new_shown_date)
 
 
 @bp_user.get("/my_schedule")
 def my_schedules_get():
-    _, personal_schedule = create_all_schedules()  # Should be replaced by function to get a personal schedule from the database
-    shown_date = set_shown_date()
+    # _, personal_schedule = create_all_schedules()  # Should be replaced by function to get a personal schedule from the database
+    personal_schedule = uc.get_saved_schedule()
+    shown_date = sc.set_shown_date()
     return render_template("my_schedule.html", personal_schedule=personal_schedule, shown_date=shown_date)
 
 
 @bp_user.post("/my_schedule/")
 def my_schedules_post():
-    _, personal_schedule = create_all_schedules()  # Should be replaced by function to get a personal schedule from the database
+    # _, personal_schedule = sc.create_all_schedules()  # Should be replaced by function to get a personal schedule from the database
+    schedule_name = request.form.get("schedule_name")
+    personal_schedule = uc.get_saved_schedule(schedule_name)
     date_action = request.form.get("date_action")
     shown_date = request.form.get("shown_date")
-    new_shown_date = set_shown_date(shown_date, date_action)
+    new_shown_date = sc.set_shown_date(shown_date, date_action)
     return render_template("my_schedule.html", personal_schedule=personal_schedule, shown_date=new_shown_date)
